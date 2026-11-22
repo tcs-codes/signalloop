@@ -1,0 +1,8 @@
+{
+  "prompt_name": "critic_extract",
+  "model": "claude-haiku-5-5",
+  "key": "67870d6bd49e9779f2895e8de50e2bd3a2dd40e43f85688ea2cbaccd4b63a4c0",
+  "text": "{\"claims\":[{\"claim\":\"Pulley raised a $41M Series B\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley's Series B was announced four days ago\",\"type\":\"prospect_fact\"},{\"claim\":\"Rounds like Pulley's usually bring a board forecast request\",\"type\":\"other\"},{\"claim\":\"Pulley has an open Enterprise Account Executive role\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley has an open Enterprise SDR Manager role\",\"type\":\"prospect_fact\"},{\"claim\":\"New sellers at Pulley will need a pipeline process in place\",\"type\":\"other\"},{\"claim\":\"Quillpath reads the CRM every night\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath integrates with HubSpot\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath integrates with Salesforce\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives each rep a short list of next actions per deal\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath writes a weekly pipeline and forecast summary that can be forwarded to the board\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath setup takes about 15 minutes\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath setup requires nothing to migrate\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath offers a free 14-day pilot\",\"type\":\"product_claim\"},{\"claim\":\"Would you like to try the free 14-day pilot on your real pipeline?\",\"type\":\"other\"}]}",
+  "input_tokens": 855,
+  "output_tokens": 544
+}

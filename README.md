@@ -68,11 +68,20 @@ fixtures (for example the recording DB) unless `--force`.
    *Draft outreach* for the top N (about 30 s per account, live LLM).
 4. **Inbox:** open a draft → why-now bullets with evidence → critic badge and claim table
    (rewrites shown) → *Approve* / *Edit & approve* / *Reject*.
-5. **Learn:** *Generate demo campaign* (SYNTHETIC outcomes with a planted pattern) → *Run LEARN*
-   → segment lift, narrative with n, proposed ICP change. _(Recorded numbers: pending.)_
-6. **Inbox → ICP changes:** before/after diff + evidence → *Approve* → ICP v2, lookalike
-   re-run, the Accounts top 10 changes. _(Pending the LEARN recording.)_
-7. **Credits:** credits per run and agent, cache hit rate, LLM cost.
+5. **Learn:** *Generate demo campaign* (SYNTHETIC outcomes over the 326 real contacts, with a
+   planted pattern; mock mode first finds decision-makers for every account from fixtures) →
+   *Run LEARN* → "VP+ at Series A companies with 20-50 staff replied at 3.6x baseline (n=39)";
+   Directors 0.24x (n=74); proposed ICP change.
+6. **Inbox → ICP changes:** headcount 20-200 → 20-50, funding stage → Series A only, Directors
+   dropped from buyer seniority; each change cites lift and n → *Approve* → ICP v2, lookalike
+   re-run converges at 149 matches, the Accounts top 10 is entirely new (Series A, 20-50 staff).
+7. **Credits:** credits per run and agent, cache hit rate, LLM cost. In mock mode the credits
+   are what the recorded live calls cost (about 545 for the whole loop); a cached replay is 0.
+
+A scripted run of steps 1-7 through the real pages takes about 2 minutes; drafting (step 3)
+is the only live LLM step, about 30-70 s per account, and its output is then cached in
+`fixtures/llm` so a repeat demo replays it instantly. The planted LEARN pattern was the top
+insight for every seed from 1 to 10 (lift 2.6-4.5x, n=39); the recorded demo uses seed 9.
 
 ## Recording fixtures (live → mock)
 

@@ -1,0 +1,8 @@
+{
+  "prompt_name": "critic_extract",
+  "model": "claude-haiku-5-5",
+  "key": "bb57a38f8fca2d9f447c56061345907d7edc75fda8a4035ad4e04b7a79aed783",
+  "text": "{\"claims\":[{\"claim\":\"Michael is the recipient of this outreach.\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley raised a $41M Series B.\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath is an AI pipeline-review assistant.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath reads the prospect's CRM nightly.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath builds the weekly forecast summary for board updates.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath offers a free 14-day pilot.\",\"type\":\"product_claim\"},{\"claim\":\"The pilot would run on the prospect's real pipeline.\",\"type\":\"product_claim\"},{\"claim\":\"Congratulations on Pulley's Series B.\",\"type\":\"other\"},{\"claim\":\"Is the prospect open to a free 14-day pilot on their real pipeline?\",\"type\":\"other\"}]}",
+  "input_tokens": 712,
+  "output_tokens": 343
+}

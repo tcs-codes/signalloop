@@ -1,0 +1,8 @@
+{
+  "prompt_name": "critic_extract",
+  "model": "claude-haiku-5-5",
+  "key": "b8b683f52dc63f09af7108da57652527b6bcc5d37909262b088bdb2aba30cc95",
+  "text": "{\"claims\":[{\"claim\":\"Recipient's name is Andreas\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley raised a $41M Series B\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath reads the CRM every night\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives each rep a short list of next actions\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath offers a free 14-day pilot\",\"type\":\"product_claim\"},{\"claim\":\"Pilot would run on the prospect's real pipeline\",\"type\":\"product_claim\"}]}",
+  "input_tokens": 695,
+  "output_tokens": 225
+}

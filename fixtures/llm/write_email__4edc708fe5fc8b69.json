@@ -1,0 +1,8 @@
+{
+  "prompt_name": "write_email",
+  "model": "claude-sonnet-5-5",
+  "key": "4edc708fe5fc8b69439eb13e94a34aeb887505211b26d9ccf08a40570580aa0f",
+  "text": "{\"subject\":\"Congrats on Pulley's $41M Series B\",\"body\":\"Hi Andreas,\\n\\nCongratulations on Pulley's $41M Series B four days ago. With a round that size, the board will likely expect a forecast, and I saw you're hiring an Enterprise SDR Manager and two Enterprise Account Executives.\\n\\nQuillpath reads your CRM every night and flags stalled deals. It also gives each rep a short list of next actions and writes a weekly pipeline and forecast summary you can forward to the board. It connects read-only to HubSpot or Salesforce in about 15 minutes, with nothing to migrate.\\n\\nWould you like to run the free 14-day pilot on Pulley's real pipeline before the new sellers start?\",\"missing\":[\"Which CRM Pulley uses (HubSpot or Salesforce is not stated in the evidence)\",\"Whether Pulley has a dedicated RevOps person or who runs sales today\"]}",
+  "input_tokens": 3825,
+  "output_tokens": 320
+}

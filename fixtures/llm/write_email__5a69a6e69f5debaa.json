@@ -1,0 +1,8 @@
+{
+  "prompt_name": "write_email",
+  "model": "claude-sonnet-5-5",
+  "key": "5a69a6e69f5debaa971353d71a9a764ac6a3ef9265d426dd0151a7912f0bae4d",
+  "text": "{\"subject\":\"Congrats on the Series B, Pulley\",\"body\":\"Hi Michael,\\n\\nCongrats on Pulley's $41M Series B four days ago. With the board expecting a forecast and Enterprise AE and SDR Manager roles open, pipeline process matters more now.\\n\\nQuillpath reads your CRM every night, flags stalled deals (no activity, missing next step, slipped close date), and gives each rep a short list of next actions. It also writes a weekly pipeline and forecast summary you can forward to the board. It connects to HubSpot or Salesforce in about 15 minutes, read-only, with nothing to migrate.\\n\\nWould you like to try the free 14-day pilot on your real pipeline?\",\"missing\":[\"Which CRM Pulley uses (HubSpot or Salesforce)\",\"Whether Pulley has a dedicated RevOps person\",\"Michael's specific pipeline review or forecasting process\"]}",
+  "input_tokens": 3808,
+  "output_tokens": 311
+}

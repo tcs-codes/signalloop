@@ -1,0 +1,8 @@
+{
+  "prompt_name": "critic_extract",
+  "model": "claude-haiku-5-5",
+  "key": "7442d5fee4642bc0fb96a5777d5075b22c3157cfe49d145ba29dcda62819aaa8",
+  "text": "{\"claims\":[{\"claim\":\"Pulley closed a $41M Series B.\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley's $41M Series B was announced four days ago.\",\"type\":\"prospect_fact\"},{\"claim\":\"With the round closed, the board will likely expect a forecast.\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley is hiring an Enterprise SDR Manager.\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley is hiring two Enterprise Account Executives.\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath is an AI pipeline-review assistant.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath reads the CRM every night.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives each rep a short list of next actions.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath writes a weekly pipeline and forecast summary that can be forwarded to the board.\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes on top of the existing CRM.\",\"type\":\"product_claim\"},{\"claim\":\"Setup requires nothing to be migrated.\",\"type\":\"product_claim\"},{\"claim\":\"A free 14-day pilot is offered on the team's pipeline.\",\"type\":\"product_claim\"},{\"claim\":\"Would you like to try the free 14-day pilot on your team's pipeline?\",\"type\":\"other\"},{\"claim\":\"Congratulations on Pulley's Series B.\",\"type\":\"other\"}]}",
+  "input_tokens": 845,
+  "output_tokens": 538
+}
