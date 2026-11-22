@@ -1,0 +1,541 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "viaduct.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner",
+                "Vice President",
+                "Director"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Head of Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "VP Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Head of Revenue Operations"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Chief Revenue Officer"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 4,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.92,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 56862,
+        "basic_profile": {
+          "name": "David Hallac",
+          "professional_network_name": "David Hallac",
+          "headline": "CEO at Viaduct (acq. by Dunlop)",
+          "current_title": "Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2449a1868ac3007d57e229169b54d83fe80e1be7f7862049f9772de4f23cbe9a.jpg",
+          "location": {
+            "city": "Palo Alto",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Palo Alto, California, United States",
+            "full_location": "Palo Alto, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/david-hallac-593a5987"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Viaduct",
+                "company_website": "http://www.viaduct.ai",
+                "professional_network_id": "19012157",
+                "title": "Founder & CEO",
+                "description": "Viaduct (acq. by Sumitomo Rubber / Dunlop in 2025) is an AI-powered connected vehicle platform helping organizations reduce downtime and improve performance across the asset lifecycle.",
+                "employment_type": "",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638548,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f71845bbf6019549822890c7d5cc760c80720ab64cc699dd4ade3d9a3016808a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/viaduct-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 69,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1382618597,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sunnyvale, California, United States",
+                "company_hq_location_address_components": [
+                  "Sunnyvale",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 290801,
+        "basic_profile": {
+          "name": "Bradley Enrici",
+          "professional_network_name": "Bradley Enrici",
+          "headline": "Executive Leadership \u2726 SaaS \u2726 Technology \u2726 Fintech",
+          "current_title": "Vice President of Business Development",
+          "normalized_title": {
+            "matched_title": "Vice President of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Indianapolis",
+            "state": "Indiana",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Indianapolis, Indiana, United States",
+            "full_location": "Indianapolis, Indiana, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/benrici"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Viaduct",
+                "company_website": "http://www.viaduct.ai",
+                "professional_network_id": "19012157",
+                "title": "Vice President of Business Development",
+                "description": "Lead enterprise GTM strategy and revenue operations for Viaduct\u2019s AI-powered predictive maintenance platform serving fleet, construction, and defense markets. Scaled cross-functional teams, built enterprise pipelines, and secured Fortune 1000 partnerships, driving Series B growth.\n\n\u2726 Key Highlights \u2726\n\n\u2022 Built and scaled the GTM team; reduced ramp time by 40% and improved quota attainment by 35%\n\u2022 Generated $18M+ pipeline; secured 4+ Fortune 1000 clients using consultative sales and ROI modeling\n\u2022 Drove partner-led expansion with Sumitomo Rubber Industries, aligning GTM and product for joint fleet growth\n\u2022 Created ABM campaigns that tripled qualified pipeline and increased enterprise conversions by 25%\n\u2022 Overhauled forecasting and reporting with AI-driven dashboards, improving accuracy to 95%",
+                "location": {
+                  "raw": "Menlo Park, California, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638548,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f71845bbf6019549822890c7d5cc760c80720ab64cc699dd4ade3d9a3016808a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/viaduct-ai",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 69,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2440628414,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sunnyvale, California, United States",
+                "company_hq_location_address_components": [
+                  "Sunnyvale",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 403585,
+        "basic_profile": {
+          "name": "Matej Drev",
+          "professional_network_name": "Matej Drev",
+          "headline": "Deploying AI across industrial sectors and continents",
+          "current_title": "Chief Operating Officer",
+          "normalized_title": {
+            "matched_title": "Chief Operating Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matejdrev"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Viaduct",
+                "company_website": "http://www.viaduct.ai",
+                "professional_network_id": "19012157",
+                "title": "Chief Operating Officer",
+                "description": "Responsible for operations, finance, and GTM globally. Dotted line responsibility for CS. Strategic partner to Viaduct's Board, CEO, and founding team.\n\nAcquired by Sumitomo Rubber Industries (2025).",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638548,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f71845bbf6019549822890c7d5cc760c80720ab64cc699dd4ade3d9a3016808a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/viaduct-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 69,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1728741199,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sunnyvale, California, United States",
+                "company_hq_location_address_components": [
+                  "Sunnyvale",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Operators Guild",
+                "company_website": "https://operators-guild.com",
+                "professional_network_id": "7972843",
+                "title": "Member",
+                "description": "Operator Guild is an independent, invitation-only group of tech and startup operations and finance executives.",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1085363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/37abe679183bc676bbd0862992adad36c652af38ca1a05c5e3937d6909791eb7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-operators-guild",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 543,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Professional Organizations",
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Professional Organizations",
+                "position_id": 2388468774,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Daly City, California, United States",
+                "company_hq_location_address_components": [
+                  "Daly City",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "American Slovenian Education Foundation",
+                "company_website": "http://www.asef.net/",
+                "professional_network_id": "18092383",
+                "title": "Executive Committee",
+                "description": "Serving on the Executive Committee of this fantastic non-profit providing educational opportunities to talented young people on both sides of the Atlantic.",
+                "employment_type": "",
+                "start_date": "2013-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3749498,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fa5d0b0b21e1553f71ab893361d02bece680b294ca53a051a552e31781282113.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/asef",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 13,
+                "company_headcount_latest": 53,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 781002331,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Menlo Park, California, United States",
+                "company_hq_location_address_components": [
+                  "Menlo Park",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 803904,
+        "basic_profile": {
+          "name": "Brian Belloli",
+          "professional_network_name": "Brian Belloli",
+          "headline": "Builder and Operator.  Tech startup executive leader focused on product/market fit, GTM strategy/execution, commercial org development and sustainable revenue growth.",
+          "current_title": "General Manager & Chief Commercial Officer",
+          "normalized_title": {
+            "matched_title": "Co-Founder, Chief Commercial Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9065,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bad224ec011f9849b677c1467376fe1748b16338d2c0883463177ec2b73485d2.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brianbelloli"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Viaduct",
+                "company_website": "http://www.viaduct.ai",
+                "professional_network_id": "19012157",
+                "title": "General Manager & Chief Commercial Officer",
+                "description": "\u2022 Lead the manufacturing business unit at Viaduct, driving revenue and profit objectives.  \n\u2022 Oversee strategy and execution across product, engineering, marketing, sales, and customer success teams.  \n\u2022 Foster a collaborative environment to enhance team performance and achieve business goals.",
+                "employment_type": "Full-time",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638548,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f71845bbf6019549822890c7d5cc760c80720ab64cc699dd4ade3d9a3016808a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/viaduct-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 69,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2800893498,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sunnyvale, California, United States",
+                "company_hq_location_address_components": [
+                  "Sunnyvale",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Viaduct",
+                "company_website": "http://www.viaduct.ai",
+                "professional_network_id": "19012157",
+                "title": "Chief Commercial Officer (CCO)",
+                "description": "Viaduct was a startup founded in 2019 that was acquired by Sumitomo Rubber Industries (SRI) in August 2025.  \n\nViaduct specializes in AI solutions for connected assets. We use patented AI technology to analyze complex time series data from connected assets, such as vehicles, to discover hidden patterns and predict anomalies. This helps businesses in various industries, including automotive, trucking, construction, agriculture, and industrial sectors, to achieve several benefits:\n\n- Lower warranty costs: By identifying systemic quality issues months earlier than traditional methods, lowers cost by an average of 12%.\n\n- Reduce downtime: Predictive maintenance capabilities help reduce unplanned downtime by an average of 23%.\n\n- Minimize maintenance costs: Optimizing maintenance schedules and resource allocation with predictive analytics.\n\n- Detect manufacturing issues: Identifying and fixing manufacturing defects before they cause downtime.\n\n- Create new revenue streams: Unlocking insights from connected asset data to enable premium service offerings.\n\n- Drive operational efficiency: Reducing investigation time by 90% and improving execution with advanced AI tools.",
+                "location": {
+                  "raw": "Southeast, Mi"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 638548,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f71845bbf6019549822890c7d5cc760c80720ab64cc699dd4ade3d9a3016808a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/viaduct-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 69,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2431616502,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sunnyvale, California, United States",
+                "company_hq_location_address_components": [
+                  "Sunnyvale",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "MD&A Consulting",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "GTM & Sales Strategy Consultant",
+                "description": "Management and performance consultant focused on strategy and execution for Go-to-Market, revenue growth, deal closing, overall organizational structure and culture/leadership transformation.",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Strategic",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2332691945,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ6CMBAG4Fdpbma465Xyl1cxhrTlCIOxEcpgjO9unL8PvS473suez51mR37k6EPFJHkbCzyHbS26IsSEKYkmFFFJki0yCqJUVIOaCmzc2GhwdLaj0-xuYE0c7oOj3np-LLVdzz94_v4CAAD__wP40Q53AAAA",
+    "total_count": 20,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

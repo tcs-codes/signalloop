@@ -1,0 +1,19 @@
+{
+  "request": {
+    "field": "locations.country",
+    "query": "india",
+    "limit": 15
+  },
+  "endpoint": "/company/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "India"
+      },
+      {
+        "value": "British Indian Ocean Territory"
+      }
+    ]
+  }
+}

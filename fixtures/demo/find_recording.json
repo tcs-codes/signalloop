@@ -1,0 +1,174 @@
+{
+  "note": "LLM outputs recorded during the live FIND run on 2026-11-22; replayed by FakeLLM in mock mode",
+  "icp_description": "B2B software companies, 20-200 employees, Seed to Series B, US or India.",
+  "traits": {
+    "traits": [
+      {
+        "dimension": "industry",
+        "values": [
+          "Software Development"
+        ],
+        "coverage": 1.0,
+        "explanation": "5 of 5 seeds are in the Software Development industry."
+      },
+      {
+        "dimension": "headcount_band",
+        "values": [
+          "20-50"
+        ],
+        "coverage": 0.6,
+        "explanation": "3 of 5 seeds have a headcount of 20-50 employees."
+      },
+      {
+        "dimension": "funding_stage",
+        "values": [
+          "series_a"
+        ],
+        "coverage": 1.0,
+        "explanation": "5 of 5 seeds are at the series_a funding stage."
+      },
+      {
+        "dimension": "hq_country",
+        "values": [
+          "USA"
+        ],
+        "coverage": 1.0,
+        "explanation": "5 of 5 seeds are headquartered in the USA."
+      },
+      {
+        "dimension": "headcount_growth_band",
+        "values": [
+          "10-25%",
+          "0-10%"
+        ],
+        "coverage": 0.8,
+        "explanation": "4 of 5 seeds have headcount growth in the 10-25% or 0-10% bands (2 each)."
+      }
+    ],
+    "persona_hypothesis": {
+      "titles": [
+        "Head of Sales",
+        "VP Sales",
+        "Head of Revenue Operations",
+        "Chief Revenue Officer",
+        "CEO / Founder"
+      ],
+      "seniority": [
+        "CXO",
+        "Owner / Partner",
+        "Vice President",
+        "Director"
+      ]
+    },
+    "missing": [
+      "technologies"
+    ]
+  },
+  "icp": {
+    "company_filters": [
+      {
+        "field": "taxonomy.professional_network_industry",
+        "type": "=",
+        "value": "Software Development"
+      },
+      {
+        "field": "headcount.total",
+        "type": "=>",
+        "value": 20
+      },
+      {
+        "field": "headcount.total",
+        "type": "=<",
+        "value": 200
+      },
+      {
+        "field": "funding.last_round_type",
+        "type": "in",
+        "value": [
+          "seed",
+          "series_a",
+          "series_b"
+        ]
+      },
+      {
+        "field": "locations.country",
+        "type": "in",
+        "value": [
+          "USA",
+          "IND"
+        ]
+      }
+    ],
+    "person_filters": [
+      {
+        "field": "experience.employment_details.current.seniority_level",
+        "type": "in",
+        "value": [
+          "CXO",
+          "Owner / Partner",
+          "Vice President",
+          "Director"
+        ]
+      },
+      {
+        "field": "experience.employment_details.current.function_category",
+        "type": "in",
+        "value": [
+          "Sales"
+        ]
+      }
+    ],
+    "fit_weights": {
+      "industry": 0.3,
+      "headcount": 0.2,
+      "funding_stage": 0.25,
+      "geo": 0.1,
+      "growth": 0.15
+    },
+    "rationale": "Industry is set to Software Development (5 of 5 seeds). The description's wider ranges override the seed traits, which are all Series A and USA (5 of 5 each), so the filters use Seed to Series B, USA and India, and 20-200 employees (only 3 of 5 seeds are in the 20-50 band). Growth (4 of 5 seeds at 0-25%) is not a hard filter and only affects scoring. Buyers are senior sales leaders (Head of Sales, VP Sales, CRO), matching the persona hypothesis. The Sales function filter will exclude CEO/Founders and may miss some RevOps titles.",
+    "missing": [
+      "B2B business model (no allowed field expresses B2B vs B2C)",
+      "technologies (no allowed field and no seed trait available)"
+    ]
+  },
+  "tune_patches": [
+    {
+      "direction": "tighten",
+      "action": "add",
+      "index": null,
+      "condition": {
+        "field": "headcount.growth_percent.6m",
+        "type": "=>",
+        "value": 10
+      },
+      "reason": "The current result of 3204 companies is far above the 50\u2013200 target, and requiring at least 10% six-month headcount growth is a new field that narrows the approved ICP without altering its filters."
+    },
+    {
+      "direction": "tighten",
+      "action": "add",
+      "index": null,
+      "condition": {
+        "field": "funding.last_fundraise_date",
+        "type": "=>",
+        "value": "2023-01-01"
+      },
+      "reason": "The 802-company result is still above the 50\u2013200 target, and the last fundraise date is a new field not used by the approved filters, so requiring a round on or after 2023-01-01 narrows the list without changing the ICP."
+    },
+    {
+      "direction": "tighten",
+      "action": "add",
+      "index": null,
+      "condition": {
+        "field": "funding.last_round_amount_usd",
+        "type": "=>",
+        "value": 1000000
+      },
+      "reason": "The current result of 652 companies is still well above the 50\u2013200 target, and requiring a last round of at least $1M is a new field not used by the approved filters that narrows the list without changing the ICP."
+    }
+  ],
+  "expected": {
+    "tuned_count": 575,
+    "fetched": 150,
+    "preview_count": 3204
+  }
+}

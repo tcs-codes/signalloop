@@ -1,0 +1,16 @@
+{
+  "request": {
+    "field": "funding.last_round_type",
+    "query": "series_a",
+    "limit": 10
+  },
+  "endpoint": "/company/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "series_a"
+      }
+    ]
+  }
+}

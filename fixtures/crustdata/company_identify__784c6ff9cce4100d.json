@@ -1,0 +1,49 @@
+{
+  "request": {
+    "domains": [
+      "delphina.ai"
+    ]
+  },
+  "endpoint": "/company/identify",
+  "credits": 0.2,
+  "response": [
+    {
+      "matched_on": "delphina.ai",
+      "match_type": "domain",
+      "matches": [
+        {
+          "confidence_score": 1.0,
+          "company_data": {
+            "crustdata_company_id": 1033872,
+            "basic_info": {
+              "name": "Delphina",
+              "crustdata_company_id": 1033872,
+              "primary_domain": "delphina.ai",
+              "all_domains": [
+                "delphina.ai"
+              ],
+              "website": "https://delphina.ai/",
+              "professional_network_url": "https://www.linkedin.com/company/delphina-ai",
+              "professional_network_id": "96953747",
+              "profile_name": "Delphina",
+              "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/68ba9c26259ec43f5d1bd8c813cbaac564b8fccd1814bfd72c4e74f2ffc9f205.jpg",
+              "description": "Teams with messy enterprise data trust Delphina's AI-managed context layer and best-in-class data agents, workflows, and data apps. Loved by Substack, LATAM Airlines, Basecamp Franchising, and more. Join us to create the future of data: https://jobs.ashbyhq.com/Delphina",
+              "company_type": "Privately Held",
+              "year_founded": 2023,
+              "employee_count_range": "11-50",
+              "markets": [
+                "PRIVATE"
+              ],
+              "industries": [
+                "Software Development",
+                "Technology, Information and Internet",
+                "Technology, Information and Media"
+              ]
+            },
+            "social_profiles": null
+          }
+        }
+      ]
+    }
+  ]
+}

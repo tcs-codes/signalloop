@@ -1,0 +1,22 @@
+{
+  "request": {
+    "field": "locations.country",
+    "query": "united states",
+    "limit": 15
+  },
+  "endpoint": "/company/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "United States"
+      },
+      {
+        "value": "United States of America"
+      },
+      {
+        "value": "United States Minor Outlying Islands"
+      }
+    ]
+  }
+}

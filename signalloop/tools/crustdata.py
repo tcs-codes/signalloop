@@ -254,16 +254,17 @@ class CrustdataClient:
             row = s.get(ApiCache, key)
             return None if row is None else row.response_json
 
-    def _cache_put(self, key: str, endpoint: str, body: dict, response: Any) -> None:
+    def _cache_put(self, key: str, endpoint: str, body: dict, response: Any, credits: float = 0.0) -> None:
         from signalloop.db import session_scope
         from signalloop.models import ApiCache
 
         with session_scope() as s:
             row = s.get(ApiCache, key)
             if row is None:
-                s.add(ApiCache(key=key, endpoint=endpoint, request_json=body, response_json=response))
+                s.add(ApiCache(key=key, endpoint=endpoint, request_json=body,
+                               response_json=response, credits=credits))
             else:
-                row.response_json = response
+                row.response_json, row.credits = response, credits
 
     def _load_fixture(self, name: str, key: str) -> tuple[Any, float]:
         for fname in (f"{name}__{key[:16]}.json", f"{name}__default.json"):
@@ -328,7 +329,7 @@ class CrustdataClient:
             response = [{"matched_on": v, "match_type": None, "matches": []}
                         for k in ("domains", "names", "crustdata_company_ids",
                                   "professional_network_profile_urls") for v in body.get(k, [])]
-        self._cache_put(key, path, body, response)
+        self._cache_put(key, path, body, response, credits)
         meter.add_credits(credits)
         self._log(endpoint=path, credits=credits, latency_ms=ms(), cached=False, ok=True)
         return response

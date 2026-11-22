@@ -1,0 +1,16 @@
+{
+  "request": {
+    "field": "experience.employment_details.current.seniority_level",
+    "query": "Director",
+    "limit": 10
+  },
+  "endpoint": "/person/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "Director"
+      }
+    ]
+  }
+}

@@ -28,4 +28,25 @@ copy .env.example .env   # then fill in ANTHROPIC_API_KEY and CRUSTDATA_API_KEY
 .\.venv\Scripts\streamlit.exe run app/Home.py
 ```
 
-_Recording fixtures and the demo walkthrough are documented as those phases land._
+## Recording fixtures (live → mock)
+
+```powershell
+$env:SIGNALLOOP_MODE="live"
+.\.venv\Scripts\python.exe scripts\record_fixtures.py credits      # free balance check
+.\.venv\Scripts\python.exe scripts\record_find.py seeds            # F7
+.\.venv\Scripts\python.exe scripts\record_find.py traits           # F8
+.\.venv\Scripts\python.exe scripts\record_find.py icp "B2B software companies, 20-200 employees, Seed to Series B, US or India."
+.\.venv\Scripts\python.exe scripts\record_find.py lookalike        # F9
+.\.venv\Scripts\python.exe scripts\record_find.py contacts         # F11
+.\.venv\Scripts\python.exe scripts\record_find.py export           # api_cache -> fixtures/crustdata
+```
+
+Each step runs inside a metered run (`CREDIT_BUDGET_PER_RUN`). Exported fixtures keep the
+credits the live call cost, so the Credits page shows a realistic cost in mock mode.
+`fixtures/demo/find_recording.json` holds the LLM outputs of the recorded run, and
+`tests/test_replay_find.py` replays the whole FIND flow from fixtures with no network.
+
+> **Privacy:** `fixtures/crustdata/` contains real business-contact data (names, titles,
+> profile URLs) returned by Crustdata. Keep this repository private.
+
+_The demo walkthrough is documented when Phase 6 lands._

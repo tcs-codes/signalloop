@@ -1,0 +1,49 @@
+{
+  "request": {
+    "domains": [
+      "puppygraph.com"
+    ]
+  },
+  "endpoint": "/company/identify",
+  "credits": 0.2,
+  "response": [
+    {
+      "matched_on": "puppygraph.com",
+      "match_type": "domain",
+      "matches": [
+        {
+          "confidence_score": 1.0,
+          "company_data": {
+            "crustdata_company_id": 1039449,
+            "basic_info": {
+              "name": "PuppyGraph",
+              "crustdata_company_id": 1039449,
+              "primary_domain": "puppygraph.com",
+              "all_domains": [
+                "puppygraph.com"
+              ],
+              "website": "http://puppygraph.com",
+              "professional_network_url": "https://www.linkedin.com/company/puppygraph",
+              "professional_network_id": "90502758",
+              "profile_name": "PuppyGraph",
+              "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b39f30d87812b4ffa314916659d2e6eafb256f621b6411992fb9072d51ec8de3.jpg",
+              "description": "A graph query engine for all your data.No ETLPuppyGraph enables you to query your data as a graph by directly connecting to your data warehouses and lakes. This eliminates the need to build and maintain time-consuming ETL pipelines needed with a traditional graph database setup. No more waiting for data and failed ETL processes.Deploy To Query In 10 MinsPuppyGraph's revolutionary query engine eliminates onboarding hassles that comes with a graph database, letting you deploy and start querying within just 10 minutes. Replacing an existing database? Effortlessly drop in PuppyGraph as the replacement, seamlessly connecting to third-party tools without the need for data or code migration.Petabyte-Level ScalabilityPuppyGraph eradicates graph scalability issues by separating computation and storage. Our auto-sharded, distributed computation effortlessly manages vast datasets. Querying directly from your warehouses, lakes, or multiple data sources, PuppyGraph empowers you to graph-query all your data, instead of only the data loaded into a graph database.10-Hop Queries In SecondsPuppyGraph delivers lightning-fast results, handling complex multi-hop queries like 10-hop neighbors in seconds. Our patent-pending technology efficiently leverages all computing resources, ensuring exceptional performance. Want to take it to the next level? More machines, more performance.",
+              "company_type": "Privately Held",
+              "year_founded": 2023,
+              "employee_count_range": "11-50",
+              "markets": [
+                "PRIVATE"
+              ],
+              "industries": [
+                "Software Development",
+                "Technology, Information and Internet",
+                "Technology, Information and Media"
+              ]
+            },
+            "social_profiles": null
+          }
+        }
+      ]
+    }
+  ]
+}

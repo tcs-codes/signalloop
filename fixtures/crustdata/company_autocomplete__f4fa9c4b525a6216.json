@@ -1,0 +1,46 @@
+{
+  "request": {
+    "field": "funding.last_round_type",
+    "query": "series",
+    "limit": 15
+  },
+  "endpoint": "/company/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "series_unknown"
+      },
+      {
+        "value": "series_a"
+      },
+      {
+        "value": "series_b"
+      },
+      {
+        "value": "series_c"
+      },
+      {
+        "value": "series_d"
+      },
+      {
+        "value": "series_e"
+      },
+      {
+        "value": "series_f"
+      },
+      {
+        "value": "series_g"
+      },
+      {
+        "value": "series_h"
+      },
+      {
+        "value": "series_i"
+      },
+      {
+        "value": "series_j"
+      }
+    ]
+  }
+}

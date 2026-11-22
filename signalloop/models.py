@@ -248,6 +248,7 @@ class ApiCache(SQLModel, table=True):
     endpoint: str = Field(index=True)
     request_json: dict[str, Any] = _json()
     response_json: Any = Field(default=None, sa_column=Column(JSON))
+    credits: float = 0.0  # what the original (live) call cost; replayed into mock fixtures
     created_at: datetime = Field(default_factory=utcnow)
 
 

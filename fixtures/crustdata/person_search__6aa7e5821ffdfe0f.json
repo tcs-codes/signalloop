@@ -1,0 +1,709 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "inertiasystems.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner",
+                "Vice President",
+                "Director"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Head of Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "VP Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Head of Revenue Operations"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Chief Revenue Officer"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 4,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.92,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 42509,
+        "basic_profile": {
+          "name": "Matthew Hudelson",
+          "professional_network_name": "Matthew Hudelson",
+          "headline": "Founder Inertia Systems - Connecting teams to project data through Intelligent Construction Drawings",
+          "current_title": "Founder",
+          "normalized_title": {
+            "matched_title": "Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "San Diego",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Diego, California, United States",
+            "full_location": "San Diego, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matthew-hudelson-7b631738"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "Founder",
+                "description": "",
+                "location": {
+                  "raw": "San Diego, California, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2039552808,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "CEO & Founder",
+                "description": "",
+                "location": {
+                  "raw": "San Diego, CA"
+                },
+                "employment_type": "",
+                "start_date": "2010-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 16,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 203298503,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 375738,
+        "basic_profile": {
+          "name": "Mark Klusza",
+          "professional_network_name": "Mark Klusza",
+          "headline": "CTO | CIO | Board Member | Investor\n\nChanging the Way Construction Projects are Managed with Innovation & Technology.",
+          "current_title": "Chief Technology Officer",
+          "normalized_title": {
+            "matched_title": "Chief Technology Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/99d2c3c031c0cfa575e80a215bc5f8e1543551be2ac39e15f6a8fdea8b6fa6c5.jpg",
+          "location": {
+            "city": "Houston",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Houston, Texas, United States",
+            "full_location": "Houston, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/klusza"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "mklusza"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "Chief Technology Officer",
+                "description": "I joined Inertia to help shape the future of construction by unlocking the full potential of AI in the field. As CTO, I\u2019m focused on transforming how teams interact with project data\u2014turning static information into actionable intelligence that drives better decisions, faster execution, and safer outcomes.\n\nAfter decades building technology for the construction industry, I saw an opportunity at Inertia to solve one of its biggest challenges: turning overwhelming project data into something useful, accessible, and predictive. As CTO, I\u2019m helping lead that transformation with a deeply embedded AI strategy.\n\nOur mission is to embed AI into the core of project workflows, enabling automation of understanding, uncovering hidden risks and patterns, and empowering teams to act faster and with greater confidence\u2014from design through execution.\n\nCurrent Focus Areas:\n\n\u2022  AI-First Platform Architecture: Designing systems that interpret and connect plans, specs, RFIs, and field data into a dynamic, searchable system of record.\n\n\u2022 Intelligent Construction Agents: Building AI tools that identify risk, coordinate scope, and assist field teams in real time\u2014before issues escalate.\n\n\u2022 Human-Centered Interfaces: Creating intuitive visualizations that surface critical insights without adding noise\u2014bridging the gap between complexity and usability.\n\n\u2022 Industry-Driven Innovation: Collaborating closely with ENR contractors to ensure the platform delivers real-world impact and scales effectively across diverse projects.",
+                "location": {
+                  "raw": "Houston, Texas, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2668597330,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Henrich Advisory",
+                "company_website": "https://henrichadvisory.com",
+                "professional_network_id": "113028328",
+                "title": "CTO & Innovation Officer",
+                "description": "As Chief Technology Officer at Henrich Advisory, I drive the company\u2019s technology vision and execution, aligning digital solutions with the firm\u2019s strategic advisory work.",
+                "location": {
+                  "raw": "Houston, Texas, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 29778006,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2615b36adbe8a32ddd40f5595f861a624b193c75f61ebd9b31cf9a559d5d25c3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/henrichadvisory",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 5,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2873973806,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pose3D",
+                "company_website": "https://pose3d.ai/",
+                "professional_network_id": "107497647",
+                "title": "Investor",
+                "description": "Changing the way 3D Spatial Data is managed",
+                "employment_type": "",
+                "start_date": "2024-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 7229766,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c22013fd8441a0117c28b61629912dc88b60949cfa8dc9292632a96d39881b1c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pose3d",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 3,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2879736982,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Houston, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Houston",
+                  "Harris County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "DotProduct LLC (Dot3D)",
+                "company_website": "http://www.dotproduct3d.com",
+                "professional_network_id": "2724629",
+                "title": "Co-Founder",
+                "description": "DotProduct3D is a company that develops handheld 3D scanning solutions, combining depth sensing, computer vision, and real-time data processing. Founded in 2012 by a team with deep roots in 3D data acquisition (including former employees from companies like Trimble, Google, and others), DotProduct3D\u2019s goal was to make 3D scanning more portable, affordable, and accessible without sacrificing accuracy.\n\n\u2022 Co-founded DotProduct LLC, pioneering real-time 3D perception technology for mobile devices.  \n\u2022 Developed a user-friendly platform for capturing and managing 3D data without cloud dependency.  \n\u2022 Focused on B2B enterprise solutions across diverse markets, including AEC, BIM, and forensics.  \n\u2022 Achieved significant market traction, enhancing operational efficiency for clients in various industries.",
+                "location": {
+                  "raw": "Houston, Texas Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2013-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4368864,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7c034a7fe5ef7f14f92b7ce25633ad8332b95ade40158e9aa895dbb4b148d01d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/dotproduct",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 13,
+                "company_headcount_latest": 9,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1339154316,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 16383582,
+        "basic_profile": {
+          "name": "Aman Asrani",
+          "professional_network_name": "Aman Asrani",
+          "headline": "Director of Engineering at Inertia Systems",
+          "current_title": "Director of Engineering",
+          "normalized_title": {
+            "matched_title": "Director of Engineering",
+            "department": "Engineering & Technology",
+            "sub_department": "IT Leadership & Management",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/59fe4c071c39aea710563843153424fd2477b50c77ff8353a490c7df07081a0f.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Diego County, California, United States",
+            "full_location": "San Diego County, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/amanasrani"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "BlazeIconic"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "Director of Engineering",
+                "description": "Head of Engineering department: Adept at aligning technical initiatives with business goals, optimizing productivity, and fostering a collaborative, high-performance culture.\n\nKey Contributions:\n\nTransformative SDLC: Revamped workflows across four global teams (Web, Mobile, ICD, DevOps), boosting productivity and collaboration, including remote settings.\n\nSecurity & Compliance: Led SOC2 compliance with Vanta, meeting enterprise-grade standards and securing high-value contracts.\n\nBudget & Hiring: Managed department budgets, aligned spending with goals, created hiring plans, and integrated Product Designers and QA Engineers into SDLC workflows.\n\nCrisis Management: Directed critical debugging sessions with record turnaround times, ensuring system stability and customer satisfaction.\n\nArchitectural Leadership:\nDelivered Procore 3D BIM Viewer and Oracle Primavera Cloud integrations, improving workflows.\nImplemented RDS Proxy for Lambda scaling, asynchronous processing, and advanced AWS CloudTrail monitoring.\nExecuted zero-downtime upgrades for legacy systems, addressing breaking changes.\nScaling for Growth: Optimized user-facing products for growth, enhanced workflows, and developed admin tools for a product-led growth model. Improved collaboration between Engineering, Operations, and Delivery teams.\n\nTechnologies:\nDevelopment: Python, PHP, JavaScript, Three.js, WebGL\nCloud & DevOps: AWS Lambda, Docker, CloudTrail, RDS Proxy, GitHub Actions\nProductivity: Jira, Confluence, Productboard, Postman, Pendo, HubSpot\nSecurity: SOC2, Vanta",
+                "location": {
+                  "raw": "San Diego Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2292945399,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "Engineering Manager",
+                "description": "Experienced Engineering Manager with a strong record of leading globally distributed teams, delivering scalable SaaS solutions, and fostering technical innovation. Skilled at aligning engineering efforts with business goals, optimizing developer productivity, and building resilient cloud-based architectures. Proficient in managing technical debt, implementing CI/CD pipelines, and creating high-performance engineering cultures.\n\nKey Achievements:\n\nGlobal Leadership: Led a 25+ member engineering team across Web, Mobile, and Algorithms products, ensuring collaboration and delivery across geographies while reporting to the CEO.\n\nProcore Integration: Directed integration with Procore, progressing from proof of concept to marketplace release. Press Release\n\nCloud Transformation: Migrated legacy ETL processes to AWS Lambda, boosting performance by 150% and reducing costs.\n\nCI/CD Optimization: Transitioned to GitHub Actions, simplifying deployments and improving reliability.\nVisualization Enhancements: Migrated a legacy WebGL viewer to Three.js, enhancing end-user performance and visualization.\n\nSecurity & Maintenance: Conducted a cloud infrastructure audit, ensuring IT compliance and onboarding an offshore DevOps team for maintenance.\n\nAgile Practices: Transitioned teams from Kanban to Scrum, improving sprint velocity and workflows in collaboration with leadership.\n\nTeam Building: Recruited, onboarded, and mentored engineers, product managers, and QA analysts, fostering growth and innovation.\n\nTechnologies & Tools:\nProgramming: JavaScript, PHP, Python, Three.js, WebGL\nCloud & DevOps: AWS Lambda, Docker, GitHub Actions, Cloudflare\nProject Management: Jira, Confluence, Miro, Productboard, Agile & Scrum Practices",
+                "location": {
+                  "raw": "San Diego Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1862749022,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "Senior Software Engineer",
+                "description": "Product Engineering \u2022 Start-up Life\n\nInertia powers California\u2019s largest construction projects, including Stanford University hospitals ($5B) and LA Stadium (Rams & Chargers, $4B).\n\nOverview: As an early engineering hire, I rose from Software Engineer to Lead Engineer at Inertia Systems, leading full-stack development, infrastructure migration, and performance optimization for a SaaS platform on high-profile projects. My work enhanced scalability, performance, and integrations, boosting client success.\n\n\u2022 Architected core product feature -  \u201cIntelligent Construction Drawings\u201d (ICD) location-tracking module for improved project management and field efficiency. https://www.inertiasystems.com/platform/location-tracking\n\n\u2022 Performance Optimization: Optimized MySQL queries and APIs, achieving a 30% boost in processing speed.\n\n\u2022 Cloud Migration: Led migration from Rackspace/GCP to AWS, using S3 Transfer Acceleration to increase file upload speeds by 200%, cutting costs and improving data access.\n\n\u2022 DevOps & Infrastructure: Configured Linux servers with PHP-FPM, nginx, load balancers, and managed DNS with Cloudflare. Established CI/CD pipelines, enhancing scalability and deployment efficiency.\n\n\u2022 Procore Integration & SSO: Designed integration with Procore, including data sync and OAuth SSO, improving access and user engagement.\n\n\u2022 Developer Productivity: Implemented Docker and Xdebug in PhpStorm, boosting productivity by 25%. Built reusable classes, improving maintainability.\n\n\u2022 Scaling Core Modules: Refactored notifications with SendGrid APIs, improving support response by 75% and speeding feature delivery.\n\nPromoted to Lead Engineer with an equity increase, recognized for product development contributions and technical mentorship.\n\nTechnologies & tools used: AWS, Docker, Linux, nginx, Cloudflare, CI/CD, PHP, Doctrine, JavaScript, Ext JS, WebGL, Three.js, MySQL, Jira, Confluence, Miro, Productboard, Figma, Agile SDLC",
+                "location": {
+                  "raw": "Greater San Diego Area"
+                },
+                "employment_type": "",
+                "start_date": "2019-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "Senior",
+                "function_category": "Engineering",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1520115539,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Intel",
+                "company_website": "http://www.intel.com",
+                "professional_network_id": "1053",
+                "title": "Artificial Intelligence Student Ambassador",
+                "description": "",
+                "location": {
+                  "raw": "San Jose, California"
+                },
+                "employment_type": "",
+                "start_date": "2018-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 680974,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/695d38b2df6775888aef6ef10f99965e556780003fb698acb4ef83f8aa8fe731.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/intel-corporation",
+                "seniority_level": "In Training",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 109705,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Semiconductor Manufacturing",
+                  "Computers and Electronics Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Semiconductor Manufacturing",
+                "position_id": 1339990012,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Santa Clara, California, United States",
+                "company_hq_location_address_components": [
+                  "Santa Clara",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 121768139,
+        "basic_profile": {
+          "name": "Jedon Thompson",
+          "professional_network_name": "Jedon Thompson",
+          "headline": "Director of Engineering, Blade AI at Inertia Systems",
+          "current_title": "Director of Engineering, Blade AI",
+          "normalized_title": {
+            "matched_title": "Director, Engineering",
+            "department": "Engineering & Technology",
+            "sub_department": "IT Leadership & Management",
+            "similarity": 0.8854,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9fb5d109c892f05c5bfdb3e823c6c57a405529234e94d8256b25cf8b8acf0cce.jpg",
+          "location": {
+            "city": "North",
+            "state": "Virginia",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "North, Virginia, United States",
+            "full_location": "North, Virginia, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jedon"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inertia Systems",
+                "company_website": "https://www.inertiasystems.com",
+                "professional_network_id": "17934257",
+                "title": "Director of Engineering, Blade AI",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2020-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4dc3f263df6d63c33e87cb0d5d4dbd76b91357ce567e2f787ddbc88098c992e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inertia-systems",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1633676132,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chula Vista, California, United States",
+                "company_hq_location_address_components": [
+                  "Chula Vista",
+                  "San Diego County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Darkling Design and Development",
+                "company_website": "http://darklingdesign.com",
+                "professional_network_id": "7798527",
+                "title": "Owner / Software Architect",
+                "description": "Independent software architecture, engineering, and consulting across industrial IoT, embedded systems, distributed applications, cloud infrastructure, and AI. I design and build end-to-end solutions, from field devices and sensor networks to data pipelines, APIs, and user interfaces.\nSOFTWARE & ARCHITECTURE\nC#, .NET, Blazor, Python, C++, JavaScript; Clean Architecture, CQRS, MediatR, REST APIs, microservices, asynchronous processing, and event-driven systems. SQL Server, PostgreSQL, TimescaleDB, MySQL, and InfluxDB. Authentication, OAuth, Entra ID, and role-based access control.\nINDUSTRIAL IoT & AUTOMATION\nRemote telemetry, data acquisition, monitoring, and control for industrial equipment. Microcontroller firmware; LoRa/RFM69 and cellular communications; MQTT, RabbitMQ, and Node-RED. Sensor integration, relay control, voltage monitoring, alerting, and time-series analytics. Environmental data collection for agricultural prediction models.\nAI & AGENTIC ENGINEERING\nAI-assisted development and coding agents for implementation, refactoring, testing, and code review. Agentic workflows, Model Context Protocol (MCP), tool integrations, and LLM-powered applications and automation.\nCLOUD & SYSTEMS\nDocker, Linux, Windows Server, IIS, Nginx, CI/CD, deployment automation, and self-hosted/cloud infrastructure. Background in multithreaded real-time systems, scientific and pharmaceutical software, enterprise integration, and legacy modernization.\nFocus: practical solutions, maintainable architecture, reliability, and bridging hardware and software.",
+                "location": {
+                  "raw": "Mathews County, VA"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2003-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 11406996,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/be0b78659fbdb48d4d18df3bc2b67f0def635d804f9e9a55ed081e12ebc0b05a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/darkling-design-and-development",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Engineering",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 23,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1226154979,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ7CIBAG4FchN3fgCpSjr2JMA_9BOhiJLR2M8d2N8_eh11WP97bnc6fVEJYKzwkJDRLFxqKq7DPPTaJvFhVw2nJy1QVEX1iSDVycStCmmSZDZz8GrebGM8dF2KX7ZGj0kR8b-vX8G_P3FwAA__-ribqIegAAAA==",
+    "total_count": 11,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -44,7 +44,7 @@ def export(out_dir: Path, overwrite: bool) -> int:
             skipped += 1
             continue
         p.write_text(json.dumps({"request": row.request_json, "endpoint": row.endpoint,
-                                 "credits": None, "response": row.response_json}, indent=2),
+                                 "credits": row.credits, "response": row.response_json}, indent=2),
                      encoding="utf-8")
         written += 1
     print(f"exported {written} fixtures to {out_dir} ({skipped} already existed)")

@@ -1,0 +1,58 @@
+{
+  "request": {
+    "field": "funding.last_round_type",
+    "query": "",
+    "limit": 15
+  },
+  "endpoint": "/company/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "seed"
+      },
+      {
+        "value": "series_unknown"
+      },
+      {
+        "value": "grant"
+      },
+      {
+        "value": "pre_seed"
+      },
+      {
+        "value": "series_a"
+      },
+      {
+        "value": "private_equity"
+      },
+      {
+        "value": "debt_financing"
+      },
+      {
+        "value": "non_equity_assistance"
+      },
+      {
+        "value": "series_b"
+      },
+      {
+        "value": "post_ipo_equity"
+      },
+      {
+        "value": "angel"
+      },
+      {
+        "value": "post_ipo_debt"
+      },
+      {
+        "value": "equity_crowdfunding"
+      },
+      {
+        "value": "undisclosed"
+      },
+      {
+        "value": "series_c"
+      }
+    ]
+  }
+}

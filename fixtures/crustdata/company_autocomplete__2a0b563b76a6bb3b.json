@@ -1,0 +1,34 @@
+{
+  "request": {
+    "field": "taxonomy.professional_network_industry",
+    "query": "software",
+    "limit": 15
+  },
+  "endpoint": "/company/search/autocomplete",
+  "credits": 0.0,
+  "response": {
+    "suggestions": [
+      {
+        "value": "Software Development"
+      },
+      {
+        "value": "IT System Custom Software Development"
+      },
+      {
+        "value": "Mobile Computing Software Products"
+      },
+      {
+        "value": "Embedded Software Products"
+      },
+      {
+        "value": "Desktop Computing Software Products"
+      },
+      {
+        "value": "Data Security Software Products"
+      },
+      {
+        "value": "Computer Software"
+      }
+    ]
+  }
+}

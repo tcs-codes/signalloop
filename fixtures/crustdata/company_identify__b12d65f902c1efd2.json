@@ -1,0 +1,49 @@
+{
+  "request": {
+    "domains": [
+      "tristar.ai"
+    ]
+  },
+  "endpoint": "/company/identify",
+  "credits": 0.2,
+  "response": [
+    {
+      "matched_on": "tristar.ai",
+      "match_type": "domain",
+      "matches": [
+        {
+          "confidence_score": 1.0,
+          "company_data": {
+            "crustdata_company_id": 1102782,
+            "basic_info": {
+              "name": "Tristar AI",
+              "crustdata_company_id": 1102782,
+              "primary_domain": "tristar.ai",
+              "all_domains": [
+                "tristar.ai"
+              ],
+              "website": "https://tristar.ai",
+              "professional_network_url": "https://www.linkedin.com/company/tristar-ai",
+              "professional_network_id": "68564774",
+              "profile_name": "Tristar AI",
+              "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1a3ca48df9e37ae0bac5e19de51a1a8f6b06988a7840edca5d14638f7a031321.jpg",
+              "description": "Manufacturers depend on reliable operations to produce goods, in industries that require precision such as plastics, automotive, and chemicals. Tristar AI provides manufacturers with the world's most advanced computer vision AI system that keeps track of when things go wrong in production, quality, and maintenance.Our AI-powered cameras and software collect production data, allowing plant managers to receive alerts about operations issues in real-time, preventing monetary losses.Explore our state-of-the-art technology to optimize your manufacturing processes and achieve operational excellence.",
+              "company_type": "Privately Held",
+              "year_founded": 2022,
+              "employee_count_range": "11-50",
+              "markets": [
+                "PRIVATE"
+              ],
+              "industries": [
+                "Software Development",
+                "Technology, Information and Internet",
+                "Technology, Information and Media"
+              ]
+            },
+            "social_profiles": null
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "request": {
+    "domains": [
+      "fairly.com"
+    ]
+  },
+  "endpoint": "/company/identify",
+  "credits": 0.2,
+  "response": [
+    {
+      "matched_on": "fairly.com",
+      "match_type": "domain",
+      "matches": [
+        {
+          "confidence_score": 1.0,
+          "company_data": {
+            "crustdata_company_id": 3132739,
+            "basic_info": {
+              "name": "Fairly",
+              "crustdata_company_id": 3132739,
+              "primary_domain": "fairly.com",
+              "all_domains": [
+                "fairly.com"
+              ],
+              "website": "http://www.fairly.com",
+              "professional_network_url": "https://www.linkedin.com/company/fairly-inc",
+              "professional_network_id": "105792524",
+              "profile_name": "Fairly",
+              "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8b222f3fff4d3514c319efcf457b2a43c15c3384eff5d39851a9ff8047e07895.jpg",
+              "description": "The personalized care that you, your home, and your guests deserve, supported by technology that makes things easy. Manage your vacation home through Fairly.",
+              "company_type": "Privately Held",
+              "year_founded": 2024,
+              "employee_count_range": "51-200",
+              "markets": [
+                "PRIVATE"
+              ],
+              "industries": [
+                "Software Development",
+                "Technology, Information and Internet",
+                "Technology, Information and Media"
+              ]
+            },
+            "social_profiles": null
+          }
+        }
+      ]
+    }
+  ]
+}
