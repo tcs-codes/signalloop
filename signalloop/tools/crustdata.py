@@ -285,7 +285,9 @@ class CrustdataClient:
         )
         return retrying(attempt)
 
-    def _post(self, name: str, body: dict[str, Any], *, before_live: Callable[[], None] | None = None) -> Any:
+    def _post(self, name: str, body: dict[str, Any]) -> Any:
+        from signalloop.tools import meter
+
         path = PATHS[name]
         key = cache_key(path, body)
         t0 = time.perf_counter()
@@ -296,12 +298,11 @@ class CrustdataClient:
             self._log(endpoint=path, credits=0.0, latency_ms=ms(), cached=True, ok=True)
             return cached
 
+        meter.check_budget(meter.estimate(name, body))  # raises BudgetExceeded before spending
         try:
             if self.mode == "mock":
                 response, credits = self._load_fixture(name, key)
             else:
-                if before_live is not None:
-                    before_live()
                 response, credits = self._send(path, body)
         except Exception as exc:
             self._log(endpoint=path, credits=float(getattr(exc, "credits", 0) or 0),
@@ -313,6 +314,7 @@ class CrustdataClient:
                         for k in ("domains", "names", "crustdata_company_ids",
                                   "professional_network_profile_urls") for v in body.get(k, [])]
         self._cache_put(key, path, body, response)
+        meter.add_credits(credits)
         self._log(endpoint=path, credits=credits, latency_ms=ms(), cached=False, ok=True)
         return response
 
