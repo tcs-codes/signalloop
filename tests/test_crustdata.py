@@ -174,3 +174,16 @@ def test_throttle_spaces_calls():
     t.wait("/x")
     t.wait("/y")
     assert slept == [10.0]
+
+
+def test_throttle_autocomplete_override():
+    now, slept = [0.0], []
+
+    def sleep(s):
+        slept.append(s)
+        now[0] += s
+
+    t = cd._Throttle(rpm=6, clock=lambda: now[0], sleep=sleep, overrides={"/autocomplete": 300})
+    t.wait("/company/search/autocomplete")
+    t.wait("/company/search/autocomplete")
+    assert slept == [pytest.approx(0.2)]

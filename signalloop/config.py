@@ -35,6 +35,15 @@ class Settings(BaseSettings):
     # search/enrich/identify; raise this if your tier is higher.
     CRUSTDATA_RPM: float = 5
 
+    # FIND (F9, F11)
+    LOOKALIKE_TARGET_MIN: int = 50
+    LOOKALIKE_TARGET_MAX: int = 200
+    LOOKALIKE_MAX_ITERS: int = 4
+    LOOKALIKE_FETCH_LIMIT: int = 150   # results fetched once tuning has converged
+    SIMILARITY_POLISH_TOP_N: int = 0   # >0: polish top-N similarity reasons with MODEL_FAST
+    CONTACTS_TOP_N: int = 30
+    CONTACTS_PER_ACCOUNT: int = 2
+
     # Scoring weights (F14)
     PRIORITY_FIT_WEIGHT: float = 0.6
     PRIORITY_TIMING_WEIGHT: float = 0.4

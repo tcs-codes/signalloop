@@ -30,6 +30,7 @@ from signalloop.runctx import current_agent, current_run_id
 log = logging.getLogger(__name__)
 
 BATCH_SIZE = 25
+AUTOCOMPLETE_RPM = 300  # autocomplete has its own, much higher limit
 
 # endpoint name -> path (names are used in fixture filenames)
 PATHS: dict[str, str] = {
@@ -156,18 +157,29 @@ class _Throttle:
     """Minimum spacing between live calls to the same endpoint (requests per minute)."""
 
     def __init__(self, rpm: float, clock: Callable[[], float] = time.monotonic,
-                 sleep: Callable[[float], None] = time.sleep):
+                 sleep: Callable[[float], None] = time.sleep,
+                 overrides: dict[str, float] | None = None):
         self.interval = 60.0 / rpm if rpm > 0 else 0.0
+        self._overrides = {k: (60.0 / v if v > 0 else 0.0) for k, v in (overrides or {}).items()}
         self._last: dict[str, float] = {}
         self._lock = threading.Lock()
         self._clock, self._sleep = clock, sleep
 
-    def wait(self, endpoint: str) -> None:
+    def _interval_for(self, endpoint: str) -> float:
         if not self.interval:
+            return 0.0
+        for suffix, iv in self._overrides.items():
+            if endpoint.endswith(suffix):
+                return iv
+        return self.interval
+
+    def wait(self, endpoint: str) -> None:
+        interval = self._interval_for(endpoint)
+        if not interval:
             return
         with self._lock:
             now = self._clock()
-            due = self._last.get(endpoint, -1e18) + self.interval
+            due = self._last.get(endpoint, -1e18) + interval
             if due > now:
                 self._sleep(due - now)
                 now = self._clock()
@@ -192,7 +204,8 @@ class CrustdataClient:
         self.fixtures_dir = Path(fixtures_dir or s.fixtures_dir / "crustdata")
         self._sleep = sleep
         self._max_attempts = max_attempts
-        self._throttle = _Throttle(rpm if rpm is not None else s.CRUSTDATA_RPM, sleep=sleep)
+        self._throttle = _Throttle(rpm if rpm is not None else s.CRUSTDATA_RPM, sleep=sleep,
+                                   overrides={"/autocomplete": AUTOCOMPLETE_RPM})
         self._transport = transport
         self._http: httpx.Client | None = None
         self.base_url = s.CRUSTDATA_BASE_URL
