@@ -37,7 +37,10 @@ def test_find_flow_replays_from_fixtures(fake_llm):
         assert out.fetched == rec["expected"]["fetched"] == 150
 
         found = contacts.find_contacts()
-        assert sum(len(v) for v in found.values()) == 60
+        cs = [c for v in found.values() for c in v]
+        assert len(cs) == 60
+        champs = [c for c in cs if c.role.value == "champion"]
+        assert len(champs) >= 25 and all(contacts._GTM.search(c.title) for c in champs)
 
     s = meter.summary(run.run_id)
     assert s["errors"] == 0

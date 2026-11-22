@@ -1,0 +1,341 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "getcovered.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 3222040,
+        "basic_profile": {
+          "name": "Kimberly Adams",
+          "professional_network_name": "Kimberly Adams",
+          "headline": "Multifamily Industry Veteran with over 25 years of experience. Proven track record for driving results. Specialty in strategic business development. Reputation for building strong and lasting partnerships.",
+          "current_title": "Director of Sales",
+          "normalized_title": {
+            "matched_title": "Director of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cb5e780de7547b4c687ceb98d5493ee1f15f9b2cb7d084fbec4f1ddb9d228176.jpg",
+          "location": {
+            "city": "Boynton Beach",
+            "state": "Florida",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boynton Beach, Florida, United States",
+            "full_location": "Boynton Beach, Florida, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kimgadams"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Get Covered",
+                "company_website": "https://getcovered.io/",
+                "professional_network_id": "12627025",
+                "title": "Director of Sales",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640246,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df6211cc1eaaf03b44dd5d6e4ac4ccd22a64c8a286bf37b273de780623f73d56.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/get-covered-inc",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 126,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2596872906,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 92878627,
+        "basic_profile": {
+          "name": "Lucy Babin",
+          "professional_network_name": "Lucy Babin",
+          "headline": "Director of Sales @ Get Covered | Making Life Easier for Operators, Site teams, and Residents",
+          "current_title": "Director of Sales",
+          "normalized_title": {
+            "matched_title": "Director of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/65427119d4a458903ddffb9bb18e32b751d2b52b8b07d7a0a7a107c7c525b92c.jpg",
+          "location": {
+            "city": "Bend",
+            "state": "Oregon",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Bend, Oregon, United States",
+            "full_location": "Bend, Oregon, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/lucybabin"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Get Covered",
+                "company_website": "https://getcovered.io/",
+                "professional_network_id": "12627025",
+                "title": "Director of Sales",
+                "description": "Get Covered is an industry-leading insurance provider that offers customized solutions to meet lease requirements. Get Covered utilizes advanced technology to track and manage insurance compliance, freeing property teams from administrative tasks. By partnering with Get Covered, property owners/operators can streamline insurance processes, increase revenue, and enhance resident satisfaction.",
+                "location": {
+                  "raw": "Bend, Oregon, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640246,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df6211cc1eaaf03b44dd5d6e4ac4ccd22a64c8a286bf37b273de780623f73d56.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/get-covered-inc",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 126,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2414478275,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 105274701,
+        "basic_profile": {
+          "name": "Wendy Doherty",
+          "professional_network_name": "Wendy Doherty",
+          "headline": "Multifamily Leader | Enterprise Partnerships & Portfolio Strategy | Director of Strategic National Accounts",
+          "current_title": "Director of Strategic Sales",
+          "normalized_title": {
+            "matched_title": "Director, Strategic Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9991,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d95e1181af970106a2ffbe8d3dde54609a55547ff696d07e29bf5b739c760d37.jpg",
+          "location": {
+            "city": null,
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Dallas-Fort Worth Metroplex",
+            "full_location": "Dallas-Fort Worth Metroplex"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/wendydoherty"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Get Covered",
+                "company_website": "https://getcovered.io/",
+                "professional_network_id": "12627025",
+                "title": "Director of Strategic Sales",
+                "description": "I lead strategic national account partnerships at Get Covered, working with enterprise multifamily operators to simplify resident insurance and guarantee portfolio-wide compliance. Our platform combines a 30-second HO4 enrollment experience with an automated master policy backstop \u2014 eliminating certificate chasing for site teams while adding ancillary revenue to the bottom line.\n \nAfter 30 years in multifamily (half onsite, half on the vendor side), I bring an operator-first lens to every partnership: if it doesn't make life easier for the onsite team, it isn't the right solution.",
+                "location": {
+                  "raw": "DFW"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640246,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df6211cc1eaaf03b44dd5d6e4ac4ccd22a64c8a286bf37b273de780623f73d56.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/get-covered-inc",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 126,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2821010134,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Doherty Strategy Group",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Founder & CEO, DSG | Doherty Strategy Group",
+                "description": "Doherty Strategy Group (DSG) is a boutique consulting firm specializing in guiding high-growth startups and multifamily innovators through scalable, sustainable growth.\n\nAs Founder & CEO, I partner with early-stage and emerging companies to architect sales strategies, streamline operations, and build the leadership infrastructure needed for real traction \u2014 not just growth at all costs. With over 30 years of multifamily industry experience, I bring a pragmatic, people-first approach to startup leadership.\n\nDSG exists to help founders and revenue teams gain clarity, create momentum, and scale with soul.\n\nSkills:\nStrategic Sales Architecture \u00b7 Startup Leadership & Advisory \u00b7 Business Ownership & Growth Strategy \u00b7 Operational Scaling \u00b7 Leadership Development & Team Coaching \u00b7 Multifamily Industry Expertise \u00b7 GTM Planning \u00b7 Fractional Executive Support \u00b7 Founder Mentorship",
+                "location": {
+                  "raw": "DFW"
+                },
+                "employment_type": "Contract",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2652896877,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTKwQqDMAwA0F8pOXtIYtom_soYUrOAhzGZ1sMY-_fh-b0vvM_YP_PajhWmBGFkQkw4MhqN2sRbEWEsHhoaVqWiLpqDUdDF_MFehDiWmnOpMCQ4tr3DlG6Ema9O9yFB33p7zr6dr8vy7x8AAP__Y_K2i3kAAAA=",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "boodlebox.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 79520851,
+        "basic_profile": {
+          "name": "Greg Lyons",
+          "professional_network_name": "Greg Lyons",
+          "headline": "AI Enablement @ BoodleBox | Championing Collaborative Intelligence: empowering educators and teams to define better problems, validate outputs, and lead the work.",
+          "current_title": "AI-Edu GTM Strategist & Enablement Advisor",
+          "normalized_title": {
+            "matched_title": "AI Ambassador",
+            "department": "Engineering & Technology",
+            "sub_department": "Machine Learning & AI Engineering",
+            "similarity": 0.7706,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/76b575c99bba6b5361a2313e06c61bdb4ef378991c17bd63b08a80b7fcea2ce9.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/greg-k-lyons"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "greglyons87"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "BoodleBox",
+                "company_website": "https://boodlebox.ai",
+                "professional_network_id": "11033108",
+                "title": "AI-Edu GTM Strategist & Enablement Advisor",
+                "description": "I work at the intersection of higher education, AI adoption, and go-to-market strategy \u2014 helping institutions understand not just how to use AI faster, but how to use it well. Through BoodleBox\u2019s Collaborative AI model, I support colleges and universities in building shared AI workflows that preserve human discernment, strengthen institutional knowledge, and turn AI experimentation into responsible, scalable transformation.",
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640689,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a655d54a9bf43a7b9432f0f77c6b8565306cd35f2b958e1418a0885b3f72172a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boodleboxai",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 55,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2907927102,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Colorado Springs, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Colorado Springs",
+                  "El Paso County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 93733809,
+        "basic_profile": {
+          "name": "Sean Traigle",
+          "professional_network_name": "Sean Traigle",
+          "headline": "Transformative Sales & Business Development Executive | Consultant | Leader",
+          "current_title": "Executive Vice President of Sales",
+          "normalized_title": {
+            "matched_title": "Executive Vice President of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c06524941354d2365c8e04e1bd3a6b07b0ff1630ae13151f13d202e54442e11f.jpg",
+          "location": {
+            "city": "Spokane",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Spokane-Coeur d'Alene Area",
+            "full_location": "Spokane-Coeur d'Alene Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/seantraigle"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "BoodleBox",
+                "company_website": "https://boodlebox.ai",
+                "professional_network_id": "11033108",
+                "title": "Executive Vice President of Sales",
+                "description": "As Executive Vice President of Sales at BoodleBox, I lead the company\u2019s go-to-market strategy for its collaborative GenAI platform in higher education, driving revenue growth and expanding institutional partnerships. I lead all sales efforts internally, develop scalable sales processes, and ensure alignment with BoodleBox\u2019s mission to empower lifelong AI literacy and professional readiness.\n\nScaled Revenue10x YoY in Under 18 Months\n- Led the sales organization to beat standard SaaS benchmarks for speed-to-revenue, driving YoY growth while maintaining a highly efficient burn multiple (1.29).\n-Built a \"Faculty First\" Strategy with 115% NRR\ngrew our footprint to 100+ higher education institutions by winning faculty champions first, resulting in strong retention (<5% churn) and a 115% Net Revenue Retention rate.\n- Designed Industry-Leading Unit Economics\nBuilt a sales engine that prioritizes efficiency, delivering LTV:CAC ratios well above industry standards (over 100:1 in our core market) with payback periods under 10 months.\n- Established Predictable Pipeline Visibility\nCreated a clear path to doubling ARR by securing a solid base of contracted expansion and a high-confidence procurement pipeline with a 90% historical close rate.\n- Balancing Focus with Opportunity\nManaged the delicate balance of capitalizing on organic inbound interest from the corporate sector while keeping the team laser-focused on hitting our primary higher education seasonal goals.\n- Differentiating in a Crowded AI Market\nPositioned the platform as a \"multi-player\" solution for teams, solving the collaboration gaps left by single-user enterprise tools and winning us clients ranging from litigation teams to government units.\n- Driving High-Conviction Procurement\nRefined our sales motion to navigate complex institutional buying cycles (Feb\u2013June), successfully converting pilot programs into campus-wide long-term partnerships.",
+                "location": {
+                  "raw": "Virginia, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640689,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a655d54a9bf43a7b9432f0f77c6b8565306cd35f2b958e1418a0885b3f72172a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boodleboxai",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 55,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2637356589,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Colorado Springs, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Colorado Springs",
+                  "El Paso County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 213721320,
+        "basic_profile": {
+          "name": "Justin Ergler",
+          "professional_network_name": "Justin Ergler",
+          "headline": "EVP, Legal Strategy & Growth at BoodleBox | Former GSK Director of Legal Ops | Collaborative AI for Law Firms & Legal Departments | FT Legal Intrapreneur of the Year",
+          "current_title": "Executive Vice President, Legal Strategy and Growth",
+          "normalized_title": {
+            "matched_title": "EVP and Chief Legal Officer",
+            "department": "Legal & Compliance",
+            "sub_department": "Corporate Legal Affairs",
+            "similarity": 0.9228,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/467829f102b6f78ca2cc5700fb8839ca8b644dbfa2ab869c5f2213bf54c406b5.jpg",
+          "location": {
+            "city": "Raleigh",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Raleigh, North Carolina, United States",
+            "full_location": "Raleigh, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/justinergler"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "BoodleBox",
+                "company_website": "https://boodlebox.ai",
+                "professional_network_id": "11033108",
+                "title": "Executive Vice President, Legal Strategy and Growth",
+                "description": "BoodleBox is built on collaborative AI: attorneys and partners work alongside multiple leading AI models in one secure workspace and stay in control of the conversation. They direct the AI, challenge it, and refine its output together, rather than handing work to a black box. The result is AI that amplifies legal expertise instead of replacing it, with a level of transparency both firms and clients can trust.\n\nIf you lead a law firm or legal department and are thinking seriously about AI and the client-firm relationship, lets talk.",
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640689,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a655d54a9bf43a7b9432f0f77c6b8565306cd35f2b958e1418a0885b3f72172a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boodleboxai",
+                "seniority_level": "Vice President",
+                "function_category": "Legal",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 55,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3035942497,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Colorado Springs, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Colorado Springs",
+                  "El Paso County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Legal Value Network",
+                "company_website": "https://www.legalvaluenetwork.com",
+                "professional_network_id": "64743364",
+                "title": "Board Member",
+                "description": "* Co-founded a national platform uniting law firms, corporate legal departments, and legal technology providers around a shared conviction: that better transparency, fairer pricing, and stronger client-firm relationships are good for everyone at the table.\n* Co-host the Off the Clock podcast, convening in-house counsel, AmLaw partners, pricing directors, and legal operations leaders around the business of law \u2014 practice economics, client value, AI's impact on legal pricing, and the evolving firm-client relationship.\n* Deliver board-level organizational strategy, annual budgeting, and long-term growth planning for the network \u2014 governing a national organization while maintaining an active advisory practice.\n* Serve as a featured speaker and facilitator at industry conferences and forums convening AmLaw firm leadership, pricing directors, and in-house general counsel on legal operations, AFA design, outside counsel strategy, and the future of legal service delivery.",
+                "employment_type": "",
+                "start_date": "2020-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1582166,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ed27eaf2be04ba4b7909321f2e867f51fee76698daba081d941744400e7b69d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/legal-value-network",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Legal Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Legal Services",
+                "position_id": 1609716478,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "US, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe_A6ICyXzFmobTNDkbixg7G-O_G8_vA69Ljve313GF1EEUkW7OsmTlqIjVjaRJrxYJLSsSa2QcyKhrIdFEszTPVGBNygsnB2Y8Bq7uFGXOYMfj75GD0UR9b69fzb_j9BQAA__-L5wbreQAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

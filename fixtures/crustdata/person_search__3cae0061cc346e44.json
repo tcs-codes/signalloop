@@ -1,0 +1,384 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "insightfinder.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 947182,
+        "basic_profile": {
+          "name": "Brian Glickman",
+          "professional_network_name": "Brian Glickman",
+          "headline": "Sales Leader - Evangelist and GTM thought leader of emerging technology | Reliable and Responsible Agentic AI",
+          "current_title": "Regional Sales Director - Strategic Accounts",
+          "normalized_title": {
+            "matched_title": "Sales Director, Strategic Accounts",
+            "department": "Sales & Revenue",
+            "sub_department": "Account Management & Strategy",
+            "similarity": 0.9815,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Orange County, California, United States",
+            "full_location": "Orange County, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bglickman"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "InsightFinder AI",
+                "company_website": "http://www.insightfinder.com",
+                "professional_network_id": "10300795",
+                "title": "Regional Sales Director - Strategic Accounts",
+                "description": "As Regional Sales Director at InsightFinder, I partner with Global 2000 organizations to help them improve the reliability, resilience, and operational performance of mission-critical AI and enterprise systems.\n\nAs AI rapidly evolves from experimentation to production, organizations face a new challenge: ensuring AI applications, autonomous agents, and complex IT environments operate reliably at enterprise scale. InsightFinder is at the forefront of this transformation, combining patented Composite AI with causal, predictive, generative AI, and reinforcement learning to help customers proactively detect, predict, and resolve issues before they impact the business.\n\nI work with executive leaders, AI engineering teams, SREs, platform organizations, and operations teams to modernize AI and IT operations through AI Reliability, AIOps, and autonomous operations.\n\nI'm excited to help enterprises move beyond simply observing their systems to building AI and digital operations they can trust with confidence.",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 636446,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e273dbfbc47dda0124e59afb0f65a0d69f402fa9d50c715e8bc4cac35cf69641.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/insightfinder-inc.",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2974430940,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Durham, North Carolina, United States",
+                "company_hq_location_address_components": [
+                  "Durham",
+                  "Durham County",
+                  "North Carolina",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2941774,
+        "basic_profile": {
+          "name": "Dan Braun",
+          "professional_network_name": "Dan Braun",
+          "headline": "Regional Sales Director",
+          "current_title": "Regional Sales Director",
+          "normalized_title": {
+            "matched_title": "Regional Sales Director",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/76e456cc75be6b9f3e9c1dd572986daf7fc2e572b58850b86d8747ac9045dc99.jpg",
+          "location": {
+            "city": null,
+            "state": "Florida",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Miami-Fort Lauderdale Area",
+            "full_location": "Miami-Fort Lauderdale Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/dan-braun-27079a56"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "InsightFinder AI",
+                "company_website": "http://www.insightfinder.com",
+                "professional_network_id": "10300795",
+                "title": "Regional Sales Director",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 636446,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e273dbfbc47dda0124e59afb0f65a0d69f402fa9d50c715e8bc4cac35cf69641.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/insightfinder-inc.",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2829205050,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Durham, North Carolina, United States",
+                "company_hq_location_address_components": [
+                  "Durham",
+                  "Durham County",
+                  "North Carolina",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3554665,
+        "basic_profile": {
+          "name": "Erin McMahon",
+          "professional_network_name": "Erin McMahon",
+          "headline": "CMO and Head of Investor Relations at Axe Compute I AI Infrastructure & B2B SaaS | GTM Certified Partner & Advisor | Former Google, Twitter, Facebook | Proven Track Record 3x-10x Growth",
+          "current_title": "Chief Marketing Officer and Head of Investor Relations",
+          "normalized_title": {
+            "matched_title": "Founder & Chief Marketing Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.983,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/71e67c185f8df2bb3c980938879fefe18981535a246dab045a1ca81a112ca5d0.jpg",
+          "location": {
+            "city": "Chapel Hill",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Chapel Hill, North Carolina, United States",
+            "full_location": "Chapel Hill, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/erinlmcmahon"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "erinlmcmahon"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Axe Compute",
+                "company_website": "http://axecompute.com",
+                "professional_network_id": "109847011",
+                "title": "Chief Marketing Officer and Head of Investor Relations",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 24719897,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6ef8e413bd3d65319578d7a7e26354dbaff35633d46cd75b2af72c53a004c880.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/axecompute",
+                "seniority_level": "CXO",
+                "function_category": "Marketing",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 16,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2864617545,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Pittsburgh, Pennsylvania, United States",
+                "company_hq_location_address_components": [
+                  "Pittsburgh",
+                  "Allegheny County",
+                  "Pennsylvania",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Podonos",
+                "company_website": "https://www.podonos.com",
+                "professional_network_id": "100518875",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2202360,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81d2f1247fc103480f55dab70b2a12e00cada5466002cada856291f79426a2b2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/podonos",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2942715999,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Gatos, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Gatos",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "InsightFinder AI",
+                "company_website": "http://www.insightfinder.com",
+                "professional_network_id": "10300795",
+                "title": "Marketing and Growth Consultant",
+                "description": "Partnered directly with leadership to shape InsightFinder's value proposition for AiOps and AI Observability. Collaborated on key positioning documents, content strategy, partner enablement, and ecosystem messaging during critical phases of product development. Supported the evolution of go-to-market direction, including competitive analysis,  narrative refinement.",
+                "employment_type": "",
+                "start_date": "2022-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 636446,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e273dbfbc47dda0124e59afb0f65a0d69f402fa9d50c715e8bc4cac35cf69641.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/insightfinder-inc.",
+                "seniority_level": "Entry Level",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2171027868,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Durham, North Carolina, United States",
+                "company_hq_location_address_components": [
+                  "Durham",
+                  "Durham County",
+                  "North Carolina",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8A1EK7XzFmYYVmByNxYwdj_Hez8_vC-2z7Z9nKscHsIEcJ2NAMWbFkDVGkKnlJeUUqXHOrJomjN1MpWJVjXH31xJwCIkwOjr4PmN0diW4p0WNyMPooz0X7-bqEf_8AAAD__7HdCAR3AAAA",
+    "total_count": 8,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

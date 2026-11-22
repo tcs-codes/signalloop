@@ -1,4 +1,11 @@
-"""F11: decision-maker finder (person search scoped to each top account)."""
+"""F11: decision-maker finder.
+
+Two narrow person searches per account, both scoped to the current employer's domain:
+  * champion:        title matches GTM keywords (sales, revenue, growth, ...), ranked by seniority
+  * economic buyer:  seniority CXO / Owner-Partner or a founder title, CEO/founder first
+Crustdata leaves `function_category` empty for most profiles, so a single
+"senior OR title" query returned many non-sales leaders; two queries fix that.
+"""
 from __future__ import annotations
 
 import re
@@ -23,6 +30,13 @@ ECON_SENIORITY = {"cxo", "owner / partner"}
 ECON_TITLE = re.compile(r"\b(ceo|cto|cfo|coo|cro|chief|founder|co-founder|cofounder|president)\b", re.I)
 CHAMP_SENIORITY = {"vice president", "director", "head"}
 CHAMP_TITLE = re.compile(r"\b(vp|vice president|head|director|lead)\b", re.I)
+
+CHAMPION_KEYWORDS = ["Sales", "Revenue", "Business Development", "Growth", "Go To Market", "GTM"]
+ECON_SENIORITY_VALUES = ["CXO", "Owner / Partner"]
+SENIORITY_ORDER = ["cxo", "owner / partner", "vice president", "director", "manager", "senior"]
+_CEO = re.compile(r"\b(ceo|chief executive|founder|co-founder|cofounder)\b", re.I)
+_GTM_EXEC = re.compile(r"\b(cro|chief revenue|coo|chief operating|chief commercial|president)\b", re.I)
+_GTM = re.compile(r"\b(sales|revenue|business development|growth|go[- ]to[- ]market|gtm|commercial|partnerships)\b", re.I)
 
 
 @dataclass
@@ -56,24 +70,45 @@ def role_for(title: str, seniority: str) -> ContactRole:
     return ContactRole.other
 
 
-def _rank(norm: dict, persona: Persona) -> float:
-    sen = [s.lower() for s in persona.seniority]
+def _seniority_rank(norm: dict) -> float:
     s = (norm.get("seniority") or "").lower()
-    score = (len(sen) - sen.index(s)) if s in sen else 0.0
-    title = (norm.get("title") or "").lower()
-    if any(w in title for t in persona.titles for w in [t.lower()]):
+    return float(len(SENIORITY_ORDER) - SENIORITY_ORDER.index(s)) if s in SENIORITY_ORDER else 0.0
+
+
+def champion_rank(norm: dict) -> float:
+    title = norm.get("title") or ""
+    score = _seniority_rank(norm)
+    if _GTM.search(title):
+        score += 10
+    if re.search(r"\b(head|vp|vice president|director)\b", title, re.I):
         score += 2
-    elif any(k in title for t in persona.titles for k in t.lower().split() if len(k) > 3):
-        score += 1
     return score
 
 
-def person_filter(domain: str, persona: Persona) -> dict:
-    any_of = [{"field": F_SENIORITY, "type": "in", "value": persona.seniority}]
-    any_of += [{"field": F_TITLE, "type": "(.)", "value": t} for t in persona.titles[:4]]
+def econ_rank(norm: dict) -> float:
+    title = norm.get("title") or ""
+    if _CEO.search(title):
+        return 30.0
+    if _GTM_EXEC.search(title):
+        return 20.0
+    return 10.0 + _seniority_rank(norm)
+
+
+def champion_filter(domain: str, keywords: list[str] | None = None) -> dict:
     return {"op": "and", "conditions": [
         {"field": F_DOMAIN, "type": "=", "value": domain},
-        {"op": "or", "conditions": any_of},
+        {"op": "or", "conditions": [{"field": F_TITLE, "type": "(.)", "value": k}
+                                    for k in (keywords or CHAMPION_KEYWORDS)]},
+    ]}
+
+
+def econ_filter(domain: str) -> dict:
+    return {"op": "and", "conditions": [
+        {"field": F_DOMAIN, "type": "=", "value": domain},
+        {"op": "or", "conditions": [
+            {"field": F_SENIORITY, "type": "in", "value": ECON_SENIORITY_VALUES},
+            {"field": F_TITLE, "type": "(.)", "value": "Founder"},
+        ]},
     ]}
 
 
@@ -96,34 +131,41 @@ def find_contacts(account_ids: list[int] | None = None, per_account: int | None 
         accounts = suppression.filter_accounts(accounts)
 
     client = get_client()
+    keywords = list(dict.fromkeys(CHAMPION_KEYWORDS))
     found: dict[int, list[Contact]] = {}
     for acc in accounts:
         try:
-            resp = client.person_search(person_filter(acc.domain, persona), limit=per_account + 2)
+            champs = client.person_search(champion_filter(acc.domain, keywords), limit=3).get("profiles") or []
+            econs = client.person_search(econ_filter(acc.domain), limit=3).get("profiles") or []
         except CrustdataError:
             found[acc.id] = []
             continue
-        profiles = resp.get("profiles") or []
-        ranked = sorted(profiles, key=lambda p: _rank(store.normalize_person(p), persona), reverse=True)
+        champs = sorted((p for p in champs if _GTM.search(store.normalize_person(p)["title"] or "")),
+                        key=lambda p: champion_rank(store.normalize_person(p)), reverse=True)
+        econs = sorted(econs, key=lambda p: econ_rank(store.normalize_person(p)), reverse=True)
+
         chosen: list[Contact] = []
-        roles_taken: set[ContactRole] = set()
-        # first pass: one per role (champion, economic buyer); second pass: fill
-        for want_new_role in (True, False):
-            for p in ranked:
-                if len(chosen) >= per_account:
-                    break
+
+        def take(pool: list[dict], role_override: ContactRole | None) -> bool:
+            for p in pool:
                 norm = store.normalize_person(p)
-                role = role_for(norm["title"], norm["seniority"])
-                if want_new_role and (role in roles_taken or role == ContactRole.other):
-                    continue
                 if any(c.crustdata_person_id == norm["crustdata_person_id"] for c in chosen):
                     continue
+                role = role_override or role_for(norm["title"], norm["seniority"])
                 c = store.upsert_contact(p, acc.id, role=role)
                 if suppression.is_suppressed(contact=c):
                     continue
                 chosen.append(c)
-                roles_taken.add(role)
-        found[acc.id] = chosen
+                return True
+            return False
+
+        # a GTM-titled CXO (e.g. CRO) found by the champion search is still a fine champion
+        take(champs, ContactRole.champion)
+        if len(chosen) < per_account:
+            take(econs, ContactRole.economic_buyer)
+        while len(chosen) < per_account and (take(champs, ContactRole.champion) or take(econs, None)):
+            pass
+        found[acc.id] = chosen[:per_account]
         if chosen:
             with session_scope() as s:
                 row = s.get(Account, acc.id)

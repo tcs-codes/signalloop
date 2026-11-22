@@ -1,0 +1,215 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "ampd.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 35029,
+        "basic_profile": {
+          "name": "Brandon Nutter",
+          "professional_network_name": "Brandon Nutter",
+          "headline": "Ampd | Co-founder | CTO | Board Member | Building the Next Evolution of Agentic AI Commerce",
+          "current_title": "Ampd Co-founder | CTO | Board Member",
+          "normalized_title": {
+            "matched_title": "CTO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9559,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/57781fae672a492069e72edf7c3807df93e43b2a57181b881c8b4972d19a93e7.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brandonnutter"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "brandonnutter85"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ampd",
+                "company_website": "http://www.ampd.io",
+                "professional_network_id": "6428921",
+                "title": "Ampd Co-founder | CTO | Board Member",
+                "description": "I lead product + engineering at Ampd, building a world-class team and the underlying technology powering the next evolution of Agentic AI Commerce. My focus is inventing and shipping enterprise-grade AdTech products that help the largest CPG brands drive measurable revenue\u2014connecting media to commerce outcomes through modern attribution, contribution, and data science.\n\nAt Ampd, I\u2019m hands-on across product strategy, architecture, and execution\u2014designing agentic systems that learn from shopper and media signals, optimize decisioning in real time, and create the best possible customer experience from ad click to landing directly inside a retailer app to purchase.\n\n\u2022 Building and leading world-class engineering teams (high velocity, high reliability, high ownership)\n\n\u2022 Architecting real-time AdTech systems that can process billions of events with enterprise-grade uptime and observability\n\n\u2022 Inventing enterprise products that the largest CPG brands adopt, love, and adds marketshare\n\n\u2022 AI + agentic systems for routing, optimization, and continuous learning loops across media to commerce outcomes\n\n\u2022 Engineering architecture across event pipelines, identity/measurement, experimentation, and decisioning services\n\n\u2022 Data science + algorithms for attribution, contribution, forecasting, and media mix models (MMM)\n\n\u2022 Real-time ad systems across walled gardens and performance measurement in complex channel ecosystems\n\n\u2022 Data clean rooms, privacy-safe measurement, and incrementality to prove what\u2019s actually working\n\n\u2022 Deep technical API integrations with TikTok, Meta, Google, Amazon, Walmart, and Target to build cross-channel, commerce-optimized media platforms\n\n\u2014> If you\u2019re building at the intersection of AdTech, AI, and commerce\u2014or you\u2019re a brand/platform team looking to make media measurable from impression to purchase\u2014let\u2019s connect.",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642106,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/93a286a389255da9a4df9333c1e7ef98aec696963f54df8b839b7ffdf792d46b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ampd-ads",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 712161553,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 35030,
+        "basic_profile": {
+          "name": "Joshua Gebhardt",
+          "professional_network_name": "Joshua Gebhardt",
+          "headline": "Co-founder & CEO @ Ampd",
+          "current_title": "CEO and Co-founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/88f7b3d2a9764e21a1b424bbb4c44393b8990120d5f147822f2c31b3481c8ec3.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/joshuagebhardt"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "joshua_gebhardt"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ampd",
+                "company_website": "http://www.ampd.io",
+                "professional_network_id": "6428921",
+                "title": "CEO and Co-founder",
+                "description": "Bringing retail to shoppers - where they live online. \n\nAmpd is the leader and innovator in the enterprise platform space for activating and driving new and qualified ad traffic from Google, Youtube, Instagram, Facebook, and TikTok - to online retailers. \n\nOur proprietary closed loop attribution is complete with automation, and allows Enterprise brands to drive scalable, qualified, incremental,  new-to-brand traffic to products and storefronts on retailers.",
+                "location": {
+                  "raw": "Seattle"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642106,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/93a286a389255da9a4df9333c1e7ef98aec696963f54df8b839b7ffdf792d46b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ampd-ads",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 702933941,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

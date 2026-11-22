@@ -1,0 +1,397 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "courierhealth.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 127792,
+        "basic_profile": {
+          "name": "Danny Sigurdson",
+          "professional_network_name": "Danny Sigurdson",
+          "headline": "Founder, Courier Health",
+          "current_title": "Founder, CEO",
+          "normalized_title": {
+            "matched_title": "Founder, CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cbef69897c9a587259b3c2e573077d4b926e945746b8a27d2d17d83e62f03271.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/dsigurdson"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Courier Health",
+                "company_website": "https://www.courierhealth.com/",
+                "professional_network_id": "75027704",
+                "title": "Founder, CEO",
+                "description": "Courier Health partners with life sciences companies to reinvent the patient experience for the 100s of millions of people around the world who suffer from a chronic condition or rare disease.",
+                "location": {
+                  "raw": "New York"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641743,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d25485bac8d2835abb47263682455893bd4bb15dcf5cc2591041a17ab4d783ae.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/courierhealth",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 163,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1737988871,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 278576,
+        "basic_profile": {
+          "name": "John Eckhart",
+          "professional_network_name": "John Eckhart",
+          "headline": "CTO at Courier Health",
+          "current_title": "Chief Technology Officer",
+          "normalized_title": {
+            "matched_title": "Chief Technology Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a3087fa5646f74f7bc736a592e150364b20bc56ee1bd4a7444c27f12c94c2adf.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jeckhart"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Courier Health",
+                "company_website": "https://www.courierhealth.com/",
+                "professional_network_id": "75027704",
+                "title": "Chief Technology Officer",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641743,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d25485bac8d2835abb47263682455893bd4bb15dcf5cc2591041a17ab4d783ae.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/courierhealth",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 163,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2614921924,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 25422925,
+        "basic_profile": {
+          "name": "Mike Lamm",
+          "professional_network_name": "Mike Lamm",
+          "headline": "Chief People Officer at Courier Health",
+          "current_title": "Chief People Officer",
+          "normalized_title": {
+            "matched_title": "Chief People Officer",
+            "department": "People & HR",
+            "sub_department": "HR Operations & Administration",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/fd6ddab7ea3b87f1c4f2d1422071d236f8b03ab56e6cefe9d5184e6c66a5decf.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mikelamm"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Courier Health",
+                "company_website": "https://www.courierhealth.com/",
+                "professional_network_id": "75027704",
+                "title": "Chief People Officer",
+                "description": "Lead the overall People function at Courier Health as we aim to fulfill our mission to transform the patient experience for hundreds of millions of people living with chronic and rare diseases.\n\nBacked by Oak HC/FT, Norwest, and Work-Bench.",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 641743,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d25485bac8d2835abb47263682455893bd4bb15dcf5cc2591041a17ab4d783ae.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/courierhealth",
+                "seniority_level": "CXO",
+                "function_category": "Human Resources",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 163,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3031538661,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Foundation for Shrewsbury Education",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Board Member",
+                "description": "The Foundation for Shrewsbury Eduction (FSE) exists to provide transformative education, leading-edge technology and a supportive learning environment for every student at Shrewsbury Borough School.\n\nhttps://fse-sbs.org/",
+                "location": {
+                  "raw": "Shrewsbury, NJ"
+                },
+                "employment_type": "",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 3044015766,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Intro",
+                "company_website": "https://intro.co/?utm_source=LinkedIn&utm_medium=Bio",
+                "professional_network_id": "74165569",
+                "title": "Startup Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 700039,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4615331d55aaf11858f5fe8feb046dd29845c40daa07ff012d703834252604c1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/useintro",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 247,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "E-Learning Providers",
+                  "Education"
+                ],
+                "company_professional_network_industry": "E-Learning Providers",
+                "position_id": 2834348042,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Venice, California, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Hacking HR",
+                "company_website": "https://www.hackinghrlab.io/",
+                "professional_network_id": "11298508",
+                "title": "Founding Member / Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1109697,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dd0dc33a2b2a9e664df5f186c969cb15830c88611bfe1fc53ff4ef6522b6aa2f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hacking-hr",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 1313,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Human Resources Services",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Human Resources Services",
+                "position_id": 2834331775,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Flagstaff, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Flagstaff",
+                  "Coconino County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ6CMBAG4FdpbmZoj_5cy6sYQ9rjDIOxEcpgjO9umL8vvU_bP8tWjo1mR8wCjRVJHmKWMqpmgfm1xIIgooBWyGgM05LWGKvIiDz5ENLkQYOjo-2dZndjRObMuA-OeuvluWg7Xxfh9w8AAP__XOVd03gAAAA=",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "mojro.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1537769,
+        "basic_profile": {
+          "name": "Ranganath Seetharamu",
+          "professional_network_name": "Ranganath Seetharamu",
+          "headline": "Chief Operating Officer at Mojro | AI Enabled Logistics Platform",
+          "current_title": "Chief Operating Officer",
+          "normalized_title": {
+            "matched_title": "Chief Operating Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Greater Bengaluru Area",
+            "full_location": "Greater Bengaluru Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ranganathseetharamu"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Mojro",
+                "company_website": "https://www.mojro.com",
+                "professional_network_id": "7936944",
+                "title": "Chief Operating Officer",
+                "description": "",
+                "location": {
+                  "raw": "Bengaluru"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2016-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 7897,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8aa5d2dad17237290314460be723d74e0996f182d08e1965b1a710959519d630.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mojro",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 835469799,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Jayangar III Block, Madhavan Park, Karn\u0101taka, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1537770,
+        "basic_profile": {
+          "name": "Kishan Aswath",
+          "professional_network_name": "Kishan Aswath",
+          "headline": "Co-Founder & CEO at Mojro",
+          "current_title": "Co-Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kishan75"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Mojro",
+                "company_website": "https://www.mojro.com",
+                "professional_network_id": "7936944",
+                "title": "Co-Founder & CEO",
+                "description": "",
+                "location": {
+                  "raw": "Bengaluru Area, India"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2016-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 7897,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8aa5d2dad17237290314460be723d74e0996f182d08e1965b1a710959519d630.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mojro",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 816381339,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Jayangar III Block, Madhavan Park, Karn\u0101taka, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3043468,
+        "basic_profile": {
+          "name": "Amit Kulkarni",
+          "professional_network_name": "Amit Kulkarni",
+          "headline": "Co-Founder & CTO at Mojro | Build smarter supply chains through faster and efficient decision-making.",
+          "current_title": "Co-Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9972,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/amit-kulkarni-2327365"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Mojro",
+                "company_website": "https://www.mojro.com",
+                "professional_network_id": "7936944",
+                "title": "Co-Founder & CTO",
+                "description": "At Mojro, I lead product, technology, and sales for the North American market, bringing over 20 years of experience as a technology and sales leader in enterprise SaaS. I combine my expertise in technology with a deep understanding of supply chains to create products that drive substantial business value for our customers.\n\nAs the Head of Sales for the US market, I focus on direct sales, partner enablement, GTM strategy, and accelerating value for our premium customers.\n\nI am responsible for the conceptualization and development of advanced logistics planning, a multi-dimensional optimization engine, and omni-channel visibility solution.",
+                "location": {
+                  "raw": "Bengaluru Area, India"
+                },
+                "employment_type": "",
+                "start_date": "2016-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 7897,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8aa5d2dad17237290314460be723d74e0996f182d08e1965b1a710959519d630.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mojro",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 832838689,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Jayangar III Block, Madhavan Park, Karn\u0101taka, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMarDMAwA0KsYzRliS5bkXOXzCXLkkqHUNHGGUnr30vm94Xm147Xudu6wBMjNNiEsUZhJImXxZN6c2LRKruU2F1XjljBWq4YluUo0z0xRkWEKcPZjwBL-cCYk1v8pwOjD7uvWr8dP8PMNAAD__yjaGEx3AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

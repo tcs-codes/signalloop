@@ -1,0 +1,356 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "getbild.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 4542734,
+        "basic_profile": {
+          "name": "Virpal S.",
+          "professional_network_name": "Virpal S.",
+          "headline": "VP @ Bild |  Ex-Cloudflare",
+          "current_title": "Vice President of Sales",
+          "normalized_title": {
+            "matched_title": "Vice President of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8e7c72e5ee2511ea1bbf9f3098fa4881d1032ef1ff2ddf5de9be563fa328c5b6.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Chicago Area",
+            "full_location": "Greater Chicago Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/virpalsingh"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Bild",
+                "company_website": "https://www.getbild.com/",
+                "professional_network_id": "54101104",
+                "title": "Vice President of Sales",
+                "description": "I chose Bild because its mission struck a chord with me: the people who build real physical things, from medical devices to spacecraft, deserve tools as modern as the products they create, and Bild frees them from version control chaos so they can build faster, better, and together. What sealed it was the founders, who saw this problem with rare clarity and are building with a conviction that makes you want to be in the room with them. Bild chose me because I do not just sell a product, I champion a mission, and they trusted me to be the voice that carries their vision to the engineers who need it most. Getting to fight for something I believe in this deeply, next to founders and a team this good, is exactly the work I hoped I would find.",
+                "location": {
+                  "raw": "Chicago, IL"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 639096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/19ce76f1f8771029c068a0dc78074dfc3d3e9984f17552539a2e2c68c3261ee6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getbild",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2972159584,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 20438873,
+        "basic_profile": {
+          "name": "Ian Wood",
+          "professional_network_name": "Ian Wood",
+          "headline": "Helping Engineering Teams Streamline Product Data & Collaboration | SaaS Sales | Freight \u2192 Tech | Relationship-Driven",
+          "current_title": "PDM/PLM Liaison",
+          "normalized_title": {
+            "matched_title": "PLM Specialist",
+            "department": "Consulting & Professional Services",
+            "sub_department": "SAP & ERP Consulting",
+            "similarity": 0.8766,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d836f275c8f9f98a760ea6923c750b9a240f77c8567b71134a37986bf11f59d8.jpg",
+          "location": {
+            "city": "Chicago",
+            "state": "Illinois",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Chicago, Illinois, United States",
+            "full_location": "Chicago, Illinois, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ian-wood-iu"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Bild",
+                "company_website": "https://www.getbild.com/",
+                "professional_network_id": "54101104",
+                "title": "PDM/PLM Liaison",
+                "description": "",
+                "location": {
+                  "raw": "Chicago, IL"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 639096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/19ce76f1f8771029c068a0dc78074dfc3d3e9984f17552539a2e2c68c3261ee6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getbild",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3043061071,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Bild",
+                "company_website": "https://www.getbild.com/",
+                "professional_network_id": "54101104",
+                "title": "Founding Business Development Representative",
+                "description": "-Generated qualified pipeline by engaging engineering, product, and operations leaders through strategic outbound (email, calls, and LinkedIn)\n-Consistently exceeded expectations, achieving 103% of Q1 2026 quota\n-Identified inefficiencies in product data management, collaboration, and workflow processes to create relevant, high-impact messaging.",
+                "location": {
+                  "raw": "Chicago, IL"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 639096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/19ce76f1f8771029c068a0dc78074dfc3d3e9984f17552539a2e2c68c3261ee6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getbild",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2829314604,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 29093625,
+        "basic_profile": {
+          "name": "Seamus K.",
+          "professional_network_name": "Seamus K.",
+          "headline": "Business Development Representative at Bild",
+          "current_title": "Business Development Representative",
+          "normalized_title": {
+            "matched_title": "Service Desk Analyst",
+            "department": "Customer Service & Support",
+            "sub_department": "Technical Support & Help Desk",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c9625543c4b9b4e5e8cb03e0a0c79596b9289c1d95cd1602215ba43468ecb79d.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Chicago Area",
+            "full_location": "Greater Chicago Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/seamus-hken"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Bild",
+                "company_website": "https://www.getbild.com/",
+                "professional_network_id": "54101104",
+                "title": "Business Development Representative",
+                "description": "",
+                "location": {
+                  "raw": "Chicago, Illinois, United States"
+                },
+                "employment_type": "",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 639096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/19ce76f1f8771029c068a0dc78074dfc3d3e9984f17552539a2e2c68c3261ee6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getbild",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3006335712,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJvQrCMBAA4FcJN3c4cj_J9VVEyjVp6CAG23QQ8d3F-fvA69qO97L7ucMcwJO75IKkxo01irYq1YyyKFfijQ0LpRhd1yxUlaqtmNALS8sJYQpw9mPAHG7R0Eij3KcAow9_LKVfzz_x9xcAAP__ZGtisHgAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

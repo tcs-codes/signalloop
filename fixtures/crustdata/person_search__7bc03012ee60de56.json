@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "c1.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 860540,
+        "basic_profile": {
+          "name": "Chuck Fontana",
+          "professional_network_name": "Chuck Fontana",
+          "headline": "Corporate & Business Development",
+          "current_title": "VP, Corporate and Business Development",
+          "normalized_title": {
+            "matched_title": "Vice President Corporate & Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9984,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dc0a361ae1eb397390e2ae82a18648503a5c23b302caaa4c04adf8cd2b76a89d.jpg",
+          "location": {
+            "city": "Burlingame",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Burlingame, California, United States",
+            "full_location": "Burlingame, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/elchuque"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "chuckiefontana"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "C1",
+                "company_website": "https://www.c1.ai/",
+                "professional_network_id": "69199526",
+                "title": "VP, Corporate and Business Development",
+                "description": "Leading strategic alliances and partnerships at ConductorOne, the next generation, modern platform for identity governance.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640627,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1a49d7cb4b2e077aff50ae4b4c558165becc1e34466c5364c3331d5edd265ac2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/c1-ai",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 163,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2744227700,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 912746,
+        "basic_profile": {
+          "name": "Stacey Lawrence",
+          "professional_network_name": "Stacey Lawrence",
+          "headline": "Director of Sales Strategy and Operations",
+          "current_title": "Director of Sales Strategy and Operations",
+          "normalized_title": {
+            "matched_title": "Director, Sales Strategy and Operations",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Operations & Enablement",
+            "similarity": 0.999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/62b2e1c244e0e430f379a6ec04e4573e082376f06d016eee89d0d628b50202c9.jpg",
+          "location": {
+            "city": "Denver",
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver, Colorado, United States",
+            "full_location": "Denver, Colorado, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/staceylawrence2424"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "C1",
+                "company_website": "https://www.c1.ai/",
+                "professional_network_id": "69199526",
+                "title": "Director of Sales Strategy and Operations",
+                "description": "",
+                "location": {
+                  "raw": "Denver, CO"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640627,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1a49d7cb4b2e077aff50ae4b4c558165becc1e34466c5364c3331d5edd265ac2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/c1-ai",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 163,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2565795963,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1432937,
+        "basic_profile": {
+          "name": "Jeff StClair",
+          "professional_network_name": "Jeff StClair",
+          "headline": "CRO at C1.ai  |  Agentic control plane",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5aeb70818a5b0fac9e02540b85cad49802d79b76588422bc26cd71867cc2125d.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jeffstclair1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "C1",
+                "company_website": "https://www.c1.ai/",
+                "professional_network_id": "69199526",
+                "title": "Chief Revenue Officer",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640627,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1a49d7cb4b2e077aff50ae4b4c558165becc1e34466c5364c3331d5edd265ac2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/c1-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 163,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2988414712,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_QNDVZ9yoiI-kPO4jFrTuI-O6y8_eF91n3z7rpscHiwCISx2ZS7OZZowm2Sp6TZm4qqNWLD3mefU05BrVGxRIhC9XCAWFycPR9wOLuGCkkksfkYPShzzX383UJyu8fAAD__x-BbUF4AAAA",
+    "total_count": 17,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "ampd.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 2113598,
+        "basic_profile": {
+          "name": "Austin Trunnell",
+          "professional_network_name": "Austin Trunnell",
+          "headline": "VP Revenue @ Ampd",
+          "current_title": "Vice President of Revenue",
+          "normalized_title": {
+            "matched_title": "VP Revenue",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9947,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/1f99c6b85759dc2521c347046b85603a065a124c02ec1a0e63f5492daee148d6.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/austintrunnell"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ampd",
+                "company_website": "http://www.ampd.io",
+                "professional_network_id": "6428921",
+                "title": "Vice President of Revenue",
+                "description": "",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642106,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/93a286a389255da9a4df9333c1e7ef98aec696963f54df8b839b7ffdf792d46b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ampd-ads",
+                "seniority_level": "Vice President",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2833076260,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 27075485,
+        "basic_profile": {
+          "name": "Trang N.",
+          "professional_network_name": "Trang N.",
+          "headline": "Retail Marketing | eCommerce Strategy | Data & Analytics | Customer Success",
+          "current_title": "Senior Director, Growth",
+          "normalized_title": {
+            "matched_title": "Sr. Director, Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9989,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/771842abf055c85438874581378b93ebd1353dbc70d5f05042da9babaa36e4e5.jpg",
+          "location": {
+            "city": null,
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Seattle Area",
+            "full_location": "Greater Seattle Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/trangnguyen6040"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ampd",
+                "company_website": "http://www.ampd.io",
+                "professional_network_id": "6428921",
+                "title": "Senior Director, Growth",
+                "description": "Leading enterprise partnerships and team at Ampd, helping brands unlock more intelligent, measurable connections between media investment and real retail outcomes.",
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642106,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/93a286a389255da9a4df9333c1e7ef98aec696963f54df8b839b7ffdf792d46b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ampd-ads",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2968524564,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 111393183,
+        "basic_profile": {
+          "name": "Brandon Yann",
+          "professional_network_name": "Brandon Yann",
+          "headline": "Director of Client Growth @ Ampd | Social Commerce | Meta, TikTok, & Google to Retail |",
+          "current_title": "Director of Client Growth",
+          "normalized_title": {
+            "matched_title": "Client Growth Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Account Management & Strategy",
+            "similarity": 0.9962,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7e75146794f76514e398fad4183efcddcbb96c310d5cd7ce0e8cbcc5629e11c8.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brandon-yann"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ampd",
+                "company_website": "http://www.ampd.io",
+                "professional_network_id": "6428921",
+                "title": "Director of Client Growth",
+                "description": "- Lead client growth and strategic partnerships across enterprise CPG brands and agency partners, helping teams connect offsite media across Meta, TikTok, and Google to commerce outcomes across Amazon, Walmart, Target, and other major retailers.\n  \n- Partner with national brand media, retail commerce, and agency leadership teams to expand individual activations into scalable, always-on activations across brand portfolios.\n\n- Use client learnings and performance insights to identify emerging opportunities for brands and agency growth.\n\n- Help shape Ampd\u2019s go-to-market strategy and industry POV across Social Commerce, offsite Retail Media, attribution, incrementality, and commerce measurement.",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642106,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/93a286a389255da9a4df9333c1e7ef98aec696963f54df8b839b7ffdf792d46b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ampd-ads",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2816869348,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe_QAh3rfsWYpRTIDkbixg7G-O_G8_vA66rHe9v13GF1kHJRziJJa2NbTBAt-blp84qoOaJUExQhLrM3mpcUAjKXxDGyF5gcnP0YsLobEQUJtIT75GD0oY_N-vX8W_z-AgAA__9TpPi9eQAAAA==",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,754 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "humanly.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 863440,
+        "basic_profile": {
+          "name": "Destiny Brandt",
+          "professional_network_name": "Destiny \ud83d\udcb2 Brandt",
+          "headline": "GTM Founding Sales Headhunter | SaaS | Recruit top biller$ & vet jobs for sellers w/ option$ | 30k sales, founder, vc & sales exec connections | \u2764\ufe0f to build founding sales teams | FREE intros | Contingent | 206.747.9724",
+          "current_title": "GTM Sales Recruiter & Founder",
+          "normalized_title": {
+            "matched_title": "GTM Recruiter",
+            "department": "People & HR",
+            "sub_department": "Talent Acquisition & Recruiting",
+            "similarity": 0.9023,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/15f5a25f4b6825b9341670c2b4320c960cee369b86356828155bde74f08459b2.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/destinybrandtmakesyoumoremoney"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "It's Destiny Recruiting",
+                "company_website": "http://www.itsdestinyrecruiting.com",
+                "professional_network_id": "43214386",
+                "title": "GTM Sales Recruiter & Founder",
+                "description": "B2b: FREE until you hire + always free for sales talent we represent - GTM SaaS Verticals where we have placed $ales talent:\n\n\u2705 Accounting & Financial -SaaS\n\u2705 AI/ Automation, ML -SaaS\n\u2705 AI Governance -SaaS\n\u2705 API -SaaS\n\u2705 Authentication -SaaS\n\u2705 Authorization -SaaS\n\u2705 Buyer Intent, Dialer - SaS\n\u2705 Biz Transformation -SaaS\n\u2705 Cloud, Cloud Spend -SaaS\n\u2705 Compliance -SaaS \n\u2705 Construction -SaaS\n\u2705 Consulting AI -SaaS\n\u2705 Cyber Security -SaaS \n\u2705 Data, Data Analytics -SaaS\n\u2705 Data Warehousing -SaaS\n\u2705 E-comm & Subscription -SaaS\n\u2705 Equity, VC & Investment -SaaS\n\u2705 E-Learn & Accreditation -SaaS\n\u2705 Email & Marketing -SaaS\n\u2705 Engineering & Low Code  -SaaS\n\u2705 Healthcare -SaaS\n\u2705 HR/Talent -SaaS\n\u2705 Infrastructure -SaaS\n\u2705 Insure & Benefits -SaaS\n\u2705 Legal -SaaS\n\u2705 Logistics & Transpo -SaaS \n\u2705 Supply Chain -SaaS\n\u2705 Manufacturing -SaaS\n\u2705 Monitoring & Performance -SaaS\n\u2705 Storage/ Network -SaaS\n\u2705 Procurement -SaaS\n\u2705 Professional Dev & Coaching -SaaS\n\u2705 Property & Leasing -SaaS\n\u2705 Research -SaaS\n\u2705 Robotics -SaaS\n\u2705 Sales, Copy, Video -SaaS\n\u2705 Security, Detection, Privacy - SaaS\n\u2705 Semiconductor - SaaS\n\u2705 Trend Forecast - SaaS\n\u2705 Threat Intell -SaaS\n\u2705 Warehousing -SaaS\n\u2705 Work Optimiz -SaaS\n\n- GTM (pre seed to series B startups) \n\nProfiles:\n\n\u25aa\ufe0f GTM Founding Team \n\u25aa\ufe0f Founding GTM Sales Development Rep\n\u25aa\ufe0f Founding GTM New logo Account Executives \n\u25aa\ufe0f Founding GTM Enterprise & Strategic AE\n\u25aa\ufe0f Founding GTM Technical Account Manager/ CSM\n\u25aa\ufe0f Founding GTM Sales Engineers \n\u25aa\ufe0f Founding GTM Solution Engineers \n\u25aa\ufe0f Founding AE/AM/CSM hybrid\n\u25aa\ufe0f Founding Customer Success Managers (Onboarding, Expansions, Renewals + IT)\n\u25aa\ufe0f Founding Account Managers \n\u25aa\ufe0f Founding Partnerships\n\u25aa\ufe0f Founding Channel Sales \n\u25aa\ufe0f Founding Head of Sales \n\u25aa\ufe0f Founding Engineers\n\u25aa\ufe0f Founding Product\n\u25aa\ufe0f Founding Product Marketing\n\u25aa\ufe0f Founding Marketing \n\u25aa\ufe0f First hire SVP/CRO/CGO/CMO\n\nsales/ops/legal/contracts/comp/fundraising/startup/ai, cofounder finding & tools nerd - lmk how I can support! \n\nMore info on our website on how we vet & match partnerships that LA$T",
+                "location": {
+                  "raw": "Greater Seattle Area"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2020-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1873796,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4dc7dfcd09ef83f053670780dd0621091736b196165987c293ea99d5535279fd.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/it-s-destiny-recruiting",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Sales",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 43,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Staffing and Recruiting",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Staffing and Recruiting",
+                "position_id": 1616937156,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Founder Institute",
+                "company_website": "http://fi.co",
+                "professional_network_id": "1154695",
+                "title": "GTM/ Startup Founder Mentor",
+                "description": "",
+                "location": {
+                  "raw": "Seattle, WA"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1225607,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3f7ecff7d25935a6e60d9d2a4d5a19febbdc61c98330aa840dec04e103862f4d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-founder-institute",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1682,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 2903002000,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "strato-cloud.io",
+                "company_website": "https://www.strato-cloud.io",
+                "professional_network_id": "104462393",
+                "title": "GTM Advisor",
+                "description": "Out of 45+ documented breaches from 2025/2026 for non human identities and AI Agents. Strato-cloud would have prevented/mitigated all of them. We managed over 20,000 cloud environments including customer-facing accounts in VMware with zero breaches over five years.",
+                "employment_type": "Self-employed",
+                "start_date": "2025-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2807512,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/70a3a5735a8b2182f35f385625c720ee6322ba7a2b44a80a5dc4281042efb644.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/strato-cloud-io",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Computer and Network Security",
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Computer and Network Security",
+                "position_id": 2927297959,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dover, Delaware, United States",
+                "company_hq_location_address_components": [
+                  "Dover",
+                  "Kent County",
+                  "Delaware",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Sellers Circle",
+                "company_website": "",
+                "professional_network_id": "109613411",
+                "title": "Founding Member",
+                "description": "Join our community of sellers, founders, sales executives & consultants",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 16561168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4d146d30fbb036f6856968c693c7dd8058a31ce47a7cc688a299d37c23b9f028.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sellers-circle",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 13,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Community Services",
+                  "Hospitals and Health Care"
+                ],
+                "company_professional_network_industry": "Community Services",
+                "position_id": 2758168085,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Proof of Concept (sales)",
+                "company_website": "",
+                "professional_network_id": "109008381",
+                "title": "GTM Sales Recruiter & Founder",
+                "description": "Don't pay us recruiting fee until our candidate has met/exceeded their ramp goals \n\nWork closely with us to build a founder proof of concept so when you are ready to scale, proven process is in place\n\nOnce systems are designed, we find the right founding seller to build off it - while designing, testing and perfecting new ones  \n\nWe have fractional CROS who have experience raising & allocating funding and help position your revenue models intentionally \n\nWe are here to put your best foot forward, way before and after a successful placement has been made",
+                "employment_type": "Self-employed",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 13514584,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/acfea578bb73e33a5a63da7a35ae2b96c2b71df12a7ee7763d659c39f7281e47.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/proof-of-concept-sales-its-destiny-sales-recruiting",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 4,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Staffing and Recruiting",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Staffing and Recruiting",
+                "position_id": 2735487137,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "CueCard",
+                "company_website": "https://www.cuecard.ai/",
+                "professional_network_id": "96881132",
+                "title": "GTM Advisor",
+                "description": "Buyer intent without the \u201cfluff\u201d of a deal room\n\nWorking directly with the founder Karthik to build gtm foundations and frameworks across engineering, sales, sales enablement and content marketing \n\nMore than 60% of all sales organizations FAIL to close on their pipeline because their reps are too busy with manual work like filling out RFPs or failing to answer customer questions in a timely manner",
+                "employment_type": "Self-employed",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6113305,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bfad395f6041a78f140c646c487ec3868839193d7e105ce6292894160d389b1d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cuecard-ai",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2610240812,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Aptivio",
+                "company_website": "http://aptiv.io",
+                "professional_network_id": "11709977",
+                "title": "GTM Advisor",
+                "description": "",
+                "employment_type": "Self-employed",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 815388,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/682a154c7148eb9da5d9d4cb2fd85f22c9cf4ac840a17b431f58d7bd50519661.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/aptivio",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2593249546,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Space to Scale AI",
+                "company_website": "http://Spacetoscaleai.com",
+                "professional_network_id": "104616137",
+                "title": "GTM Advisor",
+                "description": "Drive revenue WITHOUT adding sales headcount for super early stage orgs\n\nBuild a Founder proof of concept that can be scaled when the processes are in place, the pipeline is consistent, margins are there and expectations are clear",
+                "employment_type": "Self-employed",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2675087,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dc91538d84f3ea9bc6fb8c99f3f596827b9dcff8747e5c3c33ddee2e145d3ef6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/spacetoscaleai",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2848763335,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Independence, Missouri, United States",
+                "company_hq_location_address_components": [
+                  "Independence",
+                  "Jackson County",
+                  "Missouri",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Yardstick",
+                "company_website": "https://yardstick.team",
+                "professional_network_id": "53221907",
+                "title": "GTM Advisor",
+                "description": "40% sales hires fail (estimate) \n\nYardstick uses AI to make the interview conversations between sales hiring teams and sellers be intentional - \u201cgo deep, not wide\u201d \n\nCollaborating with Lucas - Founder on best sales, talent, product and marketing practices \n\nTheir saas solution provides an organized approach to closing and onboarding the RIGHT sellers \n\nWe know from experience at It\u2019s Destiny Recruiting the importance of both parties understanding context and having the time (and science) to make the right decisions\n\nYardstick eliminates \u201cwinging it\u201d when interviewing sales people - providing a more transparent, inclusive and consistent hiring model \n\nFor years I\u2019ve asked myself \u201cwhy are my top candidates passing/passed over for opportunities because they didn\u2019t think the interviewee wanted or was deserving of context\u201d (discovery is a two way street with 1% talent) or how to find a balance for busy execs who wanted to be present in interviews but lacked clear direction \n\nYardstick creates an environment where both parties  can dig deep & refine if they are in alignment - creating happy partnerships that la$t",
+                "employment_type": "Self-employed",
+                "start_date": "2024-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 924607,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4df01d81b703174c5349b63ae0b2a0dd2b3afcb5cc24a102e2effb9a1855f1d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yardstickteams",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2593253086,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Invest in the be$t",
+                "company_website": "",
+                "professional_network_id": "106706037",
+                "title": "Investor (Seed Stage - Series B)",
+                "description": "",
+                "employment_type": "Self-employed",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 7611508,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/13a7d91110b505b2873254180b16153896804b1ef05458ff61f5d89ad427041f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/invest-in-the-best-saas-its-destiny-sales-recruiting",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 4,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2620209670,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "RevOps Co-op",
+                "company_website": "http://www.revopscoop.com",
+                "professional_network_id": "68641483",
+                "title": "Revenue Nerd",
+                "description": "Fell in love with this community while doing GTM sales recruiting for founder & ceo - Matt Volm via Funnel IQ",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2020-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1060074,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1c3e5eae082a62caca422a1d2d8a7e0900a84574d58fd56179fa9763d32a9e88.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/revopscoop",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 1286,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2676544451,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Humanly (humanly.io)",
+                "company_website": "https://www.humanly.io",
+                "professional_network_id": "18945362",
+                "title": "GTM Advisor",
+                "description": "Conversational AI\n\nHumanly bridges automated chat interactions and AI-powered virtual interview analytics for high-volume hiring and retention",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2020-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634762,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dfd2c666e1fbabaddf6842ad88e11aea1e1a3546d06068334145fa0877554749.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/humanlyhr",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2156231951,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Outsourced Admins",
+                "company_website": "",
+                "professional_network_id": "105042660",
+                "title": "Executive Administrative & Operations Consultant",
+                "description": "- making busy biz owners look good since 2010 \n- 1k+ meetings booked\n- 2k+ emails sent\n- 50+ candidates interviewed\n- 20+ jobs filled\n- 10+ systems used & created \n- 2k docs, trainings, images, PowerPoint/SharePoint creation, Excels/graphs/pivot tables/data visuals, reports & trainings made, content written, websites, blogs, & socials built/managed\n\n- 2010 - 2012: Supported owner of multiple subway locations in OR on payroll, P&L, email, order, scheduling & inventory system/software, run job posts, interview & hire & train, buying, location purchase/merger - Turned into a consultant after leaving my assistant manager position I had for years to move to Seattle suggested I start taking on projects & planning my own biz (outsourced admins) my 2nd client - my step mom, a nurse practitioner out of Depoe bay, Oregon & a gym owner in Tacoma, WA to manage their busy emails/calendars, run biz fb pages & do admin/marketing for monthly retainers\n\n- 2012 - 2013: Supported general manager of new cut co knife location - recruiting, email management, scheduling, marketing, training & travel, I managed this entrepreneurs kid at subway, and when they heard I was taking on projects engaged & signed  for a 6 month contact that lasted 1.5 years - though I felt really bad selling people cut co mlm jobs. Always was rewarding when you saw reps get paid and win though. I\u2019ve placed a few of them in saas/tech though! Via my llc I supported an orthodontist out of Bellevue & a Dj biz owner out of Renton, Washington w/ admin, email, scheduling, marketing, social media & photoshop & preso building\n\n- 2012 - 2016: Supported multiple healthcare org projects w2 to 1099 3-24 month contracts signed via my own lcc/ contracts - calls, admin, provider support, verifying, invoicing, collecting & process dev- Bothell Chiropractic & Wellness, Bellevue Chiro & ND, Belltown Spine & Joint, West Sea Chiro, Rosevelt Chiropractic, Graham Rehabilitation and Wellness Center, Seattle PT, East side Acupuncture +",
+                "employment_type": "Self-employed",
+                "start_date": "2010-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6230958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d128bfca1ffac104c57255c8d6f06f16ac7860a24786e6e1e8d4943ca2453f1f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/outsourced-admins-its-destiny-sales-recruiting",
+                "seniority_level": "Entry Level",
+                "function_category": "Operations",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 16,
+                "company_headcount_latest": 4,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Operations Consulting",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Operations Consulting",
+                "position_id": 2513546787,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 876554,
+        "basic_profile": {
+          "name": "Dan Crouch",
+          "professional_network_name": "Dan Crouch",
+          "headline": "Human @ Humanly",
+          "current_title": "Senior GTM Engineer, Presales",
+          "normalized_title": {
+            "matched_title": "Senior Presales Engineer",
+            "department": "Sales & Revenue",
+            "sub_department": "Solution Consulting & Presales",
+            "similarity": 0.8841,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/503c2605a58a224ccbfe5d177a6ef9df2685f6e24dfff943cd1c656d9783ee33.jpg",
+          "location": {
+            "city": null,
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Dallas-Fort Worth Metroplex",
+            "full_location": "Dallas-Fort Worth Metroplex"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/danielwcrouch"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Humanly (humanly.io)",
+                "company_website": "https://www.humanly.io",
+                "professional_network_id": "18945362",
+                "title": "Senior GTM Engineer, Presales",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 634762,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dfd2c666e1fbabaddf6842ad88e11aea1e1a3546d06068334145fa0877554749.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/humanlyhr",
+                "seniority_level": "Senior",
+                "function_category": "Engineering",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2948384896,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1690624,
+        "basic_profile": {
+          "name": "Aj S.",
+          "professional_network_name": "AJ S.",
+          "headline": "Scale Your Hiring, Not Your Team | Automating High-Volume Hiring with Ethical AI | SaaS | President\u2019s Club | #womenintech",
+          "current_title": "GTM Account Executive",
+          "normalized_title": {
+            "matched_title": "GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9622,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/564488299708c20b64af3d3617f0e15b79a1f36d28524fb0f6f7faef487370dd.jpg",
+          "location": {
+            "city": "Pinehurst",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Pinehurst, North Carolina, United States",
+            "full_location": "Pinehurst, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ajs2222"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "amandastrombeck"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Humanly (humanly.io)",
+                "company_website": "https://www.humanly.io",
+                "professional_network_id": "18945362",
+                "title": "GTM Account Executive",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 634762,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dfd2c666e1fbabaddf6842ad88e11aea1e1a3546d06068334145fa0877554749.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/humanlyhr",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2692309750,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ6CMBAG4Fdpbmbofz1a4FWMIaXXC4OxEcpgjO9unL8Pva56vNc9nzstjqABMqbk51FQAfNIOrHFTSpU8mY-MVctwSz4KTMjiW5Fq1rUWGhwdLaj0-JuiLOPLPfBUW89P9bSrudfEL6_AAAA__8wLapeeAAAAA==",
+    "total_count": 13,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

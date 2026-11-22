@@ -1,0 +1,347 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "allspice.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 12354033,
+        "basic_profile": {
+          "name": "Cuong Tram",
+          "professional_network_name": "Cuong Tram",
+          "headline": "Chief Revenue Officer | Physical AI & Enterprise SaaS GTM Leader | Generative AI, LLMs & Agentic AI | Hyper Revenue Growth | Scaling Global Revenue Organizations - Former Twilio",
+          "current_title": "Chief Revenue Officer (CRO)",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer (CRO)",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/836c70b5b22a16fd6984c1c968eebfb178664e3d7b1af76ed70ccf13b8d37620.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/cuongtram"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "AllSpice.io",
+                "company_website": "https://www.allspice.io/",
+                "professional_network_id": "40653338",
+                "title": "Chief Revenue Officer (CRO)",
+                "description": "Leading global go-to-market strategy, revenue growth, and commercial operations for AllSpice.io, an AI-powered enterprise software platform leveraging frontier large language models (LLMs), including Anthropic Claude, OpenAI GPT, and Google Gemini, to transform engineering workflows through generative AI, intelligent automation, and AI agents.\n\n\u25aa 3X revenue growth in six months, scaling the commercial organization 5X while building a repeatable enterprise SaaS growth engine.\n\u25aa Led enterprise AI adoption and strategic customer acquisition, securing customers including but not limited to, Apple, Meta, Cisco, Dell, AWS, Mercury, and Relativity Space.\n\u25aa Built and executed enterprise GTM strategy spanning sales, solutions engineering, customer experience, demand generation, and revenue operations.\n\u25aa Led company-wide rebranding, pricing and packaging transformation, and modernization of CRM, forecasting, pipeline management, and revenue analytics.\n\u25aa Commercialized AI-powered workflows and agentic AI capabilities built on leading frontier models, positioning the platform for enterprise adoption and scale.\n\nCore Expertise: Artificial Intelligence (AI) | Generative AI | Agentic AI | Large Language Models (LLMs) | Enterprise SaaS | AI Commercialization | Go-to-Market (GTM) Strategy | Revenue Growth | Enterprise Sales | Revenue Operations | Sales Leadership | Business Transformation| AI-Native Enterprise SaaS | Generative AI | Enterprise GTM | Deterministic Systems",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/da6c65d8c9c588be26236a8d31a982e4cf35b023b8dd71fedcad1f6be7e05c6d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/allspice-io",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2835609616,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 14317148,
+        "basic_profile": {
+          "name": "Joy Calkins",
+          "professional_network_name": "Joy Calkins",
+          "headline": "GTM @ AllSpice.io | Customer Support, Teamwork",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7802e018dd9071f6300712169111ffd0e903727307437b399186218f924e59f4.jpg",
+          "location": {
+            "city": "San Jose",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Jose, California, United States",
+            "full_location": "San Jose, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/joycalkins"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "AllSpice.io",
+                "company_website": "https://www.allspice.io/",
+                "professional_network_id": "40653338",
+                "title": "GTM",
+                "description": "Oversees daily operations for a high\u2011volume roofing and construction company, managing administrative, financial, and customer-facing functions while coordinating seamlessly with field crews, clients, vendors, and leadership. Leads scheduling, contract and permit management, compliance documentation, invoicing, AP/AR, and payroll. Serves as primary client liaison, coordinating inspections, updates, and project needs while supporting budgeting, material orders, and vendor performance. Improved efficiency and scalability by implementing digital workflows and standardized onboarding processes.",
+                "location": {
+                  "raw": "San Jose, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/da6c65d8c9c588be26236a8d31a982e4cf35b023b8dd71fedcad1f6be7e05c6d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/allspice-io",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2898239347,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 35702807,
+        "basic_profile": {
+          "name": "Ryan T.",
+          "professional_network_name": "Ryan T.",
+          "headline": "Enterprise GTM",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/169923460f4a0923b30447275a7c33826b1ad15818c20a4eac784d4baa24b9d5.jpg",
+          "location": {
+            "city": "Tampa",
+            "state": "Florida",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Tampa, Florida, United States",
+            "full_location": "Tampa, Florida, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ryan-terzich-solutionsales"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "AllSpice.io",
+                "company_website": "https://www.allspice.io/",
+                "professional_network_id": "40653338",
+                "title": "GTM",
+                "description": "",
+                "location": {
+                  "raw": "Tampa, FL"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 640556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/da6c65d8c9c588be26236a8d31a982e4cf35b023b8dd71fedcad1f6be7e05c6d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/allspice-io",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2892106667,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "H.P. Guest Properties",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Owner/GM",
+                "description": "Own and Operate a portfolio of long-term and short-term rental properties.",
+                "location": {
+                  "raw": "Tampa, FL"
+                },
+                "employment_type": "",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 3048310968,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMarDMAwA0KsYzRlky9-2cpVPCcKSyFBqmjhDKb176fze8LzseG27nDusAYhztS4xJYvWrETKypTdHEtRVPfGXbMxciWVEpWQmyRmzVq9wBLgHMeENfzTX8XUsN6WAHNMuW99XI8fRfx8AwAA__8_AjSOeQAAAA==",
+    "total_count": 10,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

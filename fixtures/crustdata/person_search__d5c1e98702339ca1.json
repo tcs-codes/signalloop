@@ -1,0 +1,383 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "pipe17.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 903342,
+        "basic_profile": {
+          "name": "Tiffany Johnson",
+          "professional_network_name": "Tiffany Johnson",
+          "headline": "Connecting e-commerce operations",
+          "current_title": "Head of Sales",
+          "normalized_title": {
+            "matched_title": "Head of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Evanston",
+            "state": "Illinois",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Evanston, Illinois, United States",
+            "full_location": "Evanston, Illinois, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/tiffanyjohnson5"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Pipe17",
+                "company_website": "http://www.pipe17.com/?utm_source=linkedin&utm_medium=company-bio-link",
+                "professional_network_id": "42773587",
+                "title": "Head of Sales",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2023-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63fa2e06d1d5eb1a6fefcc694d30db7881fb52357077b8604ed7aca58a46264f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pipe17",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 76,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2264687899,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 905199,
+        "basic_profile": {
+          "name": "Ian Leslie",
+          "professional_network_name": "Ian Leslie",
+          "headline": "Senior Director of Business Development @ Pipe17 | Automating Order Operations",
+          "current_title": "Sr. Director of Business Development",
+          "normalized_title": {
+            "matched_title": "Sr. Director of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Wilsonville",
+            "state": "Oregon",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Wilsonville, Oregon, United States",
+            "full_location": "Wilsonville, Oregon, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ian-leslie"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Pipe17",
+                "company_website": "http://www.pipe17.com/?utm_source=linkedin&utm_medium=company-bio-link",
+                "professional_network_id": "42773587",
+                "title": "Sr. Director of Business Development",
+                "description": "Pipe17 is a groundbreaking e-commerce operations platform that empowers businesses to streamline their operations for increased efficiency and scalability. By leveraging advanced AI and automation technologies, Pipe17 offers a comprehensive solution for seamless management of orders, inventory, fulfillment, and customer service.\n\nAt the heart of Pipe17's mission is the ambition to connect every part of the e-commerce ecosystem. Their platform integrates effortlessly with a wide range of marketplaces, shopping carts, logistics, and finance solutions, making it the 'single source of truth' for all operations. This real-time visibility across all business aspects allows companies to focus on growth and customer satisfaction, rather than wrestling with complex operational tasks.\n\nIn addition, Pipe17 extends its powerful capabilities to e-commerce software vendors, enabling them to offer more to their clients and expand their market reach. The company's commitment to collaborative growth and innovation has positioned it as a leader in the e-commerce operations space, helping businesses and vendors alike navigate the complexities of the digital marketplace with ease and effectiveness.",
+                "employment_type": "Full-time",
+                "start_date": "2024-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63fa2e06d1d5eb1a6fefcc694d30db7881fb52357077b8604ed7aca58a46264f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pipe17",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 76,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2392907698,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 905204,
+        "basic_profile": {
+          "name": "Timothy Morse",
+          "professional_network_name": "Timothy Morse",
+          "headline": "SVP of Corporate & Business Development",
+          "current_title": "Senior Vice President of Corporate & Business Development",
+          "normalized_title": {
+            "matched_title": "Vice President Corporate & Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9951,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "San Clemente",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Clemente, California, United States",
+            "full_location": "San Clemente, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/timothyryanmorse"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Pipe17",
+                "company_website": "http://www.pipe17.com/?utm_source=linkedin&utm_medium=company-bio-link",
+                "professional_network_id": "42773587",
+                "title": "Senior Vice President of Corporate & Business Development",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 638556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63fa2e06d1d5eb1a6fefcc694d30db7881fb52357077b8604ed7aca58a46264f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pipe17",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 76,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2974053022,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pipe17",
+                "company_website": "http://www.pipe17.com/?utm_source=linkedin&utm_medium=company-bio-link",
+                "professional_network_id": "42773587",
+                "title": "Senior Vice President of Partnerships & Business Development",
+                "description": "",
+                "location": {
+                  "raw": "San Clemente, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 638556,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63fa2e06d1d5eb1a6fefcc694d30db7881fb52357077b8604ed7aca58a46264f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pipe17",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 76,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2503664289,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "W/GOOD CO.",
+                "company_website": "http://www.wgood.co",
+                "professional_network_id": "68019648",
+                "title": "Advisor",
+                "description": "Work closely with the CEO to establish GTM strategy and attract the right partners for this wholesale marketplace for emerging brands. Curate brands to provide unique assortment to fit each customer\u2019s unique messaging strategy.",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4329643,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/67e0d9402cb7dcca2b6fcaaa1e24228807d21181ab6e43d355bc9b5113d7bb49.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/wgoodco",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 14,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Wholesale"
+                ],
+                "company_professional_network_industry": "Wholesale",
+                "position_id": 2062272953,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJParDMAwH8KsYzRn8FH_8nas8SnAkiwylpokzlNK7l86_Nz2vdrzWvZ47LY6s8J8ZslpQk1Ba08hVgcAxFwU0Js0qJilFnwSc5rJVrpCGDTNNjs5-DFrcf_GRfbhNjkYf9b5Kvx4_wOcbAAD__xszVjh2AAAA",
+    "total_count": 8,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

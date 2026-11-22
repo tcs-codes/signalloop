@@ -1,0 +1,515 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "daybreak.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 680855,
+        "basic_profile": {
+          "name": "Waleed Ayoub",
+          "professional_network_name": "Waleed Ayoub",
+          "headline": "Product & Technology Leader",
+          "current_title": "CTO",
+          "normalized_title": {
+            "matched_title": "CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/907ba77d29dd405275c10e3749a25684d93cf3c480b0e0c83f7ac71f8199cbbb.jpg",
+          "location": {
+            "city": "Toronto",
+            "state": "Ontario",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Toronto, Ontario, Canada",
+            "full_location": "Toronto, Ontario, Canada"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/waleedayoub"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Daybreak",
+                "company_website": "https://www.daybreak.ai",
+                "professional_network_id": "7802554",
+                "title": "CTO",
+                "description": "",
+                "location": {
+                  "raw": "Toronto, ON"
+                },
+                "employment_type": "Permanent Full-time",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 633576,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2411d14d6cdaf084f74b17320d3acdc7c47b9913e53789b7f32217837a6fb106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/daybreak-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 180,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2762527727,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "iQmetrix",
+                "company_website": "http://www.iQmetrix.com",
+                "professional_network_id": "53866",
+                "title": "Advisor",
+                "description": "",
+                "location": {
+                  "raw": "Toronto, Ontario, Canada"
+                },
+                "employment_type": "Contract Part-time",
+                "start_date": "2025-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 898995,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e9541b0b6ca5b3cd4d3d997915c9544934ea2be8ccc3472a2d48d23179a7e364.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/iqmetrix",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 253,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2672767691,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Canada",
+                "company_hq_location": "Vancouver (Waterfront / Coal Harbour / Canada Place), British Columbia, Canada",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "lido technologies inc",
+                "company_website": "http://lidotech.co",
+                "professional_network_id": "90090698",
+                "title": "lido technologies inc",
+                "description": "lido is a boutique consulting service that provides technical leadership and advisory services for high-growth product and technology companies.",
+                "location": {
+                  "raw": "Toronto, Ontario, Canada"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2022-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 5820892,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/58683ec481fb2fe185cfe549eee28e76e2685920943f27482b54cd23c7845653.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lido-tech",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 2015473636,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Canada",
+                "company_hq_location": "Toronto, Ontario, Canada",
+                "company_hq_location_address_components": [
+                  "Toronto",
+                  "Toronto",
+                  "Toronto",
+                  "Ontario",
+                  "Canada"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 934265,
+        "basic_profile": {
+          "name": "Michael Ciatto",
+          "professional_network_name": "Michael Ciatto",
+          "headline": "Founding & Managing Partner Trillium Digital Services | Privileged to redesign supply chain operating models, enabled by tech, that sustain | $2B+ documented client value delivered | Board Advisor to Technology Companies",
+          "current_title": "Managing Partner",
+          "normalized_title": {
+            "matched_title": "Managing Partner",
+            "department": "Executive Leadership",
+            "sub_department": "Board Governance & Advisory",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4e21a3b9099d9a8790344618cf77756305b23c90a4c4f806d70d58d723fd1aab.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/michael-ciatto"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "mciatto"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Trillium Digital Services",
+                "company_website": "https://www.trillium.digital",
+                "professional_network_id": "80300417",
+                "title": "Managing Partner",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1562907,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/07aa87e687e54aa90de4b629efc121915866104c753ed1bb9ad3bb0e95062581.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trillium-digital-services",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 2686551475,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Jacksonville, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Jacksonville",
+                  "Duval County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Sporting JAX",
+                "company_website": "http://www.sportingjax.com",
+                "professional_network_id": "83550472",
+                "title": "Investor Ownership Group",
+                "description": "Sporting JAX is more than a professional soccer club; it is a community-driven organization committed to developing youth, creating inclusive pathways, and using sport as a catalyst for positive change. Anchored in the United Soccer League ecosystem, Sporting JAX is building a local-to-professional pipeline that serves athletes of all backgrounds, including underserved and special needs communities. The club\u2019s mission strongly aligns with Caplin Ventures\u2019 focus on building ventures that strengthen communities and improve lives. Together, we are creating opportunity, character, and lasting impact through the power of sport. Sporting JAX exists to lift every voice and build a stronger future for the communities we serve.",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3840093,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b0964c3b7ed7c2690c9fac3719ee13eca351d7e054804b66098444861ccbeacb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sportingjax",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 106,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Sports Teams and Clubs",
+                  "Spectator Sports",
+                  "Performing Arts and Spectator Sports",
+                  "Entertainment Providers"
+                ],
+                "company_professional_network_industry": "Sports Teams and Clubs",
+                "position_id": 2818108901,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "North Florida, Florida, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Daybreak",
+                "company_website": "https://www.daybreak.ai",
+                "professional_network_id": "7802554",
+                "title": "Co-(Re)Founder",
+                "description": "Fortunate to be one of the Co-(re)Founders of Daybreak through strategic restructuring of Noodle.ai, transforming the company from a \"do it all\" AI consultancy operation into a market-leading enterprise AI platform. Spearheaded operational excellence across all business functions while establishing the cultural foundation for hypergrowth.\n\nKey Achievements & Leadership Impact:\n\ud83d\ude80 Capital & Growth Leadership\n\ud83d\udd39Partnered in leading successful $15M Series funding round, delivering 4x enterprise valuation increase within 12 months of our strategic enterprise pivot\n\ud83d\udd39Responsible for scaling commercial operations driving significant ARR growth across enterprise segments\n\ud83d\udd39Established global organizational structure supporting rapid international expansion\n\n\ud83e\udd1d Strategic Partnerships & Channel Development\n\ud83d\udd39Architected enterprise partner ecosystem leading to partner contributions on 60%+ of total deployments through channel partners by the end of 12 months\n\ud83d\udd39Developed strategic alliance framework driving accelerated market penetration and customer acquisition\n\ud83d\udd39Built repeatable partner onboarding and enablement processes designed for scale\n\n\ud83c\udfaf Operational Excellence & Culture\n\ud83d\udd39Collaborated on refresh of corporate brand identity and core value system, including innovative internal cultural awards program\n\ud83d\udd39Partnered with co-founding team to design strategic product roadmap \n\ud83d\udd39Accountable for defining and executing Daybreak's enterprise services delivery model\n\n\ud83d\udcbc Commercial & Market Expansion\n\ud83d\udd39Lead commercial team transformation delivering consistent quarter-over-quarter growth\n\ud83d\udd39Responsible for enterprise go-to-market strategy and sales operations infrastructure\n\ud83d\udd39Developing customer success and professional services capabilities ensuring high retention and expansion rates",
+                "location": {
+                  "raw": "Austin, Texas Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 633576,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2411d14d6cdaf084f74b17320d3acdc7c47b9913e53789b7f32217837a6fb106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/daybreak-ai",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 180,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2418416690,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Znrg Innovations",
+                "company_website": "https://znrginnovations.com/",
+                "professional_network_id": "107167994",
+                "title": "Executive Advisory Board Member",
+                "description": "Company Overview:\nInduction Heating AI is revolutionizing the $32B water heating industry with patent-pending AI-driven magnetic induction technology, delivering affordable zero-emission home water heating solutions that eliminate the electrification affordability barrier.\n\nAdvisory Role & Key Contributions:\nCapital Raising Strategy:\n- Advising on fundraising execution for $2.5M seed round at $10M pre-money valuation\n- Providing strategic guidance on investor relations and deal structuring\n- Leveraging network connections with clean energy VCs and strategic investors\n\nSupply Chain & Operations Advisory:\n- Guiding manufacturing scale-up strategy from prototype to commercial production\n- Advising on supply chain optimization for composite tank and AI electronics manufacturing\n- Supporting operational efficiency initiatives for projected 330K+ unit production by Year 5\n\nSaaS & Subscription Strategy Development:\n- Developing monetization frameworks for 24/7 IoT monitoring platform\n- Advising on subscription pricing models and customer retention strategies\n- Guiding data analytics and AI-driven insights product development\n\nAI Solutions Strategic Advisory:\n- Power management and demand prediction algorithms\n- Predictive maintenance and fault detection systems\n- Leak detection and automatic shutoff capabilities\n- Energy optimization and grid-friendly operation\n\nImpact & Results:\n- Supporting company's path to disrupting traditional water heating market\n- Advising technology that delivers 20-30% energy savings and 50-85% lower installation costs\n- Contributing to solution addressing 64M+ U.S. homes needing affordable electrification\n- Each unit replacement removes 1 gross ton of GHG emissions",
+                "location": {
+                  "raw": "San Diego, California, United States"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 8230864,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2fb9473b0d9155089dc85a15e40ca861639f0ca3797d34ce60d09f3d3a386b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/znrg-innovations",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 3,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Water Supply and Irrigation Systems",
+                  "Water, Waste, Steam, and Air Conditioning Services",
+                  "Utilities"
+                ],
+                "company_professional_network_industry": "Water Supply and Irrigation Systems",
+                "position_id": 2694723801,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "ClearOps",
+                "company_website": "https://www.clearops.com",
+                "professional_network_id": "65293262",
+                "title": "Advisory Board Member",
+                "description": "ClearOps is a transformative aftersales platform, bridging the gap between machine manufacturing companies, dealers, distributors, and on-field machines like never before. The unique solution unlocks a new dimension of connectivity and integration, allowing businesses to anticipate future parts and product demands with unprecedented accuracy, triggering seamless production and distribution.\nClearOps empowers Original Equipment Manufacturers (OEMs) to harness the untapped potential of data, revolutionizing the way they predict demand, produce and distribute like never before. The platform offers OEMs unparalleled control and transparency over disconnected and fragmented aftersales supply chains, encompassing machines, parts, products, and technicians.\nDealers, distributors, and service facilities are equipped with an exceptional application layer, providing them with comprehensive tools and services. This transformative layer ensures they have the perfect balance of parts, avoiding shortages or excess inventory. With ClearOps, companies can effortlessly align their inventory with customer demands, elevating their service capabilities to new heights, fully integrated with OEM systems. Service facilities gain access to an unparalleled service solution suite allowing service planning and execution, optimizing workflows and minimizing downtime. Seamlessly integrated into a global repository of OEM systems, IoT data, documentation, and asset tracking services, dealers and service facilities are empowered to deliver unparalleled customer experiences.\nClearOps heralds a new era of efficiency, control, and integration in aftersales operations.",
+                "location": {
+                  "raw": "Munich, Bavaria, Germany"
+                },
+                "employment_type": "",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1370163,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72522cab7a1c991fe724bf873ea8c17ac4a38e8adfa7acebb432761a707f114f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clearops",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 58,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2302196815,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Germany",
+                "company_hq_location": "M\u00fcnchen, Bavaria, Germany",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 15151617,
+        "basic_profile": {
+          "name": "Sebastian Urbina",
+          "professional_network_name": "Sebastian Urbina",
+          "headline": "Supply Chain | AI",
+          "current_title": "Chief Innovation Officer",
+          "normalized_title": {
+            "matched_title": "Chief Innovation Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Corporate Strategy & Business Development",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3b159607277162f1ee02d3aee1579b7609efb39b5852d876c5d44410c25321a2.jpg",
+          "location": {
+            "city": "San Pedro",
+            "state": "San Jos\u00e9 Province",
+            "country": "Costa Rica",
+            "continent": "North America",
+            "raw": "San Pedro, San Jose, Costa Rica",
+            "full_location": "San Pedro, San Jose, Costa Rica"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/sebastian-urbina-12aa5b3"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "surbica"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Daybreak",
+                "company_website": "https://www.daybreak.ai",
+                "professional_network_id": "7802554",
+                "title": "Chief Innovation Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 633576,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2411d14d6cdaf084f74b17320d3acdc7c47b9913e53789b7f32217837a6fb106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/daybreak-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 180,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2811180306,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMarDMAwA0KsYzRksR1LsXOXzCZYqk6HUNHGGUnr30vm94Xn58dr2eu6wBiDB7BJZKxM2kRzdLVXL2goxLlJndFU1ahSppMLJWMnTnG9mLDAFOPsxYA1_yMgouPxPAUYf9b5Zvx4_ks83AAD__y-L4fV4AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}
