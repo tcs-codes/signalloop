@@ -11,6 +11,7 @@ Tests swap the backend for ``FakeLLM`` (canned JSON keyed by prompt name).
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import re
@@ -126,6 +127,41 @@ class AnthropicBackend:
         )
 
 
+def llm_cache_key(prompt_name: str, model: str, system: str, messages: list[dict[str, Any]]) -> str:
+    body = json.dumps({"p": prompt_name, "m": model, "s": system, "msg": messages},
+                      sort_keys=True, separators=(",", ":"), default=str)
+    return hashlib.sha256(body.encode()).hexdigest()
+
+
+class ReplayBackend:
+    """Deterministic demos: outputs keyed by the exact prompt (like the Crustdata cache).
+
+    replay: serve ``fixtures/llm/<prompt>__<key16>.json`` when present, else call ``inner``
+            and record the result. record: always call ``inner`` and record. Replayed calls
+            report 0 tokens (nothing was spent) and model ``replay:<model>``.
+    """
+
+    def __init__(self, inner: "LLMBackend", directory: Path, mode: str = "replay"):
+        self.inner, self.dir, self.mode = inner, Path(directory), mode
+
+    def path(self, prompt_name: str, key: str) -> Path:
+        return self.dir / f"{prompt_name}__{key[:16]}.json"
+
+    def complete(self, *, prompt_name, model, system, messages, variables) -> LLMResult:
+        key = llm_cache_key(prompt_name, model, system, messages)
+        p = self.path(prompt_name, key)
+        if self.mode == "replay" and p.exists():
+            data = json.loads(p.read_text(encoding="utf-8"))
+            return LLMResult(text=data["text"], input_tokens=0, output_tokens=0, model=f"replay:{model}")
+        result = self.inner.complete(prompt_name=prompt_name, model=model, system=system,
+                                     messages=messages, variables=variables)
+        self.dir.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps({"prompt_name": prompt_name, "model": result.model or model,
+                                 "key": key, "text": result.text, "input_tokens": result.input_tokens,
+                                 "output_tokens": result.output_tokens}, indent=2), encoding="utf-8")
+        return result
+
+
 Canned = Any  # dict | str | BaseModel | list[...] | Callable[[dict], Any]
 
 
@@ -168,7 +204,12 @@ _backend: LLMBackend | None = None
 def get_backend() -> LLMBackend:
     global _backend
     if _backend is None:
-        _backend = AnthropicBackend()
+        s = get_settings()
+        backend: LLMBackend = AnthropicBackend()
+        mode = s.LLM_REPLAY if s.LLM_REPLAY != "auto" else ("replay" if s.is_mock else "off")
+        if mode in ("replay", "record"):
+            backend = ReplayBackend(backend, s.fixtures_dir / "llm", mode)
+        _backend = backend
     return _backend
 
 

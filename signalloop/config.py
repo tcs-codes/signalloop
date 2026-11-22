@@ -24,6 +24,10 @@ class Settings(BaseSettings):
     MODEL_FAST: str = "claude-haiku-5-5"
     # Server-side refusal fallback (Anthropic beta); only applied to models that support it.
     LLM_REFUSAL_FALLBACK: bool = True
+    # LLM replay cache (fixtures/llm): "auto" = replay in mock mode, off in live mode;
+    # "replay" = serve recorded outputs, call live (and record) on a miss; "record" = always live,
+    # save outputs; "off" = never touch the cache.
+    LLM_REPLAY: str = "auto"
     LLM_MAX_TOKENS: int = 16000
     # Effort per model ("" = API default). Fast-model calls are extraction/checking/short notes:
     # live runs showed ~1.5k reasoning tokens and ~6s per call at the default effort.
