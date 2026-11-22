@@ -124,4 +124,7 @@ def value_matches(resolved: Any, claimed: str) -> bool:
 
 
 def norm_text(s: str) -> str:
-    return re.sub(r"\s+", " ", (s or "").lower()).strip()
+    """Lowercase, drop markdown emphasis/bullets/headings, collapse whitespace."""
+    s = re.sub(r"[*_`#>]+", "", s or "")
+    s = re.sub(r"^\s*[-•]\s+", " ", s, flags=re.M)
+    return re.sub(r"\s+", " ", s.lower()).strip()

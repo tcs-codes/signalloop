@@ -25,6 +25,11 @@ class Settings(BaseSettings):
     # Server-side refusal fallback (Anthropic beta); only applied to models that support it.
     LLM_REFUSAL_FALLBACK: bool = True
     LLM_MAX_TOKENS: int = 16000
+    # Effort per model ("" = API default). Fast-model calls are extraction/checking/short notes:
+    # live runs showed ~1.5k reasoning tokens and ~6s per call at the default effort.
+    LLM_EFFORT_STRONG: str = ""
+    LLM_EFFORT_FAST: str = "low"
+    OUTREACH_PARALLELISM: int = 4
 
     CREDIT_BUDGET_PER_RUN: float = 500
     DB_PATH: str = "data/signalloop.db"

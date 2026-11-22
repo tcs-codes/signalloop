@@ -65,6 +65,11 @@ def test_bullet_without_refs_fails(acc, fake_llm):
         briefs.build_brief(acc.id)
 
 
+def test_product_quotes_ignore_markdown():
+    text = "- **Sales hiring:** onboarding AEs into a pipeline process that does not exist yet."
+    assert evidence.norm_text("Sales hiring: onboarding AEs into a pipeline process") in evidence.norm_text(text)
+
+
 def test_resolve_and_value_matching():
     doc = {"company": {"funding": {"last_round_amount_usd": 41e6}}, "signals": [{"payload": {"days_ago": 4}}]}
     assert evidence.resolve(doc, "signals[0].payload.days_ago") == 4

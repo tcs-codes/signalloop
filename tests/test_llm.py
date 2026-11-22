@@ -54,6 +54,16 @@ def test_call_llm_raises_after_second_failure(prompt_dir, fake_llm):
     assert len(fake_llm.calls) == 2
 
 
+def test_effort_applies_per_model(monkeypatch):
+    from signalloop import config
+    monkeypatch.setenv("LLM_EFFORT_FAST", "low")
+    monkeypatch.setenv("LLM_EFFORT_STRONG", "")
+    config.reset_settings()
+    s = config.get_settings()
+    assert llm.effort_for(s.MODEL_FAST) == "low"
+    assert llm.effort_for(s.MODEL_STRONG) is None
+
+
 def test_semantic_validator_triggers_retry(prompt_dir, fake_llm):
     fake_llm.responses["echo"] = [{"answer": "x", "score": 99}, {"answer": "x", "score": 5}]
 

@@ -78,6 +78,15 @@ class LLMBackend(Protocol):
     ) -> LLMResult: ...
 
 
+def effort_for(model: str) -> str | None:
+    s = get_settings()
+    if model == s.MODEL_FAST:
+        return s.LLM_EFFORT_FAST or None
+    if model == s.MODEL_STRONG:
+        return s.LLM_EFFORT_STRONG or None
+    return None
+
+
 # ---------------------------------------------------------------- backends
 class AnthropicBackend:
     def __init__(self, api_key: str | None = None):
@@ -93,6 +102,9 @@ class AnthropicBackend:
         kwargs: dict[str, Any] = dict(
             model=model, max_tokens=self._max_tokens, system=system, messages=messages
         )
+        effort = effort_for(model)
+        if effort:
+            kwargs["output_config"] = {"effort": effort}
         if self._fallback and model in _FALLBACK_MODELS:
             resp = self._client.beta.messages.create(
                 betas=[_FALLBACK_BETA], fallbacks="default", **kwargs

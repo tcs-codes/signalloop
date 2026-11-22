@@ -98,38 +98,67 @@ class DraftOutcome:
     critic: CriticResult
 
 
-def draft_for_contact(account: Account, contact: Contact, brief_row, *,
-                      channels: tuple[Channel, ...] = (Channel.email, Channel.linkedin),
-                      review: ReviewFn | None = None) -> list[DraftOutcome]:
-    if suppression.is_suppressed(contact=contact):
-        return []
+def _draft_one(account: Account, contact: Contact, brief_row, brief: Brief, doc: dict,
+               ch: Channel, review: ReviewFn) -> DraftOutcome:
+    d, res = draft_and_review(ch, contact, brief, doc, review)
+    touch = Touch(contact_id=contact.id, account_id=account.id, channel=ch,
+                  subject=getattr(d, "subject", ""), body=getattr(d, "body", None) or d.note,
+                  angle=brief.recommended_angle, critic_json=res.model_dump(),
+                  status=TouchStatus.draft)
+    with session_scope() as s:
+        s.add(touch)
+        s.flush()
+    appr = approvals.enqueue(ApprovalKind.outreach, touch.id, {
+        "touch_id": touch.id, "account_id": account.id, "account": account.name,
+        "domain": account.domain, "contact_id": contact.id, "contact": contact.name,
+        "title": contact.title, "role": contact.role.value, "channel": ch.value,
+        "subject": touch.subject, "body": touch.body, "brief_id": brief_row.id,
+        "critic_passed": res.passed, "needs_human": res.needs_human,
+        "violations": res.violations, "rewrites": res.rewrites,
+    })
+    with session_scope() as s:
+        s.get(Touch, touch.id).approval_id = appr.id
+    touch.approval_id = appr.id
+    return DraftOutcome(touch, res)
+
+
+def _run_parallel(tasks: list[Callable[[], DraftOutcome]]) -> list[DraftOutcome]:
+    """Run drafting tasks concurrently (LLM calls dominate); results keep task order.
+    Each task runs in a copy of the caller's context so meter run_id/agent labels apply."""
+    import contextvars
+    from concurrent.futures import ThreadPoolExecutor
+
+    workers = max(1, get_settings().OUTREACH_PARALLELISM)
+    if workers == 1 or len(tasks) <= 1:
+        return [t() for t in tasks]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(contextvars.copy_context().run, t) for t in tasks]
+        return [f.result() for f in futures]
+
+
+def draft_for_contacts(account: Account, people: list[Contact], brief_row, *,
+                       channels: tuple[Channel, ...] = (Channel.email, Channel.linkedin),
+                       review: ReviewFn | None = None) -> list[DraftOutcome]:
     review = review or _default_review
     brief = briefs.brief_model(brief_row)
-    doc = evidence.build(account, watch.signals_for(account.id), contact)
-    out: list[DraftOutcome] = []
-    for ch in channels:
-        d, res = draft_and_review(ch, contact, brief, doc, review)
-        touch = Touch(contact_id=contact.id, account_id=account.id, channel=ch,
-                      subject=getattr(d, "subject", ""), body=getattr(d, "body", None) or d.note,
-                      angle=brief.recommended_angle, critic_json=res.model_dump(),
-                      status=TouchStatus.draft)
-        with session_scope() as s:
-            s.add(touch)
-            s.flush()
-        appr = approvals.enqueue(ApprovalKind.outreach, touch.id, {
-            "touch_id": touch.id, "account_id": account.id, "account": account.name,
-            "domain": account.domain, "contact_id": contact.id, "contact": contact.name,
-            "title": contact.title, "role": contact.role.value, "channel": ch.value,
-            "subject": touch.subject, "body": touch.body, "brief_id": brief_row.id,
-            "critic_passed": res.passed, "needs_human": res.needs_human,
-            "violations": res.violations, "rewrites": res.rewrites,
-        })
-        with session_scope() as s:
-            row = s.get(Touch, touch.id)
-            row.approval_id = appr.id
-        touch.approval_id = appr.id
-        out.append(DraftOutcome(touch, res))
-    return out
+    signals = watch.signals_for(account.id)
+    tasks = []
+    for contact in people:
+        if suppression.is_suppressed(contact=contact):
+            continue
+        doc = evidence.build(account, signals, contact)
+        for ch in channels:
+            tasks.append(lambda c=contact, d=doc, ch=ch: _draft_one(account, c, brief_row, brief, d, ch, review))
+    return _run_parallel(tasks)
+
+
+def draft_for_contact(account: Account, contact: Contact, brief_row, **kw) -> list[DraftOutcome]:
+    return draft_for_contacts(account, [contact], brief_row, **kw)
+
+
+def _contacts_of(account_id: int) -> list[Contact]:
+    with session_scope() as s:
+        return list(s.exec(select(Contact).where(Contact.account_id == account_id)).all())
 
 
 def _has_open_draft(contact_id: int) -> bool:
@@ -139,17 +168,24 @@ def _has_open_draft(contact_id: int) -> bool:
 
 
 def draft_this_week(n: int = 10, review: ReviewFn | None = None,
-                    channels: tuple[Channel, ...] = (Channel.email, Channel.linkedin)) -> list[DraftOutcome]:
+                    channels: tuple[Channel, ...] = (Channel.email, Channel.linkedin),
+                    staff_missing: bool = True) -> list[DraftOutcome]:
+    """Draft for the top-n in-market accounts. Accounts that became in-market but were not
+    staffed during FIND get decision-makers found on demand (F11, ~1.4 credits each)."""
+    from signalloop.services import contacts as contacts_svc
+
     outcomes: list[DraftOutcome] = []
     for b in scoring.this_week(n):
         with session_scope() as s:
             account = s.get(Account, b.account_id)
-            people = list(s.exec(select(Contact).where(Contact.account_id == b.account_id)).all())
-        people = sorted(suppression.filter_contacts(people), key=lambda c: ROLE_ORDER[c.role])
+        everyone = _contacts_of(account.id)
+        if not everyone and staff_missing:
+            contacts_svc.find_contacts(account_ids=[account.id])
+            everyone = _contacts_of(account.id)
+        people = sorted(suppression.filter_contacts(everyone), key=lambda c: ROLE_ORDER[c.role])
         people = [c for c in people if not _has_open_draft(c.id)]
         if not people:
             continue
         brief_row = briefs.latest_brief(account.id) or briefs.build_brief(account.id)
-        for c in people:
-            outcomes.extend(draft_for_contact(account, c, brief_row, channels=channels, review=review))
+        outcomes.extend(draft_for_contacts(account, people, brief_row, channels=channels, review=review))
     return outcomes

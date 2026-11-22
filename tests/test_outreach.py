@@ -68,6 +68,37 @@ def test_rerun_does_not_duplicate_open_drafts(world):
     assert outreach.draft_this_week(review=passing) == []
 
 
+def test_parallel_drafting_keeps_order_and_run_context(world, monkeypatch):
+    from signalloop.tools import meter
+    monkeypatch.setenv("OUTREACH_PARALLELISM", "4")
+    config.reset_settings()
+    a, champ, ceo = world
+    with meter.run("engage") as r:
+        out = outreach.draft_this_week(review=passing)
+    assert [(o.touch.contact_id, o.touch.channel) for o in out] == [
+        (champ.id, Channel.email), (champ.id, Channel.linkedin),
+        (ceo.id, Channel.email), (ceo.id, Channel.linkedin)]
+    s = meter.summary(r.run_id)
+    assert s["llm_calls"] == 5 and s["by_agent"]["outreach_writer"]["llm_calls"] == 4  # brief + 4 drafts
+
+
+def test_unstaffed_in_market_account_gets_contacts_on_demand(world):
+    from signalloop.tools import crustdata
+    from tests.fakes import FakeCrustdata
+    a, champ, ceo = world
+    b = store.upsert_account(company("fresh.io", 2, headcount=122, stage="series_b", amount=41e6,
+                                     last_round_date="2026-11-18"))
+    with session_scope() as s:
+        s.get(Account, b.id).fit_score = 1.0
+        s.add(Signal(account_id=b.id, type=SignalType.funding, strength=0.95, dedupe_key="k2",
+                     payload_json={"amount_usd": 41e6, "event_date": "2026-11-18", "days_ago": 4}))
+    f = FakeCrustdata()
+    f.people["fresh.io"] = [person(9, "Vee Pee", "VP Sales", "Vice President", "fresh.io")]
+    crustdata.set_client(f)
+    out = outreach.draft_this_week(review=passing)
+    assert any(o.touch.account_id == b.id for o in out) and f.count("person_search") == 2
+
+
 def test_too_long_email_is_rejected(world, fake_llm):
     long_body = {"subject": "one two three four five six seven eight nine", "body": "word " * 130}
     fake_llm.responses["write_email"] = [long_body, long_body]
