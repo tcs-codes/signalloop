@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "c5c8f3846aa6d0c49fddf5fc6c3a3762f0a4d3f83f1900eeed7eac73cc2e440c",
+  "text": "{\"claims\":[{\"claim\":\"Hi David\",\"type\":\"other\"},{\"claim\":\"Juicebox is hiring sales reps fast\",\"type\":\"prospect_fact\"},{\"claim\":\"New AEs need a pipeline process from day one\",\"type\":\"prospect_fact\"},{\"claim\":\"David's company uses a CRM\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath reads the CRM nightly\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals every morning\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath provides next actions per rep\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes\",\"type\":\"product_claim\"},{\"claim\":\"Nothing to migrate\",\"type\":\"product_claim\"},{\"claim\":\"Worth a look?\",\"type\":\"other\"}]}",
+  "input_tokens": 713,
+  "output_tokens": 620
+}

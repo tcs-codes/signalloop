@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "f524c76088fd29ab8efa9115fb995503b5d23681b63f4d1732e4cfea0e1be29f",
+  "text": "{\"claims\":[{\"claim\":\"Juicebox has three open sales roles.\",\"type\":\"prospect_fact\"},{\"claim\":\"The open sales roles are an Account Executive and two Sales Managers.\",\"type\":\"prospect_fact\"},{\"claim\":\"The latest sales role was posted 6 days ago.\",\"type\":\"prospect_fact\"},{\"claim\":\"Juicebox headcount is up 83.7% in six months.\",\"type\":\"prospect_fact\"},{\"claim\":\"New sellers need a repeatable pipeline process from day one.\",\"type\":\"other\"},{\"claim\":\"Quillpath reads the CRM every night.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals (no activity, missing next step, slipped close date).\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives each rep a short list of next actions per deal.\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes.\",\"type\":\"product_claim\"},{\"claim\":\"Setup works on the prospect's existing CRM.\",\"type\":\"product_claim\"},{\"claim\":\"Setup requires nothing to be migrated.\",\"type\":\"product_claim\"},{\"claim\":\"A free 14-day pilot is available.\",\"type\":\"product_claim\"},{\"claim\":\"Would you like to try the free 14-day pilot on your real pipeline?\",\"type\":\"other\"}]}",
+  "input_tokens": 833,
+  "output_tokens": 450
+}

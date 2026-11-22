@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "232c88f8de10f19589790030d29699b788744f49391080a63aad6b602de8b6f7",
+  "text": "{\"claims\":[{\"claim\":\"Recipient's name is Laurie\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster is hiring several AEs and SDRs\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath is an AI pipeline-review assistant\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals each morning\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives reps next actions\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath could help new reps start with a clear pipeline process\",\"type\":\"product_claim\"},{\"claim\":\"Free 14-day pilot\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes\",\"type\":\"product_claim\"},{\"claim\":\"Worth a look?\",\"type\":\"other\"}]}",
+  "input_tokens": 725,
+  "output_tokens": 275
+}

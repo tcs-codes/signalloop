@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_linkedin",
+  "key": "3b52f2e08be2bdfb600bffb830fec9dc0518e6e48783136d1247efe04b277612",
+  "text": "{\"note\": \"Hi David, Juicebox is hiring sales reps fast, and new AEs need a pipeline process from day one. Quillpath reads your CRM nightly and flags stalled deals every morning, with next actions per rep. Setup takes about 15 minutes, nothing to migrate. Worth a look?\"}",
+  "input_tokens": 3430,
+  "output_tokens": 734
+}

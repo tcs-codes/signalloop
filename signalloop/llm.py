@@ -156,7 +156,7 @@ class ReplayBackend:
         result = self.inner.complete(prompt_name=prompt_name, model=model, system=system,
                                      messages=messages, variables=variables)
         self.dir.mkdir(parents=True, exist_ok=True)
-        p.write_text(json.dumps({"prompt_name": prompt_name, "model": result.model or model,
+        p.write_text(json.dumps({"prompt_name": prompt_name,
                                  "key": key, "text": result.text, "input_tokens": result.input_tokens,
                                  "output_tokens": result.output_tokens}, indent=2), encoding="utf-8")
         return result

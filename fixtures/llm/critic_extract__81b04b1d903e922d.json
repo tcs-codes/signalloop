@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "81b04b1d903e922d77294e43f4d99d8450ac4282d134c923f4aada7763f4afbe",
+  "text": "{\n  \"claims\": [\n    {\n      \"claim\": \"Hi Fabian\",\n      \"type\": \"other\"\n    },\n    {\n      \"claim\": \"vCluster is hiring AEs and SDRs\",\n      \"type\": \"prospect_fact\"\n    },\n    {\n      \"claim\": \"New reps are starting soon\",\n      \"type\": \"prospect_fact\"\n    },\n    {\n      \"claim\": \"Quillpath flags stalled deals nightly\",\n      \"type\": \"product_claim\"\n    },\n    {\n      \"claim\": \"Quillpath gives each rep next actions\",\n      \"type\": \"product_claim\"\n    },\n    {\n      \"claim\": \"Setup takes ~15 minutes\",\n      \"type\": \"product_claim\"\n    },\n    {\n      \"claim\": \"Quillpath offers a free 14-day pilot on the prospect's real pipeline\",\n      \"type\": \"product_claim\"\n    },\n    {\n      \"claim\": \"Would you be open to a pilot before the new reps start?\",\n      \"type\": \"other\"\n    }\n  ]\n}",
+  "input_tokens": 711,
+  "output_tokens": 658
+}

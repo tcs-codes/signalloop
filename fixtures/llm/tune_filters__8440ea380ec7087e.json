@@ -1,6 +1,5 @@
 {
   "prompt_name": "tune_filters",
-  "model": "claude-haiku-5-5",
   "key": "8440ea380ec7087ecbd6fc8faf7046eb7a12a0b86e293ea2b07eb9820d89fc7f",
   "text": "{\"direction\":\"tighten\",\"action\":\"add\",\"condition\":{\"field\":\"headcount.growth_percent.6m\",\"type\":\">=\",\"value\":10},\"reason\":\"Adding a 6-month headcount growth of at least 10% is a new filter on an unused field that narrows the 595 matches toward the 50\u2013200 target without touching the approved ICP filters.\"}",
   "input_tokens": 1741,

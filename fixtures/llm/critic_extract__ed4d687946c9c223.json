@@ -1,6 +1,5 @@
 {
   "prompt_name": "critic_extract",
-  "model": "claude-haiku-5-5",
   "key": "ed4d687946c9c223a63794d0b3d71476285a74ed977aa044409b0f7637f597e6",
   "text": "{\"claims\":[{\"claim\":\"The recipient's name is Michael.\",\"type\":\"other\"},{\"claim\":\"Pulley closed a $41M Series B.\",\"type\":\"prospect_fact\"},{\"claim\":\"Pulley's Series B closed 4 days ago.\",\"type\":\"prospect_fact\"},{\"claim\":\"New sellers are on the way for Pulley.\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath is an AI pipeline-review assistant.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath reads the CRM nightly.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalling deals.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath drafts the weekly forecast for the board.\",\"type\":\"product_claim\"},{\"claim\":\"Worth a look before the hires start?\",\"type\":\"other\"}]}",
   "input_tokens": 715,

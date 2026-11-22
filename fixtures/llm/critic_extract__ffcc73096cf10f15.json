@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "ffcc73096cf10f153e5ce2c002db127ffff1e0535daa4b0a77b413f8d3aa653b",
+  "text": "{\"claims\":[{\"claim\":\"Connor is the recipient of the outreach.\",\"type\":\"other\"},{\"claim\":\"Juicebox is hiring three sales roles.\",\"type\":\"prospect_fact\"},{\"claim\":\"The latest Juicebox sales role was posted 6 days ago.\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath reads the CRM every night.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals each morning.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath provides next actions per rep.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath offers a free 14-day pilot.\",\"type\":\"product_claim\"},{\"claim\":\"The pilot runs on the prospect's real pipeline.\",\"type\":\"product_claim\"},{\"claim\":\"Would a free 14-day pilot on your real pipeline be useful?\",\"type\":\"other\"}]}",
+  "input_tokens": 704,
+  "output_tokens": 303
+}

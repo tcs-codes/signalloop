@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "235dfda20154840448c3cd9122f9591654160eadf16013da16bdfb4d10750548",
+  "text": "{\"claims\":[{\"claim\":\"The prospect is named David.\",\"type\":\"prospect_fact\"},{\"claim\":\"Juicebox has three sales roles open.\",\"type\":\"prospect_fact\"},{\"claim\":\"Juicebox has an open Account Executive role.\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath is an AI pipeline-review assistant.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals nightly.\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes.\",\"type\":\"product_claim\"},{\"claim\":\"Setup requires nothing to migrate.\",\"type\":\"product_claim\"},{\"claim\":\"Hi David.\",\"type\":\"other\"},{\"claim\":\"Worth a look?\",\"type\":\"other\"}]}",
+  "input_tokens": 702,
+  "output_tokens": 262
+}

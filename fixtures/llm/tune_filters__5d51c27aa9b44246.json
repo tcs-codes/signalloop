@@ -1,6 +1,5 @@
 {
   "prompt_name": "tune_filters",
-  "model": "fake:claude-haiku-5-5",
   "key": "5d51c27aa9b44246d51ad5ce7c28ab8150aeb19c9b03b65d4600fcb0c5413753",
   "text": "{\"direction\": \"tighten\", \"action\": \"add\", \"index\": null, \"condition\": {\"field\": \"headcount.growth_percent.6m\", \"type\": \"=>\", \"value\": 10}, \"reason\": \"The current result of 3204 companies is far above the 50\\u2013200 target, and requiring at least 10% six-month headcount growth is a new field that narrows the approved ICP without altering its filters.\"}",
   "input_tokens": 707,

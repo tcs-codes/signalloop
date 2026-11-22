@@ -1,6 +1,5 @@
 {
   "prompt_name": "write_linkedin",
-  "model": "claude-haiku-5-5",
   "key": "f6d109a53bf5af0c815518cc29a328c98e581ffd09e101f47de99912a6683aba",
   "text": "{\"note\": \"Hi Michael, congrats on Pulley's $41M Series B. Quillpath is an AI pipeline-review assistant that reads your CRM nightly, flags stalled deals, and builds the weekly forecast summary for board updates. Open to a free 14-day pilot on your real pipeline?\"}",
   "input_tokens": 3523,

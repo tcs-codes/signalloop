@@ -1,6 +1,5 @@
 {
   "prompt_name": "extract_traits",
-  "model": "fake:claude-sonnet-5-5",
   "key": "cd4249a3c6d05da322363a0e10b5676e214d5df10031caef7716f7f259b67be0",
   "text": "{\"traits\": [{\"dimension\": \"industry\", \"values\": [\"Software Development\"], \"coverage\": 1.0, \"explanation\": \"5 of 5 seeds are in the Software Development industry.\"}, {\"dimension\": \"headcount_band\", \"values\": [\"20-50\"], \"coverage\": 0.6, \"explanation\": \"3 of 5 seeds have a headcount of 20-50 employees.\"}, {\"dimension\": \"funding_stage\", \"values\": [\"series_a\"], \"coverage\": 1.0, \"explanation\": \"5 of 5 seeds are at the series_a funding stage.\"}, {\"dimension\": \"hq_country\", \"values\": [\"USA\"], \"coverage\": 1.0, \"explanation\": \"5 of 5 seeds are headquartered in the USA.\"}, {\"dimension\": \"headcount_growth_band\", \"values\": [\"10-25%\", \"0-10%\"], \"coverage\": 0.8, \"explanation\": \"4 of 5 seeds have headcount growth in the 10-25% or 0-10% bands (2 each).\"}], \"persona_hypothesis\": {\"titles\": [\"Head of Sales\", \"VP Sales\", \"Head of Revenue Operations\", \"Chief Revenue Officer\", \"CEO / Founder\"], \"seniority\": [\"CXO\", \"Owner / Partner\", \"Vice President\", \"Director\"]}, \"missing\": [\"technologies\"]}",
   "input_tokens": 1112,

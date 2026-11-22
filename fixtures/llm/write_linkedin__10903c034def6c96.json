@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_linkedin",
+  "key": "10903c034def6c966c1303bc6fc31257a1da95af2cc0219be670be1ba133dd53",
+  "text": "{\"note\": \"Hi David, Juicebox has grown headcount 83.7% in six months to 158. As more deals flow through your CRM, Quillpath flags stalled deals nightly and sends a weekly forecast summary you can forward to the board. Setup takes about 15 minutes on your existing CRM. Worth a look?\", \"missing\": []}",
+  "input_tokens": 3340,
+  "output_tokens": 544
+}

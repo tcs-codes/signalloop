@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_linkedin",
+  "key": "60566babb51d7a642a60e0114c6e1009044c385cdad6ac160b765fb83a9ba007",
+  "text": "{\"note\":\"Hi Fabian, saw vCluster is hiring AEs and SDRs, new reps starting soon. Quillpath flags stalled deals nightly and gives each rep next actions. Setup takes ~15 minutes. Open to a free 14-day pilot on your real pipeline before they start?\"}",
+  "input_tokens": 3615,
+  "output_tokens": 783
+}

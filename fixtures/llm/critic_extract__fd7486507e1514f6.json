@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "fd7486507e1514f6c2ac2c777af34413c045202223fa7b5c226858142f98fa5c",
+  "text": "{\"claims\":[{\"claim\":\"Recipient's name is David\",\"type\":\"other\"},{\"claim\":\"Juicebox has grown headcount 83.7% in six months\",\"type\":\"prospect_fact\"},{\"claim\":\"Juicebox headcount is 158\",\"type\":\"prospect_fact\"},{\"claim\":\"As more deals flow through your CRM\",\"type\":\"other\"},{\"claim\":\"Quillpath flags stalled deals nightly\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath sends a weekly forecast summary\",\"type\":\"product_claim\"},{\"claim\":\"The weekly forecast summary can be forwarded to the board\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes\",\"type\":\"product_claim\"},{\"claim\":\"Setup works on the prospect's existing CRM\",\"type\":\"product_claim\"},{\"claim\":\"Worth a look?\",\"type\":\"other\"}]}",
+  "input_tokens": 716,
+  "output_tokens": 296
+}

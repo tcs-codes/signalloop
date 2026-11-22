@@ -1,6 +1,5 @@
 {
   "prompt_name": "write_linkedin",
-  "model": "claude-haiku-5-5",
   "key": "165ff75b64a75a5cef58cdd7689561d3d38a637eaefd677beaffe25539b401ea",
   "text": "{\"note\": \"Hi Andreas, congrats on Pulley's $41M Series B. Quillpath reads your CRM every night, flags stalled deals, and gives each rep a short list of next actions. Open to a free 14-day pilot on your real pipeline?\", \"missing\": []}",
   "input_tokens": 3540,

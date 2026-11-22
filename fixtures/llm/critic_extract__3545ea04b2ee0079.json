@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "3545ea04b2ee0079daee7ef501eedbe551573ec985ce2b914f3b296290380fff",
+  "text": "{\"claims\":[{\"claim\":\"The recipient's name is Connor.\",\"type\":\"prospect_fact\"},{\"claim\":\"Juicebox is hiring sales roles.\",\"type\":\"prospect_fact\"},{\"claim\":\"Juicebox has three sales roles posted in the last few weeks.\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath gives new reps a repeatable pipeline process from day one.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath provides nightly stalled-deal flags.\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath provides next actions for each deal.\",\"type\":\"product_claim\"},{\"claim\":\"The sender is open to a quick look.\",\"type\":\"other\"}]}",
+  "input_tokens": 705,
+  "output_tokens": 240
+}

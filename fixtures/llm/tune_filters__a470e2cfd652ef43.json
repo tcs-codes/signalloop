@@ -1,6 +1,5 @@
 {
   "prompt_name": "tune_filters",
-  "model": "fake:claude-haiku-5-5",
   "key": "a470e2cfd652ef43de6acbeed19dbb21e1b0441a24e758059fdcb5497b1bd7ec",
   "text": "{\"direction\": \"tighten\", \"action\": \"add\", \"index\": null, \"condition\": {\"field\": \"funding.last_fundraise_date\", \"type\": \"=>\", \"value\": \"2023-01-01\"}, \"reason\": \"The 802-company result is still above the 50\\u2013200 target, and the last fundraise date is a new field not used by the approved filters, so requiring a round on or after 2023-01-01 narrows the list without changing the ICP.\"}",
   "input_tokens": 829,

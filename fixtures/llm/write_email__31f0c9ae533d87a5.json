@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_email",
+  "key": "31f0c9ae533d87a586c06bc11cd1df6c164413b5cef388e8d44ae61f722be018",
+  "text": "{\"subject\":\"Pipeline process before vCluster's new reps start\",\"body\":\"Hi Fabian,\\n\\nvCluster has 7 open sales roles, including Federal Account Executive, Enterprise Account Executive and SDR roles in NYC and the SF Bay Area. The newest was posted 4 days ago.\\n\\nWith that many new reps, the pipeline process matters before they start. Quillpath reads your CRM (HubSpot or Salesforce) every night, flags stalled deals each morning, and gives each rep a short list of next actions per deal. It also writes a weekly pipeline and forecast summary you can forward to the board. Setup takes about 15 minutes, with read-only access and nothing to migrate.\\n\\nWould you like to try a free 14-day pilot on your real pipeline before the new reps join?\",\"missing\":[\"Which CRM vCluster uses (HubSpot or Salesforce)\",\"Whether vCluster has a sales leader or RevOps owner who reviews pipeline today\",\"Whether Fabian is involved in sales and forecasting decisions, since his title is CTO and Co-Founder\"]}",
+  "input_tokens": 3957,
+  "output_tokens": 371
+}

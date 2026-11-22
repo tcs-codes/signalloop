@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_email",
+  "key": "ee6b3872a4881906b764b85b406c36d444c3cd1658c19633e3c5656c2a5895bd",
+  "text": "{\"subject\":\"Onboarding vCluster's new AEs and SDRs\",\"body\":\"Hi Laurie,\\n\\nI saw vCluster has 7 sales roles open, including Federal Account Executive and Enterprise Account Executive, plus SDR roles in NYC and the SF Bay Area. Headcount is also up 17.3% in six months.\\n\\nQuillpath is an AI pipeline-review assistant. It reads your CRM every night, flags stalled deals (no activity, missing next step, slipped close date), and gives each rep a short list of next actions per deal. That could help new reps ramp on a consistent pipeline process. It connects to HubSpot or Salesforce in about 15 minutes, read-only, with nothing to migrate.\\n\\nWould you like to run a free 14-day pilot on your real pipeline before the new reps start?\",\"missing\":[\"Which CRM vCluster uses (HubSpot or Salesforce)\",\"Whether vCluster has a RevOps person or an existing pipeline review process\",\"Any information on Laurie's specific responsibilities for the federal or enterprise teams\"]}",
+  "input_tokens": 3892,
+  "output_tokens": 366
+}

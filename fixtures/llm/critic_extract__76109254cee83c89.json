@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "76109254cee83c89d088e8150a207edf72956ebbad2fa7f646caf65daa7438b0",
+  "text": "{\"claims\":[{\"claim\":\"Recipient is named Fabian\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster has 7 sales roles open\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster's open sales roles include federal AEs\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster's open sales roles include enterprise AEs\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster's open sales roles include SDRs\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath flags stalled deals each morning\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives reps next actions\",\"type\":\"product_claim\"},{\"claim\":\"Free 14-day pilot offered\",\"type\":\"product_claim\"},{\"claim\":\"Pilot runs on the prospect's real pipeline\",\"type\":\"product_claim\"},{\"claim\":\"Setup takes about 15 minutes\",\"type\":\"product_claim\"}]}",
+  "input_tokens": 709,
+  "output_tokens": 319
+}

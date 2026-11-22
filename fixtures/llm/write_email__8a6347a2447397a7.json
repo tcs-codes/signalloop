@@ -1,6 +1,5 @@
 {
   "prompt_name": "write_email",
-  "model": "claude-sonnet-5-5",
   "key": "8a6347a2447397a78e80a99bfac1408796d6d382a4dec50e145086b5cef518b4",
   "text": "{\"subject\":\"Congrats on Pulley's Series B\",\"body\":\"Hi Michael,\\n\\nCongrats on Pulley's $41M Series B four days ago. Rounds like this usually bring a board forecast request, and I saw Pulley has Enterprise Account Executive and Enterprise SDR Manager roles open, so new sellers will need a pipeline process in place.\\n\\nQuillpath reads your CRM (HubSpot or Salesforce) every night, flags stalled deals, and gives each rep a short list of next actions per deal. It also writes a weekly pipeline and forecast summary you can forward to the board. Setup takes about 15 minutes, with nothing to migrate.\\n\\nWould you like to try the free 14-day pilot on your real pipeline?\",\"missing\":[\"Which CRM Pulley uses (HubSpot or Salesforce is not confirmed in the evidence)\",\"Who owns the open sales roles or the board forecast at Pulley\"]}",
   "input_tokens": 4011,

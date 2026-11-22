@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_email",
+  "key": "9094b681f2be8bea8b6fe97147baf05efc8bdf45e07861ba30ef9d0c30f3fc3a",
+  "text": "{\"subject\":\"Onboarding new sellers at Juicebox\",\"body\":\"Hi David,\\n\\nJuicebox has three sales roles open, an Account Executive and two Sales Managers, with the latest posted 6 days ago. Headcount is also up 83.7% in six months, to 158.\\n\\nNew sellers need a repeatable pipeline process from day one. Quillpath reads your CRM every night, flags stalled deals (no activity, missing next step, slipped close date), and gives each rep a short list of next actions per deal. Setup takes about 15 minutes on your existing CRM, with nothing to migrate.\\n\\nWould you be open to a free 14-day pilot on your team's real pipeline?\",\"missing\":[]}",
+  "input_tokens": 3626,
+  "output_tokens": 240
+}

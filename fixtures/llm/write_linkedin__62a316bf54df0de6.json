@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_linkedin",
+  "key": "62a316bf54df0de6868270390d94339e752cc6ae563a6a362aff36eca0249173",
+  "text": "{\"note\": \"Hi Connor, Juicebox is hiring three sales roles, the latest posted 6 days ago. Quillpath reads your CRM every night and flags stalled deals each morning, with next actions per rep. Would a free 14-day pilot on your real pipeline be useful?\"}",
+  "input_tokens": 3502,
+  "output_tokens": 527
+}

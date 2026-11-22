@@ -1,6 +1,5 @@
 {
   "prompt_name": "tune_filters",
-  "model": "fake:claude-haiku-5-5",
   "key": "4da373b5a2251c95dc1367ff8a8c092cc4e590334a6751db17d79dad9c464efc",
   "text": "{\"direction\": \"tighten\", \"action\": \"add\", \"index\": null, \"condition\": {\"field\": \"funding.last_round_amount_usd\", \"type\": \"=>\", \"value\": 1000000}, \"reason\": \"The current result of 652 companies is still well above the 50\\u2013200 target, and requiring a last round of at least $1M is a new field not used by the approved filters that narrows the list without changing the ICP.\"}",
   "input_tokens": 962,

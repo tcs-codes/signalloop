@@ -1,0 +1,7 @@
+{
+  "prompt_name": "critic_extract",
+  "key": "b6d112124c7bd9cbb5037118c830d5ce9c7bb981ca444136be8e1a73067b32f2",
+  "text": "{\"claims\":[{\"claim\":\"vCluster has 7 open sales roles\",\"type\":\"prospect_fact\"},{\"claim\":\"The newest of vCluster's open sales roles was posted 4 days ago\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster has a Federal Account Executive open role\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster has an Enterprise Account Executive open role\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster has SDR roles in NYC\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster has SDR roles in the SF Bay Area\",\"type\":\"prospect_fact\"},{\"claim\":\"vCluster is onboarding new reps (AEs)\",\"type\":\"prospect_fact\"},{\"claim\":\"Quillpath reads the CRM (HubSpot or Salesforce) every night\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath flags stalled deals each morning\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath gives each rep a short list of next actions per deal\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath setup takes about 15 minutes\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath requires no data migration\",\"type\":\"product_claim\"},{\"claim\":\"Quillpath offers a free 14-day pilot on the prospect's real pipeline\",\"type\":\"product_claim\"}]}",
+  "input_tokens": 843,
+  "output_tokens": 467
+}

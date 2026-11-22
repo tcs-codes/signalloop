@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_linkedin",
+  "key": "dd85e2212e611435c226f28542d0cd8f690baff9052278a51d9e6cda79996d03",
+  "text": "{\"note\": \"Hi Laurie, saw vCluster is hiring several AEs and SDRs. Quillpath is an AI pipeline-review assistant that flags stalled deals each morning and gives reps next actions. Could help new reps start with a clear pipeline process. Free 14-day pilot, about 15 minutes to set up. Worth a look?\"}",
+  "input_tokens": 3606,
+  "output_tokens": 567
+}

@@ -1,0 +1,7 @@
+{
+  "prompt_name": "write_linkedin",
+  "key": "fc4e01d97c6ba3dfef750eec4af37d2e349161cd3ac02022d06e2ccfa5ae6830",
+  "text": "{\"note\": \"Hi David, I noticed Juicebox has three sales roles open, including an Account Executive. Quillpath is an AI pipeline-review assistant that flags stalled deals nightly. Setup takes about 15 minutes with nothing to migrate. Worth a look?\"}",
+  "input_tokens": 3501,
+  "output_tokens": 722
+}
