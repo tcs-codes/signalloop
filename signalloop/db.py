@@ -72,6 +72,13 @@ def drop_db(engine: Engine | None = None) -> None:
     SQLModel.metadata.drop_all(engine or get_engine())
 
 
+def reset_db(engine: Engine | None = None) -> None:
+    """Empty every table in place (works while the app holds the DB open, unlike deleting the file)."""
+    eng = engine or get_engine()
+    SQLModel.metadata.drop_all(eng)
+    SQLModel.metadata.create_all(eng)
+
+
 def table_names(engine: Engine | None = None) -> list[str]:
     return inspect(engine or get_engine()).get_table_names()
 

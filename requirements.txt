@@ -1,0 +1,14 @@
+# Runtime dependencies for Streamlit Community Cloud (pinned to the versions tested locally).
+# Local development installs from pyproject.toml instead: pip install -e ".[dev]"
+anthropic==2.12.0
+httpx==0.28.1
+tenacity==9.2.1
+pydantic==2.14.4
+pydantic-settings==2.16.3
+sqlmodel==0.0.50
+SQLAlchemy==2.1.9
+pandas==3.1.1
+pyarrow==26.0.1
+streamlit==1.67.0
+altair==6.3.0
+python-dotenv==1.2.4

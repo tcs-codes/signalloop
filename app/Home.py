@@ -18,6 +18,14 @@ setup("SignalLoop")
 st.caption("FIND → WATCH → ENGAGE → LEARN → update the ICP. Nothing is sent without your approval.")
 cfg = get_settings()
 
+with st.sidebar.expander("Demo controls"):
+    st.caption("Mock mode replays recorded Crustdata data; no credits are used.")
+    if st.button("Reset demo", help="Empty all data and start again from the Setup page"):
+        from signalloop import db as _db
+        _db.reset_db()
+        st.session_state.clear()
+        st.success("Demo data cleared. Start on the Setup page.")
+
 ls = status.loop_status()
 m = st.columns(5)
 m[0].metric("ICP", f"v{ls.icp_version} ({ls.icp_source})" if ls.icp_version else "none")
