@@ -10,6 +10,7 @@ import pandas as pd  # noqa: E402
 import streamlit as st  # noqa: E402
 
 from _common import guarded, setup  # noqa: E402
+from signalloop.services import contacts as contacts_svc  # noqa: E402
 from signalloop.services import icp as icp_svc  # noqa: E402
 from signalloop.services import lookalike  # noqa: E402
 from signalloop.tools import meter  # noqa: E402
@@ -55,3 +56,22 @@ if accounts:
                  column_config={"fit": st.column_config.ProgressColumn("fit", min_value=0, max_value=1)})
 else:
     st.caption("No accounts yet. Run the lookalike search.")
+
+# ---------------------------------------------------------------- F11
+st.subheader("Decision-makers")
+top_n = st.number_input("Accounts to staff (top by fit)", 1, 100,
+                        value=contacts_svc.get_settings().CONTACTS_TOP_N)
+if st.button("Find decision-makers", disabled=not accounts):
+    with guarded("Decision-maker search"), meter.run("find.contacts") as run, st.spinner("Searching people…"):
+        found = contacts_svc.find_contacts(top_n=int(top_n), icp_id=icp.id)
+        n = sum(len(v) for v in found.values())
+        st.success(f"{n} contacts across {sum(1 for v in found.values() if v)} accounts. "
+                   f"Credits: {run.credits:g}")
+
+people = contacts_svc.list_contacts()
+if people:
+    by_acc = {a.id: a.name for a in accounts}
+    st.dataframe(pd.DataFrame([{
+        "account": by_acc.get(c.account_id, c.account_id), "name": c.name, "title": c.title,
+        "seniority": c.seniority, "role": c.role.value, "profile": c.profile_url,
+    } for c in people if c.account_id in by_acc]), use_container_width=True, hide_index=True)
