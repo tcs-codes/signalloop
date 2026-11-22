@@ -64,7 +64,12 @@ if traits_data:
 # ---------------------------------------------------------------- 3. ICP
 st.header("3 · Ideal customer profile")
 prefill = ""
-if traits_data:
+_rec = traits_svc.get_settings().fixtures_dir / "demo" / "find_recording.json"
+if traits_svc.get_settings().DEMO_MODE and _rec.exists():
+    # the recorded description: identical prompts replay identical ICP filters (fixtures/llm)
+    import json as _json
+    prefill = _json.loads(_rec.read_text(encoding="utf-8"))["icp_description"]
+elif traits_data:
     t = Traits.model_validate(traits_data)
     prefill = "; ".join(f"{tr.dimension.replace('_', ' ')}: {', '.join(tr.values)}" for tr in t.traits)
 description = st.text_area("Describe the ICP in plain English", value=prefill, height=100)
