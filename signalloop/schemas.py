@@ -63,3 +63,67 @@ class FilterPatch(BaseModel):
 
 class SimilarityReason(BaseModel):
     reason: str
+
+
+# ---------------------------------------------------------------- F15 brief
+class EvidenceRef(BaseModel):
+    field: str          # path into the evidence JSON, e.g. company.funding.last_round_amount_usd
+    value: str          # the value as quoted from that path
+
+
+class BriefBullet(BaseModel):
+    text: str
+    refs: list[int] = Field(default_factory=list)   # indices into Brief.evidence_refs
+
+
+class Brief(BaseModel):
+    headline: str
+    bullets: list[BriefBullet]
+    recommended_angle: Literal["funding", "hiring", "growth", "leader_change"]
+    evidence_refs: list[EvidenceRef]
+    missing: list[str] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------- F16 drafts
+class EmailDraft(BaseModel):
+    subject: str
+    body: str
+    missing: list[str] = Field(default_factory=list)
+
+
+class LinkedInDraft(BaseModel):
+    note: str
+    missing: list[str] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------- F17 critic
+ClaimType = Literal["prospect_fact", "product_claim", "other"]
+Verdict = Literal["supported", "unsupported", "contradicted"]
+
+
+class ExtractedClaim(BaseModel):
+    claim: str
+    type: ClaimType
+
+
+class ClaimList(BaseModel):
+    claims: list[ExtractedClaim] = Field(default_factory=list)
+
+
+class ClaimVerdict(BaseModel):
+    claim: str
+    verdict: Verdict
+    evidence: Optional[str] = None     # evidence path or quote that supports/contradicts it
+    reason: str = ""
+
+
+class VerdictList(BaseModel):
+    verdicts: list[ClaimVerdict] = Field(default_factory=list)
+
+
+class CriticResult(BaseModel):
+    passed: bool
+    claims: list[dict] = Field(default_factory=list)     # claim, type, verdict, evidence, reason, source
+    violations: list[str] = Field(default_factory=list)
+    rewrites: int = 0
+    needs_human: bool = False
