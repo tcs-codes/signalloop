@@ -44,6 +44,16 @@ class Settings(BaseSettings):
     CONTACTS_TOP_N: int = 30
     CONTACTS_PER_ACCOUNT: int = 2
 
+    # WATCH (F12)
+    WATCH_FUNDING_DAYS: int = 90
+    WATCH_GROWTH_MIN_PCT: float = 15.0
+    WATCH_JOB_DAYS: int = 30
+    WATCH_LEADER_DAYS: int = 90
+    WATCH_DISCOVERY_LIMIT: int = 25    # new accounts per scan from the tuned ICP + recency (0 = off)
+    WATCH_JOB_LIMIT: int = 100
+    # Demo determinism: scans run "as of" this date when DEMO_MODE is on (YYYY-MM-DD, empty = today)
+    DEMO_AS_OF: str = "2026-11-22"
+
     # Scoring weights (F14)
     PRIORITY_FIT_WEIGHT: float = 0.6
     PRIORITY_TIMING_WEIGHT: float = 0.4

@@ -1,0 +1,29 @@
+{
+  "note": "Demo day 2. Real funding events from the recorded Crustdata data (2026-11-22). The baseline scan holds them back; Run daily scan now releases them. Nothing here is invented.",
+  "release": [
+    {
+      "domain": "withpulley.com",
+      "type": "funding",
+      "name": "Pulley",
+      "round": "series_b",
+      "date": "2026-11-18",
+      "amount_usd": 41000000.0
+    },
+    {
+      "domain": "simplismart.ai",
+      "type": "funding",
+      "name": "Simplismart",
+      "round": "series_b",
+      "date": "2026-10-27",
+      "amount_usd": 14000000.0
+    },
+    {
+      "domain": "infisical.com",
+      "type": "funding",
+      "name": "Infisical",
+      "round": "series_b",
+      "date": "2026-10-27",
+      "amount_usd": 40000000.0
+    }
+  ]
+}

@@ -36,6 +36,13 @@ def person(pid: int, name: str, title: str, seniority: str, domain: str,
     return p
 
 
+def job(domain: str, title: str, date_added: str, jid: int) -> dict:
+    return {"crustdata_job_id": jid,
+            "job_details": {"title": title, "url": f"https://jobs.example/{jid}"},
+            "company": {"basic_info": {"primary_domain": domain}},
+            "metadata": {"date_added": f"{date_added}T00:00:00"}}
+
+
 class FakeCrustdata:
     def __init__(self):
         self.companies: dict[str, dict] = {}            # domain -> company_data
@@ -84,7 +91,8 @@ class FakeCrustdata:
     def job_search(self, filters: dict, limit: int = 50, cursor=None, fields=None, sorts=None) -> dict:
         self.calls.append(("job_search", {"filters": filters, "limit": limit}))
         domain = _find_value(filters, "company.basic_info.primary_domain")
-        jobs = self.jobs.get(domain, [])[:limit]
+        domains = domain if isinstance(domain, list) else [domain]
+        jobs = [j for d in domains for j in self.jobs.get(d, [])][:limit]
         return {"job_listings": jobs, "next_cursor": None, "total_count": len(jobs)}
 
     def autocomplete(self, dataset: str, field: str, query: str, limit: int = 20) -> list[str]:
