@@ -96,6 +96,34 @@ class LinkedInDraft(BaseModel):
     missing: list[str] = Field(default_factory=list)
 
 
+# ---------------------------------------------------------------- F26 insights
+class InsightNarrative(BaseModel):
+    headline: str
+    positives: list[str] = Field(default_factory=list)   # top segments that over-perform
+    negatives: list[str] = Field(default_factory=list)   # segments that under-perform
+    narrative: str = ""
+    missing: list[str] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------- F28 ICP diff
+class IcpChange(BaseModel):
+    op: Literal["narrow", "widen", "add", "remove"]
+    scope: Literal["company", "person"] = "company"
+    field: str
+    from_: Any = Field(default=None, alias="from")
+    to: list[FilterCond] = Field(default_factory=list)   # replacement conditions for `field`
+    evidence_insight_ids: list[int] = Field(default_factory=list)
+    reason: str
+
+    model_config = {"populate_by_name": True}
+
+
+class IcpDiff(BaseModel):
+    changes: list[IcpChange]
+    expected_effect: str = ""
+    missing: list[str] = Field(default_factory=list)
+
+
 # ---------------------------------------------------------------- F17 critic
 ClaimType = Literal["prospect_fact", "product_claim", "other"]
 Verdict = Literal["supported", "unsupported", "contradicted"]
