@@ -22,7 +22,7 @@ copy .env.example .env   # then fill in ANTHROPIC_API_KEY and CRUSTDATA_API_KEY
 | `mock` (default) | `api_cache`, else `fixtures/crustdata/*.json`; no network | replay cache `fixtures/llm/` (identical prompt → recorded output), otherwise live and recorded | development, demos |
 | `live` | real API calls, responses written to `api_cache` | live (`LLM_REPLAY=record` also saves them) | recording fixtures |
 
-Tests always run in mock mode with network access blocked and a `FakeLLM`.
+Tests always run in mock mode.
 
 
 1. **Setup:** the 5 seed domains (Series A software companies found with a live Crustdata
