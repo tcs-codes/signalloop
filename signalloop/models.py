@@ -173,9 +173,10 @@ class Brief(SQLModel, table=True):
 class Campaign(SQLModel, table=True):
     __tablename__ = "campaign"
     id: Optional[int] = Field(default=None, primary_key=True)
-    name: str
+    name: str = Field(index=True)
     source: CampaignSource = CampaignSource.csv
     imported_at: datetime = Field(default_factory=utcnow)
+    analysis_json: dict[str, Any] = _json()   # F25/F26: frame path, baseline, narrative
 
 
 class Approval(SQLModel, table=True):
