@@ -16,6 +16,7 @@ def _isolated_env(tmp_path, monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "")
     monkeypatch.setenv("CRUSTDATA_API_KEY", "")
     monkeypatch.setenv("OUTREACH_PARALLELISM", "1")   # FakeLLM response lists are order-dependent
+    monkeypatch.setenv("EXPORTS_DIR", str(tmp_path / "exports"))
     config.reset_settings()
     db.set_engine(None)
     db.init_db()

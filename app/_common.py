@@ -24,6 +24,16 @@ def setup(title: str) -> None:
     st.caption(f"Mode: **{s.SIGNALLOOP_MODE}** · credit budget per run: {s.CREDIT_BUDGET_PER_RUN:g}")
 
 
+def link(page: str, label: str) -> None:
+    """st.page_link, falling back to plain text when the page isn't registered
+    (e.g. a page script run on its own instead of via Home.py)."""
+    try:
+        st.page_link(page, label=label)
+    except Exception:
+        name = Path(page).stem.split("_", 1)[-1].replace("_", " ")
+        st.markdown(f"{label} (open **{name}** in the sidebar)")
+
+
 @contextmanager
 def guarded(action: str):
     """Show errors in the page instead of crashing it."""

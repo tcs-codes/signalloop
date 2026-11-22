@@ -30,6 +30,10 @@ class Settings(BaseSettings):
     LLM_EFFORT_STRONG: str = ""
     LLM_EFFORT_FAST: str = "low"
     OUTREACH_PARALLELISM: int = 4
+    # USD per 1M tokens (input, output) for the cost estimate on the Credits page
+    LLM_PRICES: dict[str, tuple[float, float]] = {
+        "claude-sonnet-5-5": (2.0, 10.0), "claude-haiku-5-5": (0.10, 0.50),
+        "claude-opus-5-5": (4.0, 20.0)}
 
     CREDIT_BUDGET_PER_RUN: float = 500
     DB_PATH: str = "data/signalloop.db"
@@ -75,6 +79,7 @@ class Settings(BaseSettings):
     DEMO_MODE: bool = True
 
     fixtures_dir: Path = Field(default=PROJECT_ROOT / "fixtures")
+    exports_dir: Path = Field(default=PROJECT_ROOT / "exports")
 
     @property
     def db_path(self) -> Path:

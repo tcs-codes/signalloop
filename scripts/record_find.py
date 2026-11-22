@@ -76,8 +76,13 @@ def main() -> int:
             print(f"  {a.fit_score:.2f} {a.domain:28} {a.similarity_reason}")
         report(r)
     elif step == "contacts":
-        with meter.run("find.contacts") as r:
-            found = contacts.find_contacts()
+        ids = None
+        if len(sys.argv) > 2 and sys.argv[2] == "all":   # staff every account that has no contacts yet
+            staffed = {c.account_id for c in contacts.list_contacts()}
+            ids = [a.id for a in lookalike.list_accounts() if a.id not in staffed]
+            print(f"  staffing {len(ids)} unstaffed accounts")
+        with meter.run("find.contacts", budget=400) as r:
+            found = contacts.find_contacts(account_ids=ids)
         n = sum(len(v) for v in found.values())
         print(f"  {n} contacts across {sum(1 for v in found.values() if v)}/{len(found)} accounts")
         for c in contacts.list_contacts()[:10]:

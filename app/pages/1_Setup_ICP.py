@@ -42,7 +42,7 @@ if seed_rows:
     st.dataframe(pd.DataFrame([{**{"domain": a.domain, "name": a.name},
                                 **{k: a.firmographics_json.get("normalized", {}).get(k) for k in
                                    ("industry", "headcount", "funding_stage", "last_funding_date", "hq_country")}}
-                               for a in seed_rows]), use_container_width=True, hide_index=True)
+                               for a in seed_rows]), width="stretch", hide_index=True)
 
 # ---------------------------------------------------------------- 2. traits
 st.header("2 · Shared traits")
@@ -57,7 +57,7 @@ if traits_data:
     t = Traits.model_validate(traits_data)
     st.dataframe(pd.DataFrame([{"dimension": tr.dimension, "values": ", ".join(tr.values),
                                 "coverage": f"{tr.coverage:.0%}", "explanation": tr.explanation}
-                               for tr in t.traits]), use_container_width=True, hide_index=True)
+                               for tr in t.traits]), width="stretch", hide_index=True)
     st.caption("Persona hypothesis: " + ", ".join(t.persona_hypothesis.titles) +
                " · seniority: " + ", ".join(t.persona_hypothesis.seniority))
 
@@ -82,7 +82,7 @@ if versions:
     row = icp_svc.get_icp(labels[choice])
     c1, c2 = st.columns([3, 1])
     with c1:
-        st.dataframe(pd.DataFrame(icp_svc.describe_filters(row)), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(icp_svc.describe_filters(row)), width="stretch", hide_index=True)
         st.write(row.rationale)
     with c2:
         st.metric("Matching companies", row.filters_json.get("preview_count") or "n/a")

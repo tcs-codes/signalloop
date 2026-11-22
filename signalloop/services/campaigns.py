@@ -17,7 +17,7 @@ from typing import IO, Any
 import pandas as pd
 from sqlmodel import select
 
-from signalloop.config import PROJECT_ROOT
+from signalloop.config import get_settings
 from signalloop.db import session_scope
 from signalloop.models import (
     Account, Campaign, CampaignSource, Contact, Outcome, OutcomeEvent, Signal, Touch,
@@ -214,7 +214,7 @@ def enrich_campaign(campaign_id: int, out_dir: Path | None = None) -> pd.DataFra
                     o.account_id = a.id
 
     df = build_frame(campaign_id)
-    out_dir = out_dir or PROJECT_ROOT / "data"
+    out_dir = out_dir or get_settings().db_path.parent   # next to the DB it belongs to
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"campaign_{campaign_id}.parquet"
     df.to_parquet(path, index=False)

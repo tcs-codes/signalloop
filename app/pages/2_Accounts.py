@@ -52,7 +52,7 @@ if accounts:
         "priority": round(a.priority, 3), "status": a.status.value,
         "similarity reason": a.similarity_reason, "icp": a.icp_version_id,
     } for a in accounts])
-    st.dataframe(df, use_container_width=True, hide_index=True,
+    st.dataframe(df, width="stretch", hide_index=True,
                  column_config={"fit": st.column_config.ProgressColumn("fit", min_value=0, max_value=1)})
 else:
     st.caption("No accounts yet. Run the lookalike search.")
@@ -74,4 +74,4 @@ if people:
     st.dataframe(pd.DataFrame([{
         "account": by_acc.get(c.account_id, c.account_id), "name": c.name, "title": c.title,
         "seniority": c.seniority, "role": c.role.value, "profile": c.profile_url,
-    } for c in people if c.account_id in by_acc]), use_container_width=True, hide_index=True)
+    } for c in people if c.account_id in by_acc]), width="stretch", hide_index=True)
