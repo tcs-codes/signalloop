@@ -57,7 +57,12 @@ class Settings(BaseSettings):
     # Scoring weights (F14)
     PRIORITY_FIT_WEIGHT: float = 0.6
     PRIORITY_TIMING_WEIGHT: float = 0.4
-    TIMING_DECAY_DAYS: float = 14.0
+    TIMING_DECAY_DAYS: float = 14.0    # default decay constant (job posts)
+    # Per-type decay constants in days; 0 = no decay. Funding rounds are often announced weeks
+    # after closing and stay a valid trigger for ~2 months; headcount growth is a state, not an event.
+    TIMING_DECAY_BY_TYPE: dict[str, float] = {"funding": 45.0, "leader_change": 30.0,
+                                              "job_post": 14.0, "headcount_growth": 0.0}
+    GROWTH_MAX_STRENGTH: float = 0.5
 
     # ICP diff eligibility (F28)
     ICP_DIFF_MIN_N: int = 30

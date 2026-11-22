@@ -50,6 +50,20 @@ def test_timing_formula_and_breakdown():
         assert s.get(Account, a.id).priority == b.priority
 
 
+def test_decay_is_per_signal_type():
+    from signalloop.services import watch
+    assert watch.decay(26, "funding") > 0.5 > watch.decay(26, "job_post")
+    assert watch.decay(400, "headcount_growth") == 1.0      # a state, not an event
+    assert watch.detect_growth({"headcount_growth_6m_pct": 90}, TODAY, 15).strength == 0.5
+
+
+def test_fresh_funding_beats_growth_only():
+    funded, growing = _acc("funded.io", 1), _acc("growing.io", 2)
+    _sig(funded, "2026-11-18", strength=0.9)
+    _sig(growing, "2026-11-22", strength=0.5, t=SignalType.headcount_growth)
+    assert scoring.this_week(today=TODAY)[0].domain == "funded.io"
+
+
 def test_accounts_without_signals_not_in_this_week():
     _acc("none.io", 1)
     assert scoring.this_week(today=TODAY) == []

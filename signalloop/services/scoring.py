@@ -1,7 +1,11 @@
 """F14: fit x timing scoring (deterministic, no LLM).
 
-    timing   = 1 - prod(1 - strength_i * decay_i),   decay_i = exp(-days_since_event_i / 14)
+    timing   = 1 - prod(1 - strength_i * decay_i),   decay_i = exp(-days_since_event_i / tau_type)
     priority = PRIORITY_FIT_WEIGHT * fit + PRIORITY_TIMING_WEIGHT * timing
+
+The plan uses one tau of 14 days. Simulating on the recorded data showed that this makes a
+26-day-old $40M round nearly worthless while undecayed headcount growth saturated timing for
+most accounts, so tau is per signal type (TIMING_DECAY_BY_TYPE) and growth strength is capped.
 """
 from __future__ import annotations
 
@@ -39,7 +43,7 @@ def timing_score(signals: list[Signal], today: date) -> tuple[float, list[dict]]
     detail = []
     for s in signals:
         days = watch.signal_age_days(s, today)
-        d = watch.decay(days)
+        d = watch.decay(days, s.type.value)
         contribution = max(0.0, min(1.0, s.strength * d))
         remaining *= 1 - contribution
         detail.append({"signal_id": s.id, "type": s.type.value, "strength": s.strength,

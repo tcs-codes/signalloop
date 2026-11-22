@@ -91,7 +91,8 @@ def detect_growth(norm: dict, today: date, min_pct: float) -> Detected | None:
     g = norm.get("headcount_growth_6m_pct")
     if g is None or g < min_pct:
         return None
-    return Detected(SignalType.headcount_growth, round(min(1.0, g / 50), 3), {
+    cap = get_settings().GROWTH_MAX_STRENGTH  # growth is a state: never as strong as an event
+    return Detected(SignalType.headcount_growth, round(min(cap, g / 100), 3), {
         "growth_6m_pct": round(g, 1), "headcount": norm.get("headcount"),
         "event_date": today.isoformat(), "days_ago": 0,
         "evidence": ["company.headcount.growth_percent", "company.headcount.total"],
@@ -261,5 +262,7 @@ def signal_age_days(sig: Signal, today: date | None = None) -> float:
     return float(max(d, 0))
 
 
-def decay(days: float) -> float:
-    return math.exp(-days / get_settings().TIMING_DECAY_DAYS)
+def decay(days: float, signal_type: str | None = None) -> float:
+    cfg = get_settings()
+    tau = cfg.TIMING_DECAY_BY_TYPE.get(signal_type or "", cfg.TIMING_DECAY_DAYS)
+    return 1.0 if tau <= 0 else math.exp(-days / tau)
