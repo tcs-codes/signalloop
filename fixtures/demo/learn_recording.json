@@ -1,0 +1,15 @@
+{
+  "note": "LEARN recorded live on 2026-11-22 (synthetic campaign outcomes, real accounts/contacts). LLM outputs live in fixtures/llm (segment_insights, propose_icp_diff, v2 tune_filters) and replay for identical prompts.",
+  "seed": 9,
+  "campaign_rows": 326,
+  "reply_rate": 0.113,
+  "top_insight": {"segment": "20-50 × VP+ × series_a", "lift": 3.62, "n": 39},
+  "directors": {"lift": 0.24, "n": 74},
+  "headline": "VP+ at Series A companies with 20-50 staff replied at 3.6x baseline (n=39)",
+  "icp_diff": {
+    "headcount.total": "=> 20; =< 200  ->  => 20; =< 50",
+    "funding.last_round_type": "[seed, series_a, series_b] -> [series_a]",
+    "experience.employment_details.current.seniority_level": "[CXO, Owner / Partner, Vice President, Director] -> [CXO, Owner / Partner, Vice President]"
+  },
+  "v2_lookalike": {"count": 149, "converged": true, "fetched": 149, "upserted": 146}
+}

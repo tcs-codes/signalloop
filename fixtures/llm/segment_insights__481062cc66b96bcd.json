@@ -1,0 +1,8 @@
+{
+  "prompt_name": "segment_insights",
+  "model": "claude-sonnet-5-5",
+  "key": "481062cc66b96bcd7a1f2a7b034d1927c030881f7bc4214b07e87349c41f00e0",
+  "text": "{\"headline\":\"VP+ at Series A companies with 20-50 staff replied at 3.6x baseline (n=39)\",\"positives\":[\"20-50 headcount \u00d7 VP+ \u00d7 Series A: 41.0% reply rate (16 replies, n=39), 3.6x lift vs the 11.3% baseline.\",\"20-50 headcount \u00d7 Series A: 27.0% reply rate (17 replies, n=63), 2.4x lift.\",\"20-50 headcount \u00d7 VP+: 23.5% reply rate (19 replies, n=81), 2.1x lift.\"],\"negatives\":[\"51-200 headcount \u00d7 Director: 2.3% reply rate (1 reply, n=44), 0.2x lift.\",\"Directors overall: 2.7% reply rate (2 replies, n=74), 0.2x lift.\"],\"narrative\":\"Focus the next campaign on VP+ contacts at Series A companies with 20-50 staff, which replied at 3.6x baseline (n=39); the broader 20-50 \u00d7 Series A (n=63) and 20-50 \u00d7 VP+ (n=81) segments also beat the 11.3% baseline. Deprioritize Director-level contacts, especially at 51-200 headcount companies (n=44), where there was only 1 reply. The results do not explain why these segments responded differently, so treat them as targeting signals to test further.\",\"missing\":[\"No information on causes of the response differences (e.g., messaging, timing, or channel).\",\"No results for segments outside those listed, so other segments' performance is unknown.\"]}",
+  "input_tokens": 953,
+  "output_tokens": 492
+}

@@ -61,7 +61,8 @@ def exists(doc: Any, path: str) -> bool:
 
 
 # ---------------------------------------------------------------- numbers
-_NUM = re.compile(r"(?<![\w.])\$?\s?(\d+(?:[.,]\d+)*)\s?(k|m|mm|bn|b|million|billion|thousand|%)?(?![\w])", re.I)
+# "x"/"×" (lift multipliers) are units too: without them "0.2x" backtracked to match just "0".
+_NUM = re.compile(r"(?<![\w.])\$?\s?(\d+(?:[.,]\d+)*)\s?(k|m|mm|bn|b|million|billion|thousand|%|x|×)?(?![\w])", re.I)
 _MULT = {"k": 1e3, "thousand": 1e3, "m": 1e6, "mm": 1e6, "million": 1e6, "b": 1e9, "bn": 1e9, "billion": 1e9}
 
 

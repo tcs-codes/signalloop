@@ -39,6 +39,11 @@ class AnalysisResult:
         rows = [i for i in self.insights if (i.lift > 1 if positive else i.lift < 1)]
         return sorted(rows, key=lambda i: i.lift, reverse=positive)[:k]
 
+    def highlights(self, k: int, positive: bool) -> list[Insight]:
+        """Segments for the narrative: reliable ones (n >= 30) first, then by lift."""
+        rows = [i for i in self.insights if (i.lift > 1 if positive else i.lift < 1)]
+        return sorted(rows, key=lambda i: (i.low_confidence, -i.lift if positive else i.lift))[:k]
+
 
 def load_frame(campaign_id: int) -> pd.DataFrame:
     with session_scope() as s:
@@ -121,7 +126,7 @@ def analyze(campaign_id: int, narrate: bool = True) -> AnalysisResult:
     res = AnalysisResult(campaign_id, baseline, len(df), rows)
 
     if narrate and rows:
-        pos, neg = res.top(3, True), res.top(2, False)
+        pos, neg = res.highlights(3, True), res.highlights(2, False)
         pool = [baseline, baseline * 100, len(df)]
         for i in pos + neg:
             pool += [i.n, i.responders, i.rate, i.rate * 100, i.lift, round(i.lift, 1), round(i.rate * 100, 1)]

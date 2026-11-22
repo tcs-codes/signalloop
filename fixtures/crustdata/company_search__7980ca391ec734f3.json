@@ -1,0 +1,54 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "taxonomy.professional_network_industry",
+          "type": "=",
+          "value": "Software Development"
+        },
+        {
+          "field": "locations.country",
+          "type": "in",
+          "value": [
+            "USA",
+            "IND"
+          ]
+        },
+        {
+          "field": "headcount.total",
+          "type": "=>",
+          "value": 20
+        },
+        {
+          "field": "headcount.total",
+          "type": "=<",
+          "value": 50
+        },
+        {
+          "field": "funding.last_round_type",
+          "type": "in",
+          "value": [
+            "series_a"
+          ]
+        }
+      ]
+    },
+    "limit": 1,
+    "fields": [
+      "crustdata_company_id"
+    ]
+  },
+  "endpoint": "/company/search",
+  "credits": 0.53,
+  "response": {
+    "companies": [
+      {
+        "crustdata_company_id": 6585
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIOw7CMAwA0KtEnjs4Hydxr4JQ5XysDoiINh0Q4u6I9X3gdfXjve1y7rAa4BBqtsrIgtRtUUEv7BE5ddHmYg6p-lYpJg3YuNgYxJWenNfiSoLFwDmOCau5Rcp0XwzMMeWx1XE9_0xM318AAAD__2IMq1p2AAAA",
+    "total_count": 595
+  }
+}

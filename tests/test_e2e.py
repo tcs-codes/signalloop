@@ -105,16 +105,14 @@ def _learn_fixtures_ready() -> str | None:
 def test_e2e_full_loop(replay, tmp_path, monkeypatch):
     learn = json.loads(LEARN_REC.read_text(encoding="utf-8"))
     monkeypatch.setattr(demo_campaign, "DEFAULT_CSV", tmp_path / "campaign.csv")
-    state = steps_1_and_2()
-    # staff every account as the recording did, so the campaign covers the same contacts
-    staffed = {c.account_id for c in contacts.list_contacts()}
-    contacts.find_contacts(account_ids=[a.id for a in lookalike.list_accounts() if a.id not in staffed])
+    state = steps_1_and_2()   # run_learn(generate=True) staffs the remaining accounts from fixtures
 
-    # 3. LEARN
-    replay.responses["segment_insights"] = learn["segment_insights"]
+    # 3. LEARN (no canned LEARN responses: a replay miss would fail, proving the prompts match)
     res = orchestrator.run_learn(generate=True, seed=learn["seed"])
     assert res.ok, res.error
+    assert res.data["rows"] == learn["campaign_rows"]
     assert set(res.data["top_insight"].split(" = ")[1].split(" (")[0].split(" × ")) == {"series_a", "20-50", "VP+"}
+    assert res.data["headline"] == learn["headline"]
 
     # 4. ICP diff -> v2 -> lookalike re-run
     appr_id = res.data["icp_diff_approval_id"]
@@ -123,4 +121,5 @@ def test_e2e_full_loop(replay, tmp_path, monkeypatch):
     assert done.ok, done.error
     assert icp_svc.latest_approved().version == 2
     assert icp_svc.get_icp(state["v1"].id).status == IcpStatus.superseded
+    assert done.data["count"] == learn["v2_lookalike"]["count"]
     assert done.data["top10"] != state["top10_v1"]

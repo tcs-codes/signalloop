@@ -98,6 +98,16 @@ def test_tiny_segment_cannot_pick_the_combined_dimensions():
     assert "hq_country" not in ranked and set(ranked) >= {"seniority", "funding_stage", "headcount_band"}
 
 
+def test_narrative_prefers_reliable_negatives(campaign, fake_llm):
+    c, df = campaign
+    fake_llm.responses["segment_insights"] = good_narrative
+    res = analysis.analyze(c.id)
+    neg = res.highlights(2, positive=False)
+    reliable = [i for i in res.insights if i.lift < 1 and not i.low_confidence]
+    if reliable:
+        assert not neg[0].low_confidence
+
+
 def test_lift_math():
     df = pd.DataFrame({"responded": [True, False, False, False] * 10,
                        "seniority": ["VP+", "VP+", "Director", "Director"] * 10})

@@ -70,6 +70,11 @@ def test_product_quotes_ignore_markdown():
     assert evidence.norm_text("Sales hiring: onboarding AEs into a pipeline process") in evidence.norm_text(text)
 
 
+def test_numbers_in_handles_lift_multipliers():
+    assert evidence.numbers_in("replied at 3.6x baseline (n=39); Directors 0.2× (n=74)") == [3.6, 39, 0.2, 74]
+    assert evidence.numbers_in("$41M Series B, 15% growth, 2,400 staff") == [41e6, 15, 2400]
+
+
 def test_resolve_and_value_matching():
     doc = {"company": {"funding": {"last_round_amount_usd": 41e6}}, "signals": [{"payload": {"days_ago": 4}}]}
     assert evidence.resolve(doc, "signals[0].payload.days_ago") == 4
