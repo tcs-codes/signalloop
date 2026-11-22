@@ -26,7 +26,8 @@ class Traits(BaseModel):
 
 
 # ---------------------------------------------------------------- F1 ICP
-FilterOp = Literal["=", "!=", "in", "not_in", ">", "<", "=>", "=<", "between", "(.)", "[.]"]
+# ">=" / "<=" are accepted here and rewritten to Crustdata's "=>" / "=<" by the validator.
+FilterOp = Literal["=", "!=", "in", "not_in", ">", "<", "=>", "=<", ">=", "<=", "between", "(.)", "[.]"]
 
 
 class FilterCond(BaseModel):
