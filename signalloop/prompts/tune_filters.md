@@ -19,10 +19,15 @@ Direction needed: **{{direction}}**.
 
 ## Task
 
+Filters **{{locked}}** are the ICP the user approved.
+
 Propose exactly ONE change that moves the count toward the target range:
-- To loosen: remove the most restrictive filter, widen a numeric bound, or add values to an `in` list.
-- To tighten: add one filter (for example 6-month headcount growth `=>` 10, a recent
-  `funding.last_fundraise_date`), narrow a numeric bound, or remove values from an `in` list.
+- To loosen: remove or widen the most restrictive filter, or add values to an `in` list.
+- To tighten: NEVER change, remove or override the approved filters ({{locked}}), and do not
+  add a filter on a field they already use. Instead add one new filter on another field, for
+  example 6-month headcount growth `=>` 10, a recent `funding.last_fundraise_date`, or a
+  minimum `funding.last_round_amount_usd`. You may also tighten a filter you added earlier
+  (an index after the approved ones).
 
 Return:
 - `direction`: "{{direction}}"

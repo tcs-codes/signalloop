@@ -73,6 +73,37 @@ def test_too_many_tightens_and_converges(fake, fake_llm):
     assert fake_llm.calls[0]["variables"]["direction"] == "tighten"
 
 
+def test_tightening_cannot_change_approved_filters(fake, fake_llm):
+    fake.search_count = lambda flt: 150 if _has(flt, "headcount.growth_percent.6m") else 3000
+    fake_llm.responses["tune_filters"] = [
+        # 1st try: raise the approved headcount floor -> rejected by the guard
+        {"direction": "tighten", "action": "replace", "index": 1,
+         "condition": {"field": "headcount.total", "type": "=>", "value": 50}, "reason": "bigger"},
+        # retry: add growth instead -> accepted
+        {"direction": "tighten", "action": "add",
+         "condition": {"field": "headcount.growth_percent.6m", "type": "=>", "value": 10}, "reason": "growth"},
+    ]
+    row = _approved_icp()
+    res = lookalike.run_lookalike(row.id)
+    assert res.converged and res.count == 150
+    assert "locked" in fake_llm.calls[1]["messages"][-1]["content"]
+    tuned = icp_svc.get_icp(row.id).filters_json["tuned"]["spec"]["company_filters"]
+    assert {"field": "headcount.total", "type": "=>", "value": 20} in tuned
+
+
+def test_tightening_cannot_add_filter_on_locked_field():
+    spec = ICP(company_filters=[FilterCond(field="headcount.total", type="=<", value=200)])
+    guard = lookalike._patch_guard(spec, locked=1, direction="tighten")
+    from signalloop.schemas import FilterPatch
+    with pytest.raises(ValueError, match="already set"):
+        guard(FilterPatch(direction="tighten", action="add", reason="x",
+                          condition=FilterCond(field="headcount.total", type="=<", value=100)))
+    # loosening may widen an approved filter
+    lookalike._patch_guard(spec, 1, "loosen")(FilterPatch(
+        direction="loosen", action="replace", index=0, reason="x",
+        condition=FilterCond(field="headcount.total", type="=<", value=500)))
+
+
 def test_stops_after_max_iters(fake, fake_llm):
     fake.search_count = lambda flt: 5000
     fake_llm.responses["tune_filters"] = {

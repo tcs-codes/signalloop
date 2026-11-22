@@ -163,9 +163,33 @@ class LookalikeResult:
     skipped_suppressed: int = 0
 
 
+def _patch_guard(spec: ICP, locked: int, direction: str):
+    """Approved ICP filters (indices < locked) may be widened when loosening, but never
+    removed, replaced or overridden when tightening: tightening only adds filters on
+    fields the ICP does not constrain, or edits filters the tuner itself added."""
+    locked_fields = {c.field for c in spec.company_filters[:locked]}
+
+    def check(p: FilterPatch) -> None:
+        if p.direction != direction:
+            raise ValueError(f"direction must be '{direction}'")
+        if direction == "tighten":
+            if p.action in ("remove", "replace") and (p.index is None or p.index < locked):
+                raise ValueError(f"filters 0..{locked - 1} are the approved ICP and are locked "
+                                 "when tightening; add a new filter instead")
+            if p.condition is not None and p.condition.field in locked_fields:
+                raise ValueError(f"'{p.condition.field}' is already set by the approved ICP; "
+                                 "tighten with a different field (growth, funding date, round size)")
+        if p.action in ("remove", "replace") and (p.index is None or
+                                                  not 0 <= p.index < len(spec.company_filters)):
+            raise ValueError(f"index must be between 0 and {len(spec.company_filters) - 1}")
+
+    return check
+
+
 def tune(spec: ICP, target_min: int, target_max: int, max_iters: int) -> tuple[ICP, int | None, bool, list[dict]]:
     log: list[dict] = []
     count: int | None = None
+    locked = len(spec.company_filters)
     for i in range(max_iters):
         flt = icp_svc.to_crustdata(spec.company_filters)
         count = _count(flt)
@@ -185,8 +209,10 @@ def tune(spec: ICP, target_min: int, target_max: int, max_iters: int) -> tuple[I
                                       for j, c in enumerate(spec.company_filters)),
                  "count": count, "target_min": target_min, "target_max": target_max,
                  "direction": direction, "history": history or "(none)",
+                 "locked": f"0..{locked - 1}" if locked else "(none)",
                  "field_guide": icp_svc.field_guide()},
-                FilterPatch, model=get_settings().MODEL_FAST, agent="lookalike_builder")
+                FilterPatch, model=get_settings().MODEL_FAST, agent="lookalike_builder",
+                validator=_patch_guard(spec, locked, direction))
             spec, warnings = apply_patch(spec, patch)
             entry["patch"] = patch.model_dump()
             entry["warnings"] = warnings
