@@ -46,8 +46,10 @@ PATHS: dict[str, str] = {
 }
 AUTOCOMPLETE_DATASETS = {"company", "person", "job"}
 
+# `hiring` is left out: hiring.recent_openings is disabled on this account, and
+# job-post signals come from /job/search instead.
 DEFAULT_COMPANY_ENRICH_FIELDS = [
-    "basic_info", "headcount", "funding", "locations", "taxonomy", "hiring", "people",
+    "basic_info", "headcount", "funding", "locations", "taxonomy", "people",
 ]
 DEFAULT_COMPANY_SEARCH_FIELDS = [
     "crustdata_company_id", "basic_info", "headcount", "funding", "locations", "taxonomy",

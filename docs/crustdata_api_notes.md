@@ -112,6 +112,18 @@ Self-serve tiers set per-endpoint RPM for search/enrich/identify: Starter (no sp
 `/account/credits`: 300 RPM. The client retries 429 and 5xx with exponential
 backoff and jitter, honouring `Retry-After` when present.
 
+## Account check (`/account/endpoints`, 2026-11-22)
+
+- All endpoints SignalLoop uses are `enabled`, including `/person/identify`.
+- Rate limit **5 RPM** on search/enrich/identify (Starter tier), 300 RPM on autocomplete,
+  100 RPM overall. `CRUSTDATA_RPM=5` matches.
+- Prices match the list prices above.
+- Disabled fields that matter: `hiring.recent_openings` (company enrich), `maps`,
+  `technographics`, `social_posts`, `social_profiles.crunchbase`; `headcount` and
+  `locations` on `/company/identify` (identify returns `basic_info` only anyway);
+  person `assessment`, `certifications`, `recently_changed_jobs`,
+  `years_of_experience`. SignalLoop requests none of these.
+
 ## Differences from the build plan's assumptions
 
 1. **`/person/enrich` does not accept emails.** Emails go to `/person/identify`, which
