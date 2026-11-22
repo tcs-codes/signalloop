@@ -1,0 +1,47 @@
+{
+  "request": null,
+  "credits": 1.0,
+  "note": "default mock fixture (shapes from docs.crustdata.com examples)",
+  "response": [
+    {
+      "matched_on": "abhilash@crustdata.com",
+      "match_type": "email",
+      "match_status": "matched",
+      "matches": [
+        {
+          "confidence_score": 1.0,
+          "person_data": {
+            "crustdata_person_id": 1068035,
+            "basic_profile": {
+              "name": "Abhilash Chowdhary",
+              "headline": "Co-founder at Crustdata",
+              "current_title": "Co-Founder & CEO",
+              "location": {
+                "city": "San Francisco",
+                "country": "United States of America"
+              }
+            },
+            "social_handles": {
+              "professional_network_identifier": {
+                "profile_url": "https://www.linkedin.com/in/abhilashchowdhary"
+              }
+            },
+            "experience": {
+              "employment_details": {
+                "current": [
+                  {
+                    "name": "Crustdata",
+                    "title": "Co-Founder & CEO",
+                    "seniority_level": "CXO",
+                    "function_category": "Entrepreneurship",
+                    "company_website_domain": "crustdata.com"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

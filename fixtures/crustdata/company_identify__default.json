@@ -1,0 +1,27 @@
+{
+  "request": null,
+  "credits": 0.2,
+  "note": "default mock fixture (shapes from docs.crustdata.com examples)",
+  "response": [
+    {
+      "matched_on": "retool.com",
+      "match_type": "domain",
+      "matches": [
+        {
+          "confidence_score": 1.0,
+          "company_data": {
+            "crustdata_company_id": 633593,
+            "basic_info": {
+              "name": "Retool",
+              "primary_domain": "retool.com",
+              "year_founded": 2017,
+              "employee_count_range": "201-500",
+              "website": "https://retool.com",
+              "professional_network_url": "https://www.linkedin.com/company/tryretool"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

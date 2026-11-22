@@ -1,0 +1,28 @@
+{
+  "request": null,
+  "credits": 0.03,
+  "note": "default mock fixture (shapes from docs.crustdata.com examples)",
+  "response": {
+    "job_listings": [
+      {
+        "crustdata_job_id": 41053563,
+        "job_details": {
+          "title": "Account Executive",
+          "category": "Sales",
+          "url": "https://www.linkedin.com/jobs/view/1"
+        },
+        "company": {
+          "basic_info": {
+            "name": "Retool",
+            "primary_domain": "retool.com"
+          }
+        },
+        "metadata": {
+          "date_added": "2026-11-10T00:00:00"
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 1
+  }
+}

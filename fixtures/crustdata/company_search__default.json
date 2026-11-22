@@ -1,0 +1,49 @@
+{
+  "request": null,
+  "credits": 1.03,
+  "note": "default mock fixture (shapes from docs.crustdata.com examples)",
+  "response": {
+    "companies": [
+      {
+        "crustdata_company_id": 633593,
+        "basic_info": {
+          "name": "Retool",
+          "primary_domain": "retool.com",
+          "year_founded": 2017,
+          "employee_count_range": "201-500",
+          "website": "https://retool.com",
+          "professional_network_url": "https://www.linkedin.com/company/tryretool"
+        },
+        "headcount": {
+          "total": 416,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "mom": 0.0,
+            "qoq": -3.48,
+            "six_months": -7.76,
+            "yoy": -10.54,
+            "two_years": 11.83
+          }
+        },
+        "funding": {
+          "total_investment_usd": 141000000.0,
+          "last_round_type": "series_c",
+          "last_fundraise_date": "2022-07-27",
+          "last_round_amount_usd": 45000000.0,
+          "investors": [
+            "Sequoia Capital"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States"
+        },
+        "taxonomy": {
+          "professional_network_industry": "Software Development"
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 1
+  }
+}

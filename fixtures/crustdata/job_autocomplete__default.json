@@ -1,0 +1,15 @@
+{
+  "request": null,
+  "credits": 0.0,
+  "note": "default mock fixture (shapes from docs.crustdata.com examples)",
+  "response": {
+    "suggestions": [
+      {
+        "value": "Sales"
+      },
+      {
+        "value": "Engineering"
+      }
+    ]
+  }
+}

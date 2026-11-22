@@ -31,6 +31,9 @@ class Settings(BaseSettings):
 
     CRUSTDATA_BASE_URL: str = "https://api.crustdata.com"
     CRUSTDATA_API_VERSION: str = "2025-11-01"
+    # Client-side spacing per endpoint in live mode. Starter tier allows 5 RPM on
+    # search/enrich/identify; raise this if your tier is higher.
+    CRUSTDATA_RPM: float = 5
 
     # Scoring weights (F14)
     PRIORITY_FIT_WEIGHT: float = 0.6
