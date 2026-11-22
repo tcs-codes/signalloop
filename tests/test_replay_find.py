@@ -45,3 +45,21 @@ def test_find_flow_replays_from_fixtures(fake_llm):
     s = meter.summary(run.run_id)
     assert s["errors"] == 0
     assert s["credits"] > 150          # recorded live cost is replayed, not re-spent
+
+    # WATCH: baseline scan holds back the day-2 events, day 2 releases exactly 3 of them
+    from signalloop.services import outreach, scoring, watch
+    base = watch.daily_scan()
+    assert base.errors == [] and base.held_back == 3 and base.new_accounts > 0
+    assert {sig.type.value for sig in base.new_signals} >= {"funding", "headcount_growth", "job_post"}
+    day2 = watch.daily_scan(day2=True)
+    assert len(day2.new_signals) == 3
+    top = [b.domain for b in scoring.this_week(10)]
+    assert top[0] == "withpulley.com"
+    assert {"withpulley.com", "infisical.com", "simplismart.ai"} <= set(top)
+
+    # ENGAGE staffing for unstaffed in-market accounts replays from fixtures too
+    from signalloop.services import contacts as contacts_svc
+    pulley = next(b for b in scoring.this_week(10) if b.domain == "withpulley.com")
+    staffed = contacts_svc.find_contacts(account_ids=[pulley.account_id])[pulley.account_id]
+    assert {c.role.value for c in staffed} == {"champion", "economic_buyer"}
+    assert outreach  # imported for the demo path; drafting needs a real LLM

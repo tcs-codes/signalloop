@@ -1,0 +1,2284 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "taxonomy.professional_network_industry",
+          "type": "=",
+          "value": "Software Development"
+        },
+        {
+          "field": "headcount.total",
+          "type": "=>",
+          "value": 20
+        },
+        {
+          "field": "headcount.total",
+          "type": "=<",
+          "value": 200
+        },
+        {
+          "field": "funding.last_round_type",
+          "type": "in",
+          "value": [
+            "seed",
+            "series_a",
+            "series_b"
+          ]
+        },
+        {
+          "field": "locations.country",
+          "type": "in",
+          "value": [
+            "USA",
+            "IND"
+          ]
+        },
+        {
+          "field": "headcount.growth_percent.6m",
+          "type": "=>",
+          "value": 10
+        },
+        {
+          "field": "funding.last_round_amount_usd",
+          "type": "=>",
+          "value": 1000000
+        },
+        {
+          "field": "funding.last_fundraise_date",
+          "type": "=>",
+          "value": "2026-10-23"
+        }
+      ]
+    },
+    "limit": 25,
+    "fields": [
+      "crustdata_company_id",
+      "basic_info",
+      "headcount",
+      "funding",
+      "locations",
+      "taxonomy"
+    ],
+    "sorts": [
+      {
+        "field": "funding.last_fundraise_date",
+        "order": "desc"
+      }
+    ]
+  },
+  "endpoint": "/company/search",
+  "credits": 21.63,
+  "response": {
+    "companies": [
+      {
+        "crustdata_company_id": 691669,
+        "basic_info": {
+          "name": "Pulley",
+          "crustdata_company_id": 691669,
+          "primary_domain": "withpulley.com",
+          "all_domains": [
+            "withpulley.com"
+          ],
+          "website": "https://withpulley.com",
+          "professional_network_url": "https://www.linkedin.com/company/pulley-permitting",
+          "professional_network_id": "81892869",
+          "profile_name": "Pulley",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4c76c59f12ef9cd32a5637d92a346c0240217d4e596b11c171be2f8b59d1e78d.jpg",
+          "description": "Pulley is an end-to-end permitting solution powered by AI that helps commercial project teams break ground faster. AI agents trained on $15B in commercial project data work alongside a nationwide team of local permitting experts, who take every project from strategy through issuance, shortening timelines at every step. Roughly 90% of Pulley permits are approved within a single round of review\u2014so opening dates stop being a moving target. Pulley works with America\u2019s largest enterprises as the Fortune 500\u2019s #1 most trusted permitting partner.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2021,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 122,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 10.909090909090908,
+            "3m": 10.909090909090908,
+            "6m": 17.307692307692307,
+            "12m": 34.065934065934066
+          },
+          "growth_absolute": {
+            "1m": 12,
+            "3m": 12,
+            "6m": 18,
+            "12m": 31
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "hello@pulley.studio",
+          "phone_number": "",
+          "total_investment_usd": 68400000.0,
+          "last_round_amount_usd": 41000000.0,
+          "last_fundraise_date": "2026-11-18",
+          "last_round_type": "series_b",
+          "investors": [
+            "BoxGroup",
+            "CRV",
+            "Catalyst Investors",
+            "Chase Gilbert",
+            "Connor Theilmann",
+            "Derrick Li",
+            "Fifth Wall",
+            "Jean-Denis Greze",
+            "Jump Capital",
+            "Nat Friedman",
+            "Operator Partners",
+            "Overeasy Ventures",
+            "Ryan Petersen",
+            "South Park Commons",
+            "Suffolk Technologies",
+            "Susa Ventures",
+            "Tooey Courtemanch"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": [
+            ", New York, NY, US",
+            ", Austin, TX, US"
+          ]
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "Construction",
+            "Permitting",
+            "ConTech",
+            "Real Estate",
+            "Software Development",
+            "Permit Expediting"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Enterprise Software",
+            "Software",
+            "Enterprise Software & Network Solutions",
+            "Information Technology"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1992516,
+        "basic_info": {
+          "name": "each::labs",
+          "crustdata_company_id": 1992516,
+          "primary_domain": "eachlabs.ai",
+          "all_domains": [
+            "eachlabs.ai"
+          ],
+          "website": "https://eachlabs.ai/",
+          "professional_network_url": "https://www.linkedin.com/company/eachlabs",
+          "professional_network_id": "101532219",
+          "profile_name": "each::labs",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b0c3ce52cbf4306c00bcb92c3d52ab54a0ac61f83b578c16d92d5ae2e903a7aa.jpg",
+          "description": "Turn your AI models into secure, fast, and infinitely scalable inference endpoints.Connect them with other AI Models. With drag and drop.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2023,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 23,
+          "largest_headcount_country": "TUR",
+          "growth_percent": {
+            "1m": 9.523809523809524,
+            "3m": 27.77777777777778,
+            "6m": 35.294117647058826,
+            "12m": 35.294117647058826
+          },
+          "growth_absolute": {
+            "1m": 2,
+            "3m": 5,
+            "6m": 6,
+            "12m": 6
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "eftal@eachlabs.ai",
+          "phone_number": "",
+          "total_investment_usd": 8800000.0,
+          "last_round_amount_usd": 7000000.0,
+          "last_fundraise_date": "2026-11-18",
+          "last_round_type": "seed",
+          "investors": [
+            "Alper G\u00fcler",
+            "Andac Turkmen",
+            "Begim Ba\u015fl\u0131gil",
+            "Cihat \u0130mamo\u011flu",
+            "Dara Hizveren",
+            "ENA Venture Capital",
+            "European Bank for Reconstruction and Development",
+            "Galip Selcuk",
+            "Gertjan Ndoja",
+            "G\u00f6kben Demir",
+            "Korhan Er\u00e7in",
+            "Kristian Serani",
+            "Nevzat Ayd\u0131n",
+            "Or\u00e7un \u015eim\u015fek",
+            "Revo Capital",
+            "Right Side Capital Management",
+            "Serra K\u00fc\u00e7\u00fcko\u011flu",
+            "Silva Ndoja",
+            "Treeo VC"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Jose Ave, San Francisco, California",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Developer Tools",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "518210",
+            "sector": "Information",
+            "sub_sector": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+            "industry_group": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+            "industry": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7374",
+              "industry": "Data Processing and Preparation",
+              "year": 1987
+            },
+            {
+              "sic_code": "7379",
+              "industry": "Computer Related Services, Nec",
+              "year": 1987
+            },
+            {
+              "sic_code": "7389",
+              "industry": "Business Services, Nec",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 2395885,
+        "basic_info": {
+          "name": "Speakeasy",
+          "crustdata_company_id": 2395885,
+          "primary_domain": "speakeasygo.com",
+          "all_domains": [
+            "speakeasygo.com",
+            "spkeasy.com"
+          ],
+          "website": "http://spkeasy.com",
+          "professional_network_url": "https://www.linkedin.com/company/speakeasy-go",
+          "professional_network_id": "98047827",
+          "profile_name": "Speakeasy",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/67970cfbaa928c0612ba7f6de92049073bf4d6e718ba40c7c1d2d14960ae21aa.jpg",
+          "description": "Speakeasy is the operations and intelligence platform powering live entertainment-hospitality. We enable venues, festivals, event organizers & experience oriented businesses to operate more efficiently, freeing up resources and enabling reinvestment into what matters most: the experience.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2023,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 20,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 11.11111111111111,
+            "3m": 17.647058823529413,
+            "6m": 42.857142857142854,
+            "12m": 53.84615384615385
+          },
+          "growth_absolute": {
+            "1m": 2,
+            "3m": 3,
+            "6m": 6,
+            "12m": 7
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "contact@speakeasygo.com",
+          "phone_number": "",
+          "total_investment_usd": 27599999.0,
+          "last_round_amount_usd": 18800000.0,
+          "last_fundraise_date": "2026-11-18",
+          "last_round_type": "series_a",
+          "investors": [
+            "Capital One Ventures",
+            "Positive Sum",
+            "VMG Partners",
+            "Yamaha Music Innovation"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "New York, New York, United States",
+          "street_address": "New York, New York, United States",
+          "city": "New York",
+          "state": "New York",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Event Management",
+            "Events",
+            "Hospitality",
+            "Marketing Automation",
+            "Mobile Payments",
+            "Payments",
+            "SaaS",
+            "Sales Automation",
+            "Software",
+            "Ticketing"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1033872,
+        "basic_info": {
+          "name": "Delphina",
+          "crustdata_company_id": 1033872,
+          "primary_domain": "delphina.ai",
+          "all_domains": [
+            "delphina.ai"
+          ],
+          "website": "https://delphina.ai/",
+          "professional_network_url": "https://www.linkedin.com/company/delphina-ai",
+          "professional_network_id": "96953747",
+          "profile_name": "Delphina",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/68ba9c26259ec43f5d1bd8c813cbaac564b8fccd1814bfd72c4e74f2ffc9f205.jpg",
+          "description": "Teams with messy enterprise data trust Delphina's AI-managed context layer and best-in-class data agents, workflows, and data apps. Loved by Substack, LATAM Airlines, Basecamp Franchising, and more. Join us to create the future of data: https://jobs.ashbyhq.com/Delphina",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2023,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 28,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 3.7037037037037033,
+            "3m": 16.666666666666664,
+            "6m": 21.73913043478261,
+            "12m": 33.33333333333333
+          },
+          "growth_absolute": {
+            "1m": 1,
+            "3m": 4,
+            "6m": 5,
+            "12m": 7
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "",
+          "phone_number": "",
+          "total_investment_usd": 15000000.0,
+          "last_round_amount_usd": 7500000.0,
+          "last_fundraise_date": "2026-11-12",
+          "last_round_type": "series_a",
+          "investors": [
+            "Costanoa Ventures",
+            "Fei-Fei Li",
+            "Guido Imbens",
+            "Radical Ventures",
+            "Tenacity Capital"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Predictive Analytics",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1102782,
+        "basic_info": {
+          "name": "Tristar AI",
+          "crustdata_company_id": 1102782,
+          "primary_domain": "tristar.ai",
+          "all_domains": [
+            "tristar.ai"
+          ],
+          "website": "https://tristar.ai",
+          "professional_network_url": "https://www.linkedin.com/company/tristar-ai",
+          "professional_network_id": "68564774",
+          "profile_name": "Tristar AI",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1a3ca48df9e37ae0bac5e19de51a1a8f6b06988a7840edca5d14638f7a031321.jpg",
+          "description": "Manufacturers depend on reliable operations to produce goods, in industries that require precision such as plastics, automotive, and chemicals. Tristar AI provides manufacturers with the world's most advanced computer vision AI system that keeps track of when things go wrong in production, quality, and maintenance.Our AI-powered cameras and software collect production data, allowing plant managers to receive alerts about operations issues in real-time, preventing monetary losses.Explore our state-of-the-art technology to optimize your manufacturing processes and achieve operational excellence.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2022,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 37,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0.0,
+            "3m": 15.625,
+            "6m": 54.166666666666664,
+            "12m": 37.03703703703704
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 5,
+            "6m": 13,
+            "12m": 10
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "hello@tristar.ai",
+          "phone_number": "+1 832 714 0243",
+          "total_investment_usd": 18250000.0,
+          "last_round_amount_usd": 12400000.0,
+          "last_fundraise_date": "2026-11-12",
+          "last_round_type": "series_a",
+          "investors": [
+            "Blackhorn Ventures",
+            "Capgemini",
+            "Ford Street Ventures",
+            "Isai",
+            "Isogon Ventures",
+            "Las Olas Venture Capital",
+            "NextView Ventures",
+            "SNR 5",
+            "SNR.vc",
+            "Scale Rise",
+            "Seraph Group",
+            "TenOneTen Ventures",
+            "Trust Ventures"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "Boston, Massachusetts, United States",
+          "street_address": "Boston, Massachusetts, United States",
+          "city": "Boston",
+          "state": "Massachusetts",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Software",
+            "Software Engineering"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 13605231,
+        "basic_info": {
+          "name": "4Minds",
+          "crustdata_company_id": 13605231,
+          "primary_domain": "4minds.ai",
+          "all_domains": [
+            "4minds.ai"
+          ],
+          "website": "https://4minds.ai/",
+          "professional_network_url": "https://www.linkedin.com/company/4mindsai",
+          "professional_network_id": "106859343",
+          "profile_name": "4Minds",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cb9b05d825e43da5ee44723a4f251a668e589e39a216f06d1e82aba7fa65651.jpg",
+          "description": "\u201cThe question is no longer whether organizations can deploy AI, but whether they can do it in a way that protects their data, reflects how their business actually operates and earns the confidence of the people using it.\u201d \u2014 Ryan Trimberger, CEO & Co-Founder, 4MindsRyan, a successful serial tech entrepreneur, co-founded 4Minds alongside GenAI inventor Jerome Naidoo and Google/AWS veteran Jason Nocco to address enterprise AI\u2019s biggest gap: a lack of adaptive, domain-specific context. General-purpose AI platforms are starved for it, while custom efforts to build it can stall for months in data-prep and retraining, often failing to deliver the value they were designed to capture.4Minds solves both problems. Through innovative capabilities and security-first deployment strategies, 4Minds helps businesses launch in just hours contextual AI that leaders can trust to deliver outcomes that matter, while protecting sensitive data and IP.Context used by other AI platforms begins to stagnate the minute it\u2019s deployed, limiting the business value AI can deliver while consuming valuable engineering resources with ongoing retraining and maintenance.But right where other platforms stall, 4Minds surges.That\u2019s because 4Minds:- Sees clearly across fragmented, constantly evolving institutional knowledge;- Reasons adaptively across complex workflows;- Keeps learning, reasoning, adapting and improving automatically with every AI execution and knowledge change;- Delivers transparent, traceable and explainable intelligence; and- Gives organizations complete control and ownership of their data, models and AI infrastructure.For businesses like yours, that means:- No more data-prep purgatory;- No more perpetual pilots;- No more model retraining;- No more expensive downtime; and- No more outputs you can\u2019t validate or explain.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2024,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 59,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 3.508771929824561,
+            "3m": 78.78787878787878,
+            "6m": 118.5185185185185,
+            "12m": 391.66666666666663
+          },
+          "growth_absolute": {
+            "1m": 2,
+            "3m": 26,
+            "6m": 32,
+            "12m": 47
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "support@4minds.ai",
+          "phone_number": "",
+          "total_investment_usd": 22567498.0,
+          "last_round_amount_usd": 15000000.0,
+          "last_fundraise_date": "2026-11-12",
+          "last_round_type": "series_a",
+          "investors": [
+            "Isom Holdings",
+            "Waterwood Capital Group"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "Dallas, Texas, United States",
+          "street_address": "2550 Pacific Ave Suite 920, Dallas, Texas",
+          "city": "Dallas",
+          "state": "Texas",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Generative AI",
+            "Machine Learning",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 2364942,
+        "basic_info": {
+          "name": "Rox",
+          "crustdata_company_id": 2364942,
+          "primary_domain": "rox.com",
+          "all_domains": [
+            "rox.com"
+          ],
+          "website": "https://www.rox.com/",
+          "professional_network_url": "https://www.linkedin.com/company/rox-data-corp",
+          "professional_network_id": "99211661",
+          "profile_name": "Rox",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e890839487e818413e658bc27a8b8c672bd5f16079f830fd3032085a6c741463.jpg",
+          "description": "Rox helps businesses secure and grow revenue.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2024,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 181,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 2.840909090909091,
+            "3m": 15.286624203821656,
+            "6m": 30.215827338129497,
+            "12m": 141.33333333333334
+          },
+          "growth_absolute": {
+            "1m": 5,
+            "3m": 24,
+            "6m": 42,
+            "12m": 106
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "",
+          "phone_number": "",
+          "total_investment_usd": 150000000.0,
+          "last_round_amount_usd": 100000000.0,
+          "last_fundraise_date": "2026-11-11",
+          "last_round_type": "series_b",
+          "investors": [
+            "Databricks Ventures",
+            "Factory",
+            "General Catalyst",
+            "Google Ventures",
+            "March Capital",
+            "Neo",
+            "Prosperity7 Ventures",
+            "Sequoia Capital",
+            "South Park Commons"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "Revenue Agents"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Agentic AI",
+            "Artificial Intelligence (AI)",
+            "CRM",
+            "Enterprise Software",
+            "FinTech",
+            "Marketing",
+            "SaaS",
+            "Sales Automation",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1039449,
+        "basic_info": {
+          "name": "PuppyGraph",
+          "crustdata_company_id": 1039449,
+          "primary_domain": "puppygraph.com",
+          "all_domains": [
+            "puppygraph.com"
+          ],
+          "website": "http://puppygraph.com",
+          "professional_network_url": "https://www.linkedin.com/company/puppygraph",
+          "professional_network_id": "90502758",
+          "profile_name": "PuppyGraph",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b39f30d87812b4ffa314916659d2e6eafb256f621b6411992fb9072d51ec8de3.jpg",
+          "description": "A graph query engine for all your data.No ETLPuppyGraph enables you to query your data as a graph by directly connecting to your data warehouses and lakes. This eliminates the need to build and maintain time-consuming ETL pipelines needed with a traditional graph database setup. No more waiting for data and failed ETL processes.Deploy To Query In 10 MinsPuppyGraph's revolutionary query engine eliminates onboarding hassles that comes with a graph database, letting you deploy and start querying within just 10 minutes. Replacing an existing database? Effortlessly drop in PuppyGraph as the replacement, seamlessly connecting to third-party tools without the need for data or code migration.Petabyte-Level ScalabilityPuppyGraph eradicates graph scalability issues by separating computation and storage. Our auto-sharded, distributed computation effortlessly manages vast datasets. Querying directly from your warehouses, lakes, or multiple data sources, PuppyGraph empowers you to graph-query all your data, instead of only the data loaded into a graph database.10-Hop Queries In SecondsPuppyGraph delivers lightning-fast results, handling complex multi-hop queries like 10-hop neighbors in seconds. Our patent-pending technology efficiently leverages all computing resources, ensuring exceptional performance. Want to take it to the next level? More machines, more performance.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2023,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 26,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": -3.7037037037037033,
+            "3m": -7.142857142857142,
+            "6m": 18.181818181818183,
+            "12m": 30.0
+          },
+          "growth_absolute": {
+            "1m": -1,
+            "3m": -2,
+            "6m": 4,
+            "12m": 6
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "contact@puppygraph.com",
+          "phone_number": "",
+          "total_investment_usd": 15000000.0,
+          "last_round_amount_usd": 10000000.0,
+          "last_fundraise_date": "2026-11-10",
+          "last_round_type": "series_a",
+          "investors": [
+            "Defy.vc",
+            "Particle Future"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "Santa Clara, California, United States",
+          "street_address": "Santa Clara, California, United States",
+          "city": "Santa Clara",
+          "state": "California",
+          "all_office_addresses": [
+            "1978 Garzoni Pl, Santa Clara, California, 95054, US"
+          ]
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "AI Infrastructure",
+            "Analytics",
+            "Artificial Intelligence (AI)",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 817012,
+        "basic_info": {
+          "name": "Primordial Labs",
+          "crustdata_company_id": 817012,
+          "primary_domain": "primordial-labs.com",
+          "all_domains": [
+            "primordial-labs.com"
+          ],
+          "website": "https://www.primordial-labs.com",
+          "professional_network_url": "https://www.linkedin.com/company/primordial-labs-inc",
+          "professional_network_id": "72406703",
+          "profile_name": "Primordial Labs",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63bfad2a61364186579eee84574f552f0e4102ee4b9edfe8fb2326e32eb1a925.jpg",
+          "description": "Primordial Labs is building Anura, the next-generation warfighter interface.The DoD is investing billions in advanced robotics, sensors, and weapon systems. But the value of that hardware is capped by a human's ability to control it. Anura unlocks the full potential of these platforms by removing the interface bottleneck.Anura fundamentally changes the paradigm of command & control within human-machine integrated formations, moving from complex button-mashing to natural language tasking. Beyond the obvious span of control benefits, this shift dramatically reduces training time and costs. That means increased adoption of new hardware and faster deployment of new software features on existing platforms.TLDR; We let soldiers talk to their robotic teammates just like they talk to their human teammates.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2021,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 32,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 6.666666666666667,
+            "3m": 14.285714285714285,
+            "6m": 10.344827586206897,
+            "12m": 68.42105263157895
+          },
+          "growth_absolute": {
+            "1m": 2,
+            "3m": 4,
+            "6m": 3,
+            "12m": 13
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "info@primordial-labs.com",
+          "phone_number": "(425) 234-2662",
+          "total_investment_usd": 25499994.0,
+          "last_round_amount_usd": 18499994.0,
+          "last_fundraise_date": "2026-11-03",
+          "last_round_type": "series_a",
+          "investors": [
+            "Ballistic Ventures",
+            "Lockheed Martin Ventures",
+            "Squadra Ventures",
+            "Stony Lonesome Group"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "New Haven, Texas, United States",
+          "street_address": "New Haven, Texas, United States",
+          "city": "New Haven",
+          "state": "Texas",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "Human-Centric AI System Design",
+            "Autonomous Systems C2",
+            "Natural Language Interfaces",
+            "Automated Mission Planning Support",
+            "Autonomy",
+            "Human-Machine Teaming",
+            "Human-Machine Interface",
+            "Uncrewed Systems",
+            "Unmanned Systems",
+            "Drones"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Aerospace",
+            "Artificial Intelligence",
+            "Artificial Intelligence (AI)",
+            "Autonomous Vehicles",
+            "GovTech",
+            "Machine Learning",
+            "National Security"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 7465458,
+        "basic_info": {
+          "name": "Traversal",
+          "crustdata_company_id": 7465458,
+          "primary_domain": "traversal.com",
+          "all_domains": [
+            "traversal.com"
+          ],
+          "website": "http://www.traversal.com",
+          "professional_network_url": "https://www.linkedin.com/company/traversal-ai",
+          "professional_network_id": "107422026",
+          "profile_name": "Traversal",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9123346ac64e1999e4ee17db29a3df77ee0deaf835f61a3904db6dadc5b3cd8a.jpg",
+          "description": "Traversal is an AI platform for site reliability engineering that troubleshoots, remediates, and prevents production incidents \u2014 even in the largest, most complex systems.Two core AI breakthroughs make this possible: a continuously-updated Production World ModelTM that maps your system in real time, and a Causal Search EngineTM that identifies root cause across 10+ hops, from apps to services to infrastructure to networking, reducing investigation time from hours to minutes. Traversal improves system resilience \u2014 reducing MTTR and reclaiming engineering hours lost to troubleshooting.Founded by a team of AI researchers and engineers from MIT, Columbia, Berkeley, and Cornell, and backed by Sequoia and Kleiner Perkins.Explore open roles: www.traversal.com/careers",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2023,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 106,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 3.9215686274509802,
+            "3m": 4.9504950495049505,
+            "6m": 23.25581395348837,
+            "12m": 103.84615384615385
+          },
+          "growth_absolute": {
+            "1m": 4,
+            "3m": 5,
+            "6m": 20,
+            "12m": 54
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "support@traversal.com",
+          "phone_number": "",
+          "total_investment_usd": 173000000.0,
+          "last_round_amount_usd": 120000000.0,
+          "last_fundraise_date": "2026-11-03",
+          "last_round_type": "series_b",
+          "investors": [
+            "Amex Ventures",
+            "Battery Ventures",
+            "Hanabi Capital",
+            "Henry Shi",
+            "Khosla Ventures",
+            "Kleiner Perkins",
+            "NFDG Ventures",
+            "Redpoint",
+            "Sequoia Capital"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "New York, New York, United States",
+          "street_address": "New York, New York, United States",
+          "city": "New York",
+          "state": "New York",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Application Performance Management",
+            "Artificial Intelligence (AI)",
+            "Cloud Computing",
+            "DevOps",
+            "Developer Tools",
+            "Enterprise Software",
+            "IT Infrastructure",
+            "Software",
+            "Software Engineering"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 30769956,
+        "basic_info": {
+          "name": "Guava",
+          "crustdata_company_id": 30769956,
+          "primary_domain": "goguava.ai",
+          "all_domains": [
+            "goguava.ai"
+          ],
+          "website": "https://goguava.ai/",
+          "professional_network_url": "https://www.linkedin.com/company/goguava-ai",
+          "professional_network_id": "112741017",
+          "profile_name": "Guava",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8ade98c47b6fafc4a1957d80164a52925e6e56e4c5568738eb37de1c0fbc55f0.jpg",
+          "description": "Your expertise just found its voice.Guava is conversational voice AI, shipped as an API. One proprietary stack, end to end: ASR, TTS and language models built together rather than stitched from third-party vendors, with real telephony from the first call.You already built the brain. Guava gives it a voice. Your logic runs the conversation in code, not prompts. Rules as code, versioned and tested and reviewed like the rest of your codebase. Your CRM, EHR and workflow engine stay the source of truth, and nothing is copied out.Prompt bloat is a maintenance nightmare. Change one line to fix one call and every other call becomes a regression test. Rules grow, confidence doesn't. Code scales.Security is not an add-on. Every call runs on the certified stack: SOC 2 Type II, HITRUST i1, PCI DSS Level 1, and a BAA available for healthcare deployments. Reports available under MNDA.10B+ live agent minutes. 100+ deployments. 13 years in production. A 99.9% uptime SLA. 14 days from kickoff to your first live call.Where Guava ships: BPO, healthcare, vertical AI, insurance, fintech and government.Built for calls that have to be right.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2026,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 28,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 7.6923076923076925,
+            "3m": 33.33333333333333,
+            "6m": 833.3333333333334,
+            "12m": 833.3333333333334
+          },
+          "growth_absolute": {
+            "1m": 2,
+            "3m": 7,
+            "6m": 25,
+            "12m": 25
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "hi@goguava.ai.",
+          "phone_number": "",
+          "total_investment_usd": 12500000.0,
+          "last_round_amount_usd": 12500000.0,
+          "last_fundraise_date": "2026-11-03",
+          "last_round_type": "seed",
+          "investors": [
+            "Acrew Capital",
+            "Clocktower Technology Ventures",
+            "Commerce Ventures",
+            "Flourish Ventures",
+            "Willowtree Investments"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "Los Angeles, California, United States",
+          "street_address": "1375 E 6th St Unit 2 unit 2, Los Angeles, California",
+          "city": "Los Angeles",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "Voice AI",
+            "Conversational AI",
+            "Voice agent API",
+            "Voice agents",
+            "AI agents",
+            "Speech recognition",
+            "Text to speech",
+            "Telephony",
+            "SIP and WebRTC",
+            "Developer tools",
+            "Contact center automation",
+            "Customer experience",
+            "Healthcare voice automation",
+            "Patient intake",
+            "Insurance claims",
+            "Bank KYC",
+            "Collections",
+            "BPO automation",
+            "Vertical AI",
+            "AI compliance"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Generative AI",
+            "Machine Learning",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 930057,
+        "basic_info": {
+          "name": "Tutor",
+          "crustdata_company_id": 930057,
+          "primary_domain": "tutorintelligence.com",
+          "all_domains": [
+            "tutorintelligence.com"
+          ],
+          "website": "https://tutorintelligence.com/careers",
+          "professional_network_url": "https://www.linkedin.com/company/tutorintelligence",
+          "professional_network_id": "79865783",
+          "profile_name": "Tutor",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9613f50d3492999dd76e001139030279dc4a04dfd09a76f458370feb14860bee.jpg",
+          "description": "Tutor was founded to build the intelligence that lets machines see, learn, and act alongside people in the most complex, real-world production environments. Our teams work at the edge of AI, robotics, and operations to embody robotic systems with humans\u2019 intuitive understanding of the physical world and how to interact with it.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2021,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 186,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 12.048192771084338,
+            "3m": 25.675675675675674,
+            "6m": 45.3125,
+            "12m": 141.55844155844156
+          },
+          "growth_absolute": {
+            "1m": 20,
+            "3m": 38,
+            "6m": 58,
+            "12m": 109
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "",
+          "phone_number": "(917) 513-0210",
+          "total_investment_usd": 153648870.0,
+          "last_round_amount_usd": 75000000.0,
+          "last_fundraise_date": "2026-11-02",
+          "last_round_type": "series_b",
+          "investors": [
+            "Andreessen Horowitz",
+            "Fundomo",
+            "Neo",
+            "Timon Capital",
+            "Union Square Ventures"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "Watertown, Massachusetts, United States",
+          "street_address": "80 Coolidge Hill Rd, Watertown, Massachusetts",
+          "city": "Watertown",
+          "state": "Massachusetts",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Information Technology",
+            "Machine Learning",
+            "Robotics",
+            "SaaS"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "541715",
+            "sector": "Professional, Scientific, and Technical Services",
+            "sub_sector": "Professional, Scientific, and Technical Services",
+            "industry_group": "Scientific Research and Development Services",
+            "industry": "Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "8731",
+              "industry": "Commercial Physical Research",
+              "year": 1987
+            },
+            {
+              "sic_code": "8733",
+              "industry": "Noncommercial Research Organizations",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 32559148,
+        "basic_info": {
+          "name": "Clark",
+          "crustdata_company_id": 32559148,
+          "primary_domain": "getclark.com",
+          "all_domains": [
+            "getclark.com"
+          ],
+          "website": "http://getclark.com",
+          "professional_network_url": "https://www.linkedin.com/company/clark-accounting",
+          "professional_network_id": "132184007",
+          "profile_name": "Clark",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/19cef7353a9c3e91c9892ba486a1d27bb82a082aea7380a086231c73a62828e2.jpg",
+          "description": "Clark is the collaborative AI platform for assurance. Our agent, Ava, works inside live engagements alongside your auditors, running the substantive fieldwork that swallows busy season: testing full populations, tying out, vouching, recalculating, and building the workpapers to support it. Partners stay in control of every opinion. The judgment, the client relationships, and the signature stay exactly where they belong, with the firm, because in a world generating economic data at machine speed, that licensed signature is the trust the entire system runs on. The result is a better audit, delivered faster, and a profession that finally gets to do the work people became CPAs to do.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2025,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 50,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0.0,
+            "3m": 85.18518518518519,
+            "6m": 2400.0,
+            "12m": 4900.0
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 23,
+            "6m": 48,
+            "12m": 49
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "info@uiagent.co",
+          "phone_number": "",
+          "total_investment_usd": 16100000.0,
+          "last_round_amount_usd": 11000000.0,
+          "last_fundraise_date": "2026-11-02",
+          "last_round_type": "seed",
+          "investors": [
+            "Enes Witwit",
+            "Marathon Management Partners",
+            "Rerail",
+            "Sofeon Ventures",
+            "Touring Capital"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "New York, New York, United States",
+          "street_address": "New York, New York, United States",
+          "city": "New York",
+          "state": "New York",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "AI Audit",
+            "AI Accounting",
+            "AI for CPA"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Accounting",
+            "Artificial Intelligence (AI)",
+            "Intelligent Systems"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1180915,
+        "basic_info": {
+          "name": "Casap",
+          "crustdata_company_id": 1180915,
+          "primary_domain": "casaphq.com",
+          "all_domains": [
+            "casaphq.com",
+            "casap.ai"
+          ],
+          "website": "https://casap.ai",
+          "professional_network_url": "https://www.linkedin.com/company/casaphq",
+          "professional_network_id": "88470679",
+          "profile_name": "Casap",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e68581b136bbf9e3f526012a68ba342e233e04b54ad1f562bcc9a00bf7040da5.jpg",
+          "description": "Casap\u2019s AI agents handle the high-stakes work financial institutions can\u2019t afford to get wrong.Our platform brings together specialized AI agents, institutional policies, relevant context, and human oversight to run critical operations across disputes, fraud, collections, claims, and more. Agents work across existing systems to resolve disputes instantly, reduce fraud losses, recover more in collections, and settle claims faster.Built for the complexity of financial services, every decision is explainable and auditable. Institutions control what runs autonomously and where humans stay in the loop. Our forward-deployed teams partner with institutions from AI strategy through production, delivering real outcomes in weeks.Trusted by more than 100 banks, credit unions, fintechs, and processors, Casap was founded in 2022 by former Robinhood and Chime leaders. Headquartered in New York, Casap is backed by Base10 Partners, Experian, Synchrony, Emergence, Lightspeed, and Primary.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2023,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 69,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0.0,
+            "3m": 16.94915254237288,
+            "6m": 35.294117647058826,
+            "12m": 81.57894736842105
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 10,
+            "6m": 18,
+            "12m": 31
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "hello@casap.capital",
+          "phone_number": "",
+          "total_investment_usd": 89600000.0,
+          "last_round_amount_usd": 56000000.0,
+          "last_fundraise_date": "2026-10-28",
+          "last_round_type": "series_b",
+          "investors": [
+            "Alloy Labs",
+            "Base10 Partners",
+            "Commerce Ventures",
+            "Curql",
+            "Emergence Capital",
+            "Experian",
+            "Lightspeed Venture Partners",
+            "Primary Venture Partners",
+            "SignalRank",
+            "SoFi",
+            "Synchrony Ventures"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "650 5th St Suite 201, San Francisco, California",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": [
+            "575 8th Avenue, New York, New York, 10018, US"
+          ]
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "FinTech",
+            "Finance",
+            "Fraud Detection",
+            "Risk Management",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 706727,
+        "basic_info": {
+          "name": "Simplismart",
+          "crustdata_company_id": 706727,
+          "primary_domain": "simplismart.ai",
+          "all_domains": [
+            "simplismart.ai"
+          ],
+          "website": "https://connect.simplismart.ai/linkedin",
+          "professional_network_url": "https://www.linkedin.com/company/simplismart",
+          "professional_network_id": "82819726",
+          "profile_name": "Simplismart",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee722ae1d5df6fc8e517dc799dcd3e965abb0522ea86344ba6a25f0cfbc6b4ab.jpg",
+          "description": "Fastest inference for generative AI workloads. Simplified orchestration via a declarative language similar to terraform. Deploy any open-source model and take advantage of Simplismart\u2019s optimised serving. With a growing quantum of workloads, one size does not fit all; use our building blocks to personalise an inference engine for your needs.***API vs In-house***Renting AI via third-party APIs has apparent downsides: data security, rate limits, unreliable performance, and inflated cost. Every company has different inferencing needs: *One size does not fit all.* Businesses need control to manage their cost <> performance tradeoffs. Hence, the movement towards open-source usage:  businesses prefer small niche models trained on relevant datasets over large generalist models that do not justify ROI.**Need for MLOps platform***Deploying large models comes with its hurdles: access to compute, model optimisation, scaling infrastructure, CI/CD pipelines, and cost efficiency, all requiring highly skilled machine learning engineers. We need a tool to support this advent towards generative AI, as we had tools to transition to cloud and mobile. MLOps platforms simplify orchestration workflows for in-house deployment cycles. Two off-the-shelf solutions readily available:1. Orchestration platforms with model serving layer: *do not offer optimised performance for all models, limiting user\u2019s ability to squeeze performance*2. GenAI Cloud Platforms: *GPU brokers offering no control over cost*Enterprises need control. Simplismart\u2019s MLOps platform provides them with building blocks to prepare for the necessary inference. The fastest inference engine allows businesses to unlock and run each model at performant speed. The inference engine has been optimised at three levels: the model-serving layer, infrastructure layer, and a model-GPU-chip interaction layer, while also enhanced with a known model compilation technique.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2022,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 50,
+          "largest_headcount_country": "IND",
+          "growth_percent": {
+            "1m": 6.382978723404255,
+            "3m": 28.205128205128204,
+            "6m": 28.205128205128204,
+            "12m": 56.25
+          },
+          "growth_absolute": {
+            "1m": 3,
+            "3m": 11,
+            "6m": 11,
+            "12m": 18
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "contact@simplismart.ai",
+          "phone_number": "",
+          "total_investment_usd": 21000000.0,
+          "last_round_amount_usd": 14000000.0,
+          "last_fundraise_date": "2026-10-27",
+          "last_round_type": "series_b",
+          "investors": [
+            "Accel",
+            "Akshay Kothari",
+            "Anicut Capital",
+            "Dallas Venture Capital",
+            "First Cheque",
+            "Google for Startups",
+            "Micromax Informatics",
+            "NVIDIA",
+            "Shastra VC",
+            "Sheryl Sandberg",
+            "Sunn91 Ventures",
+            "Titan Capital"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "Machine learning",
+            "Artificial Intelligence",
+            "Deep Learning",
+            "Predictive analysis",
+            "Supervised Learning",
+            "Distributed learning",
+            "Workflow management",
+            "Auto-scale deployments",
+            "Audio Transcription",
+            "Summarization",
+            "Entity Extraction",
+            "Entity Classification",
+            "LLM",
+            "RAG",
+            "Diffusion Pipelines",
+            "Voice"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "AI Infrastructure",
+            "Artificial Intelligence (AI)",
+            "Developer Platform",
+            "Internet"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 810181,
+        "basic_info": {
+          "name": "Infisical",
+          "crustdata_company_id": 810181,
+          "primary_domain": "infisical.com",
+          "all_domains": [
+            "infisical.com"
+          ],
+          "website": "https://infisical.com",
+          "professional_network_url": "https://www.linkedin.com/company/infisical",
+          "professional_network_id": "87088127",
+          "profile_name": "Infisical",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1104f7db106a154fed95ddc9a19226a647d96db4895106d9c02705c9f3111628.jpg",
+          "description": "Infisical is the leading open source security infrastructure platform for developers and agents: manage secrets, identity, and access.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2022,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 49,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 13.953488372093023,
+            "3m": 19.51219512195122,
+            "6m": 58.06451612903226,
+            "12m": 133.33333333333331
+          },
+          "growth_absolute": {
+            "1m": 6,
+            "3m": 8,
+            "6m": 18,
+            "12m": 28
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "support@infisical.com",
+          "phone_number": "",
+          "total_investment_usd": 58925000.0,
+          "last_round_amount_usd": 40000000.0,
+          "last_fundraise_date": "2026-10-27",
+          "last_round_type": "series_b",
+          "investors": [
+            "Andrew Miklas",
+            "Antonio Gracias",
+            "Christoph Deckert",
+            "Darian Shirazi",
+            "Dynamic Capital",
+            "Dynamic Funds",
+            "Elad Gil",
+            "Erik Muttersbach",
+            "Gallery Ventures",
+            "Gradient",
+            "James Hawkins",
+            "Olivier Pomel",
+            "Pace Capital",
+            "Paul Copplestone",
+            "Sanjit Biswas",
+            "Siggi Simonarson",
+            "TwentyTwo VC",
+            "Viet Le",
+            "Y Combinator"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "security",
+            "secrets",
+            "key management",
+            "IAM",
+            "secrets management",
+            "identity security"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Cloud Computing",
+            "Cloud Security",
+            "Cyber Security",
+            "DevOps",
+            "Identity Management",
+            "Network Security",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1186268,
+        "basic_info": {
+          "name": "Hyperbolic",
+          "crustdata_company_id": 1186268,
+          "primary_domain": "hyperbolic.ai",
+          "all_domains": [
+            "hyperbolic.ai"
+          ],
+          "website": "https://hyperbolic.ai/",
+          "professional_network_url": "https://www.linkedin.com/company/hyperbolic-labs",
+          "professional_network_id": "89658455",
+          "profile_name": "Hyperbolic",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7b7bdba219d1b942270c5f261ac09afcf1cab7174749bce4c45d70f46bd8f618.jpg",
+          "description": "Hyperbolic provides high\u2010performance GPU clusters and managed inference for AI startups and ML teams that need reliable capacity on demand, at a lower cost than anyone else. Researchers use Hyperbolic to launch new models faster, avoid GPU waitlists, and scale from prototype to production on the same platform for both training and inference.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2022,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 55,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 1.8518518518518516,
+            "3m": 27.906976744186046,
+            "6m": 41.02564102564102,
+            "12m": 37.5
+          },
+          "growth_absolute": {
+            "1m": 1,
+            "3m": 12,
+            "6m": 16,
+            "12m": 15
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "contact@hyperbolic.ai",
+          "phone_number": "",
+          "total_investment_usd": 49725000.0,
+          "last_round_amount_usd": 30000000.0,
+          "last_fundraise_date": "2026-10-27",
+          "last_round_type": "series_a",
+          "investors": [
+            "Alex Atallah",
+            "Alumni Ventures",
+            "Ambush Capital",
+            "Ausvic Capital",
+            "Balaji Srinivasan",
+            "Bankless Ventures",
+            "Blizzard Fund",
+            "Cambium Capital",
+            "Casey Caruso",
+            "Chapter One",
+            "CoinSummer",
+            "Dell Technologies Capital",
+            "Faction",
+            "GSR",
+            "General Catalyst",
+            "IMO Ventures",
+            "IOSG Ventures",
+            "Illia Polosukhin",
+            "LongHash Ventures",
+            "Modular Capital",
+            "Nomad Capital",
+            "Polychain",
+            "Republic Digital Acquisition Co",
+            "SNZ Holding",
+            "Salience Capital Partners Management",
+            "Samsung NEXT",
+            "Samsung NEXT\u2019s Q Fund",
+            "Sandeep Nailwal",
+            "Santiago Santo",
+            "Saturnin Pugnet",
+            "Sreeram Kannan",
+            "Tekin Salimi",
+            "Third Earth",
+            "Variant",
+            "Vertex Ventures",
+            "Vista Equity Partners",
+            "Walden Catalyst",
+            "Wintermute Ventures",
+            "xBuilders Fund"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Cloud Computing",
+            "Information Technology",
+            "Machine Learning",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "518210",
+            "sector": "Information",
+            "sub_sector": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+            "industry_group": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+            "industry": "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7374",
+              "industry": "Data Processing and Preparation",
+              "year": 1987
+            },
+            {
+              "sic_code": "7379",
+              "industry": "Computer Related Services, Nec",
+              "year": 1987
+            },
+            {
+              "sic_code": "7389",
+              "industry": "Business Services, Nec",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1402067,
+        "basic_info": {
+          "name": "Vera Health",
+          "crustdata_company_id": 1402067,
+          "primary_domain": "verahealth.ai",
+          "all_domains": [
+            "verahealth.ai"
+          ],
+          "website": "https://www.verahealth.ai",
+          "professional_network_url": "https://www.linkedin.com/company/vera-health-ai",
+          "professional_network_id": "104752730",
+          "profile_name": "Vera Health",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/da5ee1998e3cf6bd39ed10e5f5ec1a928299871def821ddd27bf12fa44e23221.jpg",
+          "description": "Vera is the most powerful medical answer engine. Improve patient outcomes with clear, practical answers based on 60M+ peer-reviewed and up-to-date papers and guidelines.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2024,
+          "employee_count_range": "2-10",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 34,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0.0,
+            "3m": 3.0303030303030303,
+            "6m": 21.428571428571427,
+            "12m": 13.333333333333334
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 1,
+            "6m": 6,
+            "12m": 4
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "",
+          "phone_number": "",
+          "total_investment_usd": 29000000.0,
+          "last_round_amount_usd": 28500000.0,
+          "last_fundraise_date": "2026-10-27",
+          "last_round_type": "series_a",
+          "investors": [
+            "Gradient",
+            "MANTIS Venture Capital",
+            "Optum Ventures",
+            "Pioneer Fund",
+            "SV Angel",
+            "Threshold",
+            "Y Combinator"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "street_address": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "all_office_addresses": [
+            "2261 Market St, San Francisco, California, 94114, US"
+          ]
+        },
+        "taxonomy": {
+          "professional_network_specialities": [
+            "Clinical Decision Support"
+          ],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "B2B",
+            "Generative AI",
+            "Health Care",
+            "Sustainability",
+            "Wellness"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1484386,
+        "basic_info": {
+          "name": "Hyphenate (formerly Maximor)",
+          "crustdata_company_id": 1484386,
+          "primary_domain": "hyphenate.ai",
+          "all_domains": [
+            "maximor.ai",
+            "hyphenate.ai"
+          ],
+          "website": "https://hyphenate.ai/",
+          "professional_network_url": "https://www.linkedin.com/company/hyphenateai",
+          "professional_network_id": "99242160",
+          "profile_name": "Hyphenate (formerly Maximor)",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/212fe8dfae332dd184b6d7bd6dabfc01962433e2aecfd51d5a47ddf830d93245.jpg",
+          "description": "Hyphenate is the autonomous finance platform that runs on top of the ERP and systems finance already uses. It connects them in one shared context and learns how finance works from the systems, spreadsheets, and workflows already in place. Teams don\u2019t have to document every process from scratch or write prompts and rules to put agents to work.Agents do 98% of the finance work they touch. Every action shows its work and is fully auditable. Books reconcile continuously, so the numbers are always current, not just after month-end. The platform gets sharper with every escalation, every judgment call, every close.Sprint ahead \u2192 hyphenate.ai",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2025,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 40,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": -4.761904761904762,
+            "3m": -4.761904761904762,
+            "6m": 29.03225806451613,
+            "12m": 100.0
+          },
+          "growth_absolute": {
+            "1m": -2,
+            "3m": -2,
+            "6m": 9,
+            "12m": 20
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "ram@hyphenate.ai",
+          "phone_number": "",
+          "total_investment_usd": 54000000.0,
+          "last_round_amount_usd": 45000000.0,
+          "last_fundraise_date": "2026-10-27",
+          "last_round_type": "series_a",
+          "investors": [
+            "Aravind Srinivas",
+            "B Capital",
+            "Boldcap Ventures",
+            "Foundation Capital",
+            "Gaia Ventures",
+            "Nexus Venture Partners",
+            "Tien Tzuo",
+            "Yatharth Gupta"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "New York, New York, United States",
+          "street_address": "New York, New York, United States",
+          "city": "New York",
+          "state": "New York",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Accounting",
+            "Agentic AI",
+            "Artificial Intelligence (AI)",
+            "Finance",
+            "Software"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      },
+      {
+        "crustdata_company_id": 1510677,
+        "basic_info": {
+          "name": "Matiks",
+          "crustdata_company_id": 1510677,
+          "primary_domain": "matiks.com",
+          "all_domains": [
+            "matiks.com"
+          ],
+          "website": "https://www.matiks.com/apps",
+          "professional_network_url": "https://www.linkedin.com/company/matiksplay",
+          "professional_network_id": "104755330",
+          "profile_name": "Matiks",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/13ac03763f977efa1e0124f3aea4174b120473c22d03eb3b9ea8b92bc0cbc1fe.jpg",
+          "description": "Most brain training apps start with excitement and end up as something you forget to open.Matiks was built to change that.It's not just about solving puzzles quietly. It's about showing up, competing, and actually feeling the difference in how you think. When there's a leaderboard, a streak on the line, and real people going head-to-head with you... it stops being passive. It becomes something you care about.Some days you win. Some days you don't. But you keep coming back. That's where the real shift happens.Matiks is for people who want more than \"practice.\"It's for people who want consistency, pressure, and progress they can actually see.Play It Smart.-Logic, puzzles & mental math \u2014 all in one arena-Global leaderboards & ratings-1v1 live duels against players in 50+ countriesThe arena is open.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2024,
+          "employee_count_range": "11-50",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 80,
+          "largest_headcount_country": "IND",
+          "growth_percent": {
+            "1m": 12.676056338028168,
+            "3m": 19.402985074626866,
+            "6m": 33.33333333333333,
+            "12m": 116.21621621621621
+          },
+          "growth_absolute": {
+            "1m": 9,
+            "3m": 13,
+            "6m": 20,
+            "12m": 43
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "",
+          "phone_number": "",
+          "total_investment_usd": 13100000.0,
+          "last_round_amount_usd": 10000000.0,
+          "last_fundraise_date": "2026-10-26",
+          "last_round_type": "seed",
+          "investors": [
+            "Aman Gupta",
+            "Anil Goteti",
+            "Gaurav Munjal",
+            "General Catalyst",
+            "Info Edge ventures",
+            "Roman Saini",
+            "Ronnie Screwvala",
+            "Tanglin Venture Partners",
+            "Untitled ventures"
+          ]
+        },
+        "locations": {
+          "country": "IND",
+          "headquarters": "Bengaluru South, Karnataka, India",
+          "street_address": "HSR Flayour, Bengaluru South, Karnataka",
+          "city": "Bengaluru South",
+          "state": "Karnataka",
+          "all_office_addresses": []
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Mobile Gaming Apps",
+          "professional_network_industries": [
+            "Mobile Gaming Apps",
+            "Computer Games",
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Casual Games",
+            "Digital Entertainment",
+            "EdTech",
+            "Edutainment",
+            "Gaming",
+            "Online Games"
+          ],
+          "primary_naics_detail": null,
+          "sic_detail_list": null
+        }
+      },
+      {
+        "crustdata_company_id": 17476620,
+        "basic_info": {
+          "name": "Nevis",
+          "crustdata_company_id": 17476620,
+          "primary_domain": "neviswealth.com",
+          "all_domains": [
+            "neviswealth.com"
+          ],
+          "website": "http://www.neviswealth.com",
+          "professional_network_url": "https://www.linkedin.com/company/neviswealth",
+          "professional_network_id": "109777010",
+          "profile_name": "Nevis",
+          "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cec8d23ed8d6db9c39aa3466b5d5b5f9af8ea009628039749ff1e98cdc970b8.jpg",
+          "description": "Nevis is a purpose-built AI platform that helps financial advisors and their teams automate administrative workflows end-to-end.",
+          "company_type": "Privately Held",
+          "status": "active",
+          "year_founded": 2024,
+          "employee_count_range": "51-200",
+          "markets": [
+            "PRIVATE"
+          ]
+        },
+        "headcount": {
+          "total": 59,
+          "largest_headcount_country": "GBR",
+          "growth_percent": {
+            "1m": 5.357142857142857,
+            "3m": 13.461538461538462,
+            "6m": 22.916666666666664,
+            "12m": 195.0
+          },
+          "growth_absolute": {
+            "1m": 3,
+            "3m": 7,
+            "6m": 11,
+            "12m": 39
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "info@neviswealth.com",
+          "phone_number": "",
+          "total_investment_usd": 110000000.0,
+          "last_round_amount_usd": 70000000.0,
+          "last_fundraise_date": "2026-10-26",
+          "last_round_type": "series_b",
+          "investors": [
+            "Charles Schwab",
+            "EQT Ventures",
+            "ICONIQ Capital",
+            "QuantumLight",
+            "Ribbit Capital",
+            "Sequoia Capital"
+          ]
+        },
+        "locations": {
+          "country": "USA",
+          "headquarters": "New York, New York, United States",
+          "street_address": "New York, New York, United States",
+          "city": "New York",
+          "state": "New York",
+          "all_office_addresses": [
+            ", London, GB"
+          ]
+        },
+        "taxonomy": {
+          "professional_network_specialities": [],
+          "professional_network_industry": "Software Development",
+          "professional_network_industries": [
+            "Software Development",
+            "Technology, Information and Internet",
+            "Technology, Information and Media"
+          ],
+          "categories": [
+            "Artificial Intelligence (AI)",
+            "Business Intelligence",
+            "FinTech",
+            "Software",
+            "Wealth Management"
+          ],
+          "primary_naics_detail": {
+            "naics_code": "513210",
+            "sector": "Information",
+            "sub_sector": "Publishing Industries",
+            "industry_group": "Software Publishers",
+            "industry": "Software Publishers",
+            "year": 2022
+          },
+          "sic_detail_list": [
+            {
+              "sic_code": "7372",
+              "industry": "Prepackaged Software",
+              "year": 1987
+            }
+          ]
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 21
+  }
+}

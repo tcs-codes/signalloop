@@ -1,0 +1,215 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "withpulley.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 200143,
+        "basic_profile": {
+          "name": "Andreas Rotenberg",
+          "professional_network_name": "Andreas Rotenberg",
+          "headline": "Co-Founder & COO at Pulley, Former Chief of Staff at Procore Technologies",
+          "current_title": "Co-Founder & COO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & Chief Operating Officer (COO)",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9846,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a6e9bc4e655ec19357aa32dec1a1512f11eb1a3a64744f853a4e93bc03640424.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/andreas-rotenberg"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Pulley",
+                "company_website": "https://withpulley.com",
+                "professional_network_id": "81892869",
+                "title": "Co-Founder & COO",
+                "description": "We're building the first dedicated platform for construction permitting. Delayed permits cost the construction industry $50B in lost revenue and additional cost every year, adding to a shortage of housing & critical infrastructure that impacts everyone. Our purpose-built workflows, localized requirements and embedded expertise help developers, contractors, and architects get permits faster, removing a costly bottleneck to construction. Across dozens of markets, leading builders trust Pulley to permit everything from single-family homes to complex commercial projects.",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691669,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4c76c59f12ef9cd32a5637d92a346c0240217d4e596b11c171be2f8b59d1e78d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pulley-permitting",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 122,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1976744378,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 23041805,
+        "basic_profile": {
+          "name": "Charlie Jacobson",
+          "professional_network_name": "Charlie Jacobson",
+          "headline": "Co-founder @ Pulley - Faster Construction Permits",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f88a1b2af3ffe77e9206e24e221c861bbcfdaf9fd1e41f183bfa07ccbafe4ba0.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/charliejacobson"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Pulley",
+                "company_website": "https://withpulley.com",
+                "professional_network_id": "81892869",
+                "title": "Co-Founder",
+                "description": "We're building the first dedicated platform for construction permitting. Delayed permits cost the construction industry $50B in lost revenue and additional cost every year, adding to a shortage of housing & critical infrastructure that impacts everyone. Our purpose-built workflows, localized requirements and embedded expertise help developers, contractors, and architects get permits faster, removing a costly bottleneck to construction. Across dozens of markets, leading builders trust Pulley to permit everything from single-family homes to complex commercial projects.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691669,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4c76c59f12ef9cd32a5637d92a346c0240217d4e596b11c171be2f8b59d1e78d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pulley-permitting",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 122,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1976748497,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}
