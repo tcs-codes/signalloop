@@ -1,0 +1,795 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "1mind.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 97757,
+        "basic_profile": {
+          "name": "Jason Grunberg",
+          "professional_network_name": "Jason Grunberg",
+          "headline": "Chief Marketing Officer at 1mind",
+          "current_title": "Chief Marketing Officer",
+          "normalized_title": {
+            "matched_title": "Chief Marketing Officer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7d3a9d2970d960e3b42f4f27e69d15367768ff63bc11b73edc4cba6debfb710f.jpg",
+          "location": {
+            "city": "Raleigh",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Raleigh, North Carolina, United States",
+            "full_location": "Raleigh, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jgrunberg"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "1mind",
+                "company_website": "http://1mind.com",
+                "professional_network_id": "103324312",
+                "title": "Chief Marketing Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710612,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f37f0b522c4c5af44c60df95f3024c7258eaddecbc48f0d01ceede2e80b0e407.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/1mindai",
+                "seniority_level": "CXO",
+                "function_category": "Marketing",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 141,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3006844944,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 372963,
+        "basic_profile": {
+          "name": "Karthik Suresh",
+          "professional_network_name": "Karthik Suresh",
+          "headline": "CPO @ 1mind | 2x Exited Founder | Ex-Meta & ZoomInfo | CMU & LBS | We\u2019re hiring!",
+          "current_title": "Chief Product Officer",
+          "normalized_title": {
+            "matched_title": "Chief Product Officer",
+            "department": "Product & Design",
+            "sub_department": "Product Management",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0047e292aa59f0cfee155df63d8afb5abfcf58793eac12226e8f16163519a960.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/karthiksureshlbs"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "1mind",
+                "company_website": "http://1mind.com",
+                "professional_network_id": "103324312",
+                "title": "Chief Product Officer",
+                "description": "Building GTM AI Superhumans",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710612,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f37f0b522c4c5af44c60df95f3024c7258eaddecbc48f0d01ceede2e80b0e407.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/1mindai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 141,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3055931741,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Various startups",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Investor",
+                "description": "Backing founders at pre-seed through Series A who are building AI-native, category-defining companies: Vertical AI, Physical AI, AI-Native Services, and the data infrastructure underneath them. Investing directly as an angel and indirectly as an LP in early-stage VC funds.",
+                "employment_type": "Freelance",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2757118079,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 789790,
+        "basic_profile": {
+          "name": "Roy Eitan",
+          "professional_network_name": "Roy Eitan",
+          "headline": "Startup advisor helping early-stage founders scale globally, win early customers, and build strong GTM & operational foundations.",
+          "current_title": "Scout and Venture Fellow",
+          "normalized_title": {
+            "matched_title": "Venture Scout",
+            "department": "Finance & Accounting",
+            "sub_department": "Investment & Asset Management",
+            "similarity": 0.9112,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c3f4dea90332c22a56f0784215eed4c3fa286e053f77d49f671c5bb9f5d81cd0.jpg",
+          "location": {
+            "city": "Palo Alto",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Palo Alto, California, United States",
+            "full_location": "Palo Alto, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/roy-eitan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alumni Ventures",
+                "company_website": "https://www.av.vc/",
+                "professional_network_id": "4982081",
+                "title": "Scout and Venture Fellow",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 892755,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/780139a5805a0399b033cfbdecaaf3e8405c1ebe86a335b4d9435a82f1b1420e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alumniventures",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 538,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2858824375,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Manchester, New Hampshire, United States",
+                "company_hq_location_address_components": [
+                  "Manchester",
+                  "Hillsborough County",
+                  "New Hampshire",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Jellie AI",
+                "company_website": "https://jellie.ai",
+                "professional_network_id": "104947355",
+                "title": "Advisor to CEO",
+                "description": "Helping the best companies hire the 0.1% with AI",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6755760,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/664c594da61f8bd3e6169e7686e13daf45e2c7c38fb5e2f69f06ace7cfe0f54f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/jellie-ai",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 5,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2668511453,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Timetick",
+                "company_website": "https://timetick.io",
+                "professional_network_id": "73814857",
+                "title": "Advisor to CEO",
+                "description": "TimeTick is pioneering AI-driven solutions for real-time monitoring and testing of IoT software through hardware behavioral analysis.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4078320,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/73f8d19e94254cec80bcca3f4a90a7a6e72b029e192a269c36727d87b1981330.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/timetickiot",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2466185813,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Miami, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Miami",
+                  "Miami-Dade County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "PYRAMYD",
+                "company_website": "https://pyramyd.ai",
+                "professional_network_id": "104425126",
+                "title": "Board Member",
+                "description": "Pyramyd enables the intelligent discovery and comparison of software solutions at scale through AI-powered analysis of features, products, and vendors.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3838265,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f9b9c3d198399205aabb6b604a9186ca261c6edc9382420e61ebd4d00d193090.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pyramyd-ai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2562783818,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Orinda, California, United States",
+                "company_hq_location_address_components": [
+                  "Orinda",
+                  "Contra Costa County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "bananaz",
+                "company_website": "https://www.bananaz.ai/",
+                "professional_network_id": "105431993",
+                "title": "Advisor to CEO",
+                "description": "Bananaz' Co-Pilot empower mechanical engineers to manage design changes, enhance team collaboration, and automate tedious tasks.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Contract",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2614619,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/66fa4f80aad9ba0cc193d661007cfb9ac4895b784b0af42ca8420c032ae6f5b3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bananaz-ai",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 25,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2537353814,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "1mind",
+                "company_website": "http://1mind.com",
+                "professional_network_id": "103324312",
+                "title": "Advisor to CEO",
+                "description": "The super human company!!",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 710612,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f37f0b522c4c5af44c60df95f3024c7258eaddecbc48f0d01ceede2e80b0e407.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/1mindai",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 141,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2688885171,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "brain.space",
+                "company_website": "https://www.brain.space/",
+                "professional_network_id": "67347972",
+                "title": "Advisor to CEO",
+                "description": "brain.space - a brain data as a service company - is a pioneering neuroscience company that collects, analyzes, and develops machine learning models to identify human mental and cognitive states using standardized Brian Data, advanced EEG technology, and physiological sensors.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 670962,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8b2da0fcb836799685cfb330d3e344c3ab5a01b2eb6b3744048e44f96812c576.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/gobrainspace",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 48,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2518164540,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Primary Venture Partners",
+                "company_website": "http://www.primary.vc",
+                "professional_network_id": "1381092",
+                "title": "Expert",
+                "description": "Primary is New York City\u2019s premier early-stage venture firm working alongside founders to build unicorns like Alloy, Alma, Chief, Dandy Electric, Latch, K Health, Stellar Health, Slice, and many more.\nAs an Expert, I provide strategic advice and guidance to the investment team and founders within the Primary portfolio and broader network. Experts enjoy access to early-stage businesses, emerging trends and technology, and an expanded network of exceptional leaders and resources through a top-tier seed-stage firm.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1043370,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/32ff8ead66aa5948b2ce3eccfbc8bbd21894f3c5201a115ca675e60fa693b032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/primary-venture-partners",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 810,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Investment Management",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Investment Management",
+                "position_id": 2372441692,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "FTV Capital",
+                "company_website": "http://www.ftvcapital.com",
+                "professional_network_id": "28292",
+                "title": "FTV's Global Partner Network - Advisor",
+                "description": "Advisor at this fantastic $6.2B+ growth equity investment firm.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1126051,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/18e85a6aa630735dcaa49b4059c7d822adbfcc9aac441b2819674fbef72d0520.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ftv-capital",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2380726375,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Hexight",
+                "company_website": "http://hexight.io",
+                "professional_network_id": "105796159",
+                "title": "Advisor to CEO",
+                "description": "Most innovative AI solution for Supply Chain - Hexight revolutionizes supply and demand planning.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6329271,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1995dd4c9502c74f06458962fc17de9e057a0692fba3d2c4880dd91a70d1fa57.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hexight",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 22,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2440400845,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Berkeley SkyDeck",
+                "company_website": "http://skydeck.berkeley.edu/",
+                "professional_network_id": "3669180",
+                "title": "Advisor",
+                "description": "Named as a top-five U.S. university accelerator, Berkeley SkyDeck is UC Berkeley's global startup accelerator.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2023-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1034780,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3d44cddeb5a18935faef457bf67a50bb638d0b7eeb3ddedd6a146f676bc98c6f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/skydeck-berkeley",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 607,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 2327670301,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Berkeley, California, United States",
+                "company_hq_location_address_components": [
+                  "Berkeley",
+                  "Alameda County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Scale Venture Partners",
+                "company_website": "http://www.scalevp.com",
+                "professional_network_id": "51048",
+                "title": "GTM Advisor",
+                "description": "The Scale GTM Advisor Network is made up of world-class practitioners who deliver critical expertise to help Scale portfolio companies drive efficient hyper-growth. As a sales and operations GTM Advisor, I advise companies on key strategic decisions such as GTM strategy, Global Operation and tech stack.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2023-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1132698,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/cab98b20211285470886cff7fe239443226176a065f08cf235c5afea80480c59.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/scale-venture-partners",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 88,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2253213288,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco Bay Area, California, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Alchemist",
+                "company_website": "https://www.alchemist.vc",
+                "professional_network_id": "3966270",
+                "title": "Business Mentor",
+                "description": "Helping Founders in any way I can. Focused on Strategy and GTM",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 654096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/38d0a28619584e61d5a66b9d1605a9c1338a91604be5f7fe05378bf98f1a5ff5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alchemistvc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 513,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2252304922,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "United States",
+                "company_hq_location_address_components": [
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJParDMAwA4KsYzRn882xJucqjBFuSyVBqmjhDKb176fy94XnZ8dr2eu6wOsgpUpOUzZoWs145CWaLSY1VJLD_05a8Vo-xM8XgSy8lEFkUZAqwODjHMWF1_0iM7G-LgzlmvW8yrscP-PMNAAD__wFhDTx2AAAA",
+    "total_count": 9,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

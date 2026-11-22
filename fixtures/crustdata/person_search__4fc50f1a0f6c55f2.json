@@ -1,0 +1,615 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "adaptive.build"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 644412,
+        "basic_profile": {
+          "name": "Mahdi Raza",
+          "professional_network_name": "Mahdi Raza",
+          "headline": "Managing Partner at Pathlight // Startup Helper",
+          "current_title": "Founder and Managing Partner",
+          "normalized_title": {
+            "matched_title": "Founder and Managing Partner",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dd2a1efeba253c421974007190265cf7a4edc5e4d0ec87268196fc061a2fb8f7.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mahdirazapl"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Pathlight",
+                "company_website": "http://pathlight.vc/",
+                "professional_network_id": "100353631",
+                "title": "Founder and Managing Partner",
+                "description": "Pathlight Ventures is a $125m early stage venture capital firm leading early stage investments from 0 to $100m and beyond. \n\nPartner to Kalshi, Apollo, Chronosphere, Moss, EvenUp, Artie, Petra Security, Obvio, Yuzu Health, iVerify, Onos, Corner Health, Glide, Avoca, Doss, Uniti, Adaptive, and many others.",
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1190302,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f9abfa3605ab95d5a518733d9ff1dd34e51b256c9d6aba4ec6af50551e460966.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pathlightvc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 3,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2314873995,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Kalshi",
+                "company_website": "https://www.kalshi.com",
+                "professional_network_id": "19087660",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 632932,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ad0baba102470f4f48782a4a10eacad9dbd2f69f98ecac6f4849da8624460f92.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kalshi",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 604,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 3026888413,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Yuzu",
+                "company_website": "https://yuzu.health",
+                "professional_network_id": "81317268",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 930103,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f69716eb621d3203ef97ba004fd1f5a60cfdb601851114dda0866de845424ee1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yuzu",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 116,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3026899091,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Petra Security",
+                "company_website": "https://www.petrasecurity.com/?utm_source=linkedin&utm_medium=organic&utm_campaign=page-li-bio",
+                "professional_network_id": "100326669",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1129081,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/092d3076eebc1ec285807bfe66c6146b50ff8a560b7f15880015a0fbacff64a9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/petrasecurity",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 23,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3026891366,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "iVerify",
+                "company_website": "https://www.iverify.io",
+                "professional_network_id": "96087920",
+                "title": "Board and Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1046492,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/30bd922ee603bb5e74436046df3613904d3c1751ae91c5e22459510afeae4b47.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/iverify-io",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 50,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Computer and Network Security",
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Computer and Network Security",
+                "position_id": 3026887613,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Obvio",
+                "company_website": "http://obvio.ai",
+                "professional_network_id": "98768626",
+                "title": "Board and Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2707894,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b4dba2ef766cfc0c970948e1160909e4b62ea756fa265f6bc8a5a2ceea63013d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/obvio-inc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 87,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 3026890312,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Carlos, California, United States",
+                "company_hq_location_address_components": [
+                  "San Carlos",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Adaptive",
+                "company_website": "https://www.adaptive.build",
+                "professional_network_id": "74936419",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 689413,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/26489b894f8fd7a8f7ac51bb5113a7ff03cbe4c6d55edf2bf5501e7bd54a385e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/adaptiverealestate",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 126,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3026892361,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Parafin",
+                "company_website": "https://www.parafin.com",
+                "professional_network_id": "68924079",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 653599,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/107773b2f6493a56a0f4e1bd66f5020ab0dbbd6f6aae53cb3e0f33a2e5491a5d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/buildparafin",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 171,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 2773442669,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Persona",
+                "company_website": "https://withpersona.com",
+                "professional_network_id": "18850692",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 691501,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e87972d5a2414d0f189871351e54c26e2fbaf649d9139108cb63d40dd6453ba7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/persona-identities",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 711,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1808468525,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Chronosphere",
+                "company_website": "https://chronosphere.io/",
+                "professional_network_id": "40654174",
+                "title": "Partner to the Founders",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 632030,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d5787acc46a765aad0a90870be36b0b4d068a4e54bee98cc0d760f573a6e6344.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/chronosphereio",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 136,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2782548475,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 991025,
+        "basic_profile": {
+          "name": "Henry Bradlow",
+          "professional_network_name": "Henry Bradlow",
+          "headline": "Co-Founder and CTO at Adaptive (we're hiring!)",
+          "current_title": "Co-Founder and CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9955,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5cbf8deb92441c4c55d47e80cf656799296a8a93d312852f4fd3c0a9a000f262.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/henry-bradlow-a686052a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Adaptive",
+                "company_website": "https://www.adaptive.build",
+                "professional_network_id": "74936419",
+                "title": "Co-Founder and CTO",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689413,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/26489b894f8fd7a8f7ac51bb5113a7ff03cbe4c6d55edf2bf5501e7bd54a385e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/adaptiverealestate",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 126,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1827298984,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 991046,
+        "basic_profile": {
+          "name": "Matt Calvano",
+          "professional_network_name": "Matt Calvano",
+          "headline": "CEO at Adaptive | Agentic finance for construction",
+          "current_title": "Co-Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bbd3520ffeb4b3a17e472eae8397ef4d697bfceb803f51482ca054ff38d31859.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mattcalvano"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Adaptive",
+                "company_website": "https://www.adaptive.build",
+                "professional_network_id": "74936419",
+                "title": "Co-Founder and CEO",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689413,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/26489b894f8fd7a8f7ac51bb5113a7ff03cbe4c6d55edf2bf5501e7bd54a385e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/adaptiverealestate",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 126,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1826994992,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJvQrCMBAA4FcJN3doksv99FVEypkLdBCDbTqI-O7S-fvC-2z7Z93s2GAJwJ48c4mCXhFRqc1uxllYmmenYihe0gOLUdNk6s5apFIUo1QVpgBH3wcs4aYaZ6T7FGD0Yc-19vN1Qf79AwAA__8QPL3NdgAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

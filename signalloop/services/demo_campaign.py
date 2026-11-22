@@ -25,7 +25,9 @@ BASE, SEGMENT, VP_MULT, DIRECTOR, CAP = 0.06, 0.25, 1.5, 0.03, 0.6
 FIELDS = ["email", "domain", "profile_url", "sent_at", "opened", "replied", "meeting", "unsubscribed"]
 DEFAULT_CSV = PROJECT_ROOT / "fixtures" / "campaign_results.csv"
 DEFAULT_NAME = "Q4 outbound (synthetic demo)"
-DEFAULT_SEED = 42
+# Planted pattern was the top insight for seeds 1-10 on the recorded contacts (lift 2.2-4.4x,
+# n=39); seed 7 (3.97x, Directors 0.11x) is the recorded demo campaign.
+DEFAULT_SEED = 7
 
 
 def reply_probability(stage: str | None, headcount_band: str | None, seniority: str | None) -> float:

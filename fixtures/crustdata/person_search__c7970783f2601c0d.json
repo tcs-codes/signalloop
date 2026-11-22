@@ -1,0 +1,292 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "fordefi.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 78290,
+        "basic_profile": {
+          "name": "Josh Schwartz",
+          "professional_network_name": "Josh Schwartz",
+          "headline": "CEO & Cofounder @ Fordefi | Institutional MPC wallet for DeFi",
+          "current_title": "Co-Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c1f4a0f635aaecbe9c950b7311817ffb22a631bdfc8d88cb15d7375f6caf9a49.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/josh-schwartz-9339654"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "FORDEFI",
+                "company_website": "http://www.fordefi.com",
+                "professional_network_id": "81664961",
+                "title": "Co-Founder and CEO",
+                "description": "Acquired by Paxos in December 2025",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 711170,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a5e4ab8b0837d9b35ef09f09a811867d1e8414b77542b9adb44cf7e998cc6510.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fordefi",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 78,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1835353934,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 78291,
+        "basic_profile": {
+          "name": "Michael Volfman",
+          "professional_network_name": "Michael Volfman",
+          "headline": "Co-Founder, VP R&D @ Fordefi | Institutional MPC Wallet for DeFi",
+          "current_title": "Co-founder & VP R&D",
+          "normalized_title": {
+            "matched_title": "VP of R&D",
+            "department": "Engineering & Technology",
+            "sub_department": "R&D and Innovation Engineering",
+            "similarity": 0.9878,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f2f71104c29f1eaab2c12ae98376bbab40075fa6f78e242a7584dc2066af82ce.jpg",
+          "location": {
+            "city": "Tel Aviv-Yafo",
+            "state": "Tel Aviv District",
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+            "full_location": "Tel Aviv-Yafo, Tel Aviv District, Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/michaelvolfman"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "FORDEFI",
+                "company_website": "http://www.fordefi.com",
+                "professional_network_id": "81664961",
+                "title": "Co-founder & VP R&D",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 711170,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a5e4ab8b0837d9b35ef09f09a811867d1e8414b77542b9adb44cf7e998cc6510.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fordefi",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Research",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 78,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2068093190,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 78292,
+        "basic_profile": {
+          "name": "Dima Kogan",
+          "professional_network_name": "Dima Kogan",
+          "headline": "Co-Founder & CTO at Fordefi | Institutional MPC Wallet for DeFi",
+          "current_title": "Co-founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9966,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/fef710add8275cb33ab1ec21f95b9002f67734f10cb87db6f50e417bf0c4dfc7.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Israel",
+            "full_location": "Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/dima-kogan-a2b29a93"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "FORDEFI",
+                "company_website": "http://www.fordefi.com",
+                "professional_network_id": "81664961",
+                "title": "Co-founder & CTO",
+                "description": "Acquired by Paxos in December 2025.",
+                "location": {
+                  "raw": "Tel Aviv District, Israel"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 711170,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a5e4ab8b0837d9b35ef09f09a811867d1e8414b77542b9adb44cf7e998cc6510.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fordefi",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 78,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2018282303,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIMa7DIAwA0KsgzxkwmA_kKl9VZIytDFVREzJUVe9edX1veF56vLadzx1WB8VMCAMbIkZKpqTGQlL-MHqrPVGiXFvuLSKmrlq9EvssaNZ897A4OMcxYXX_uYQabouDOSbfNxnX4-f0-QYAAP__WliKE3UAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

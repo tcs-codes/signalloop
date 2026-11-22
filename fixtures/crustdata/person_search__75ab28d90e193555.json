@@ -1,0 +1,728 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "lucrasports.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 22934,
+        "basic_profile": {
+          "name": "Dylan Robbins",
+          "professional_network_name": "Dylan Robbins",
+          "headline": "Founder and CEO @ Lucra | Powering the next generation of brand loyalty through gamification      2026 NBA New York Knicks Champion",
+          "current_title": "Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9992,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0f5dfd22bf4fd576a350a80e9681385ef5f8cb840eaf3b5950c57a514107e479.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/dylan-robbins-56338b63"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lucra",
+                "company_website": "http://www.playlucra.com",
+                "professional_network_id": "70967121",
+                "title": "Founder and CEO",
+                "description": "Give your audience a reason to stay and play. Stop relying on outdated loyalty solutions and start capturing every customer interaction. With Lucra\u2019s flexible social competition platform, you can keep your customers invested, drive longer engagement, and collect valuable data.\n\nLucra powers competitive loyalty through a plug-and-play SDK, which integrates into apps or websites and enables tournaments, mini games, and peer-vs-peer competitions, with real-money or rewards. It handles compliance, payments, fraud prevention, and settlement out of the box, so partners can instantly offer gamified experiences without building or managing complex infrastructure themselves. Top entertainment, hospitality, and consumer brands, including Five Iron Golf, Backyard Sports, ChessKings, TouchTunes, and more, use Lucra's white-label technology to power tournaments and challenges, build loyalty, and drive new revenue. Learn more at\u00a0www.playlucra.com.",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2019-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654118,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6335cf0a06ef572d016d94d706bfa4c9d0553a4fa808d45dda97aed6112b217d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/play-lucra",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1717783572,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Trackit Labs",
+                "company_website": "http://Trackitlabs.com",
+                "professional_network_id": "102647114",
+                "title": "Advisor",
+                "description": "Trackit is building the official data and statistical infrastructure for professional padel.  We work with professional tours and federations to capture, validate, and standardize match data, powering official statistics, broadcast enhancements, media content, and betting-grade data feeds.  Trackit operates as the trusted data layer behind professional padel, compounding historical datasets and enabling the sport\u2019s global professionalization.",
+                "employment_type": "",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3510136,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0499168bf7e67c656fa3710e28435e43177438e742979193ba1c6ce5b8988f39.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trackit-labs",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 9,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2982628850,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Spain",
+                "company_hq_location": "Madrid, Community of Madrid, Spain",
+                "company_hq_location_address_components": [
+                  "Madrid",
+                  "Madrid",
+                  "Community of Madrid",
+                  "Spain"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "EX Interactive Ventures",
+                "company_website": "https://ext-entertainment.com/",
+                "professional_network_id": "31366479",
+                "title": "Advisor",
+                "description": "EX Interactive Ventures is a global sports, gaming, and entertainment venture studio building next-generation fan ecosystems across physical venues, digital platforms, and tokenized loyalty. Our portfolio includes SportzLab, EX Sports App, and Urbanballer \u2014 interconnected platforms designed to turn participation into scalable IP and long-term value. We operate globally, partner with rights holders and athletes, and focus relentlessly on execution, unit economics, and fan engagement infrastructure. We don\u2019t back ideas \u2014 we build engines.",
+                "employment_type": "",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2199652,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a2fc46819b5f73577d4f2b3db9504575ddc44cbb9f6becceaa947cd265e06116.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/exsports",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 19,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Mobile Gaming Apps",
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Mobile Gaming Apps",
+                "position_id": 2918579765,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Arab Emirates",
+                "company_hq_location": "Abu Dhabi, Abu Dhabi, United Arab Emirates",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "CRWN",
+                "company_website": "https://crwn.games",
+                "professional_network_id": "29362110",
+                "title": "Board Member",
+                "description": "CRWN, formerly Reality Unit, is a Poland-based mobile games studio specializing in skill-based, real-money competitive gaming. The studio builds fast-format mini games engineered for engagement, combining competitive mechanics with real-money and free-to-play infrastructure to create experiences that reward skill and keep players coming back. CRWN's games have been deployed across leading digital gaming platforms, driving measurable engagement and retention for partners at scale. Learn more at crwn.games.",
+                "employment_type": "",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1952856,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/26e2f61a6a90cef79cdcc313300325da39e54f719b922a5828740e3389779a57.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/crwn-games",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Computer Games",
+                "position_id": 2921740338,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Las Vegas, Nevada, United States",
+                "company_hq_location_address_components": [
+                  "Las Vegas",
+                  "Clark County",
+                  "Nevada",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "First Tee - Metropolitan New York",
+                "company_website": "http://www.firstteemetny.org",
+                "professional_network_id": "3012552",
+                "title": "Local Trustee",
+                "description": "First Tee is a youth development organization that enables kids to build the strength of character that empowers them through a lifetime of new challenges.",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1761266,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6356000487a9be5b31c113c1de21e93d29a3bb951e9d1925c4c3f239888b12cf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/firsttee-metny",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 45,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Education Management"
+                ],
+                "company_professional_network_industry": "Education Management",
+                "position_id": 2953700728,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Bronx, New York, United States",
+                "company_hq_location_address_components": [
+                  "The Bronx",
+                  "Bronx County",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SportsPredict.com",
+                "company_website": "http://Sportspredict.com",
+                "professional_network_id": "105601063",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 7219557,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/89414d64705b664a225f5415c6299ca108042632c798015914bf4dac76ae0d73.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sportspredictcom",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 16,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2656808458,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Chess Kings",
+                "company_website": "https://chesskingstv.com/",
+                "professional_network_id": "106675855",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 7219508,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c653b595865d03f2fb14797cb122e3dc248debed95e12787d00d1fc13cc38e8c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bet-chess-kings",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Mobile Gaming Apps",
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Mobile Gaming Apps",
+                "position_id": 2656807691,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "San Juan Capistrano, California, United States",
+                "company_hq_location_address_components": [
+                  "San Juan Capistrano",
+                  "Orange County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "TUSL",
+                "company_website": "http://www.tusl.co",
+                "professional_network_id": "108307696",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 11233112,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1725f0041585f9d798fde6d6b2aa36782a1387383a01e9601a280f7be084f92.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/tusl",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 4,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Mobile Gaming Apps",
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Mobile Gaming Apps",
+                "position_id": 2656806836,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Jamie AI",
+                "company_website": "http://www.jamie-ai.com",
+                "professional_network_id": "91107776",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2524226,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e31ead95041ddaae921c81b9e4e5858f8bb4f9ba85a01143c23ae3e9f666712a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/usejamie",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 17,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2656808428,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Fulcrum Ventures",
+                "company_website": "http://www.fulcrumventures.io",
+                "professional_network_id": "27004384",
+                "title": "Mentor & Advisor",
+                "description": "Mentor and Venture Advisor to the Fulcrum Accelerator Program to help founders raise seed capital. Learn more at https://fulcrumventureaccelerator.com/ if you'd like to apply!",
+                "location": {
+                  "raw": "Remote"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1826519,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bfddf592c683186294127ca87de273f96fd3eeecb3b94cad538674bb3f626435.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fulcrum-venture-accelerator",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Fundraising",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Fundraising",
+                "position_id": 2115896187,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Nashville, Tennessee, United States",
+                "company_hq_location_address_components": [
+                  "Nashville",
+                  "Davidson County",
+                  "Tennessee",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Verre Vert",
+                "company_website": "http://verrevertglass.com",
+                "professional_network_id": "70548699",
+                "title": "Co-Founder & Board Member",
+                "description": "Eco-Friendly, Lightweight, and Durable wine bottle solution. Completed Seed funding to commercialize bottle production for Q4 2023. Check out https://www.verrevertglass.com/ if you're interested in learning more!",
+                "location": {
+                  "raw": "San Francisco, California, United States"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2019-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3416763,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/94d448b2778998138fd60361f55c7f0030c0d956da1ed23fdfe7c2bb6e8a6555.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/verre-vert",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 3,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Food and Beverage Services",
+                  "Accommodation and Food Services"
+                ],
+                "company_professional_network_industry": "Food and Beverage Services",
+                "position_id": 1642734303,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Jose, California, United States",
+                "company_hq_location_address_components": [
+                  "San Jose",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 22935,
+        "basic_profile": {
+          "name": "Edward Psyk",
+          "professional_network_name": "Edward (Ed) Psyk",
+          "headline": "CTO / Co-founder @ Bitweary, LLC",
+          "current_title": "CTO / Co-Founder",
+          "normalized_title": {
+            "matched_title": "CTO, Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9997,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a13601aae51f133bf4185bcf95e59c826db1fd6ef73ac48654c2fb239e3652ec.jpg",
+          "location": {
+            "city": "Apex",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Apex, North Carolina, United States",
+            "full_location": "Apex, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/edpsyk"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CollegeHound, LLC",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "CTO / Co-Founder",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2739646911,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Lucra",
+                "company_website": "http://www.playlucra.com",
+                "professional_network_id": "70967121",
+                "title": "Chief Risk Officer (CRO)",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 654118,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6335cf0a06ef572d016d94d706bfa4c9d0553a4fa808d45dda97aed6112b217d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/play-lucra",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2464379489,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Bitweary, LLC",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "CTO / Co-founder",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2019-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 1545969857,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 35726654,
+        "basic_profile": {
+          "name": "Chris Stango",
+          "professional_network_name": "Chris Stango",
+          "headline": "Delivering robust, thoughtfully designed products that propel businesses forward | Product Innovation \ud83d\udd38 Go-to-Market Strategies \ud83d\udd38 Data-Driven Insights \ud83d\udd38 Business Growth \ud83d\udd38 SEO",
+          "current_title": "Chief Experience Officer",
+          "normalized_title": {
+            "matched_title": "Chief Experience Officer",
+            "department": "Customer Service & Support",
+            "sub_department": "Customer Experience Strategy",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/09338890be46cc5206c1030ae3bc6ab59b8783e97704f4cdf90dc7f73d94859b.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/christopherstango"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lucra",
+                "company_website": "http://www.playlucra.com",
+                "professional_network_id": "70967121",
+                "title": "Chief Experience Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654118,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6335cf0a06ef572d016d94d706bfa4c9d0553a4fa808d45dda97aed6112b217d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/play-lucra",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2692336311,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ7CIBAG4FchN3f4oXBAX8WYhsJdOhiJLR2M8d2N8_eh1yXHe93LudNiCDbVnDOa5E1UAUlzE7VbVbSo2lgcBxTvi3B00VUbGzufEwDrQZOhsx-DFnObQ3TMwd8nQ6OP8lhrv55_4u8vAAD__7jhe654AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

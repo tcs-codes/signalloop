@@ -1,0 +1,401 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "cinder.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 183263,
+        "basic_profile": {
+          "name": "Philip Brennan",
+          "professional_network_name": "Philip Brennan",
+          "headline": "Co-Founder at Cinder | AI Trust & Safety",
+          "current_title": "Cinder Agent",
+          "normalized_title": {
+            "matched_title": "VMware Administrator",
+            "department": "Engineering & Technology",
+            "sub_department": "IT Infrastructure & Support",
+            "similarity": 0.7453,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/986aa1d0dba1f950a908a3e8a30fda94c16e32bef0d2d0a7a8896b76d0d99e55.jpg",
+          "location": {
+            "city": "Washington",
+            "state": "District of Columbia",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Washington DC-Baltimore Area",
+            "full_location": "Washington DC-Baltimore Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/philip-brennan-33598610a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cinder",
+                "company_website": "https://cinder.ai",
+                "professional_network_id": "80478520",
+                "title": "Cinder Agent",
+                "description": "",
+                "location": {
+                  "raw": "The internet"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781132,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/601b655413ded675e29729b1189a1326e3687cbcba8104fa3e67d3c76712062c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cinder-intelligence",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2913634756,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Cinder",
+                "company_website": "https://cinder.ai",
+                "professional_network_id": "80478520",
+                "title": "Co-Founder",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 781132,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/601b655413ded675e29729b1189a1326e3687cbcba8104fa3e67d3c76712062c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cinder-intelligence",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1942432361,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 183275,
+        "basic_profile": {
+          "name": "Glen Wise",
+          "professional_network_name": "Glen Wise",
+          "headline": "Co-Founder & CEO at Cinder",
+          "current_title": "Co-Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c89825615b799071b9f01d9afc2dcf14de574fb034bdc0ac6291b1e30fccceb7.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/glenwise"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cinder",
+                "company_website": "https://cinder.ai",
+                "professional_network_id": "80478520",
+                "title": "Co-Founder & CEO",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781132,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/601b655413ded675e29729b1189a1326e3687cbcba8104fa3e67d3c76712062c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cinder-intelligence",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1940541529,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1134021,
+        "basic_profile": {
+          "name": "Brian F.",
+          "professional_network_name": "Brian F.",
+          "headline": "Trust & Safety, Technology and International Security, Counterterrorism",
+          "current_title": "Product Policy",
+          "normalized_title": {
+            "matched_title": "Policy Manager",
+            "department": "Government & Public Sector",
+            "sub_department": "Government Policy & Relations",
+            "similarity": 0.8357,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c3b0ee9bd4ce18250c37ea4259b596598e23d198616c6138c329f30f6a98793f.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brfishman"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "brianfishman"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "OpenAI",
+                "company_website": "https://openai.com/",
+                "professional_network_id": "11130470",
+                "title": "Product Policy",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 631466,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/50d7e5f0c24238f6ee1866712d9fff81a2d3f76503fb7890c7a39e97c725f19f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/openai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 11489,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Research Services",
+                "position_id": 2971243094,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Cinder",
+                "company_website": "https://cinder.ai",
+                "professional_network_id": "80478520",
+                "title": "Cofounder & Board Member",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 781132,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/601b655413ded675e29729b1189a1326e3687cbcba8104fa3e67d3c76712062c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cinder-intelligence",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 60,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1948106743,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "New America",
+                "company_website": "http://www.newamerica.org",
+                "professional_network_id": "6961",
+                "title": "Senior Fellow",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2013-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 929899,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7aa34956de4210cea253c873421cee9f38beee914cdfad0b1bc2bd4578509e8b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/new-america",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 13,
+                "company_headcount_latest": 360,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1880119210,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Washington, District of Columbia, United States",
+                "company_hq_location_address_components": [
+                  "Washington",
+                  "District of Columbia",
+                  "District of Columbia",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQ7CIAwA4FchPe9AC-Vnr2LMUihkByNxYwdjfHfj-fvA62rHe9vl3GE1UDRw7Va6F2Ik6ym3njHWQJGcJsasUUr1iZmFUrHZBiWmpM2RdFgMnOOYsJobovOW8L4YmGPKY6vjev6Fv78AAAD__1EctJd3AAAA",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

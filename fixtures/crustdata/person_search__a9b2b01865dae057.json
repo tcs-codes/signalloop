@@ -1,0 +1,306 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "blockworks.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 3566417,
+        "basic_profile": {
+          "name": "Max Widmer",
+          "professional_network_name": "Max Widmer",
+          "headline": "Sales Manager, Blockworks",
+          "current_title": "Sales Manager",
+          "normalized_title": {
+            "matched_title": "Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bfec9b4d933b5042b508cc177c2b071d7734ff1a293d8742d3ebf1a9b9c07080.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/max-widmer-69393171"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Blockworks",
+                "company_website": "https://blockworks.com",
+                "professional_network_id": "28123388",
+                "title": "Sales Manager",
+                "description": "",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698577,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ebfe691015f9da294a9ea8062d37870b0005b77726b573150f3e3252a84ce17.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-blockworks-group",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 192,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2451185212,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 88366330,
+        "basic_profile": {
+          "name": "Toni Shaw",
+          "professional_network_name": "Toni Shaw",
+          "headline": "--",
+          "current_title": "Flooring Sales Specialist",
+          "normalized_title": {
+            "matched_title": "Flooring Sales Specialist",
+            "department": "Retail & Hospitality",
+            "sub_department": "Retail Sales & Merchandising",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": "England",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "Greater London, England, United Kingdom",
+            "full_location": "Greater London, England, United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/toni-shaw-2218a3327"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Blockworks",
+                "company_website": "https://blockworks.com",
+                "professional_network_id": "28123388",
+                "title": "Flooring Sales Specialist",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698577,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ebfe691015f9da294a9ea8062d37870b0005b77726b573150f3e3252a84ce17.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-blockworks-group",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 192,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2470389174,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 88366432,
+        "basic_profile": {
+          "name": "Ibrahim Asjad",
+          "professional_network_name": "Ibrahim Asjad",
+          "headline": "--",
+          "current_title": "Assistant to Sales Manager",
+          "normalized_title": {
+            "matched_title": "Assistant to Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d524cc3dc57cd8888d3d9a4ad3ae6c36b1b8af3c672d66f8590683f2a3a52a33.jpg",
+          "location": {
+            "city": "Islamabad",
+            "state": "Islamabad Capital Territory",
+            "country": "Pakistan",
+            "continent": "Asia",
+            "raw": "Islamabad, Isl\u0101m\u0101b\u0101d, Pakistan",
+            "full_location": "Islamabad, Isl\u0101m\u0101b\u0101d, Pakistan"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ibrahim-asjad-6406582b1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Blockworks",
+                "company_website": "https://blockworks.com",
+                "professional_network_id": "28123388",
+                "title": "Assistant to Sales Manager",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698577,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ebfe691015f9da294a9ea8062d37870b0005b77726b573150f3e3252a84ce17.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-blockworks-group",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 192,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2331395452,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQrDIBAG4FeRmzOIZ-40r1JKOOMvGUqliRlK6buXzt-HXheO97rbudPiSGORWX1sCZ4z66xeg6RitXoDGvsMKykH5lxjrBtKC2ICoGlFoMnR2Y9Bi7ulxCKRw31yNPqwx7r16_mn-fsLAAD__2JaCI14AAAA",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "faros.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1903123,
+        "basic_profile": {
+          "name": "Brooks Hensley",
+          "professional_network_name": "Brooks Hensley",
+          "headline": "Business Development at Faros",
+          "current_title": "Business Development - Special Projects",
+          "normalized_title": {
+            "matched_title": "Special Projects",
+            "department": "Executive Leadership",
+            "sub_department": "Program & Project Leadership",
+            "similarity": 0.8872,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/79ffd6fc9d4b5382d9d8d70efcc3ea28eee52c8e0a892bd67a2ffbb58641285e.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brooks-hensley-518931181"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Faros",
+                "company_website": "https://www.faros.ai",
+                "professional_network_id": "29317415",
+                "title": "Business Development - Special Projects",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b17c836fe87a4bcf86dd8d8ced3c723ffd93c0a8f0272a7b2631e3e8a32aa71f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faros-ai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2337401342,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2807705,
+        "basic_profile": {
+          "name": "Yogita Khatri",
+          "professional_network_name": "Yogita Khatri",
+          "headline": "Head of Inside Sales | Global Sales Development Leader | SaaS Revenue Growth | Built $400M+ Pipeline | SDR Team Architect | International Sales Strategist | Empowering Teams to Global Success",
+          "current_title": "Head of Sales and Business Development",
+          "normalized_title": {
+            "matched_title": "Head of Sales and Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/832d004c75c56cf8aab0db900c71c800f46e22cc56a534316276d449ede483ee.jpg",
+          "location": {
+            "city": "San Jose",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Jose, California, United States",
+            "full_location": "San Jose, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yogitaskhatri"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Faros",
+                "company_website": "https://www.faros.ai",
+                "professional_network_id": "29317415",
+                "title": "Head of Sales and Business Development",
+                "description": "",
+                "location": {
+                  "raw": "San Mateo, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b17c836fe87a4bcf86dd8d8ced3c723ffd93c0a8f0272a7b2631e3e8a32aa71f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faros-ai",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3009611697,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SDR Leaders of USA",
+                "company_website": "https://sdrleaders.global",
+                "professional_network_id": "104542547",
+                "title": "Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2667144,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6a7afac8c965600589b7515ca004e7b3fc4854bffbab98414c31174b0890c5c9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sdr-leaders-of-usa",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 194,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 2605198528,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SDRLeader.com",
+                "company_website": "http://sdrleader.com",
+                "professional_network_id": "87227781",
+                "title": "Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1708741,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d8207062f4715138c0f48d75990c984db4fa0f15573cb15762f86e73e5906760.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sdrleader-com",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2605196811,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "RevGenius",
+                "company_website": "https://bit.ly/34Poibx",
+                "professional_network_id": "11701026",
+                "title": "Ambassador, RevGenius",
+                "description": "",
+                "location": {
+                  "raw": "San Jose, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1032683,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6b2efa7ce126aeccb17b73580e4eb288a7501069b7d26b44a4ed1ea3ba0e683d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/revgenius",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 3588,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1733720051,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 7056844,
+        "basic_profile": {
+          "name": "Jasmina Shappy",
+          "professional_network_name": "Jasmina Shappy",
+          "headline": "Revenue Operations Leader | Marketing & Sales Operations Expert | Driving Predictable Growth Through Data-Driven Strategy | 15x ARR Growth Track Record",
+          "current_title": "Revenue Operations",
+          "normalized_title": {
+            "matched_title": "Revenue Operations",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/709ea406b30dd1d50f746d2120c0333dc0bcf456d1ef2378e058857a56ba6476.jpg",
+          "location": {
+            "city": "Vancouver",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Vancouver, Washington, United States",
+            "full_location": "Vancouver, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jasmina-shappy"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Faros",
+                "company_website": "https://www.faros.ai",
+                "professional_network_id": "29317415",
+                "title": "Revenue Operations",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b17c836fe87a4bcf86dd8d8ced3c723ffd93c0a8f0272a7b2631e3e8a32aa71f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faros-ai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2873978624,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Women Who Explore",
+                "company_website": "http://www.womenwhoexplore.com",
+                "professional_network_id": "93229352",
+                "title": "International Trip Host",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2229231,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8b956ae4a1beaba9136efd00544dfc03417fcf8ea21c30cd4e7b4e5fef9b8be9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/womenwhoexplore",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Travel Arrangements",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Travel Arrangements",
+                "position_id": 2870486193,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Women Who Explore",
+                "company_website": "http://www.womenwhoexplore.com",
+                "professional_network_id": "93229352",
+                "title": "Event & Community Ambassador",
+                "description": "Empowering women to connect with nature, be comfortable hiking and adventuring, and build a meaningful community.\n\n\u2022 Organize and lead monthly events, designed to inspire and engage women in outdoor adventures\n\u2022 Manage and nurture a thriving online community of 12K+ members as the regional leader of the Women Who Explore Washington State Facebook group\n\u2022 Advocate for and promote Women Who Explore initiatives, supporting a global community of over 500K women passionate about the outdoors",
+                "location": {
+                  "raw": "Washington, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2229231,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8b956ae4a1beaba9136efd00544dfc03417fcf8ea21c30cd4e7b4e5fef9b8be9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/womenwhoexplore",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Travel Arrangements",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Travel Arrangements",
+                "position_id": 2870491016,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJvQ7CIBAA4FchN3cA4SjXVzGmgftJByOxpYMxvrvp_H3hfer-Wbd6bLA40FkMMeQsTGxIhZGYQ65em5nUqBSCR0lkOYnXiBVLjKFFTLdiDSYHR98HLO4-e8wlpcfkYPRRnyv383UJ_f4BAAD__7uneVZ3AAAA",
+    "total_count": 9,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

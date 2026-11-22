@@ -1,0 +1,184 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "nango.dev"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.23,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 541552,
+        "basic_profile": {
+          "name": "Om Mistry",
+          "professional_network_name": "Om Mistry",
+          "headline": "Founding Growth @ Nango | Entrepreneur",
+          "current_title": "Founding Growth",
+          "normalized_title": {
+            "matched_title": "Co-Founder, Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9475,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e13823e7fde675065de6afa3300c475e3323eced51c280e63e4c2a1403c1c4ce.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/omystery"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Nango",
+                "company_website": "https://www.nango.dev",
+                "professional_network_id": "86613346",
+                "title": "Founding Growth",
+                "description": "Leading growth initiatives across Product + Website + Channel Activation",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810130,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3abed8a36ff082c08b72c22aff5c4b3179c5c3ae9a0635f066585ba4dcb3e3ae.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/nangohq",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 20,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3036527138,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Various Startups",
+                "company_website": "",
+                "professional_network_id": "68353711",
+                "title": "Growth Advisor",
+                "description": "Advising on gtm + growth eng instrumentation/execution",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6035190,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5c6ee5a8c5a035bfd529dd445f7585f03739dd1b8a327baeaf9f8f78925434e9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/various-startups1",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1852,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 3000742628,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 1,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,1445 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "rox.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 54719,
+        "basic_profile": {
+          "name": "Ishan Mukherjee",
+          "professional_network_name": "Ishan Mukherjee",
+          "headline": "Co-Founder/CEO @ Rox - The Revenue Agent for the G2000",
+          "current_title": "Co-Founder/CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9996,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f83d551a6e314f936c6f5ef000aea224958b39420fd6843f8ee00a8d731b5f22.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ishanm"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "ishanmkh"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Rox",
+                "company_website": "https://www.rox.com/",
+                "professional_network_id": "99211661",
+                "title": "Co-Founder/CEO",
+                "description": "Rox is an Agentic CRM used by the best enterprises to manage their most essential customer relations. Backed by Sequoia, GV, General Catalyst and 25+ super-angels.",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 2364942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e890839487e818413e658bc27a8b8c672bd5f16079f830fd3032085a6c741463.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rox-data-corp",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 181,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2334515081,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1322407,
+        "basic_profile": {
+          "name": "S. Can Tima\u011fur",
+          "professional_network_name": "S. Can Tima\u011fur",
+          "headline": "Founder @Allbound OS | Building AI-Native GTM Systems",
+          "current_title": "Founder",
+          "normalized_title": {
+            "matched_title": "Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c090fb6fa6dded5bc5b10bd3c18879da20541d3ba5a3cf775cb1f1a7ec09cc74.jpg",
+          "location": {
+            "city": "\u0130zmir",
+            "state": "\u0130zmir",
+            "country": "T\u00fcrkiye",
+            "continent": "Asia",
+            "raw": "\u0130zmir, T\u00fcrkiye",
+            "full_location": "\u0130zmir, T\u00fcrkiye"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/cantimagur"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Allbound OS",
+                "company_website": "",
+                "professional_network_id": "104671450",
+                "title": "Founder",
+                "description": "What Allbound OS is all about:\n\n- Getting outbound leads on autopilot.\n- Building GTM workflows that increase your pipeline.\n- Helping you get warm leads through Linkedin content.\n- Building AI outbound workflows that scale your revenue.\n- Choosing the right sales tech stack without breaking the bank.\n\nWant to work with me and find out how much I charge for this service? \n\nAll you need to do is to fill out this form: https://tally.so/r/3xNAzr\n\nI will get back to you within 24 hours.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 6432836,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2f6594f08c168a5de5c9d438cabdd4c5738204c52abaeb4a04a738bf80ec2a64.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/allbound-os",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Advertising Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Advertising Services",
+                "position_id": 2471691019,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Rox",
+                "company_website": "https://www.rox.com/",
+                "professional_network_id": "99211661",
+                "title": "Strategic Advisor & Partner",
+                "description": "",
+                "location": {
+                  "raw": "\u0421\u0430\u043d-\u0424\u0440\u0430\u043d\u0446\u0438\u0441\u043a\u043e, CA"
+                },
+                "employment_type": "",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2364942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e890839487e818413e658bc27a8b8c672bd5f16079f830fd3032085a6c741463.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rox-data-corp",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 181,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2951608047,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "AI Ark",
+                "company_website": "http://ai-ark.com",
+                "professional_network_id": "57694046",
+                "title": "Expert Partner at AI Ark",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3533040,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7d6105767b2caec55393bd2f574d1d354ad7bfba0a36911575ec341be1da2368.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/aiark",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 42,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2862906432,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Clay",
+                "company_website": "https://www.clay.com/?utm=linkedin",
+                "professional_network_id": "13018048",
+                "title": "Clay Creator and Expert",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1010356,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bbbfb15b44f620a171a6a0f1920fbd977ec8e7432b9fda40b2620fc5dff3a628.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/grow-with-clay",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1580,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2862915418,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "BetterContact",
+                "company_website": "https://bettercontact.run",
+                "professional_network_id": "79451853",
+                "title": "Certified Agency Partner",
+                "description": "",
+                "location": {
+                  "raw": "Lyon, Auvergne-Rh\u00f4ne-Alpes, France"
+                },
+                "employment_type": "",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6034601,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/be8a66342478ca59601aa9a46b8c8ee63fc1b700d58872ef32df77fc1c428967.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bettercontact",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2862905578,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "France",
+                "company_hq_location": "Paris, \u00cele-de-France, France",
+                "company_hq_location_address_components": [
+                  "\u00cele-de-France",
+                  "France"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Master Inbox",
+                "company_website": "https://masterinbox.com",
+                "professional_network_id": "105954189",
+                "title": "MasterInbox Expert and Advisor",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4776651,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2628439d9b48c5095c25150e0b0548836e64be5a48e0efce6f1275584dfede15.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/masterinbox",
+                "seniority_level": "Senior",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 8,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Research Services",
+                "position_id": 2862920030,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "HeyReach.io",
+                "company_website": "https://heyreach.io/",
+                "professional_network_id": "86839659",
+                "title": "Partner & Expert",
+                "description": "",
+                "location": {
+                  "raw": "Skopje Statistical Region, North Macedonia"
+                },
+                "employment_type": "",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1050465,
+                "company_status": "deleted",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56b293e8b22a765b574982ed14bd96555c1c0465618bd69c13e16b3cd46eff42.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/heyreachio",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2690274898,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "North Macedonia",
+                "company_hq_location": "Skopje, Greater Skopje, North Macedonia",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "DiscoLike",
+                "company_website": "https://discolike.com",
+                "professional_network_id": "90400078",
+                "title": "Partner & Expert",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1727168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2441cb39ef0ac245a6a66b0a206b337c69dbee1e50ca7d428dd5696ed6174121.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/discolike",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 13,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Information Services",
+                "position_id": 2689986028,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Mateo, California, United States",
+                "company_hq_location_address_components": [
+                  "San Mateo",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Prospeo.io",
+                "company_website": "https://prospeo.io",
+                "professional_network_id": "105527835",
+                "title": "Certified Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1048970,
+                "company_status": "deleted",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2750866ae7ada625c673ce2868a9f40103e64f12c8dde73dc9bb127633178585.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getprospeo",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 39,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2689989357,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "BounceBan (Verify risky emails without sending messages)",
+                "company_website": "https://bounceban.com/",
+                "professional_network_id": "91172130",
+                "title": "Certified Expert",
+                "description": "",
+                "location": {
+                  "raw": "Dover, Delaware, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1985121,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7557b4afec4c85af91f62714140c5d511a436921b3e7818c36e7a4d4cc83f828.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bounceban",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2690279339,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dover, Delaware, United States",
+                "company_hq_location_address_components": [
+                  "Dover",
+                  "Kent County",
+                  "Delaware",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Sendspark",
+                "company_website": "https://www.sendspark.com/",
+                "professional_network_id": "13010192",
+                "title": "Strategic Advisor",
+                "description": "Sendspark is an AI-powered video platform to make personalized videos at scale.",
+                "location": {
+                  "raw": "San Antonio, Texas, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 815891,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/af49ddefe23142d5337b41c19af5c84788c4c915a14c93ff7c7836ee42b9ce22.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sendspark",
+                "seniority_level": "Strategic",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 19,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2543543615,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Antonio, Texas, United States",
+                "company_hq_location_address_components": [
+                  "San Antonio",
+                  "Bexar County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Trigify.io, (acquired by HubSpot)",
+                "company_website": "https://www.trigify.io/",
+                "professional_network_id": "93617504",
+                "title": "Certified Trigger Specialist",
+                "description": "Trigify leverages sales triggers to help businesses find pre-intent leads.",
+                "location": {
+                  "raw": "London Area, United Kingdom"
+                },
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1066068,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0974007bf3221051c6607c4b4ab50259d6ee5941b1c3a00199db0343b28973d6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trigify",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 19,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2543545425,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Common Room by Zoom",
+                "company_website": "https://commonroom.io/?utm_source=linkedin",
+                "professional_network_id": "72186786",
+                "title": "GTM Partner",
+                "description": "Common Room gives GTM teams a single place to capture every buying signal, score and prioritize the person and account behind the signal, and run high-converting plays at scale.",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 633084,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/00c15f8b4a8800d50ff28912e987ecd84ca40341933708eefd885d382f4d2275.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/common-room-hq",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 168,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2543546237,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Woodpecker.co",
+                "company_website": "https://woodpecker.co",
+                "professional_network_id": "6387173",
+                "title": "Strategic Advisor & Partner",
+                "description": "Woodpecker is the only cold email tool that offers free: follow-ups, email validation, warm-ups, unlimited email accounts and unlimited team members.",
+                "location": {
+                  "raw": "Wroc\u0142aw, Dolno\u015bl\u0105skie, Poland"
+                },
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 924372,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e88a50d53341e25069ef18123f01e0ea255a504f0e512c5b360529c61527da59.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/woodpecker-co",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2543546448,
+                "company_type": "Public Company",
+                "company_headquarters_country": "Poland",
+                "company_hq_location": "Wroc\u0142aw, Lower Silesian Voivodeship, Poland",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Icypeas",
+                "company_website": "https://www.icypeas.com/?utm_source=linkedin",
+                "professional_network_id": "89667826",
+                "title": "Strategic Advisor",
+                "description": "",
+                "location": {
+                  "raw": "Paris, \u00cele-de-France, France"
+                },
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2565917,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/da38643e25d69b579fd5c393cb1c7c979ab092f7955bdce6bb126555c4c53795.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/icypeas",
+                "seniority_level": "Strategic",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2689990224,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "France",
+                "company_hq_location": "Paris 09, Paris, \u00cele-de-France, France",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Persana AI",
+                "company_website": "https://www.persana.ai/",
+                "professional_network_id": "75395476",
+                "title": "Strategic Advisor",
+                "description": "Persana helps you find, enrich, personalize outbound leveraging 75+ data sources signals, and AI agents to close more deals.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 809902,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e72c0fa849229237acecc6db54255fb95822bbfa058efd972ebcf94abbcc3770.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/persana-ai",
+                "seniority_level": "Strategic",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 16,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2472147779,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Spiky.AI",
+                "company_website": "https://www.spiky.ai",
+                "professional_network_id": "68612914",
+                "title": "Strategic Advisor",
+                "description": "Spiky uses AI to help you gain insights, identify areas for improvement and determine the path to success for your sales meetings.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 823339,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7f9934aa50ccf1c7f3008da9e950bc3b6d35c6e25d5ac182db3e06614281ff4c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/spiky-ai",
+                "seniority_level": "Strategic",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2450817414,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Maildoso",
+                "company_website": "https://maildoso.ai/",
+                "professional_network_id": "100304536",
+                "title": "Strategic Advisor & Partner",
+                "description": "Maildoso helps you create hundreds of mailboxes in a few clicks and scale your outbound campaigns with rock-solid deliverability.",
+                "location": {
+                  "raw": "Granite Bay, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1306380,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a372ae31a973fc16f32d24b51c2606d7f7cc24d4d2e9619806536aeacb157eb7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/maildoso",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 25,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2441450453,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Granite Bay, California, United States",
+                "company_hq_location_address_components": [
+                  "Granite Bay",
+                  "Placer County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Persana AI",
+                "company_website": "https://www.persana.ai/",
+                "professional_network_id": "75395476",
+                "title": "Certified Persana Pro",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 809902,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e72c0fa849229237acecc6db54255fb95822bbfa058efd972ebcf94abbcc3770.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/persana-ai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 16,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2435394570,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Salesfinity",
+                "company_website": "https://salesfinity.ai?utm_source=LinkedinPage",
+                "professional_network_id": "82591929",
+                "title": "Partner",
+                "description": "Salesfinity helps you enrich contacts with validated mobile numbers, get 5.2X more call connects with AI parallel dialer, and follow up with warm prospects at the right time with the right message.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1033734,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/666e7c81511e6c6f537c8afc4c0caa00932b433349c4166240064b24b9c82e49.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/salesfinity-co",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 22,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2376756535,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "RevGenius",
+                "company_website": "https://bit.ly/34Poibx",
+                "professional_network_id": "11701026",
+                "title": "Member",
+                "description": "RevGenius is a community of revenue-generating sales, marketing, customer success, and revops professionals brought together to learn, share, support, and grow with each other.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1032683,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6b2efa7ce126aeccb17b73580e4eb288a7501069b7d26b44a4ed1ea3ba0e683d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/revgenius",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 3588,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 2316624507,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Modern Sales Pros",
+                "company_website": "http://www.modernsaleshq.com",
+                "professional_network_id": "18762737",
+                "title": "Member",
+                "description": "35,000+ members, 6k+ companies, invite-only peer learning community focused on sales leadership, sales management, sales operations, and sales enablement roles from the best revenue organizations.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1216589,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/30ccc925a8803a048fb6a4d3cb1a74615d617b212ed50b314b65f878b0f0e41a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/modernsalespros",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 305,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 2316653913,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "RevOps Co-op",
+                "company_website": "http://www.revopscoop.com",
+                "professional_network_id": "68641483",
+                "title": "Member",
+                "description": "The RevOps Co-op is a community for revenue operations professionals - including sales operations, marketing operations, and customer success operations.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1060074,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1c3e5eae082a62caca422a1d2d8a7e0900a84574d58fd56179fa9763d32a9e88.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/revopscoop",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1286,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2316661247,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Indie Hackers",
+                "company_website": "https://www.indiehackers.com",
+                "professional_network_id": "17989631",
+                "title": "Member",
+                "description": "Indie Hackers is a place where the founders of profitable businesses and side projects can share their stories transparently, and where entrepreneurs can come to read and learn from those examples.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1599483,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9335b98728faa863b30d8daf4218990459c52c88322dd005b83c9f90b9917d9e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/indie-hackers",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 13,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Online Audio and Video Media",
+                  "Internet Publishing",
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Online Audio and Video Media",
+                "position_id": 2317516986,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SaaS Alliance",
+                "company_website": "https://saasalliance.io/?utm_source=linkedin&utm_medium=social&utm_campaign=about%20page",
+                "professional_network_id": "31559381",
+                "title": "Member",
+                "description": "Future of SaaS was founded with a vision of providing the most comprehensive resources, content, and learning materials for SaaS leaders at every stage of growth. This is why we cover everything from finance and investment to marketing, strategy, customer success, DEI, and much more!",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1389183,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/01f7e013e10947727ccbd5d770f437f2ca77e5fde2b5af20d2318a19b9dfd38d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/saas-alliance",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 53,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 2317528484,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Hard Skill Exchange",
+                "company_website": "https://hardskill.exchange/",
+                "professional_network_id": "88691659",
+                "title": "Member",
+                "description": "HSE - The world\u2019s first live 1:1 skill-building marketplace for GTM.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1410951,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5d22ae746d9f33a497cd30bcb228926c5a2b1b3e3f483a13c854206c0b27d0e6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hard-skill-exchange",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 284,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Media",
+                "position_id": 2318608765,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SalesHookup",
+                "company_website": "https://www.saleshookup.com/",
+                "professional_network_id": "74483540",
+                "title": "Member",
+                "description": "SalesHookup is a networking platform that matches sales professionals for video networking sessions based on weekly time slots that they choose.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1086022,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c07c7506ea7722e02284979bbf218411e44eef3ae5ac38e5cf3b9050c97afe31.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/saleshookup",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 81,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Social Networking Platforms",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Social Networking Platforms",
+                "position_id": 2318622209,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Spain",
+                "company_hq_location": "Valencia, Valencian Community, Spain",
+                "company_hq_location_address_components": [
+                  "Valencia",
+                  "Valencia",
+                  "Valencian Community",
+                  "Spain"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SALP",
+                "company_website": "https://startupdriver.co/",
+                "professional_network_id": "80317960",
+                "title": "Strategic Advisor",
+                "description": "SALP helps you check up your startup risk, potential and valuation.",
+                "location": {
+                  "raw": "Milano"
+                },
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1926703,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2ea461e54cece9e652d8f63e57be6576cdd94891f6c4f1557d994c214a9e859d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/salp",
+                "seniority_level": "Strategic",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2332189500,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Italy",
+                "company_hq_location": "Milano, Lombardy, Italy",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "La Growth Machine",
+                "company_website": "",
+                "professional_network_id": "106920766",
+                "title": "Certified Expert",
+                "description": "LGM helps you create fully personalized, multi-channel conversations at scale.",
+                "location": {
+                  "raw": "France"
+                },
+                "employment_type": "",
+                "start_date": "2023-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2470987417,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "THE MRR CLUB",
+                "company_website": "https://themrr.club",
+                "professional_network_id": "100866688",
+                "title": "Member",
+                "description": "Start & Grow your SaaS!",
+                "employment_type": "",
+                "start_date": "2023-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1959026,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/61771a3e48fa69704caa4b972303dc077dce5a6313d80b46d23aa123aa0a48c2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mrrclub",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Education"
+                ],
+                "company_professional_network_industry": "Education",
+                "position_id": 2337608829,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "https://www.linkedin.com/redir/suspicious-page?url=Instantly%2eai",
+                "company_website": "http://www.instantly.ai/?utm_source=linkedin&utm_medium=profile&utm_campaign=trial",
+                "professional_network_id": "79083508",
+                "title": "Certified Expert Partner",
+                "description": "Instantly helps you scale your outreach campaigns through unlimited email accounts, warmup, and smart AI.",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1039860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8179af1b742fc0b433de526f51013f8e3b9c0cd2420f7ceb436aa36c0854bf37.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/instantlyapp",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 396,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2470977965,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sheridan, Wyoming, United States",
+                "company_hq_location_address_components": [
+                  "Sheridan",
+                  "Sheridan County",
+                  "Wyoming",
+                  "United States",
+                  "82801"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2724739,
+        "basic_profile": {
+          "name": "Adam Ali",
+          "professional_network_name": "Adam Ali",
+          "headline": "Chief Revenue Officer at Rox",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/de9222a2eaee2d0f5688fc1500755de6b1e5a284a6bffc4d45ca5a304302d15e.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/adamali1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Rox",
+                "company_website": "https://www.rox.com/",
+                "professional_network_id": "99211661",
+                "title": "Chief Revenue Officer",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 2364942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e890839487e818413e658bc27a8b8c672bd5f16079f830fd3032085a6c741463.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rox-data-corp",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 181,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3069966608,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8A7Whhv2LMAmvJDkbixg7G-O_G8_vA67Ljve7l3GFxwBSMo6lK3WImDBgkVI-tRWNLc0pZxauWRlwL-io-ocTZlEpjIpgcnP0YsLgbCs5C-T45GH2Ux7r16_kX_v4CAAD__66jr1p3AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

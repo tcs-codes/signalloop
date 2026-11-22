@@ -1,0 +1,402 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "scenario.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 237541,
+        "basic_profile": {
+          "name": "Emmanuel de Maistre",
+          "professional_network_name": "Emmanuel de Maistre",
+          "headline": "Co-founder & CEO of Scenario.com. Empowering creative teams to take full control of their AI content workflows. \ud83c\uddfa\ud83c\uddf8 \ud83c\uddeb\ud83c\uddf7",
+          "current_title": "Co-founder & CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/fb2afa3996e099045c0cda5a68de2e59e7a3444bd125c896336dac03285263bb.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/edemaistre"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Scenario",
+                "company_website": "https://www.scenario.com/",
+                "professional_network_id": "74891157",
+                "title": "Co-founder & CEO",
+                "description": "Empowering creative teams to take full control of their AI content workflows, at scale.\n\nTrusted by Scopely, Supercell, Epic Games, Tripledot Studios, Voodoo, Miniclip, Ubisoft, Unity, InnoGames/MTG, and dozens more across the entertainment, gaming, and creative industries.\n\nTry it out on scenario.com (web UI, nodes, API, MCP)",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781031,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/36951757b8bf91f8161e525e3831162ad4988b6e6e1123f1446b8f060422604c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/scenario-com",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1820968578,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 466100,
+        "basic_profile": {
+          "name": "Herv\u00e9 Nivon",
+          "professional_network_name": "Herv\u00e9 Nivon",
+          "headline": "Co-Founder & CTO of @ Scenario | BA & startup advisor",
+          "current_title": "Co-Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9972,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/86ebc312143b02af7e23a6aebed906fc7d4f07556a39da45b0f750bccd1de8cc.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/hervenivon"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "hervenivon"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Scenario",
+                "company_website": "https://www.scenario.com/",
+                "professional_network_id": "74891157",
+                "title": "Co-Founder & CTO",
+                "description": "Scenario reshapes how creators build and scale their worlds.\n\nWe\u2019ve built an AI-native platform that empowers game studios, artists, and brands to effortlessly generate high-quality, production-ready assets and marketing visuals. By combining state-of-the-art models, proprietary ML workflows, and a creator-first UX, we eliminate the heavy lifting\u2014so you can focus on what matters: creating.\n\nWhether you\u2019re building a game, launching a product, or crafting a universe, Scenario puts powerful, intuitive tools at your fingertips.\n\nCurious? Try it out \ud83d\udc49 https://app.scenario.com\n\nIf you\u2019re passionate about generative AI, gaming, or the future of digital creation, let\u2019s talk! \ud83e\udd17",
+                "location": {
+                  "raw": "Paris"
+                },
+                "employment_type": "",
+                "start_date": "2021-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781031,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/36951757b8bf91f8161e525e3831162ad4988b6e6e1123f1446b8f060422604c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/scenario-com",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1807944948,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SIANA",
+                "company_website": "http://www.siana.app",
+                "professional_network_id": "9855246",
+                "title": "Angel Investor",
+                "description": "Reinventing a whole new way to work with next-gen software: Sell more, Live more, Work simpler",
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3627181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/cd4f501f70fddcbfc2c0612a05c0b09865765ab97baec4366df42c1b3a63e6f0.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/siana",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 19,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2554002500,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "France",
+                "company_hq_location": "Paris, \u00cele-de-France, France",
+                "company_hq_location_address_components": [
+                  "\u00cele-de-France",
+                  "France"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pruna AI",
+                "company_website": "https://www.pruna.ai/",
+                "professional_network_id": "93832878",
+                "title": "Angel Investor",
+                "description": "Pruna.ai simplifies pursuing your AI innovations while maintaining performance in inference speed or memory footprint.",
+                "employment_type": "",
+                "start_date": "2024-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1964532,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/90ef1ba6021a14c57610ab60e55b9e6d2d077013c9e85e1673ea0b3c2de6774b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pruna-ai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 29,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2527362403,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Germany",
+                "company_hq_location": "M\u00fcnchen, Bavaria, Germany",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Purchasely",
+                "company_website": "http://www.purchasely.com",
+                "professional_network_id": "37061985",
+                "title": "Angel Investor",
+                "description": "",
+                "location": {
+                  "raw": "Paris, \u00cele-de-France, France"
+                },
+                "employment_type": "",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 816960,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/91ef881d7d8d4d8d04294dc7ac73647a57251fc85f79bfa2d371dfb55650c94e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/purchasely",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 28,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1755349696,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "Paris 03, Paris, \u00cele-de-France, France",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 4115889,
+        "basic_profile": {
+          "name": "Michel Tjoeng",
+          "professional_network_name": "Michel Tjoeng",
+          "headline": "Chief Product Officer at Scenario",
+          "current_title": "Chief Product Officer",
+          "normalized_title": {
+            "matched_title": "Chief Product Officer",
+            "department": "Product & Design",
+            "sub_department": "Product Management",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2901681ebe911c35aaac3148c1138f629b2f888bf2c4bfdad8b1c280efb424ea.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "United Kingdom",
+            "full_location": "United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/micheltjoeng"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "spindriftgroup"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Scenario",
+                "company_website": "https://www.scenario.com/",
+                "professional_network_id": "74891157",
+                "title": "Chief Product Officer",
+                "description": "",
+                "location": {
+                  "raw": "London"
+                },
+                "employment_type": "",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781031,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/36951757b8bf91f8161e525e3831162ad4988b6e6e1123f1446b8f060422604c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/scenario-com",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3014492103,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJQQ6CMBAF0Ks0s2ZB7Uz5w1WMIeVXwsJIhLIwxrsb1-8jr_O-v6e1HKuMQYo5lwJzzjkPF1YSSEA2oyZEr4jse9XkQ5yxIFWtRrc-q9MpXZBj25uM4aoxGuC3LkjbWnlM3M7nX_T7CwAA__-tna0NdwAAAA==",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

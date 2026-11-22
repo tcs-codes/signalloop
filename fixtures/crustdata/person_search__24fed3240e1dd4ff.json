@@ -1,0 +1,386 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "flagright.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 391227,
+        "basic_profile": {
+          "name": "Baran Ozkan",
+          "professional_network_name": "Baran Ozkan, CAMS",
+          "headline": "Co-founder & CEO at Flagright | AI OS for fincrime compliance",
+          "current_title": "Co-Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c2766264e88203f69f370a6694808c49a93baaca8aa5fff02bfdcaf497d388c7.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Singapore",
+            "continent": "Asia",
+            "raw": "Singapore",
+            "full_location": "Singapore"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/baranozkan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flagright",
+                "company_website": "https://link.flagright.com/LinkedIn",
+                "professional_network_id": "72378279",
+                "title": "Co-Founder & CEO",
+                "description": "Flagright arms regulated financial institutions with the best-in-class technology to combat financial crime and meet AML compliance regulations. Among many other industry-leading capabilities, Flagright offers the fastest integration in the world, fastest time-to-value, and the most intuitive AI capabilities. \n\nFlagright's AI operating system delivers all must-have capabilities across real-time transaction monitoring, customer risk scoring, case management, entity resolution, quality assurance, SAR filing, and watchlist screening among other industry-leading features. Our trademarked AI Forensics suite of AI agents deliver outcomes by improving false positive rates, alert handling times, and quality assurance while replacing many human tasks across L1, L2, and L3 lifecycle. \n\nContact us for a free demo at https://flagright.com/contact",
+                "location": {
+                  "raw": "San Francisco |  Singapore"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810685,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81ee61909436bff09afc037e0b637df77313182e9f163a72e4e9f9aa8fb4b005.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flagright",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1826300799,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Saturn",
+                "company_website": "https://www.SaturnOS.com/",
+                "professional_network_id": "98569283",
+                "title": "Angel Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1034510,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/eb3d7c0fa41ea66e373fe9e925cd3166048995a2f382398bc6943ea15fa455b8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/saturntechnology",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 76,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 2602885470,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "xPay (YC W24)",
+                "company_website": "https://www.xpaycheckout.com/",
+                "professional_network_id": "99119551",
+                "title": "Angel Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1088278,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/67a9d5a78f3733fed45448ad4d67b84f44b48843c50f4448fb2b16aae5ac821f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/xpay-checkout",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 2374828002,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "HSR Layout, Karnataka, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Vavita",
+                "company_website": "https://www.vavita.com",
+                "professional_network_id": "104923623",
+                "title": "Board Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4184566,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5aeb176d5e76c076f63f1ee374d77d5c5b695a19f1adb0dae63e1f3e71c92d31.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vavita1",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 2575555189,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "PoloTab (YC W23)",
+                "company_website": "https://polotab.com",
+                "professional_network_id": "81905131",
+                "title": "Angel Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2023-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 810081,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/337f3d323800a2aa16e43f3412f4a8ff4a32397f566e828996a4a6f35b8b0b9b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/polotab",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Restaurants",
+                  "Food and Beverage Services",
+                  "Accommodation and Food Services"
+                ],
+                "company_professional_network_industry": "Restaurants",
+                "position_id": 2374824863,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Mexico",
+                "company_hq_location": "Mexico City, Mexico City, Mexico",
+                "company_hq_location_address_components": [
+                  "Mexico City",
+                  "Mexico City",
+                  "Mexico"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Berry (YC W23)",
+                "company_website": "https://berryai.com/",
+                "professional_network_id": "89956047",
+                "title": "Angel Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2023-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 809927,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ae2e87f487f20a60ff2f093f0487d16384a9ddd7ec5062c755a0202613a67767.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/berryhq",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2374826523,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3543959,
+        "basic_profile": {
+          "name": "Desmond Teo",
+          "professional_network_name": "Desmond Teo",
+          "headline": "Building AML & fraud solutions @ Flagright",
+          "current_title": "Senior Associate, Founder\u2019s Office",
+          "normalized_title": {
+            "matched_title": "Founder's Office Associate",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9566,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/762a28273b91cea0c6d016d7384fb5c8301f2f66142c0bba1c04c45b9c9bcace.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Singapore",
+            "continent": "Asia",
+            "raw": "Singapore, Singapore",
+            "full_location": "Singapore, Singapore"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/desmondtyc"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flagright",
+                "company_website": "https://link.flagright.com/LinkedIn",
+                "professional_network_id": "72378279",
+                "title": "Senior Associate, Founder\u2019s Office",
+                "description": "The AI operating system for financial crime compliance trusted by 100+ financial institutions globally",
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810685,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81ee61909436bff09afc037e0b637df77313182e9f163a72e4e9f9aa8fb4b005.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flagright",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2980587384,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

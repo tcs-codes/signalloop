@@ -1,0 +1,517 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "breedr.co"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 120164230,
+        "basic_profile": {
+          "name": "James Wright",
+          "professional_network_name": "James Wright",
+          "headline": "Head of Growth & Marketing at Breedr | Bringing data to the global livestock supply chain",
+          "current_title": "Head of Growth and Marketing",
+          "normalized_title": {
+            "matched_title": "Head of Growth Marketing",
+            "department": "Marketing",
+            "sub_department": "Digital & Social Media Marketing",
+            "similarity": 0.9818,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c1bcdb9aefab434c4d0c311a3980471ee2499ee8ea49443d362f21571a20ce9c.jpg",
+          "location": {
+            "city": "Brayford",
+            "state": "England",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "Brayford, England, United Kingdom",
+            "full_location": "Brayford, England, United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/james-wright-37b3475a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "JPBWFarm"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Breedr",
+                "company_website": "https://www.breedr.co",
+                "professional_network_id": "18452432",
+                "title": "Head of Growth and Marketing",
+                "description": "- Driving our global growth through marketing, partnerships and product \n- Building our marketing team in Austin, Texas and giving them the tools to produce consistently strong work\n- Helping our UK team and customers get the most from the Breedr product suite",
+                "location": {
+                  "raw": "United Kingdom"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664334,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/304cde9ae188782eb95b7014d830953fbb45fa97fbfab39b9587b5eb29f2d350.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/breedr",
+                "seniority_level": "Director",
+                "function_category": "Marketing",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 50,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2992765631,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Self employed",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Farmer",
+                "description": "Beef & Sheep farmer",
+                "location": {
+                  "raw": "Devon, England, United Kingdom"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2013-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 13,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 569355471,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 120165226,
+        "basic_profile": {
+          "name": "Trevor Tuell",
+          "professional_network_name": "Trevor Tuell",
+          "headline": "Head of Business Development and Supply Chains @ Breedr | Agriculture, Entrepreneurship",
+          "current_title": "Head of Business Development and Supply Chains",
+          "normalized_title": {
+            "matched_title": "Associate Director of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.8822,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c40a2e985e768f6bc85af021f820bf73abf3b0a5190e833fb97c9419b00a2ff2.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/trevor-tuell-91188528"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Breedr",
+                "company_website": "https://www.breedr.co",
+                "professional_network_id": "18452432",
+                "title": "Head of Business Development and Supply Chains",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664334,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/304cde9ae188782eb95b7014d830953fbb45fa97fbfab39b9587b5eb29f2d350.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/breedr",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 50,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2557057535,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Breedr",
+                "company_website": "https://www.breedr.co",
+                "professional_network_id": "18452432",
+                "title": "Beef Program Manager",
+                "description": "",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 664334,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/304cde9ae188782eb95b7014d830953fbb45fa97fbfab39b9587b5eb29f2d350.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/breedr",
+                "seniority_level": "Experienced Manager",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 50,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2464667948,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Tuell Cattle",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Owner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "1994-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 32,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 155792224,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 207401834,
+        "basic_profile": {
+          "name": "Bob Scherer",
+          "professional_network_name": "Bob Scherer",
+          "headline": "Breedr Marketing Team, enhancing supply management.",
+          "current_title": "Commission Sales Associate",
+          "normalized_title": {
+            "matched_title": "Commission Sales Associate",
+            "department": "Finance & Accounting",
+            "sub_department": "Financial Operations & Accounting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "North Sioux City",
+            "state": "South Dakota",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "North Sioux City, South Dakota, United States",
+            "full_location": "North Sioux City, South Dakota, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bob-scherer-5a925565"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Breedr",
+                "company_website": "https://www.breedr.co",
+                "professional_network_id": "18452432",
+                "title": "Commission Sales Associate",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664334,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/304cde9ae188782eb95b7014d830953fbb45fa97fbfab39b9587b5eb29f2d350.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/breedr",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 50,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2844161597,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Tyson Foods",
+                "company_website": "https://tysonfoods.com/",
+                "professional_network_id": "166551",
+                "title": "Retired",
+                "description": "",
+                "location": {
+                  "raw": "Dakota Dunes, SD"
+                },
+                "employment_type": "",
+                "start_date": "2015-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 681443,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2883157911e20b080ee8386762359c5329d4a2486305e78b6e5f52e5444a5d81.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/tyson-foods",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 11,
+                "company_headcount_latest": 45550,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Food and Beverage Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Food and Beverage Manufacturing",
+                "position_id": 479685725,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Springdale, Arkansas, United States",
+                "company_hq_location_address_components": [
+                  "Springdale",
+                  "Washington County",
+                  "Arkansas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Tyson Foods",
+                "company_website": "https://tysonfoods.com/",
+                "professional_network_id": "166551",
+                "title": "Grading Coordinator",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2007-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 681443,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2883157911e20b080ee8386762359c5329d4a2486305e78b6e5f52e5444a5d81.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/tyson-foods",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 19,
+                "company_headcount_latest": 45550,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Food and Beverage Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Food and Beverage Manufacturing",
+                "position_id": 360769766,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Springdale, Arkansas, United States",
+                "company_hq_location_address_components": [
+                  "Springdale",
+                  "Washington County",
+                  "Arkansas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "33 years",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "IBP/Tyson",
+                "description": "",
+                "employment_type": "",
+                "start_date": "1981-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 45,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 360773803,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJSwrCMBAA0KuEWXeRz3xiryJSknSGLsRgmy5EvLt0_b7wPnX_LFs5NpgdmAbviVZF5rJaC1mpckKNppWyiQ-1VkG-IUdhMUPC2FAlEOeSYXJw9H3A7O7RC_qQEz4mB6OP8lxaP1-Xpd8_AAD__yIzg1Z5AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

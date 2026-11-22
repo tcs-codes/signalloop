@@ -1,0 +1,190 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "collx.app"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.23,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 117043846,
+        "basic_profile": {
+          "name": "Chris Crompton",
+          "professional_network_name": "Chris Crompton",
+          "headline": "AI-native consultant who helps other leaders/execs use AI better. Growth + UA for startups. VP, Growth & Marketing @ CollX. Ex-Life360, Ex-Dandy, Ex-gopuff.",
+          "current_title": "VP of Growth/Marketing",
+          "normalized_title": {
+            "matched_title": "Director of Growth Marketing",
+            "department": "Marketing",
+            "sub_department": "Digital & Social Media Marketing",
+            "similarity": 0.9895,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9e9f06930438dea9f8b7d5499e53c535e4228c18aee8a9b730d9a62e74681472.jpg",
+          "location": {
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Philadelphia, Pennsylvania, United States",
+            "full_location": "Philadelphia, Pennsylvania, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/chris-t-crompton"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CollX",
+                "company_website": "http://collx.app",
+                "professional_network_id": "80130229",
+                "title": "VP of Growth/Marketing",
+                "description": "",
+                "location": {
+                  "raw": "Philadelphia, Pennsylvania, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780976,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/552a8ec25b0257260ea3eecf9cf9ed451ae079ad7cc559727e1034cdb587d418.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/collx",
+                "seniority_level": "Vice President",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2116929206,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Haddonfield, New Jersey, United States",
+                "company_hq_location_address_components": [
+                  "Haddonfield",
+                  "Camden County",
+                  "New Jersey",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Reforge",
+                "company_website": "https://reforge.com",
+                "professional_network_id": "7970304",
+                "title": "Member",
+                "description": "",
+                "location": {
+                  "raw": "Philadelphia, Pennsylvania, United States"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 633123,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7dddcade5ac42f7dde07f6ff53f0d2ede7d516db4cbb3ad93a0ddabb589457fe.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/reforge",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 202,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2116930330,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 1,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

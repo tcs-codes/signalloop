@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "infinant.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 780628,
+        "basic_profile": {
+          "name": "Stephen H.",
+          "professional_network_name": "Stephen H.",
+          "headline": "Infinant Software - SVP, Head of Sales",
+          "current_title": "Senior Vice President of Sales",
+          "normalized_title": {
+            "matched_title": "Senior Vice President of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": "Tennessee",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Nashville Metropolitan Area",
+            "full_location": "Nashville Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/stephen-h-aa930b30"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Infinant",
+                "company_website": "https://www.infinant.com",
+                "professional_network_id": "76994732",
+                "title": "Senior Vice President of Sales",
+                "description": "SVP of Sales at Infinant, focused on driving growth through the Interlace Payments Hub. I leverage expertise in customer engagement, business development, and process optimization to help financial institutions modernize payments, improve operational efficiency, and reduce costs.",
+                "location": {
+                  "raw": "Charlotte, NC"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780580,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1491fa3f3e42c3294d51d1042402209044ea97b911c7f7fda01af74a89aa686a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/infinant-inc",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2886647904,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Charlotte, North Carolina, United States",
+                "company_hq_location_address_components": [
+                  "Charlotte",
+                  "Mecklenburg County",
+                  "North Carolina",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 36586207,
+        "basic_profile": {
+          "name": "Chris Rhea",
+          "professional_network_name": "Chris Rhea",
+          "headline": "Technology for the Modern Banking & Payment Era",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6070a5379fe75535685211b4d7fd1d6029b9d0d4aee64c680b148680f88ba409.jpg",
+          "location": {
+            "city": "Charlotte",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Charlotte, North Carolina, United States",
+            "full_location": "Charlotte, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/chris-rhea-1032282"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Infinant",
+                "company_website": "https://www.infinant.com",
+                "professional_network_id": "76994732",
+                "title": "Chief Revenue Officer",
+                "description": "",
+                "location": {
+                  "raw": "Charlotte, NC"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780580,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1491fa3f3e42c3294d51d1042402209044ea97b911c7f7fda01af74a89aa686a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/infinant-inc",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2811982432,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Charlotte, North Carolina, United States",
+                "company_hq_location_address_components": [
+                  "Charlotte",
+                  "Mecklenburg County",
+                  "North Carolina",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 108693260,
+        "basic_profile": {
+          "name": "Kyler Bishop",
+          "professional_network_name": "Kyler Bishop",
+          "headline": "SVP - Head of Sales & Client Success",
+          "current_title": "SVP - Head of Sales & Client Success",
+          "normalized_title": {
+            "matched_title": "Sales & Client Services Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Retail & Consumer Sales",
+            "similarity": 0.9873,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/76300c0e1b3472c6501b816700aa677c5cf43ab471b956d35a808b39b50c4484.jpg",
+          "location": {
+            "city": "Birmingham",
+            "state": "Alabama",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Birmingham, Alabama, United States",
+            "full_location": "Birmingham, Alabama, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kyler-bishop-874270bb"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Infinant",
+                "company_website": "https://www.infinant.com",
+                "professional_network_id": "76994732",
+                "title": "SVP - Head of Sales & Client Success",
+                "description": "",
+                "location": {
+                  "raw": "Birmingham, Alabama, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780580,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1491fa3f3e42c3294d51d1042402209044ea97b911c7f7fda01af74a89aa686a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/infinant-inc",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2902950774,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Charlotte, North Carolina, United States",
+                "company_hq_location_address_components": [
+                  "Charlotte",
+                  "Mecklenburg County",
+                  "North Carolina",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9QKINuv2LMQmnJDkbixg7G-O_G8_vA67Ljve3l3GF1ULFKYPU5W1Avtihh9tmocWOMpbBK0yYY55g1qfJcEi1eosVA1WBycPZjwOpuHjktFBLeJwejj_LYar-ef6PvLwAA__9WFE6seQAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

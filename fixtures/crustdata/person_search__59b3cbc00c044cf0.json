@@ -1,0 +1,347 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "opus.so"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1651536,
+        "basic_profile": {
+          "name": "Jake Drabinski",
+          "professional_network_name": "Jake Drabinski",
+          "headline": "Sales Leader @ Opus Training\ud83e\udd33\ud83c\udffc\u2728\ud83c\udf0e",
+          "current_title": "Sales Manager",
+          "normalized_title": {
+            "matched_title": "Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3bc8db8506ca2a34d6cbcb46adc6f09ed32e7a1361ce38642d74ad11a22b0f69.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jake-drabinski-64a165107"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Opus Training",
+                "company_website": "https://www.opus.so",
+                "professional_network_id": "3598921",
+                "title": "Sales Manager",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 812269,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3589fd8ed5260cec851ade4b7f5e959050752e37cef3df2971b4e3825e72770e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/opus-so",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3003521059,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3399382,
+        "basic_profile": {
+          "name": "Meghan Foulkes",
+          "professional_network_name": "Meghan Foulkes",
+          "headline": "SVP of Revenue at Opus Training (We\u2019re Hiring!)",
+          "current_title": "SVP of Revenue",
+          "normalized_title": {
+            "matched_title": "VP Revenue",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9976,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/44ccc0127090f5ef9f9a9088a6607d1509751416f1d556bbf199311176304503.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/meghan-foulkes-91323b86"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Opus Training",
+                "company_website": "https://www.opus.so",
+                "professional_network_id": "3598921",
+                "title": "SVP of Revenue",
+                "description": "The training operations platform purpose-built for your frontline workforce | Customers: Jose Andr\u00e9s Group, Craveworthy Brands, Smashburger, VASA Fitness, Blaze Pizza, Super Star Car Wash, Salt & Straw, Just Salad, Newks Eatery, Luke's Lobster, (Shaq's) Big Chicken, Bonchon and hundreds more",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 812269,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3589fd8ed5260cec851ade4b7f5e959050752e37cef3df2971b4e3825e72770e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/opus-so",
+                "seniority_level": "Vice President",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2933712008,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Ladder",
+                "company_website": "https://laddergtm.com/",
+                "professional_network_id": "102991595",
+                "title": "Managing Partner",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 13580083,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/71145a6ad15dbf31df352ac56ec09f67be4a92be402a552fe8b08508856d8167.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/laddergtm",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 5,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2604631631,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 26610884,
+        "basic_profile": {
+          "name": "Joe Yates",
+          "professional_network_name": "Joe Yates",
+          "headline": "Director of Enterprise Sales",
+          "current_title": "Director of Enterprise Sales",
+          "normalized_title": {
+            "matched_title": "Director of Enterprise Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5cf7994c831af6a88cf9c1e5d3843818ecd6117d03e5b93071663fce788d9ce1.jpg",
+          "location": {
+            "city": "Raleigh",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Raleigh, North Carolina, United States",
+            "full_location": "Raleigh, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/joeyatesv"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Opus Training",
+                "company_website": "https://www.opus.so",
+                "professional_network_id": "3598921",
+                "title": "Director of Enterprise Sales",
+                "description": "We help organizations transform how they train and empower their frontline workforce in over 100+ languages. Opus is a mobile-first learning platform built for the realities of the frontline, using native AI to deliver fast, engaging, and effective training at scale. With full visibility across your workforce, you get the frontline business intelligence needed to drive your business. We make it simple for teams to learn, grow, and stay connected\u2014right from their phones.\n\nCustomers: Jose Andr\u00e9s Group, Craveworthy Brands, Smashburger, Blaze Pizza, Bahama Bucks, Gordon Ramsay Group, Salt & Straw, Just Salad, Newks Eatery, Luke's Lobster, (Shaq's) Big Chicken, Bonchon and hundreds more!",
+                "location": {
+                  "raw": "Raleigh, North Carolina, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 812269,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3589fd8ed5260cec851ade4b7f5e959050752e37cef3df2971b4e3825e72770e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/opus-so",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2772177842,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe_Qpi5N9isiI40pO4jFrTuI-O_i-X3gdfr-Xjc9NlgCuBak2TnmVjCZ4BxnbnfxZJaJ0DBWSpFUq6KrZGyVULm6SG5WYApw9H3AEq5IlCLz5TYFGH3oY7V-Pv9E318AAAD___3JMfl4AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

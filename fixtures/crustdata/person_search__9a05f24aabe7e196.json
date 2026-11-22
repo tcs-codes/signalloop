@@ -1,0 +1,213 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "superblocks.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 230877,
+        "basic_profile": {
+          "name": "Ran Ma",
+          "professional_network_name": "Ran Ma",
+          "headline": "CTO/Co-founder @ Superblocks | We\u2019re hiring!",
+          "current_title": "Co-Founder/CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9981,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/fd49a56e09e2d1976ceadeb63800d11b97cc680821ca0588d39ea01952fdc8a1.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ranma"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "Co-Founder/CTO",
+                "description": "Superblocks AI helps CIOs and CISOs secure and govern enterprise vibe coding organization-wide in their private cloud, while enabling their business teams to build from prompt to production.",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1991366801,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 230878,
+        "basic_profile": {
+          "name": "Brad Menezes",
+          "professional_network_name": "Brad Menezes",
+          "headline": "CEO at Superblocks | Software Factory for Business Teams, Governed by IT & Security.",
+          "current_title": "Co-Founder & CEO | Build & Govern AI-Generated Enterprise Apps",
+          "normalized_title": {
+            "matched_title": "Chief AI Officer",
+            "department": "Engineering & Technology",
+            "sub_department": "Machine Learning & AI Engineering",
+            "similarity": 0.9602,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/63698989543b184d508553b2c4d3a54319690d396b087be7b1544443f21b5b13.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bradmenezes"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "Co-Founder & CEO | Build & Govern AI-Generated Enterprise Apps",
+                "description": "Superblocks AI is the Enterprise Software Factory: CIOs/CISOs secure and govern enterprise vibe coding organization-wide in their private cloud, while enabling their business teams to build from prompt to production.",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1983558557,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

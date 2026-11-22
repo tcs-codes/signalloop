@@ -1,0 +1,229 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "goguava.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 120186464,
+        "basic_profile": {
+          "name": "Justin Dorosh",
+          "professional_network_name": "Justin Dorosh",
+          "headline": "Business Development Executive at Gridspace",
+          "current_title": "Business Development Executive",
+          "normalized_title": {
+            "matched_title": "Business Development Executive",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b1fc8fdb6f7545ba1eab17ad0306e5affc27379dba5ff3d977118947155c8f0f.jpg",
+          "location": {
+            "city": "Farmington",
+            "state": "Michigan",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Farmington, Michigan, United States",
+            "full_location": "Farmington, Michigan, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/justin-dorosh-388240313"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Gridspace",
+                "company_website": "https://www.gridspace.com/",
+                "professional_network_id": "3286803",
+                "title": "Business Development Executive",
+                "description": "ML/AI is changing the world. The question is - how is it impacting the relationship with your customers? The call center experience is a frustrating one for almost every customer, yet it is one of the most important touch points for you with your customer. And it hasn't improved in a decade. That's where Gridspace comes in, using the power of ML/AI to provide a suggestion engine that guides and directs agents to a great customer experience or a Human Language Bot that is indistinguishable from a human and can handle almost any conversation, not simply pre-programmed responses. It's time to give your customers the experience you want them to have!",
+                "location": {
+                  "raw": "Los Angeles Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2023-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 637201,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a0c5b4898b51eda74cacc15727d1fc9d30b8d47b12e1bc0f46fe5f7ab6846092.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/guavaai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 12,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2414201276,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 172434217,
+        "basic_profile": {
+          "name": "Alex M.",
+          "professional_network_name": "Alex M.",
+          "headline": "Business Architect | Internal Transformation & GTM | Re-engineering Operating Models | 4x Founding Member | Scaling Seed to Series C + M&A",
+          "current_title": "Head of Business Development \u2022 Founding Member",
+          "normalized_title": {
+            "matched_title": "Co-Founder/Head of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9973,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cddde22fb5718447999dd68d3d24ae01a284f927b6104f048b53b8c72aabc511.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alex-martinez-consultant"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Guava",
+                "company_website": "https://goguava.ai/",
+                "professional_network_id": "112741017",
+                "title": "Head of Business Development \u2022 Founding Member",
+                "description": "Founding GTM Leader (0 \u2192 1 \u2192 Scale) Owns the full Business Development lifecycle for the voice AI infrastructure purpose-built for regulated industries, driving pipeline creation, competitive displacement, and strategic partnerships across regulated industries.\n \n\ud83d\udd39 Pipeline Architecture from Scratch: Generated $2.75MM+ in pipeline in 90 days as a solo BD function, closing the company's first BD-sourced revenue. Pipeline spans early-stage startups to Fortune 500 enterprises with deal sizes from $5K land deals to $500K engagements, all sourced and qualified through a single BD function.\n \n\ud83d\udd39 Sales Enablement & Operational Scale: Built the repeatable GTM engine (signal-based prospecting, pipeline design, MEDDPICC, ICP governance, competitive battlecards) that enabled two AEs to carry $2MM+ in active pipeline sourced entirely through BD-built processes, shifting the function from individual contribution to organizational capability.\n \n\ud83d\udd39 Cross-Functional GTM Leadership: Partner with Marketing on ABM campaign design, content strategy, and conference activation. Collaborate with Customer Success on end-user testing, validation workflows, and expansion strategies that identify new use cases within existing accounts to drive net revenue retention.\n \n\ud83d\udd39 AI SDR Product Development: Serve as internal product manager alongside the Forward Deployed Engineering team to scope, build, and govern an AI-powered SDR, translating frontline BD pattern recognition into product requirements and ICP routing logic.\n \n\ud83d\udd39 Competitive Displacement: Engineered a structured conquest motion against incumbent voice AI vendors and legacy CCaaS platforms, delivering a 50% displacement win rate at demo-or-beyond and establishing Guava as the compliance-first alternative in the market.\n \n\ud83d\udd39 Conference-to-Pipeline Strategy: Designed and executed multi-event GTM campaigns with pre-event sequencing and floor coverage, generating a measurable 2-3x pipeline multiplier vs. show-up-only attendance.",
+                "employment_type": "",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 30769956,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8ade98c47b6fafc4a1957d80164a52925e6e56e4c5568738eb37de1c0fbc55f0.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/goguava-ai",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 28,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2895120924,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

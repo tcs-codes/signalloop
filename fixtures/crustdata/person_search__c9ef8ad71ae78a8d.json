@@ -1,0 +1,376 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "m0.org"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 3560262,
+        "basic_profile": {
+          "name": "Jacob L.",
+          "professional_network_name": "Jacob L.",
+          "headline": "Chief Growth Officer @ M0",
+          "current_title": "Chief Growth Officer",
+          "normalized_title": {
+            "matched_title": "Chief Growth Officer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bdf4205cef5cf8ac8ae2a650520823196d2a4c3ee65c15bea975539c5f09a798.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jacob-l-ba537428"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "jacoblaufer"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "M0",
+                "company_website": "https://www.m0.org/",
+                "professional_network_id": "92567833",
+                "title": "Chief Growth Officer",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780561,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cc9262881559d86e2c3e34ced922d277a9dd769c4d2b8de0ef88644ec966032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/m0-infrastructure",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2371263722,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 108465311,
+        "basic_profile": {
+          "name": "Jack Sun",
+          "professional_network_name": "Jack Sun",
+          "headline": "GTM & Partnerships @ M0",
+          "current_title": "Onchain GTM",
+          "normalized_title": {
+            "matched_title": "GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.6321,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2058a3538463822cd1a3352e1fcdde2b885226714c4379ba6980b3099c23d0e9.jpg",
+          "location": {
+            "city": "San Juan",
+            "state": "San Juan",
+            "country": "Puerto Rico",
+            "continent": "North America",
+            "raw": "San Juan, Puerto Rico",
+            "full_location": "San Juan, Puerto Rico"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/hhjacksun"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "M0",
+                "company_website": "https://www.m0.org/",
+                "professional_network_id": "92567833",
+                "title": "Onchain GTM",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780561,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cc9262881559d86e2c3e34ced922d277a9dd769c4d2b8de0ef88644ec966032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/m0-infrastructure",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2997583854,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Wonderstruck",
+                "company_website": "https://wonderstruck.studio/",
+                "professional_network_id": "82322108",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "Self-employed",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1473637,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2b4a892224bf67712ae1cdae30c7d408f771395c65b87e60f171dcd7e77594ca.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/wonderstruck-studio",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 23,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Design"
+                ],
+                "company_professional_network_industry": "Design",
+                "position_id": 2997597028,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Ethereum",
+                "company_website": "http://www.ethereum.org",
+                "professional_network_id": "5091692",
+                "title": "DAOist",
+                "description": "https://degenscore.com/profile/hhjacks\n\nGCR Deal Lead: https://globalcoinresearch.com/\nBlood Mage @ Hydra Ventures DAO: https://github.com/metacartel/hydra-DAO\nPunk DAO Genesis: https://punksdao.io/\nNEWO DeFi Mentor: https://www.neworder.network/\nFWB Host Committee: https://www.fwb.help/\nFingerPrints DAO Genesis: http://www.fingerprintsdao.xyz/\nUniWhales DAO Genesis: https://uniwhales.io/\nBessemerDAO Scout: https://www.bvp.com/news/building-the-web3-ecosystem-of-the-future",
+                "location": {
+                  "raw": "Metaverse"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2021-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1132075,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4d5a7d2cb74aa60b8e6e3716662ce92a9ba0b8b1a9653149b012ffbd2f5e9adc.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ethereum",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 983,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1762406214,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 118177150,
+        "basic_profile": {
+          "name": "Connor L.",
+          "professional_network_name": "Connor L.",
+          "headline": "Growth @ M0 | Make Your Own Money",
+          "current_title": "Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2f19a0b9b5d6ccc96c92e3c83d95d2929d8e422e59a847fc19cb6baaa69c1d4c.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/connor-l-3a4869260"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "M0",
+                "company_website": "https://www.m0.org/",
+                "professional_network_id": "92567833",
+                "title": "Growth",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780561,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cc9262881559d86e2c3e34ced922d277a9dd769c4d2b8de0ef88644ec966032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/m0-infrastructure",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2713711353,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe-QtClZ9ysiI2sTdhCLW3cQ8d_F8_vA67Ljve567rAESOZFtCFVj7Vx82SlWMvsSFy2QlGJ46ZRhZPb7BlzYpUNKVdJCFOAsx8DlnAjmkmEMt6nAKMPfay1X8-_8fcXAAD___BS9k15AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

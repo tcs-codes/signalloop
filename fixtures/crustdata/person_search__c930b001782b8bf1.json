@@ -1,0 +1,213 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "trackstarhq.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 81583,
+        "basic_profile": {
+          "name": "Daniel Langer",
+          "professional_network_name": "Daniel Langer",
+          "headline": "Co-Founder at Trackstar (YC W23)",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3d0072533ff758cb048c925a8215d55ab68879eff21d4501160a5920a097548c.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": null,
+            "continent": null,
+            "raw": "",
+            "full_location": ""
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/daniel-langer-84846548"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Trackstar",
+                "company_website": "http://trackstarhq.com",
+                "professional_network_id": "76523549",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810141,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/150e69d816313887839e04610bff1b1c6b2c0fa075652d8d9526582cc300728e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trackstarhq",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2096821817,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 81584,
+        "basic_profile": {
+          "name": "Jeremy Schneck",
+          "professional_network_name": "Jeremy Schneck",
+          "headline": "Co-founder at Trackstar (YC W23)",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b9fad397a769815beffd0ff3ba7b7b65e5efa031319a998777561826400a512f.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": null,
+            "continent": null,
+            "raw": "",
+            "full_location": ""
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jeremy-schneck-a67b5479"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Trackstar",
+                "company_website": "http://trackstarhq.com",
+                "professional_network_id": "76523549",
+                "title": "Co-Founder",
+                "description": "Building the universal API for warehouse management systems. We provide a simple and well-documented way for companies to integrate with WMS.",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810141,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/150e69d816313887839e04610bff1b1c6b2c0fa075652d8d9526582cc300728e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trackstarhq",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2096828158,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

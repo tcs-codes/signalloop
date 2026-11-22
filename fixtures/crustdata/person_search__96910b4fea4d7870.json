@@ -1,0 +1,406 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "cyvl.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 303560,
+        "basic_profile": {
+          "name": "Daniel Pelaez",
+          "professional_network_name": "Daniel Pelaez",
+          "headline": "CEO, Cofounder at CYVL | Forbes 30 Under 30 | Startup Advisor",
+          "current_title": "CEO, Cofounder",
+          "normalized_title": {
+            "matched_title": "CEO, Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9996,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a353789529cdf22ad607a5c24d144593eebca9ff73e55ef255317db48bf8fbb9.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/d-pelaez"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "thedanielpelaez"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CYVL",
+                "company_website": "https://cyvl.com/?utm_source=linkedin&utm_medium=social&utm_campaign=company_bio",
+                "professional_network_id": "67496084",
+                "title": "CEO, Cofounder",
+                "description": "",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698100,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/177f7cfa61ccba4493739d981ff8c2820d1fa161729c80677d633ae9c0c30341.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cyvl",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 70,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1743901515,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Somerville, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Somerville",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 303561,
+        "basic_profile": {
+          "name": "Noah Budris",
+          "professional_network_name": "Noah Budris",
+          "headline": "Co-Founder at Cyvl.ai",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c80defa645890832411217e63814ce344a74e94569aca48b0c954489849ebeb0.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Boston",
+            "full_location": "Greater Boston"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/noah-budris-27b37a13b"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CYVL",
+                "company_website": "https://cyvl.com/?utm_source=linkedin&utm_medium=social&utm_campaign=company_bio",
+                "professional_network_id": "67496084",
+                "title": "Co-Founder",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2021-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698100,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/177f7cfa61ccba4493739d981ff8c2820d1fa161729c80677d633ae9c0c30341.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cyvl",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 70,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1805546402,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Somerville, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Somerville",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 604161,
+        "basic_profile": {
+          "name": "Reed Walker",
+          "professional_network_name": "Reed Walker",
+          "headline": "CFO | Venture Partner | Growth Stage - Capital Intensive & Regulated Industries",
+          "current_title": "CFO",
+          "normalized_title": {
+            "matched_title": "CFO",
+            "department": "Finance & Accounting",
+            "sub_department": "Financial Planning & Analysis",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7e637bb570dfd906f5638b19325672458736ed2517403ea2a12b6be8c9632dfe.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/reedandwalk"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "reedandwalk"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CYVL",
+                "company_website": "https://cyvl.com/?utm_source=linkedin&utm_medium=social&utm_campaign=company_bio",
+                "professional_network_id": "67496084",
+                "title": "CFO",
+                "description": "We\u2019re excited to announce Reed Walker as Cyvl\u2019s new Chief Financial Officer. With his expertise, we will continue transforming the way roads are built and maintained\u2014making communities safer, stronger, and more connected nationwide.\u00a0Reed brings a unique blend of financial acumen, entrepreneurial leadership, and deep experience working with government customers to extract value from data collected via advanced hardware systems.\n\nHis expertise in aligning technical operations with financial strategy\u2014particularly in hardware-enabled, data-driven sectors\u2014makes him ideally suited to help Cyvl scale its impact in modernizing American infrastructure. Reed has worked closely with public-sector clients, enabling them to leverage complex datasets for smarter, more resilient investment decisions\u2014a mission that directly complements Cyvl\u2019s vision for the future of infrastructure.\n\nReed began his career supporting technology commercialization for NASA and has been a fractional CFO for nine startups, driving over $50 million in capital structuring. As a three-time founder who has led two startup exits, he brings proven leadership and a strategic mindset that will be invaluable as Cyvl continues its growth trajectory.",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698100,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/177f7cfa61ccba4493739d981ff8c2820d1fa161729c80677d633ae9c0c30341.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cyvl",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 70,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2692172261,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Somerville, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Somerville",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "JuneBrain Inc.",
+                "company_website": "http://junebrain.com",
+                "professional_network_id": "35501394",
+                "title": "Board Member",
+                "description": "JuneBrain Inc. develops telehealth OCT devices and AI software to optimize remote monitoring of neurological and retinal diseases. Our user-friendly, portable solutions enhance research, streamline trials, and expand access to advanced care in clinical and point-of-care settings.",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 828614,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e54252e676ce17e4f9e18eb40f1c9b8bef671a5becd2ec697a47bfa1d722e939.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/junebrain",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Medical Equipment Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Medical Equipment Manufacturing",
+                "position_id": 2980229909,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Baltimore, Maryland, United States",
+                "company_hq_location_address_components": [
+                  "Baltimore",
+                  "Maryland",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Quadrant Advisory",
+                "company_website": "http://www.wearequadrant.com",
+                "professional_network_id": "11460970",
+                "title": "CFO Advisor",
+                "description": "Fractional CFO advisor providing services to early and mid-stage startups to help tackle each company\u2019s unique financial, economic, and operational needs. He has helped his clients raise more than $25mm in capital through his fundraising support, financial modeling, and due diligence services.",
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 973893,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6f061556d9cf51d31b06d3a3fd7db1a4d39f764b2a3da31e943ed6fa6dbc7119.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/wearequadrant",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 24,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 1744281708,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Washington, District of Columbia, United States",
+                "company_hq_location_address_components": [
+                  "Washington",
+                  "District of Columbia",
+                  "District of Columbia",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Cotton & Reed",
+                "company_website": "https://www.cottonandreed.com/",
+                "professional_network_id": "11290428",
+                "title": "Co-Founder & Board Member",
+                "description": "",
+                "location": {
+                  "raw": "DC"
+                },
+                "employment_type": "",
+                "start_date": "2020-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1740399,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ca80868f799b593febdc28759270c6d103a2c23ff011ce3398bd163860f7a490.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cottonandreed",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Food & Beverages"
+                ],
+                "company_professional_network_industry": "Food & Beverages",
+                "position_id": 1692004869,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Washington, District of Columbia, United States",
+                "company_hq_location_address_components": [
+                  "Washington",
+                  "District of Columbia",
+                  "District of Columbia",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe-QrD9r9ioiI01TdhCLW3cQ8d3F8_eB12XHe9vl3GF1ECRVzsjVxIsaFZo1ZOQmBee6-LwgReY6K3FrxqqiWYN5LK2WGGFycPZjwOpuCQMluk8ORh_y2LRfzz-k7y8AAP__TulpNnYAAAA=",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

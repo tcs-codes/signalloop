@@ -1,0 +1,368 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "axle.insure"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 2194688,
+        "basic_profile": {
+          "name": "Thomas DellaCroce",
+          "professional_network_name": "Thomas DellaCroce",
+          "headline": "Sales Leader I Generative AI I Automotive Disruptor I SaaS Background I 20+ Years of Automotive Experience I Sales Executive Leader I President\u2019s Club Member",
+          "current_title": "Enterprise Sales Director",
+          "normalized_title": {
+            "matched_title": "Enterprise Sales Director",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/thomas-m-dellacroce"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Axle",
+                "company_website": "https://axle.insure",
+                "professional_network_id": "82345745",
+                "title": "Enterprise Sales Director",
+                "description": "Axle is the leading insurance verification platform for automotive. We replace the manual process with real-time, carrier-verified data \u2014 what used to take 15\u201320 minutes now takes under 2. Sonic and 2,000+ dealer groups have made the switch because Axle delivers:\n\nCarrier-verified data in seconds \u2014 coverages, drivers, and expiration dates pulled straight from the carrier. No expired cards, no guesswork.\nFewer unrecovered losses \u2014 catch expired policies, missing comp/collision, and unlisted drivers before the keys leave your hand.\n96% carrier coverage + Document AI \u2014 State Farm, Progressive, Geico, Allstate, USAA, and hundreds more.",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810206,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/64ac4b6dd63482227e6453cd36ed03d4f755ae9ce4c9b9841108e67c06aaa8c5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/axle-labs",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 44,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2896929521,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Atlanta, New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "FAAREN Group",
+                "company_website": "https://faaren-group.com/",
+                "professional_network_id": "11782234",
+                "title": "Senior Advisor",
+                "description": "",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2023-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 676195,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/23de5de925de9e5b2d7c43b52abac691ea48b87c1ca1a0fbbd265c807de41f45.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faaren",
+                "seniority_level": "Senior",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 38,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2336366026,
+                "company_type": "Public Company",
+                "company_headquarters_country": "Germany",
+                "company_hq_location": "W\u00fcrzburg, Bavaria, Germany",
+                "company_hq_location_address_components": [
+                  "W\u00fcrzburg",
+                  "W\u00fcrzburg",
+                  "Lower Franconia",
+                  "Bavaria",
+                  "Germany",
+                  "97"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Del Par Properties, LLC",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Managing Partner",
+                "description": "",
+                "employment_type": "Self-employed",
+                "start_date": "2020-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 1965566198,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2450986,
+        "basic_profile": {
+          "name": "Joseph Dahleen",
+          "professional_network_name": "Joseph Dahleen",
+          "headline": "Enterprise Sales Director - Mortgage at Axle",
+          "current_title": "Enterprise Sales Director - Mortgage",
+          "normalized_title": {
+            "matched_title": "Mortgage Sales Manager",
+            "department": "Finance & Accounting",
+            "sub_department": "Loan Processing & Origination",
+            "similarity": 0.8802,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2cc0a18dce923ab9d2a8d40ad1b120b0c33e40b8745ca5282fd6bc011096040f.jpg",
+          "location": {
+            "city": null,
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Seattle Area",
+            "full_location": "Greater Seattle Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/joedahleen"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Axle",
+                "company_website": "https://axle.insure",
+                "professional_network_id": "82345745",
+                "title": "Enterprise Sales Director - Mortgage",
+                "description": "Leading AXLEs mortgage market expansion through enterprise sales, strategic partnerships, and go-to-market execution.\n\nFocused on helping banks, credit unions, independent mortgage lenders, and servicers modernize hazard insurance verification through AI-powered automation, direct-source insurance data, and seamless mortgage technology integrations.\n\nBuilding strategic relationships across the mortgage ecosystem while developing a repeatable enterprise revenue engine\u2014from executive engagement and solution design through implementation and adoption.",
+                "employment_type": "",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810206,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/64ac4b6dd63482227e6453cd36ed03d4f755ae9ce4c9b9841108e67c06aaa8c5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/axle-labs",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 44,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3049504361,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Atlanta, New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 106196668,
+        "basic_profile": {
+          "name": "Kevin Allen",
+          "professional_network_name": "Kevin Allen",
+          "headline": "Enterprise Sales Director, Auto Finance at Axle",
+          "current_title": "Enterprise Sales Director, Auto Finance",
+          "normalized_title": {
+            "matched_title": "Auto Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Retail & Consumer Sales",
+            "similarity": 0.7574,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/34c9739d4dae9679037a6295679064a6f937ceea6ef95e420121d9ffca73bd7d.jpg",
+          "location": {
+            "city": "New Canaan",
+            "state": "Connecticut",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New Canaan, Connecticut, United States",
+            "full_location": "New Canaan, Connecticut, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kevintallen"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "shobull"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Axle",
+                "company_website": "https://axle.insure",
+                "professional_network_id": "82345745",
+                "title": "Enterprise Sales Director, Auto Finance",
+                "description": "",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810206,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/64ac4b6dd63482227e6453cd36ed03d4f755ae9ce4c9b9841108e67c06aaa8c5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/axle-labs",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 44,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3059934789,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Atlanta, New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ6CMAwA0F9ZeuawtdBRfsUYUrY2HIyLMA7G-O_G8_vA67Ljve567rAEGJ3dnbZYtmoUpdo0idRa0ijGWQjRiBxHy8psCUsWRFVNFJl8hiHA2Y4OS7ilyEmYeb4PAXrr-lhLu55_m76_AAAA__8M-4j_eQAAAA==",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

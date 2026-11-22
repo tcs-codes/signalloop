@@ -1,0 +1,336 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "faros.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 25401,
+        "basic_profile": {
+          "name": "Matthew Tovbin",
+          "professional_network_name": "\ud83c\udf17 Matthew Tovbin",
+          "headline": "Mechanizing Minds and Humanizing Machines",
+          "current_title": "CTO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CTO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c314d819e496556a7fdb2f6f75d9abb3f713abc702d6cdd8c851c48e7f7c9c44.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mttov"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "tovbinm"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Faros",
+                "company_website": "https://www.faros.ai",
+                "professional_network_id": "29317415",
+                "title": "CTO & Co-Founder",
+                "description": "Faros is an operational data platform that brings all engineering data in one place to give engineering leaders a single-pane view of their entire software development lifecycle.\n\nFaros integrates all your engineering data sources to give you holistic visibility into the entire software development lifecycle. It takes the guesswork out of planning so that you can make decisions, allocate resources and improve productivity based on actual data. Adding a new data source is as simple as flipping a switch, even if it is a homegrown system.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b17c836fe87a4bcf86dd8d8ced3c723ffd93c0a8f0272a7b2631e3e8a32aa71f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faros-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1510402979,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Specular",
+                "company_website": "https://www.specular.ai",
+                "professional_network_id": "102943780",
+                "title": "Advisor",
+                "description": "AI Agents for proactive cybersecurity. Automating high quality External Network Penetration Tests and ASM.",
+                "location": {
+                  "raw": "San Francisco, California, United States"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2233351,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/374e4b1e62d6b0c299cbd3c0cbad95363bd315b4e75f0a0c08fe1a6d75c3af4c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/specular-security",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 12,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Computer and Network Security",
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Computer and Network Security",
+                "position_id": 2492072764,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 25402,
+        "basic_profile": {
+          "name": "Vitaly Gordon",
+          "professional_network_name": "\ud83c\udf0e Vitaly Gordon",
+          "headline": "Making engineering more data-driven",
+          "current_title": "Co-founder & CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/27aec40fc0e70bec3db876027e635b87acf9e17e7a64f647d55ba01b5d632e18.jpg",
+          "location": {
+            "city": "Mountain View",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Mountain View, California, United States",
+            "full_location": "Mountain View, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/vitalygordon"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "BigDataSc"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Faros",
+                "company_website": "https://www.faros.ai",
+                "professional_network_id": "29317415",
+                "title": "Co-founder & CEO",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b17c836fe87a4bcf86dd8d8ced3c723ffd93c0a8f0272a7b2631e3e8a32aa71f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faros-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1459726086,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 25403,
+        "basic_profile": {
+          "name": "Shubha Nabar",
+          "professional_network_name": "Shubha Nabar",
+          "headline": "Co-Founder at Faros",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7af3e3715f857683b13c3296076ae2cb47331780f536c35a7cbf3ae839dc0d98.jpg",
+          "location": {
+            "city": "Sunnyvale",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Sunnyvale, California, United States",
+            "full_location": "Sunnyvale, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/shubhanabar"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Faros",
+                "company_website": "https://www.faros.ai",
+                "professional_network_id": "29317415",
+                "title": "Co-Founder",
+                "description": "At Faros, we are building the engineering intelligence platform for the AI era. We help engineering organizations understand the impact of AI on software delivery while providing the operational context that enables AI agents to operate with greater accuracy, relevance, and trust in complex enterprise environments.\u00a0Our platform is used by some of the most sophisticated engineering teams in the world, ranging from fast-growing technology companies to F500 enterprises. We believe the future of software development will be built by humans and AI working together, and we're building the foundation that makes that possible.",
+                "employment_type": "",
+                "start_date": "2019-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b17c836fe87a4bcf86dd8d8ced3c723ffd93c0a8f0272a7b2631e3e8a32aa71f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/faros-ai",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1518048153,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIParDMAwA4KsYzRlkyfJPrvJ4BFu1yFBqmjhDKb176fq94Xn147Xt9dxhdaAsyqVFwU5eoiiWJhFrCYmwG3b2NYUQlbhbK55TQlSjm3mhnA0WB-c4JqzujyQg_y8O5pj1vum4Hj_Pn28AAAD__5k31qZ1AAAA",
+    "total_count": 8,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

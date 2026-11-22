@@ -1,0 +1,298 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "useagave.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 82573,
+        "basic_profile": {
+          "name": "John Zucchi",
+          "professional_network_name": "John Zucchi",
+          "headline": "Co-Founder, Agave",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/82ae1f4f4c42c9ed8f267d0672472ad0c48352dc8dc1ee2a547f4aa45cfc57ec.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/johnzucchi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Agave",
+                "company_website": "https://www.useagave.com",
+                "professional_network_id": "76266672",
+                "title": "Co-Founder",
+                "description": "Agave helps construction companies automate their financial and accounting work using AI on top of the software they already use. \n\nAgave is backed by Y Combinator and Accel, founders of Plaid, and founders/execs at Procore, PlanGrid, Fieldwire, and others.",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810814,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7bb50d0b8d4327d3f68e558511725f22ed60f09b8a4a7dc75ea2c9526dfd1393.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/agave-ai",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 101,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1857282458,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 82574,
+        "basic_profile": {
+          "name": "Tom Reno",
+          "professional_network_name": "Tom Reno",
+          "headline": "Co-founder, Agave (YC W22) - hiring",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b616ed35c9112ffbb42a9209de3f72583f9fb024013065caf4ae5edefaf27ac9.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/tomreno"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Agave",
+                "company_website": "https://www.useagave.com",
+                "professional_network_id": "76266672",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810814,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7bb50d0b8d4327d3f68e558511725f22ed60f09b8a4a7dc75ea2c9526dfd1393.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/agave-ai",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 101,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1857228212,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 82576,
+        "basic_profile": {
+          "name": "Pooria Azimi",
+          "professional_network_name": "Pooria Azimi",
+          "headline": "Co-Founder, Agave (YC W22)",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/11ef81d5a8f94e09125d0064009e05333cb7e85cce40bbbdb335a4f145b2eb69.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/pooria-azimi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Agave",
+                "company_website": "https://www.useagave.com",
+                "professional_network_id": "76266672",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810814,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7bb50d0b8d4327d3f68e558511725f22ed60f09b8a4a7dc75ea2c9526dfd1393.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/agave-ai",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 101,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1857314426,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIwQ7CIAwA0F8hPe_QjULLfsWYpUDJDkbixg7G-O_G6_vA67Ljve167rA64EaMgtIsL5Jb1iAcKxaaBZORKdcSTZKhr4syea1zCSkre7XIHiYHZz8GrO4mS-B4nxyMPvSxlX49_07fXwAAAP__JLLkn3UAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

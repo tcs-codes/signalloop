@@ -1,0 +1,352 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "raylu.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 7967138,
+        "basic_profile": {
+          "name": "Nick Landry",
+          "professional_network_name": "Nick Landry",
+          "headline": "Raylu AI",
+          "current_title": "Head of Strategic Growth",
+          "normalized_title": {
+            "matched_title": "Director Of Strategic Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9989,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f387352bdc05ce87fcdcb0df1b4fef086780a2585a78f13298c6803f23f5b2fb.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/nick-landry-893451157"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Raylu",
+                "company_website": "https://www.raylu.ai/",
+                "professional_network_id": "89624197",
+                "title": "Head of Strategic Growth",
+                "description": "",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 700958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a4ee4835336ecab35389be43b2d79d0833b51c957d98753366d2a454afbd0d1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/raylu-ai",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 34,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2784155115,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 14103116,
+        "basic_profile": {
+          "name": "Adedayo A.",
+          "professional_network_name": "Adedayo A.",
+          "headline": "Head of Growth @ Raylu AI",
+          "current_title": "Head of Growth",
+          "normalized_title": {
+            "matched_title": "Head of Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/47a4d669681016216c6dc835f16bde786ae1f9fc6f0cb5111da6f41825b93584.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/adedayo-a-605993116"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Raylu",
+                "company_website": "https://www.raylu.ai/",
+                "professional_network_id": "89624197",
+                "title": "Head of Growth",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 700958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a4ee4835336ecab35389be43b2d79d0833b51c957d98753366d2a454afbd0d1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/raylu-ai",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 34,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2523420778,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "HUE",
+                "company_website": "",
+                "professional_network_id": "105782877",
+                "title": "Founder",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 18904878,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/53b426e90ca8eecc9196ff4a86597ee2cf24a7f8135c7b4e0b8cf4e934defab9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hueapp-co",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 4,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2523162431,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 80008030,
+        "basic_profile": {
+          "name": "Palmer Kruzner",
+          "professional_network_name": "Palmer Kruzner",
+          "headline": "Global Head of Sales, Raylu",
+          "current_title": "Global Head of Sales",
+          "normalized_title": {
+            "matched_title": "Global Head of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "International & Global Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/561a2f7eac74d88aa3d11300b16a0c8764cabfa64b607a96c86eb97e12f2d1d6.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/palmerkruzner"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Raylu",
+                "company_website": "https://www.raylu.ai/",
+                "professional_network_id": "89624197",
+                "title": "Global Head of Sales",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 700958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a4ee4835336ecab35389be43b2d79d0833b51c957d98753366d2a454afbd0d1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/raylu-ai",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 34,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2729018444,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe-QNWmb7FdERjoadhCLW3cQ8d_F8_vA62rHe93t3GEJwCTVRcxSZGabU1WtOTcpQlv0Imk2b1pIOZFkV2s5uhh6UaFWYQpw9mPAEm6CiIKE9ynA6MMe69av55_4-wsAAP__JcoQ23gAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

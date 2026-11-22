@@ -1,0 +1,399 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "homefromcollege.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 231478,
+        "basic_profile": {
+          "name": "Julia Haber",
+          "professional_network_name": "Julia Haber \ud83c\udf93",
+          "headline": "Co-Founder/CEO at Home From College | Career Creator 100K+ followers",
+          "current_title": "Co-Founder/CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9996,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/979adb5b603873688055d3bf0892eaaf05a771abb5cb1ba19ae658156170fb53.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Los Angeles Metropolitan Area",
+            "full_location": "Los Angeles Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/juliahaber"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Home From College",
+                "company_website": "http://www.homefromcollege.com",
+                "professional_network_id": "65275051",
+                "title": "Co-Founder/CEO",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 701888,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fbd36040fe647985d48ace097be3876123d050bdd894517deb2138f738e5cd88.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/homefromcollege",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1611615976,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Santa Monica, California, United States",
+                "company_hq_location_address_components": [
+                  "Santa Monica",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Chief",
+                "company_website": "http://chief.com",
+                "professional_network_id": "11864448",
+                "title": "Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2019-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 631634,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/835e506b8243f03eecb0906a0edbc5929ebf87463732c15d01f1f82f3677e556.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joinchief",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 7479,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 2757899073,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 231512,
+        "basic_profile": {
+          "name": "Kaj Zandvliet",
+          "professional_network_name": "Kaj Zandvliet",
+          "headline": "Co-Founder at Home From College",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/32b8955b1b772155c386fc55295ac9079b74b86b9897ab4b2f3a305c3c7e8d90.jpg",
+          "location": {
+            "city": "Santa Monica",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Santa Monica, California, United States",
+            "full_location": "Santa Monica, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kaj-zandvliet-94145328"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Home From College",
+                "company_website": "http://www.homefromcollege.com",
+                "professional_network_id": "65275051",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 701888,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fbd36040fe647985d48ace097be3876123d050bdd894517deb2138f738e5cd88.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/homefromcollege",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1648145363,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Santa Monica, California, United States",
+                "company_hq_location_address_components": [
+                  "Santa Monica",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Jester Developments Real Estate",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "General Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2019-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2262093584,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 101330339,
+        "basic_profile": {
+          "name": "Ashley Smith",
+          "professional_network_name": "Ashley Smith",
+          "headline": "Former Marketing & Business Development Intern @ Hearst Media Production Group | Social Media, Branded Content & Digital Storytelling | UNC-Chapel Hill Alumna",
+          "current_title": "Content Creator / Brand Partner",
+          "normalized_title": {
+            "matched_title": "Content Creator & Brand Ambassador",
+            "department": "Marketing",
+            "sub_department": "Digital & Social Media Marketing",
+            "similarity": 0.9625,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/980ddba96a2bcb276b2de945cf3d02a75e5859b6dfa6a704f3341da65b6e8ad6.jpg",
+          "location": {
+            "city": "Durham",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Durham, North Carolina, United States",
+            "full_location": "Durham, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ashleys284"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Home From College",
+                "company_website": "http://www.homefromcollege.com",
+                "professional_network_id": "65275051",
+                "title": "Content Creator / Brand Partner",
+                "description": "\u2726 Home From College is a professional development platform providing college students with remote work opportunities to kickstart their careers.\n\u2726 As a member of this platform, I have created original video content for the following brands:\n\n   \u279e Home From College (Aug 2026): highlighted my experience using H\\FC by showcasing the brand partnerships, creator opportunities, and earnings I\u2019ve generated through the platform\n   \u279e Vita Coco (Feb - Apr 2026): served as a brand ambassador promoting Vita Coco Treats beverages through on-campus distribution to student organizations and monthly posts on TikTok and Instagram Stories\n   \u279e Uber (Aug - Oct 2025): served as a brand ambassador lead promoting the Uber One Arcade pop-up event and Uber One for Students membership through social media and event collaborations that boosted engagement and sign-ups\n   \u279e Notion (Apr - May 2025): showcased how their tool can help students unlock creativity and reach their goals in and out of the classroom\n   \u279e Neutrogena (Jul - Aug 2024): highlighted their products, promoted healthy and beautiful skin, and supported their Back To School Campaign to resonate with Gen Z audience\n   \u279e Aquaphor (Jun - Sep 2024): promoted their products and their skincare benefits in a way that resonated with college students for their Back To School Campaign\n   \u279e Urban Decay x The Cybersmile Foundation (Dec 2023): promoted their Changemaker Program, which was created to enable everyone with the tools to create a more positive and inclusive online community through specialized education",
+                "employment_type": "",
+                "start_date": "2023-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 701888,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fbd36040fe647985d48ace097be3876123d050bdd894517deb2138f738e5cd88.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/homefromcollege",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2442052360,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Santa Monica, California, United States",
+                "company_hq_location_address_components": [
+                  "Santa Monica",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Her Campus Media",
+                "company_website": "http://www.hercampusmedia.com",
+                "professional_network_id": "471441",
+                "title": "Content Creator / Brand Partner",
+                "description": "\u2726 Her Campus Media is a college-focused media network connecting and empowering student creators through multiple niche communities and brand partnerships.\n\u2726 As a member of the College Fashionista, InfluenceHer Collective, and Campus Trendsetters communities, I have created original video content for the following brands:\n\nCampus Trendsetters\n\u279e SheaMoisture (Aug - Sep 2025): showcased SheaMoisture's new body wash line, and collaborated with a student organization to execute a sampling activity where I distributed ~200 samples to students on campus\n\nInfluenceHer Collective\n\u279e The Ordinary (May 2026): showcased how students can incorporate The Ordinary's new Caffeine 3% + Escin 1% face serum into their daily academic routines to reduce tired-looking skin\n\u279e HomeGoods (Jun - Jul 2025): promoted back-to-campus shopping at local HomeGoods stores\n\u279e Love Beauty and Planet (Apr 2024): highlighted Love Beauty and Planet's Spring 2024 bath and body care products from their Beloved Collection\n\nCollege Fashionista\n\u279e Jo Malone London (Aug - Sep 2026): promoted Jo Malone London's new Sea Salt & Bergamot fragrance when it launched in August 2026\n\u279e CVS (Mar 2026): drove traffic to CVS' Epic Beauty Sale by highlighting my favorite in-store beauty products\n\u279e CeraVe (Nov - Dec 2025): promoted CeraVe's Healing Ointment and new Blemish Barrier Patches as a CeraVersity Fall 2025 Ambassador\n\u279e Fenty Beauty (Mar - Apr 2023): promoted Fenty Beauty's Hella Thicc Volumizing Mascara when it launched in March 2023",
+                "employment_type": "",
+                "start_date": "2023-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 700455,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63caddb6263fcb20e201cd1775fb50814b6405e8d98031810ab08ca940c998c7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/her-campus",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 1407,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Internet Publishing",
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Internet Publishing",
+                "position_id": 2702850757,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe-QmDZN9ysiI2sNO4jFrTuI-O_i-X3gdd7397LZscEcIDMlqtbUPZJmwUvKFpV5rTUlF_WS0USJtRiqpGboEpFxbdbIYApw9H3AHK6ExIzM5TYFGH3YY6n9fP4tfn8BAAD__1X94_B5AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

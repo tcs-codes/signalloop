@@ -1,0 +1,341 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "bolt.new"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 289723,
+        "basic_profile": {
+          "name": "Bryan Adams",
+          "professional_network_name": "Bryan Adams",
+          "headline": "Revenue Leader for High Growth B2B Companies | Advisor | Investor",
+          "current_title": "Vice President of Sales",
+          "normalized_title": {
+            "matched_title": "Vice President of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c8bd0dbc12c6482d03e5ac0e884ffb83adb930c1d648cc3302782d1220c75757.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bmadams"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "Bryan_MAdams"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "bolt.new",
+                "company_website": "https://www.bolt.new/?utm_source=bolt.new_linkedin",
+                "professional_network_id": "35539062",
+                "title": "Vice President of Sales",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654143,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2346f160c36848bdc7cb81512b609b74d99da488becd9dd2b00a12916a426915.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boltdotnew",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 116,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2371265840,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 731220,
+        "basic_profile": {
+          "name": "Enrique Hoyos",
+          "professional_network_name": "Enrique Hoyos",
+          "headline": "Building growth engines across product and marketing | Growth @ Bolt",
+          "current_title": "Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e3d4bcdb5eaa65842c1acae526d3e4ef3fcd82c5dfd0f9440d3603c54e5b7b4b.jpg",
+          "location": {
+            "city": null,
+            "state": "Nova Scotia",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Halifax, Nova Scotia, Canada",
+            "full_location": "Halifax, Nova Scotia, Canada"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/enriquehoyos"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "bolt.new",
+                "company_website": "https://www.bolt.new/?utm_source=bolt.new_linkedin",
+                "professional_network_id": "35539062",
+                "title": "Growth",
+                "description": "",
+                "employment_type": "Permanent Full-time",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654143,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2346f160c36848bdc7cb81512b609b74d99da488becd9dd2b00a12916a426915.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boltdotnew",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 116,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2687456543,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Enrique Hoyos Consulting",
+                "company_website": "https://enriquehoyos.com/",
+                "professional_network_id": "31429074",
+                "title": "Marketing & Growth Strategist",
+                "description": "",
+                "employment_type": "Freelance",
+                "start_date": "2019-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4401554,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fb53f9e2e299f2c983bab5985ed97653340eeb7749ffb323a7ee3ab6f3bc9498.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/enrique-hoyos-consulting",
+                "seniority_level": "Entry Level",
+                "function_category": "Marketing",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Advertising Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Advertising Services",
+                "position_id": 1550557948,
+                "company_type": "Sole Proprietorship",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 7987233,
+        "basic_profile": {
+          "name": "Ryan Sailor",
+          "professional_network_name": "Ryan Sailor",
+          "headline": "GTM @ Bolt",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/1a4e55d6316afaba62e7df953f4f947cb1140420395e08bde252e85eef6278b0.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ryan-sailor-9b0187142"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "bolt.new",
+                "company_website": "https://www.bolt.new/?utm_source=bolt.new_linkedin",
+                "professional_network_id": "35539062",
+                "title": "GTM",
+                "description": "",
+                "location": {
+                  "raw": "Austin, Texas Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654143,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2346f160c36848bdc7cb81512b609b74d99da488becd9dd2b00a12916a426915.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boltdotnew",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 116,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2858545952,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJu6rDMAwG4FcxmjPEl_iSVzkcgir9IkOpaeIMpfTdS-fvTc8Lx2vb-dxpddSKr0upKDeTnEPSyECCzVabSEwxJK9SIUElgTOwiFcOjbPBq9Hk6OzHoNX9lVZLiPF_cjT64Psm_Xr8xM-fbwAAAP__O_s44HgAAAA=",
+    "total_count": 10,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

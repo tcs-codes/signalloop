@@ -1,0 +1,330 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "collx.app"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 556608,
+        "basic_profile": {
+          "name": "Kostas Nasis",
+          "professional_network_name": "Kostas Nasis",
+          "headline": "Entrepreneur, technologist, geek whisperer.",
+          "current_title": "CTO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CTO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/57541c4fdc753f0e0c59f8fb4b7371bc38a26ac9f9b16096c6aa174a190fdb9a.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Philadelphia",
+            "full_location": "Greater Philadelphia"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/gusnasis"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "gusnasis"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CollX",
+                "company_website": "http://collx.app",
+                "professional_network_id": "80130229",
+                "title": "CTO & Co-Founder",
+                "description": "CollX is the fastest way to figure out what your trading cards are worth. Snap photos of them and instantly get the current market price. Add them to your collection to track your overall portfolio value and buy, sell, and trade your cards with other collectors.",
+                "location": {
+                  "raw": "Camden, New Jersey, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780976,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/552a8ec25b0257260ea3eecf9cf9ed451ae079ad7cc559727e1034cdb587d418.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/collx",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1846501636,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Haddonfield, New Jersey, United States",
+                "company_hq_location_address_components": [
+                  "Haddonfield",
+                  "Camden County",
+                  "New Jersey",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 556609,
+        "basic_profile": {
+          "name": "Ted Mann",
+          "professional_network_name": "Ted Mann",
+          "headline": "Co-Founder and CEO, CollX",
+          "current_title": "Co-Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/47b8048500b9726de171bdddb864eac7b2332f6816d023df42aabbba9e401ae1.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Philadelphia",
+            "full_location": "Greater Philadelphia"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/tedmann"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "turkeymonkey"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CollX",
+                "company_website": "http://collx.app",
+                "professional_network_id": "80130229",
+                "title": "Co-Founder and CEO",
+                "description": "CollX (pronounced \"collects\") is the fastest way to find out what your trading cards are worth. Snap a pic and instantly get the current market price. Add them to your collection to track your overall portfolio, and buy, sell, and trade your cards with other collectors.",
+                "location": {
+                  "raw": "Camden, New Jersey, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780976,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/552a8ec25b0257260ea3eecf9cf9ed451ae079ad7cc559727e1034cdb587d418.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/collx",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1846116582,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Haddonfield, New Jersey, United States",
+                "company_hq_location_address_components": [
+                  "Haddonfield",
+                  "Camden County",
+                  "New Jersey",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 53600338,
+        "basic_profile": {
+          "name": "Nicole Berger",
+          "professional_network_name": "Nicole Berger",
+          "headline": "Operations Leader @ Series A & B Start-ups",
+          "current_title": "Chief Operating Officer & Board Member",
+          "normalized_title": {
+            "matched_title": "Chief Operating Officer & Board Member",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b1be536ad4f3c75c8cee76d1dd128d47999d31f149a8aa02ea394c7503046352.jpg",
+          "location": {
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Philadelphia, Pennsylvania, United States",
+            "full_location": "Philadelphia, Pennsylvania, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/nicole-berger-1226448"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CollX",
+                "company_website": "http://collx.app",
+                "professional_network_id": "80130229",
+                "title": "Chief Operating Officer & Board Member",
+                "description": "",
+                "location": {
+                  "raw": "Greater Philadelphia"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780976,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/552a8ec25b0257260ea3eecf9cf9ed451ae079ad7cc559727e1034cdb587d418.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/collx",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2544543010,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Haddonfield, New Jersey, United States",
+                "company_hq_location_address_components": [
+                  "Haddonfield",
+                  "Camden County",
+                  "New Jersey",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "NQB8",
+                "company_website": "https://www.nqb8.com",
+                "professional_network_id": "105986813",
+                "title": "Board Member & Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3808736,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c6dd46438fefccf14cc3d1ffa54dab295d414c93fb8a0762a094ec5d2cb7a68f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/nqb8-com",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2754834152,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Washington, Washington, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJvQ6CMBAA4Fdpbma40t4PvIoxhHLXMBgboQzG-O7G-fvA6_LjvezrucMcADEzZbTIXGMUYRVzLJNpERstk3mUwjS6k26TqhV3qm5bzbJihCHA2Y4Oc7hRYsSU9D4E6K2vj2Vr1_NP6fsLAAD__4S8FGF4AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

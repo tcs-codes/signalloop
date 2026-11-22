@@ -1,0 +1,329 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "rhinofcp.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 13265,
+        "basic_profile": {
+          "name": "Yuval Baror",
+          "professional_network_name": "Yuval Baror",
+          "headline": "Co-founder and advisor at Rhino Federated Computing",
+          "current_title": "Co-founder and advisor",
+          "normalized_title": {
+            "matched_title": "Co-Founder & Advisor",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9992,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/48f4a67cc5e222e4295fd6157712a64be7d40f673538f15504113ced99e265db.jpg",
+          "location": {
+            "city": null,
+            "state": "Tel Aviv District",
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Tel Aviv District, Israel",
+            "full_location": "Tel Aviv District, Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yuvalbaror"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Rhino Federated Computing",
+                "company_website": "https://www.rhinofcp.com/",
+                "professional_network_id": "71596702",
+                "title": "Co-founder and advisor",
+                "description": "Following over 5.5 years of operational leadership as CTO, transitioning to an advisory capacity to support Rhino's long-term technical strategy, key projects and stakeholders.",
+                "employment_type": "",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 643564,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b3161aba06d5831800e9709a67b3ac0c5548339de9b9f95cdadce21728c414f4.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rhinofc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 84,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2955642265,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 13266,
+        "basic_profile": {
+          "name": "Ittai Dayan",
+          "professional_network_name": "Ittai Dayan",
+          "headline": "CEO @ Rhino Federated Computing",
+          "current_title": "Chief Executive Officer",
+          "normalized_title": {
+            "matched_title": "Chief Executive Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/db07e63a8be3fde303a68465d1ced339dcb0bf9f73ec276034e024ffd94c70a5.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ittai-dayan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Rhino Federated Computing",
+                "company_website": "https://www.rhinofcp.com/",
+                "professional_network_id": "71596702",
+                "title": "Chief Executive Officer",
+                "description": "The Rhino Federated Computing Platform is a paradigm shift - it allows scaling data between different institutions and enterprises without sharing data or compromising data privacy.",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 643564,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b3161aba06d5831800e9709a67b3ac0c5548339de9b9f95cdadce21728c414f4.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rhinofc",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 84,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1732552404,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "McKinsey & Company",
+                "company_website": "http://www.mckinsey.com",
+                "professional_network_id": "1371",
+                "title": "Member, Health Tech CEO Forum",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 721642,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ee65a7be61f76ee9fb55f24826765dc3b59cf65facf1581117007399cb1d359.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mckinsey",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 37671,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 1752599547,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "United States",
+                "company_hq_location_address_components": [
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1050760,
+        "basic_profile": {
+          "name": "Chris Laws",
+          "professional_network_name": "Chris Laws",
+          "headline": "CCO at Rhino Federated Computing",
+          "current_title": "Chief Commercial Officer",
+          "normalized_title": {
+            "matched_title": "Chief Commercial Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d20257786673bc7605622a4865232cecce428b6a586299fdda74180df64302e7.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/christopherlaws"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "chris_laws"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Rhino Federated Computing",
+                "company_website": "https://www.rhinofcp.com/",
+                "professional_network_id": "71596702",
+                "title": "Chief Commercial Officer",
+                "description": "Evangelizing federated computing as the best way to unlock siloed data for AI without compromising security or privacy.",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 643564,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b3161aba06d5831800e9709a67b3ac0c5548339de9b9f95cdadce21728c414f4.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rhinofc",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 84,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2678780060,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_Qv2TZXkVkJG3KDmJx6w4ivrt4_j7wuux4b7ucO6wOkLNE0sqqFGJpPBuLJE0RuZClkC1RVl2sKS2opabAJtWaWEM0mByc_Riwulvw6Gfy98nB6EMeW-nX8y_5-wsAAP__cZ_7-XcAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

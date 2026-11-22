@@ -1,0 +1,380 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "alembic.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 38039,
+        "basic_profile": {
+          "name": "Tomas Puig",
+          "professional_network_name": "Tomas Puig",
+          "headline": "Alembic",
+          "current_title": "Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3e7978378478bb68bf83124ace7ac734d571516cd8c19cd9fcc0d050350f592f.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/tomaspuig"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "tnpuig"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alembic",
+                "company_website": "https://alembic.com/",
+                "professional_network_id": "18958653",
+                "title": "Founder & CEO",
+                "description": "Lead company vision, architectural roadmaps, and systems engineering for a frontier causal intelligence platform.\n\n- Architected and coded the core temporal heterogeneous graph engine, formulating parallel contact-tracing algorithms and Hamiltonian credit propagation over compressed sparse representations.\n\n- Directed the acquisition and integration of NVIDIA NVL72 DGX SuperPODs and now Vera Rubin clusters.\n\n- Authored our (MTL) & (UCEP) frameworks, defining state-retention and incremental repair architectures that eliminate repeated global recomputation.\n\n- Spends many of his days producing things like bare-metal C++20 and CUDA kernels, implementing deterministic warp-synchronous collectives, out-of-core temporal streaming, and collision-free sorting/scanning pipelines.\n\n- Also runs the business side of the house fundraising (raised $177M+ in capital), managing, and making sure the company is constantly accelerating",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2018-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1e8998d4094e08d331235381aca9e5eeb4209ab641bb07e3380aa638c65a946.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getalembic",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1421999206,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 38040,
+        "basic_profile": {
+          "name": "Lloyd Taylor",
+          "professional_network_name": "Lloyd Taylor",
+          "headline": "CTO/CISO at Alembic Technologies, Chameleon Polymath",
+          "current_title": "CTO/CISO",
+          "normalized_title": {
+            "matched_title": "CTO & Ciso",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9859,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cdab678925c58a6cc358c0637bbdcb8844e8c85acbf4364b4f807f9bfd6d8e6d.jpg",
+          "location": {
+            "city": "Portland",
+            "state": "Oregon",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Portland, Oregon, United States",
+            "full_location": "Portland, Oregon, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/lloydtaylor"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "netelder"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alembic",
+                "company_website": "https://alembic.com/",
+                "professional_network_id": "18958653",
+                "title": "CTO/CISO",
+                "description": "Alembic's AI-powered analytics provide a holistic view of your entire Marketing media mix. We show you impacts to your revenue, across all channels, in near-real time.\n\nWe correlate content performance, events, and conversions; provide insights across categories, geos, and demographics with concise executive dashboards; show you ROI, share of voice for content campaigns, business units, categories and seasonal efforts; and forecast conversions and revenue based on the impact, insights, and correlation of events.\n\nI was an early Angel investor, but was so impressed with the team and the vision that I joined full time.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1e8998d4094e08d331235381aca9e5eeb4209ab641bb07e3380aa638c65a946.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getalembic",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1525479749,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Athena Alliance",
+                "company_website": "http://athenaalliance.com/",
+                "professional_network_id": "10613108",
+                "title": "Board Of Directors",
+                "description": "Athena is the leading Executive Learning Community that accelerates leadership advancement to the C-suite, the CEO's office, and the boardroom through a unique model of modern business leadership education and a powerful network. Since its founding, Athena has:\n\n- Built and nurtured a network of 5,000+ C-level women, VCs, and CEOs from 200+ companies including Amazon, Autodesk, Bank of America, Intuit, Microsoft, Quinstreet, and Stripe.\n\n - Made thousands of connections between female executives and investment firms, CEOs, and boards.\n\n- Secured hundreds of interviews for those seeking board seats and saw 300+ successful board placements.\n\n- Produced and hosted hundreds of hours of business leadership content on everything from funding, to building, to operating and governing a business. Content starts live, then becomes on-demand. Members learn through discovery, guided Pathways, Learning Circles, and Peer Groups.\n\nI joined the Board in 2019 to help drive the transition from non-profit to for-profit.  This work was completed in 2020, and I am honored to continue to serve as the Secretary/Treasurer of the newly-formed Athena Rising Foundation, focused on bringing Women of Color and LGBTQ women into the Athena Alliance.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2019-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 691563,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a68553c27218c2611384872cc6e59a177621c4d7949f805d37f36df554e4f568.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/athena-alliance",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 236,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1545329293,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Better Ventures",
+                "company_website": "http://www.better.vc",
+                "professional_network_id": "3018222",
+                "title": "Advisor and Limited Partner",
+                "description": "Initial investor and advisor to VC fund family focused on impact investing.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2011-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 982658,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a65a7d5e65929474ad231fc78023b5e07dae81ac7bb6c167a2aafbb0af51853.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bettervc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Consulting",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 15,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1125768604,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Oakland, California, United States",
+                "company_hq_location_address_components": [
+                  "Oakland",
+                  "Alameda County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 38041,
+        "basic_profile": {
+          "name": "Seth Little",
+          "professional_network_name": "Seth Little",
+          "headline": "Founder & Chief Creative Officer",
+          "current_title": "Founder & Chief Creative Officer",
+          "normalized_title": {
+            "matched_title": "Founder & Chief Creative Officer",
+            "department": "Product & Design",
+            "sub_department": "Creative Direction & Art Direction",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/seth-little-b271392"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alembic",
+                "company_website": "https://alembic.com/",
+                "professional_network_id": "18958653",
+                "title": "Founder & Chief Creative Officer",
+                "description": "Alembic Technologies is an innovative AI startup revolutionizing marketing operations and data intelligence. Based in San Francisco, Alembic is backed by an impressive lineup of investors, including Ridge Ventures, Village Global, IrishAngels, and Jeffrey Katzenberg\u2019s WndrCo.\n\nAlembic\u2019s cutting-edge solutions empower businesses to transform raw data into actionable insights with unmatched clarity and precision. By streamlining complex data processes and enhancing marketing effectiveness, Alembic is setting a new standard for AI-driven decision-making.\n\nWith rapid growth underway and plans to expand its footprint, Alembic continues to attract top talent and build dynamic partnerships across industries. The company is actively hiring as it scales its groundbreaking approach to marketing intelligence.",
+                "location": {
+                  "raw": "Silicon Valley, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2018-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1e8998d4094e08d331235381aca9e5eeb4209ab641bb07e3380aa638c65a946.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getalembic",
+                "seniority_level": "CXO",
+                "function_category": "Arts and Design",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1506044496,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIMa7DIAwA0KsgzxkM5mOTq3xVkTGgDFVREzJUVe9edX1veF7teG27njusDqT1kEurGgrHIhU7GifSHEKq8memLXFEIVJlsiSIldgyd2HxXmBxcI5jwur-STD62-Jgjqn3zcb1-Hn-fAMAAP__LrsgM3UAAAA=",
+    "total_count": 9,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

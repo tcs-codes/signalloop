@@ -1,0 +1,373 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "setpoint.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 27523,
+        "basic_profile": {
+          "name": "Jonathan Stein",
+          "professional_network_name": "Jonathan Stein",
+          "headline": "Founder, CEO, Serial Instigator",
+          "current_title": "Founder",
+          "normalized_title": {
+            "matched_title": "Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/439ea7ffc8187c0f6d5ab254278dcceb7ecaa20af064c6cad307e4a7a4f755ad.jpg",
+          "location": {
+            "city": "Pound Ridge",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Pound Ridge, New York, United States",
+            "full_location": "Pound Ridge, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jonstein"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "betterment"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Warmer",
+                "company_website": "http://getwarmer.com",
+                "professional_network_id": "102841940",
+                "title": "Founder",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 2049794,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fc991f3320a87224b855b5305fa4e7ba7d73c2cf985c5e8b518b8f668d5879bc.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/warmerco",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2262456634,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Setpoint",
+                "company_website": "http://setpoint.io",
+                "professional_network_id": "75062865",
+                "title": "Advisor to CEO",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 780778,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/84997f79f2fee00908334d9ed2bbf981ccfd6ffbd68a02c545c803b1708a2785.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getsetpoint",
+                "seniority_level": "CXO",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 169,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2086494337,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Betterment",
+                "company_website": "http://www.betterment.com",
+                "professional_network_id": "487830",
+                "title": "Founder and Board Member",
+                "description": "I founded Betterment, envisioning smarter investments made accessible to everyone, and launched a new category of digital advisors. The team at Betterment deserves credit for many firsts in investing: fractional shares, automatic smart rebalancing of ETFs, automated advice on which account to save for retirement, automated asset location, etc. I built and led an amazing team for 13 years as CEO, and continue to advise the company from my seat on the Board today.",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 631676,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8c8c89dfe6166a36baf70b0c2451edddca25c9f47317d1f43423e561397caa3d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/betterment",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 676,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 1709022457,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 186993,
+        "basic_profile": {
+          "name": "Michael Lam",
+          "professional_network_name": "Michael Lam",
+          "headline": "Entrepreneur, Executive, Investor, Advisor, Board Member",
+          "current_title": "Co-Founder & Chief Investment Officer",
+          "normalized_title": {
+            "matched_title": "Founder & Chief Investment Officer",
+            "department": "Finance & Accounting",
+            "sub_department": "Investment & Asset Management",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/ed5697a09be65ccc5573fcc90340c88e33e4665a46a9ebe43696eade0bef01f1.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/michaeltlam"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Setpoint",
+                "company_website": "http://setpoint.io",
+                "professional_network_id": "75062865",
+                "title": "Co-Founder & Chief Investment Officer",
+                "description": "",
+                "location": {
+                  "raw": "Austin, Texas, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780778,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/84997f79f2fee00908334d9ed2bbf981ccfd6ffbd68a02c545c803b1708a2785.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getsetpoint",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 169,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1995387787,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 186994,
+        "basic_profile": {
+          "name": "Ben Rubenstein",
+          "professional_network_name": "Ben Rubenstein",
+          "headline": "Founder, Entrepreneur, Board Member, Advisor, Investor",
+          "current_title": "Co-Founder & President",
+          "normalized_title": {
+            "matched_title": "Co-Founder & President",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/71f39b67bfc7cd4ad549d2eb10f7fb5226592c75f228f7b42ebab03dcff8e2d5.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ben-rubenstein"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Setpoint",
+                "company_website": "http://setpoint.io",
+                "professional_network_id": "75062865",
+                "title": "Co-Founder & President",
+                "description": "",
+                "location": {
+                  "raw": "Austin, Texas, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780778,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/84997f79f2fee00908334d9ed2bbf981ccfd6ffbd68a02c545c803b1708a2785.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getsetpoint",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 169,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1942476079,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe_Qdm1M9isiI00iO4jFrTuI-O_i-X3gdfr-Xjc5NlgC5Gg51makiM4uTkVUZb7Md45JEs6uGKtZS2RkqEiWjRt5rY4lwxTg6PuAJVwTIXO5TQFGH_JYtZ_PP_D3FwAA__8H7HYpdgAAAA==",
+    "total_count": 9,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

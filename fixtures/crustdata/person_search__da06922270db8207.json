@@ -1,0 +1,306 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "alembic.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 110361802,
+        "basic_profile": {
+          "name": "Chiranjib Choudhury",
+          "professional_network_name": "Chiranjib Choudhury",
+          "headline": "--",
+          "current_title": "Zonal Sales Manager",
+          "normalized_title": {
+            "matched_title": "Zonal Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/43b5375ef989abf9a137e19746b6df73a25ede209069ba206024996331e58a6e.jpg",
+          "location": {
+            "city": "Kolkata",
+            "state": "West Bengal",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Kolkata, West Bengal, India",
+            "full_location": "Kolkata, West Bengal, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/chiranjib-choudhury-7a62a1297"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alembic",
+                "company_website": "https://alembic.com/",
+                "professional_network_id": "18958653",
+                "title": "Zonal Sales Manager",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1e8998d4094e08d331235381aca9e5eeb4209ab641bb07e3380aa638c65a946.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getalembic",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2273801988,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 110362293,
+        "basic_profile": {
+          "name": "Matt Bontaites",
+          "professional_network_name": "Matt Bontaites",
+          "headline": "GTM Leader. 4x VP/RVP of Sales",
+          "current_title": "Sr. Director, GTM",
+          "normalized_title": {
+            "matched_title": "GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9728,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5cc779927509e680c44d1c361a74098039b59690a455a5e94993374cae6e5a4a.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matt-bontaites-4987653"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alembic",
+                "company_website": "https://alembic.com/",
+                "professional_network_id": "18958653",
+                "title": "Sr. Director, GTM",
+                "description": "Causal AI and supercomputers help CXOs measure ROI in real time.",
+                "employment_type": "",
+                "start_date": "2024-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1e8998d4094e08d331235381aca9e5eeb4209ab641bb07e3380aa638c65a946.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getalembic",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2543440759,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 418310059,
+        "basic_profile": {
+          "name": "Nithish Mr",
+          "professional_network_name": "Nithish Mr",
+          "headline": "Medical Sales Representative at Alembic",
+          "current_title": "Medical Sales Representative",
+          "normalized_title": {
+            "matched_title": "Medical Sales Representative",
+            "department": "Sales & Revenue",
+            "sub_department": "Healthcare & Insurance Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c028bf8363e5fe0b77884256686d2ada8a64fa3d96ba2bbb44453b63a103faa1.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/nithish-mr-8373721b1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Alembic",
+                "company_website": "https://alembic.com/",
+                "professional_network_id": "18958653",
+                "title": "Medical Sales Representative",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689942,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f1e8998d4094e08d331235381aca9e5eeb4209ab641bb07e3380aa638c65a946.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getalembic",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 89,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 0,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9QVihlv2LMUqFkByNxYwdj_Hez8_vC-7T9s256bLA4CEIlC3HAWjiLSo0mjfycMvmSlBVnz4mYrUpFKilYI4tN2B6oBJODo-8DFncLXsgjxnyfHIw-9LmWfr4uo98_AAD__xncEER5AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

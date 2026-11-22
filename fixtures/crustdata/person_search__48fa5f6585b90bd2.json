@@ -1,0 +1,790 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "yoodli.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 2099586,
+        "basic_profile": {
+          "name": "Josh Vitello",
+          "professional_network_name": "Josh Vitello",
+          "headline": "Chief Revenue Officer at Yoodli",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/78b41460957fc43102d75a2e4c273113e6cf9e6b324e8825a3f4167968b07cf2.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/joshvitello"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "joshvitello"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yoodli",
+                "company_website": "http://www.yoodli.ai",
+                "professional_network_id": "76228185",
+                "title": "Chief Revenue Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689839,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3a3cef34aa34405d605e719808e36c5b2858cedab178f09445e9c2bfe6961dcb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yoodli",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 135,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2622361057,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2413357,
+        "basic_profile": {
+          "name": "Catherine Elliott",
+          "professional_network_name": "Catherine Elliott",
+          "headline": "Go-To-Market Leader | Optimizing high growth companies for scale | Wine Enthusiast",
+          "current_title": "Enterprise Sales Leader",
+          "normalized_title": {
+            "matched_title": "Enterprise Sales Leader",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d1377cda1476030712d4ee5602e112ab92c680259cfe95853a21585eb2ab51e5.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/catherineeelliott"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yoodli",
+                "company_website": "http://www.yoodli.ai",
+                "professional_network_id": "76228185",
+                "title": "Enterprise Sales Leader",
+                "description": "",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689839,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3a3cef34aa34405d605e719808e36c5b2858cedab178f09445e9c2bfe6961dcb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yoodli",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 135,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2761656198,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Chief",
+                "company_website": "http://chief.com",
+                "professional_network_id": "11864448",
+                "title": "Chief Member",
+                "description": "Chief is a private network built to drive more women into positions of power and keep them there. Chief is the only organization specifically designed for senior women leaders to strengthen their leadership journey, cross-pollinate ideas across industries, and effect change from the top down.",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 631634,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/835e506b8243f03eecb0906a0edbc5929ebf87463732c15d01f1f82f3677e556.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joinchief",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 7479,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 2517707365,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Executive Member",
+                "description": "Pavilion is a community of sales and marketing executives at growth-focused companies.",
+                "employment_type": "",
+                "start_date": "2023-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 2286697331,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2846350,
+        "basic_profile": {
+          "name": "Bryan D.",
+          "professional_network_name": "Bryan D.",
+          "headline": "Startups & Venture Capital @ AWS | Fractional GTM, CMO | Board Member | Startup, VC Advisor | Enabling startups to go from 0 to 1 to 10 with purpose and intent",
+          "current_title": "Senior Manager | Startups & Venture Capital",
+          "normalized_title": {
+            "matched_title": "Head of Venture Capital",
+            "department": "Finance & Accounting",
+            "sub_department": "Investment & Asset Management",
+            "similarity": 0.9497,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7c507a1313d27e38ab4ac482b16b4735544f3b88cc0058bfdc9f48789fb0fba6.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/techstoryteller"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Amazon Web Services (AWS)",
+                "company_website": "http://aws.amazon.com",
+                "professional_network_id": "2382910",
+                "title": "Senior Manager | Startups & Venture Capital",
+                "description": "The Gist:\nDriving business development and strategic engagements with startups and VCs for AWS in Boston, helping investors and founders scale on and with AWS.\n\nThe Opportunity:\nBoston's SaaS, life sciences, biotech, deep tech, and Physical AI founders need more than cloud credits. They need infrastructure, compliance, and scaling expertise matched to their stage, and AWS supports them from pre-seed through growth.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Build relationships with Boston's VCs and angels so AWS adds value early, not just as a vendor\n\ud83d\udc49\ud83c\udffd Guide founders through architecture, credits, and go-to-market support\n\ud83d\udc49\ud83c\udffd Connect startups to the right AWS teams and programs for their stage\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Match AWS resources to what a founder needs this quarter\n\ud83d\udc49\ud83c\udffd Earn investor trust through signal, not sales pitches, so relationships compound\n\ud83d\udc49\ud83c\udffd Apply GTM pattern recognition to sharpen founders' product positioning and scale with AWS",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1033829,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5ce46e90454eb6200f0fd30a6fdbba8112c41701c303d63cdc3a10059f33ada5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/amazon-web-services",
+                "seniority_level": "Experienced Manager",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 147229,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 3020267356,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Duvall, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Duvall",
+                  "King County",
+                  "Washington",
+                  "United States",
+                  "98019"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Boston AI Week",
+                "company_website": "https://aiweek.boston",
+                "professional_network_id": "108363927",
+                "title": "Board Member",
+                "description": "The Gist:\nParticipating as a board member on Boston AI Week to help Boston\u2019s AI founders get built, sold, and scaled by connecting them with the investors and operators who make it happen.\n\nThe Opportunity:\nBoston has the talent, the labs, and the deep tech DNA to be an AI capital. Founders across SaaS, life sciences, biotech, and Physical AI need more than a great model. They need support and guidance on positioning that lands, pricing that holds, and a path to revenue. Boston AI Week is where like-minded Bostonians congregate to get all that figured out.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Bring the AWS Startups lens to programming founders and investors actually want to attend\n\ud83d\udc49\ud83c\udffd Connect Boston\u2019s VCs, angels, and builders so the week produces relationships, not just badges\n\ud83d\udc49\ud83c\udffd Help early-stage teams get practical on GTM, product marketing, and monetization\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Substance over spectacle: if it doesn\u2019t help a founder on Monday morning, rewrite it\n\ud83d\udc49\ud83c\udffd Build for the full range, from pre-seed to growth stage\n\ud83d\udc49\ud83c\udffd Use GTM pattern recognition to sharpen positioning, pricing, and Boston\u2019s AI story",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "",
+                "start_date": "2026-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 12835098,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/34504941ebad54fad9b15cd825069703be85c2f45bec747be9d48ada8c9533c1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bostonaiweek",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Civic and Social Organizations",
+                "position_id": 3059514819,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Grit Amplified",
+                "company_website": "",
+                "professional_network_id": "110725122",
+                "title": "Host | Stories of Grit, From People Who've Lived It",
+                "description": "The Gist:\nGrit Amplified is a podcast built on one idea: grit can be built. Each episode features real people who developed the resilience and perseverance to push through life's hardest moments and come out stronger.\n\nThe Opportunity:\nMost people recognize grit when they see it, but few know how to grow it. Grit Amplified closes that gap with stories and practical insights for anyone ready to build mental toughness and live with greater purpose and persistence.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Sit down with guests from all walks of life to unpack their grit journeys: failure, breakthroughs, mindset shifts, and the habits that separate quitters from finishers\n\ud83d\udc49\ud83c\udffd Leave every episode with something you can apply to your own life\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd No fluff, no highlight reels: honest, unfiltered conversations about what it takes to keep going\n\ud83d\udc49\ud83c\udffd Every guest has lived it, not just talked about it",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 26678769,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bd274a1a5d97141643fb1fd6c15ec620a1c7dc60b468512efbfe56c9815e9441.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/grit-amplified",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Media",
+                "position_id": 2871068471,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Primary Venture Partners",
+                "company_website": "http://www.primary.vc",
+                "professional_network_id": "1381092",
+                "title": "Venture Expert | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nExpert partner to Primary portfolio companies on product marketing, monetization, go-to-market strategy, and team development.\n\nThe Opportunity:\nHelping Primary-backed founders turn early traction into sustainable product-market fit, with clear monetization and a repeatable GTM engine.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Advise founders and the investment team on product marketing, GTM, and monetization across the Primary portfolio and broader network\n\ud83d\udc49\ud83c\udffd Use access to early-stage businesses, emerging trends, and the seed-stage ecosystem to sharpen strategy and execution\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Set tight working rhythms with founders: structured planning, clear objectives, defined advisory goals\n\ud83d\udc49\ud83c\udffd Bring repeatable frameworks and pattern recognition that help teams move faster, de-risk GTM, and build high-caliber marketing capabilities early",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1043370,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/32ff8ead66aa5948b2ce3eccfbc8bbd21894f3c5201a115ca675e60fa693b032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/primary-venture-partners",
+                "seniority_level": "Senior",
+                "function_category": "Marketing",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 810,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Investment Management",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Investment Management",
+                "position_id": 2595571290,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Harvard Alumni Entrepreneurs",
+                "company_website": "http://www.harvardae.org",
+                "professional_network_id": "18104373",
+                "title": "Startup Mentor | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nFounder mentor and subject matter expert to Harvard alumni-led startups on product marketing, monetization, GTM strategy, and team development.\n\nThe Opportunity:\nHelping founders turn early ideas into durable product-market fit, with clear monetization and focused, scalable go-to-market motions.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Partner with Harvard alumni founders on segmentation, positioning, messaging, pricing, GTM planning, opportunity sizing, and org design\n\ud83d\udc49\ud83c\udffd Build end-to-end marketing functions across product marketing, demand gen, lifecycle, and content\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Engage through structured forums and working sessions facilitated by Harvard Alumni Entrepreneurs, with clear goals and accountability\n\ud83d\udc49\ud83c\udffd Apply proven frameworks and pattern recognition so founders move faster, avoid common GTM pitfalls, and build high-performing teams earlier",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1255408,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bd4c9c34124cf1cb3ee8b345e3c1a1ac9a42e07f536e747cf43f932462e214f3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/harvardae",
+                "seniority_level": "Strategic",
+                "function_category": "Marketing",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 124,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2600119878,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Cambridge, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Cambridge",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Techstars Boston Accelerator",
+                "company_website": "https://www.techstars.com/accelerators/boston",
+                "professional_network_id": "9117589",
+                "title": "Startup Mentor | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nAdvising Techstars Boston cohort founders/CEOs on GTM, monetization, positioning, messaging, and product-led growth to drive product-market fit and launch-ready products.\n\nThe Opportunity:\nTechstars Boston taps one of the world's deepest innovation ecosystems to accelerate healthtech, medtech, biotech, web3, deep-tech, climate-tech, and other frontier startups with concentrated mentor and investor access.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Partner with founders and marketing leaders to find the fastest, most durable path to product-market fit\n\ud83d\udc49\ud83c\udffd Shape segmentation, narrative, pricing, and GTM motions so each company's value is obvious, differentiated, and repeatably sellable\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Align on strategic goals and timelines, then design GTM strategies with clear metrics, feedback loops, and ownership\n\ud83d\udc49\ud83c\udffd Dive into each startup's category, customer, and competitive landscape to pressure-test strategy and focus execution where they can win uniquely",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2023-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1045296,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/337fe0b393098a4fd7f7752ce973d8b6317883dd1328e4c8af7aa574d37e6bbf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/techstars-boston",
+                "seniority_level": "Strategic",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 15,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2212312710,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Yoodli",
+                "company_website": "http://www.yoodli.ai",
+                "professional_network_id": "76228185",
+                "title": "Advisor | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nAdvising Yoodli's founder/CEO on GTM, monetization, positioning, messaging, and product-led growth to drive product-market fit and successful launches.\n\nThe Opportunity:\nYoodli uses AI/ML to help people improve public speaking and communication without fear of judgment, turning a universal anxiety into scalable, personalized coaching.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Partner with the founder/CEO and marketing leadership to prioritize the shortest, most sustainable path to product-market fit\n\ud83d\udc49\ud83c\udffd Clarify the narrative, target segments, and growth motions that turn product capability into tangible customer outcomes\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Align on strategic goals and timelines, then design GTM strategies with clear success metrics and feedback loops\n\ud83d\udc49\ud83c\udffd Dive into the category, customers, and competitive landscape to stress-test strategy and focus execution on where Yoodli can win uniquely",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2022-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 689839,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3a3cef34aa34405d605e719808e36c5b2858cedab178f09445e9c2bfe6961dcb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yoodli",
+                "seniority_level": "Strategic",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 135,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2215168216,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Underscore VC",
+                "company_website": "http://www.underscore.vc",
+                "professional_network_id": "10791786",
+                "title": "Core Partner | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nCore partner to Underscore portfolio companies on product marketing, monetization, go-to-market strategy, and team development.\n\nThe Opportunity:\nHelping founders turn vision into durable product-market fit, with clear monetization and repeatable, scalable GTM engines.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Work directly with founders on segmentation, positioning, messaging, pricing, GTM planning, and opportunity sizing\n\ud83d\udc49\ud83c\udffd Build end-to-end marketing functions spanning product marketing, demand generation, lifecycle, and content\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Set tight working rhythms with founding teams: structured planning, clear objectives, accountable follow-through\n\ud83d\udc49\ud83c\udffd Bring pattern recognition and frameworks that help startups move faster, reduce GTM risk, and build high-performance marketing teams early",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1038052,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8973f595bd004baec775f6434aa6432aaf44cf9f741c338ad889e0ec8567c1a1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/_underscore.vc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 144,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1898206220,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Ikigai",
+                "company_website": "https://www.linkedin.com/company/celonis",
+                "professional_network_id": "72750890",
+                "title": "Advisor | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nAdvising Ikigai's founder/CEO on GTM, monetization, positioning, messaging, and product-led growth to drive product-market fit and high-impact launches.\n\nThe Opportunity:\nIkigai, born from MIT research, is rethinking automation by making it simple to build workflows where humans stay in the loop, not just bots doing repetitive tasks.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Partner with the founder/CEO and marketing leadership to find the fastest, most durable path to product-market fit\n\ud83d\udc49\ud83c\udffd Clarify the narrative, ideal customers, and growth motions so Ikigai's value in human-in-the-loop workflows is unmistakable\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Align on strategic goals and timelines, then design GTM strategies with clear metrics, feedback loops, and ownership\n\ud83d\udc49\ud83c\udffd Go deep on the category, customer needs, and competitors to pressure-test strategy and concentrate execution where Ikigai can win uniquely",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 646411,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f0a805b2e54fc097816de9393ae65aaf8b1e5790e0565f491b3524de848fed1c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ikigailabs",
+                "seniority_level": "Strategic",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 113,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2209826370,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Slang AI",
+                "company_website": "https://www.slang.ai",
+                "professional_network_id": "14069635",
+                "title": "Advisor | Product Marketing, Monetization, GTM Strategy",
+                "description": "The Gist:\nAdvising Slang AI's founder/CEO on GTM, monetization, positioning, messaging, and product-led growth to drive product-market fit and high-impact launches.\n\nThe Opportunity:\nSlang AI is transforming what it feels like to call a business, using next-gen AI/ML to make every interaction more personalized, efficient, and genuinely delightful.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Partner with the founder/CEO and marketing leadership to find the fastest, most durable path to product-market fit\n\ud83d\udc49\ud83c\udffd Sharpen the narrative, target segments, and growth motions so Slang AI's product value is obvious and urgent for customers\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Align on strategic goals and timelines, then design GTM strategies with clear metrics, feedback loops, and ownership\n\ud83d\udc49\ud83c\udffd Go deep on category dynamics, customer needs, and competitors to pressure-test strategy and focus execution where Slang AI can win uniquely",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 853960,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/589f1f924ad758b53e1cf16c8a3aec859c921c9db9cc800134e6a12bce2bf4d7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/slang-ai",
+                "seniority_level": "Strategic",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 76,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2209827077,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Stealth Startup",
+                "company_website": "https://harmonic.ai/get-discovered",
+                "professional_network_id": "18583501",
+                "title": "Fractional GTM, CMO | AI, Deep Tech, Robotics, Biotech, SaaS",
+                "description": "The Gist:\nI help early and growth-stage startups and their VC backers find product-market fit and build the marketing function to scale: strategy, execution, and team.\n\nThe Opportunity:\nMost startups lose revenue because the story is unclear, go-to-market is undisciplined, or marketing was built too late and too thin. I close that gap, drawing on 15+ years leading marketing in high-growth, deep-tech environments to diagnose fast and build for scale.\n\nWhat I Do:\n\ud83d\udc49\ud83c\udffd Marketing stack: Positioning and messaging that land with the right buyers, OKRs and roadmaps that align the business, and GTM motions (ABM, demand gen) that generate real pipeline\n\ud83d\udc49\ud83c\udffd Product: Launches, competitive differentiation, and clarity on PMF\n\ud83d\udc49\ud83c\udffd Teams: Hiring, org design, and coaching the people already in the seat\n\ud83d\udc49\ud83c\udffd VC partners: Marketing diligence, strategy, and embedded advisory for portfolio companies\n\nHow I Operate:\n\ud83d\udc49\ud83c\udffd Act as a force-multiplier across product, sales, and leadership\n\ud83d\udc49\ud83c\udffd Sharpen the narrative, then build a marketing function that runs like a disciplined portfolio: smart bets, fast experiments, focus on revenue and market position\n\ud83d\udc49\ud83c\udffd Draw on pattern recognition from Microsoft, Grammarly, Berkshire Grey, Aptiv, and Automata\n\ud83d\udc49\ud83c\udffd Active advisor through Underscore VC, Hyperplane, Sovereign's Capital, Y Combinator, and Madrona",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "Freelance",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6040342,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/713a8ec1241326ce65bba2e8e4669985db31fc0a799ad8a77017ef6543103219.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/stealth-startup-community",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 38052,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2898330397,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9QSoFtv2LMUqDNDkbixg7G-O_G8_vA69Ljve1y7rA6yBSpmtqSW_E-1cxlDpVRCy0tojCbNSpISYsGNIlak3qRyJqFGkwOzn4MWN2NZk4h4n1yMPqQx1b79fyLx-8vAAD__5D9qlp4AAAA",
+    "total_count": 10,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

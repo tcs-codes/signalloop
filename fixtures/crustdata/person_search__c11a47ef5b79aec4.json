@@ -1,0 +1,298 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "ory.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 32347,
+        "basic_profile": {
+          "name": "Aeneas Rekkas",
+          "professional_network_name": "Aeneas Rekkas",
+          "headline": "Founder & CTO at Ory",
+          "current_title": "Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9933,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c90587b0d7f64d7eb9b444bb465a96c8c8915d12f8704984878f031b23dfa5ef.jpg",
+          "location": {
+            "city": "Munich",
+            "state": "Bavaria",
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Greater Munich Metropolitan Area",
+            "full_location": "Greater Munich Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/aeneasr"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ory Corp",
+                "company_website": "https://www.ory.com",
+                "professional_network_id": "11374545",
+                "title": "Founder & CTO",
+                "description": "Ory builds the New Identity Stack aimed for the 2020 decade by creating visionary open source technology and cloud software.",
+                "location": {
+                  "raw": "Gro\u00dfraum Philadelphia und Umgebung"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 674198,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56edd1add2d75bcdf7fc216d56d5282913bf7cf7b2421ceb3179a1e94ce20e58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ory-corp",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 1539769676,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scottsdale, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Scottsdale",
+                  "Maricopa County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 53461,
+        "basic_profile": {
+          "name": "Jeff Kukowski",
+          "professional_network_name": "Jeff Kukowski",
+          "headline": "Chief Executive Officer, Ory Corp",
+          "current_title": "Chief Executive Officer",
+          "normalized_title": {
+            "matched_title": "Chief Executive Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9eff8bcf6dde8b9c19a1a8a4e48ef969c6fa363517790108acbcc9b125300a06.jpg",
+          "location": {
+            "city": "Scottsdale",
+            "state": "Arizona",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Scottsdale, Arizona, United States",
+            "full_location": "Scottsdale, Arizona, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jeff-kukowski-00025"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ory Corp",
+                "company_website": "https://www.ory.com",
+                "professional_network_id": "11374545",
+                "title": "Chief Executive Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 674198,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56edd1add2d75bcdf7fc216d56d5282913bf7cf7b2421ceb3179a1e94ce20e58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ory-corp",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 2385695073,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scottsdale, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Scottsdale",
+                  "Maricopa County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2696126,
+        "basic_profile": {
+          "name": "Rob Murray",
+          "professional_network_name": "Rob Murray",
+          "headline": "Chief Revenue Officer, Ory Corp.",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/620824544e561ee522f75be882ae73990dd5ca440a2299564da9a52fe1a0cac2.jpg",
+          "location": {
+            "city": null,
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver Metropolitan Area",
+            "full_location": "Denver Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/robemurray"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "RobertEMurray"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ory Corp",
+                "company_website": "https://www.ory.com",
+                "professional_network_id": "11374545",
+                "title": "Chief Revenue Officer",
+                "description": "Lead Ory's global sales and go-to-market organization, with a focus on helping enterprises recognize industry-leading time to value across Ory's customer, B2B, and Agent IAM products.",
+                "location": {
+                  "raw": "Denver, CO"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 674198,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56edd1add2d75bcdf7fc216d56d5282913bf7cf7b2421ceb3179a1e94ce20e58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ory-corp",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 2972172254,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scottsdale, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Scottsdale",
+                  "Maricopa County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJSwrCMBAG4KuEWXeRDO0_k15FpOQ1dCEG23Qh4t3F9feh19WO97anc6fVkc2qCl_jXDT5oMYqUZGLLRzAFVkkLFabgk3UC2tLi5cYkA1INDk6-zFodTdGRGDcJ0ejj_TYSr-ef5HvLwAA__-Uu6N3dwAAAA==",
+    "total_count": 7,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

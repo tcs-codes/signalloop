@@ -1,0 +1,401 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "macro.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 2624008,
+        "basic_profile": {
+          "name": "Jeff Qiu",
+          "professional_network_name": "Jeff Qiu",
+          "headline": "placeholder",
+          "current_title": "Head of Growth",
+          "normalized_title": {
+            "matched_title": "Software Engineer",
+            "department": "Engineering & Technology",
+            "sub_department": "Software Engineering",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a20fe01e007b3c8c1bb4d4891b7b788b29c3692a80a7cd72eec1c64438503ce4.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/arugula"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Macro",
+                "company_website": "https://macro.com",
+                "professional_network_id": "64749390",
+                "title": "Head of Growth",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 785622,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/372242213b6c6b3bc0fc96a3fa5dfb2667e4b3cd8ceafdaa7c3b4581a412cff2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/macrocom",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2428103518,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Various Companies",
+                "company_website": "http://www.tgleaders.com",
+                "professional_network_id": "18698136",
+                "title": "Software Engineer",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2013-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1034595,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b95deaf81b454e7f6651f4f9fb51de895034d26cfba85119a75da5db970288d6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/various-boards",
+                "seniority_level": "Entry Level",
+                "function_category": "Engineering",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 13,
+                "company_headcount_latest": 22023,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 0,
+                "company_type": "",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Greenwich, Connecticut, United States",
+                "company_hq_location_address_components": [
+                  "Greenwich",
+                  "Western Connecticut Planning Region",
+                  "Connecticut",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 110068855,
+        "basic_profile": {
+          "name": "Jackson Kustec",
+          "professional_network_name": "Jackson Kustec",
+          "headline": "Ops",
+          "current_title": "Growth & Ops",
+          "normalized_title": {
+            "matched_title": "Growth Operations",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9795,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a949fe7d1debf03e37f56532cd39ce02232525181ae1917ac82cc86cbff5a93e.jpg",
+          "location": {
+            "city": null,
+            "state": "Ontario",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Greater Toronto Area, Canada",
+            "full_location": "Greater Toronto Area, Canada"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jacksonkustec"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Macro",
+                "company_website": "https://macro.com",
+                "professional_network_id": "64749390",
+                "title": "Growth & Ops",
+                "description": "I do anything that isn't software.",
+                "employment_type": "Permanent Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 785622,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/372242213b6c6b3bc0fc96a3fa5dfb2667e4b3cd8ceafdaa7c3b4581a412cff2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/macrocom",
+                "seniority_level": "Entry Level",
+                "function_category": "Operations",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1909514674,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 110069148,
+        "basic_profile": {
+          "name": "Mark James",
+          "professional_network_name": "Mark James",
+          "headline": "Consultant",
+          "current_title": "Member of Consulting Staff",
+          "normalized_title": null,
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": "Gauteng",
+            "country": "South Africa",
+            "continent": "Africa",
+            "raw": "City of Johannesburg, Gauteng, South Africa",
+            "full_location": "City of Johannesburg, Gauteng, South Africa"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mark-james-264135268"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Agency Institute",
+                "company_website": "https://agency.org.uk",
+                "professional_network_id": "28179760",
+                "title": "Member of Consulting Staff",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2005-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6035624,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6db10aedc87541f5955c9140f8684ee3c4f48067f2996e99aadfeffbe20bdc8a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/agency-institute",
+                "seniority_level": "Senior",
+                "function_category": "Consulting",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 21,
+                "company_headcount_latest": 24373,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 2213465431,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Private company",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 0,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Macro",
+                "company_website": "https://macro.com",
+                "professional_network_id": "64749390",
+                "title": "Sales Associate",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 785622,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/372242213b6c6b3bc0fc96a3fa5dfb2667e4b3cd8ceafdaa7c3b4581a412cff2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/macrocom",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2130064884,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ7CIBAG4FchN3f4DzgKfRVjGihHOhiJLR2M8d2N8_eh16XHe93zudNiyEZbvYTa4qauiLA6RIvktQqzBjhRAAFaXGy1zNwKdE5zE5cyW5oMnf0YtJgbMxAS-3ifDI0-8mPd-vX8m__-AgAA__-XyRe9eQAAAA==",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "estuary.dev"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 40013,
+        "basic_profile": {
+          "name": "David Yaffe",
+          "professional_network_name": "David Yaffe",
+          "headline": "Co-Founder at Estuary, Previously Co-Founder of Arbor (Acquired by LiveRamp)",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2c13c0c64b92ab4c5566684f501221800765af771ee67ece399d692e06b4d083.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/davidyaffe"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Estuary",
+                "company_website": "http://estuary.dev",
+                "professional_network_id": "65266256",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "Greater New York City Area"
+                },
+                "employment_type": "",
+                "start_date": "2019-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 669604,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/050554e0962604ab504b0fde15eb271e4cf5f313298f1bbfd419dc38bb106e08.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/estuary-tech",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 68,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1532816837,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Optable",
+                "company_website": "http://optable.co",
+                "professional_network_id": "64779622",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 780204,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/410726940ef4da550393c3e7da85ed29fcad9674ddd66525456cd6d8152f8b86.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/optableco",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 90,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Data Infrastructure and Analytics",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Infrastructure and Analytics",
+                "position_id": 1882377334,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Canada",
+                "company_hq_location": "Montreal, Quebec, Canada",
+                "company_hq_location_address_components": [
+                  "Montreal",
+                  "Montr\u00e9al",
+                  "Montreal",
+                  "Quebec",
+                  "Canada"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 40014,
+        "basic_profile": {
+          "name": "Johnny Graettinger",
+          "professional_network_name": "Johnny Graettinger",
+          "headline": "Builder of technology and companies",
+          "current_title": "Co-Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9972,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9ffb6c1066b5f1949ce86615e6eb78b8e9483b563ebf57da26775c3fa05c7dce.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/johngraettinger"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Estuary",
+                "company_website": "http://estuary.dev",
+                "professional_network_id": "65266256",
+                "title": "Co-Founder & CTO",
+                "description": "",
+                "location": {
+                  "raw": "Greater New York City Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 669604,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/050554e0962604ab504b0fde15eb271e4cf5f313298f1bbfd419dc38bb106e08.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/estuary-tech",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 68,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1531739177,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Gazette Project",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Creator & Committer",
+                "description": "Gazette is infrastructure for building streaming platforms: platforms composed of loosely coupled services, built and operated by distinct teams, managing and serving large amounts of state, but all communicating continuously through a common catalog of streamed data. It features a lightweight container & cloud-native architecture, high availability, and integrates elegantly with existing batch workflows.\n\nIt has served production use cases for nearly five years, with deployments scaled to millions of streamed messages per second.",
+                "employment_type": "",
+                "start_date": "2015-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 11,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 1531738171,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

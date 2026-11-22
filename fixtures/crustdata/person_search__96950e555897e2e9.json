@@ -1,0 +1,405 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "hydrahost.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 22475,
+        "basic_profile": {
+          "name": "Aaron Ginn",
+          "professional_network_name": "Aaron Ginn",
+          "headline": "CEO & Co-Founder @ Hydra Host | Forbes 30 under 30",
+          "current_title": "CEO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/43eb24ddb6ae2bc6bf4632240050a897ae083a34f11e783dd12e44812b3aa8a1.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/aginn"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hydra Host",
+                "company_website": "https://hydrahost.com",
+                "professional_network_id": "83080413",
+                "title": "CEO & Co-Founder",
+                "description": "The Shopify for GPUs and the CUDA for data centers. We want to be the largest GPU management company in the world. We provide the only turn-key automation monetization platform for data centers to rent out bare-metal GPUs. Supporting AI companies and data centers globally.",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654353,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3be9fcc475ba2abdbc9ce4b79facf73d903d1875dc79be4bdd0fa3dae7ac58f2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hydrahost",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1903183759,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Miami, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Miami",
+                  "Miami-Dade County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Foundation for American Innovation",
+                "company_website": "http://www.thefai.org",
+                "professional_network_id": "17897909",
+                "title": "Member Board Of Directors & Co-founder",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1085080,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8a44439d8b733ddbfc4e5f68a7b64e4cd01bd0fa0a7699b822898c33615870f2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/americaninnovation",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 74,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1903187381,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Washington, Washington, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Fabius Labs",
+                "company_website": "https://fabiuslabs.com/",
+                "professional_network_id": "77123829",
+                "title": "President",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4132671,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ddad105f37f733f9e7b57a35acf48b5129e117957885b9eefadc3b2a6d26ef82.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fabiuslabs",
+                "seniority_level": "Vice President",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 1980932366,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dallas, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Dallas",
+                  "Dallas County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Techstars",
+                "company_website": "http://www.techstars.com",
+                "professional_network_id": "167750",
+                "title": "Mentor",
+                "description": "Helping startups crack distribution, growth, and the civic space.",
+                "employment_type": "",
+                "start_date": "2017-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 662343,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8b25b4a33dddf2236797c35f7bb3b68650f77c5aa204874488cbf013c4a0a96c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/techstars",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 2539,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1038808237,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 22476,
+        "basic_profile": {
+          "name": "Garrett Johnson",
+          "professional_network_name": "Garrett Johnson",
+          "headline": "Co-Founder/COO at Hydra Host",
+          "current_title": "Co-Founder & COO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & Chief Operating Officer (COO)",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9846,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b1e862c6f60ca791242cfe4004757685ec0269c3b2315c7db8ea059be1e5c329.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": null,
+            "continent": null,
+            "raw": "",
+            "full_location": ""
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/garrettwjohnson"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hydra Host",
+                "company_website": "https://hydrahost.com",
+                "professional_network_id": "83080413",
+                "title": "Co-Founder & COO",
+                "description": "**WE ARE HIRING: jobs@hydrahost.com**\n\nAt Hydra Host, we have built the best data center platform for high-performance computing. We offer fastest and easiest way to build, manage, and rent bare metal in the world. We provide a simple API-driven platform to monetize available GPUs or high-grade CPUs that includes everything you need. The platform fully automates the lifecycle rental process, so customers can easily check-out without the need of human hands. With Hydra, we are giving every company easy access to GPUs and CPUs at wholesale rates.\n\nReach out to sales@hydrahost.com to explore Hydra for your business, and forward you resume to jobs@hydrahost.com if you're interested in working with our multi-disciplinary team of hackers and innovators.",
+                "location": {
+                  "raw": "Florida, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654353,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3be9fcc475ba2abdbc9ce4b79facf73d903d1875dc79be4bdd0fa3dae7ac58f2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hydrahost",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1905452296,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Miami, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Miami",
+                  "Miami-Dade County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1213912,
+        "basic_profile": {
+          "name": "Richard Quiroz",
+          "professional_network_name": "Richard Quiroz",
+          "headline": "Chief of Staff at Hydra Host | Growth & Operations Leader | Ex-Scale AI & Veteran",
+          "current_title": "Chief of Staff",
+          "normalized_title": {
+            "matched_title": "Chief of Staff",
+            "department": "Executive Leadership",
+            "sub_department": "Executive Support & Coordination",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cd2ba1648b57855926e87c38128ef454f157b3f5b4a090f558a1038048f8e4e3.jpg",
+          "location": {
+            "city": null,
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Dallas-Fort Worth Metroplex",
+            "full_location": "Dallas-Fort Worth Metroplex"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/richardquiroz"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hydra Host",
+                "company_website": "https://hydrahost.com",
+                "professional_network_id": "83080413",
+                "title": "Chief of Staff",
+                "description": "",
+                "location": {
+                  "raw": "Dallas, TX"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654353,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3be9fcc475ba2abdbc9ce4b79facf73d903d1875dc79be4bdd0fa3dae7ac58f2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hydrahost",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2977235071,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Miami, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Miami",
+                  "Miami-Dade County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ6CMAwA0F9ZeubAOso6fsUY0q42HIyLMA7G-O-G8_vC-3zsn3WTY4MlgMbK5kmMxzIVIkxTNXNLljURiXGp6mMszsJIlKvOollIUWd0hiHA0fYOS7hFjKlEvA8BeuvyXGs7X5fQ7x8AAP__ZbF1MncAAAA=",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

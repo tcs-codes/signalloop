@@ -1,0 +1,405 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "cello.so"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1529644,
+        "basic_profile": {
+          "name": "Julia Kleber",
+          "professional_network_name": "Julia Kleber",
+          "headline": "Commercial Operations & GTM @ Cello",
+          "current_title": "GTM & RevOps",
+          "normalized_title": {
+            "matched_title": "GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9447,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c9e481a9298da89c5e09a895911ca0e366cf029ca4546b24e44f485f38ce3c15.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Germany",
+            "full_location": "Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/julia-kleber-451995115"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "GTM & RevOps",
+                "description": "Founding GTM & RevOps lead - building commercial infrastructure:\n\u2022 Owning the CRM and core GTM systems, and designing processes that can scale\n\u2022 Building AI-powered channels to scale customer acquisition without scaling headcount\n\u2022 Supporting early-stage software and AI teams, on accelerating growth and go-to-market",
+                "employment_type": "Full-time",
+                "start_date": "2023-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2254605897,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1830779,
+        "basic_profile": {
+          "name": "Jesse Singer",
+          "professional_network_name": "Jesse Singer",
+          "headline": "Growth at Cello | Referrals on Autopilot",
+          "current_title": "Senior Customer Growth & Partnerships",
+          "normalized_title": {
+            "matched_title": "Customer Growth Associate",
+            "department": "Sales & Revenue",
+            "sub_department": "Account Management & Strategy",
+            "similarity": 0.9004,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2da3d5f8bd252cf1a2b14af087b25cd86abb76a111721b5b2380ae53347077af.jpg",
+          "location": {
+            "city": "Cape Town",
+            "state": "Western Cape",
+            "country": "South Africa",
+            "continent": "Africa",
+            "raw": "City of Cape Town, Western Cape, South Africa",
+            "full_location": "City of Cape Town, Western Cape, South Africa"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jessesingersa"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "Senior Customer Growth & Partnerships",
+                "description": "Helping top SaaS companies generate revenue on autopilot with in-product user referrals.",
+                "employment_type": "Full-time",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2457767161,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Maholla",
+                "company_website": "https://maholla.com/apps",
+                "professional_network_id": "72339261",
+                "title": "Pre-Seed Investor",
+                "description": "Rewards for any purchase, anywhere. Africa\u2019s leading consumer-engagement platform \ud83c\udf0d",
+                "location": {
+                  "raw": "Cape Town, Western Cape, South Africa"
+                },
+                "employment_type": "",
+                "start_date": "2021-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 826170,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a8562197f96bf007d64baa4f54a7312d7fc28473806a1e480b809a09a68e620f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/maholla",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2191305892,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "South Africa",
+                "company_hq_location": "Cape Town, Western Cape, South Africa",
+                "company_hq_location_address_components": [
+                  "Cape Town",
+                  "City of Cape Town Metropolitan Municipality",
+                  "Western Cape",
+                  "South Africa"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Gumroad",
+                "company_website": "https://gumroad.com",
+                "professional_network_id": "2544439",
+                "title": "Angel Investor",
+                "description": "Gumroad enables creatives to sell directly to their audience \u2014 so that they can make a living doing what they love.",
+                "employment_type": "",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 633496,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/08e5c666b6e74bb6539957db9f0234c9b971e618e78eec6a5596a7c5bb168bde.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/gumroad",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 571,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Consumer Services",
+                "position_id": 2305449206,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Rangers Waterpolo",
+                "company_website": "http://www.rangerswaterpolo.com",
+                "professional_network_id": "90905556",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "Cape Town, Western Cape, South Africa"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2018-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2081673,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d9ffcd579ecb742d4a629294b92e949c6ab827a43f33207f35e850d8797c2627.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rangers-waterpolo",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Sports Teams and Clubs",
+                  "Spectator Sports",
+                  "Performing Arts and Spectator Sports",
+                  "Entertainment Providers"
+                ],
+                "company_professional_network_industry": "Sports Teams and Clubs",
+                "position_id": 2107119875,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2028177,
+        "basic_profile": {
+          "name": "Kim Palallos",
+          "professional_network_name": "Kim Palallos",
+          "headline": "GTM at Cello | Referrals on Autopilot",
+          "current_title": "GTM Manager",
+          "normalized_title": {
+            "matched_title": "GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9924,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3a231113ffade4475be49aa2b6a9c2fe8d7c0f56ad88ec195adea2f8c6556ad6.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kim-palallos"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "GTM Manager",
+                "description": "I help B2B SaaS companies accelerate growth by creating marketing campaigns that promote customer advocacy and referral-driven acquisition. Working closely with product, sales, and customer success teams, I develop data-driven initiatives that increase product adoption, customer engagement, and pipeline growth.",
+                "employment_type": "Full-time",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2979972828,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMarDMAwA0KsYzRksObHsXOXzCbIqkaHUNHGGUnr30vm94XnZ8dp2OXdYA-RoGVt1NCaLzqlqXERauqVM6FpqsTmXKOrKzsSUGntVmhVVbYEpwNmPAWv4o0gFmf-nAKMPuW_ar8dPsH6-AQAA__967X7JeAAAAA==",
+    "total_count": 19,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

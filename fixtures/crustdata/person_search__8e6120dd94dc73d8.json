@@ -1,0 +1,370 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "flipcx.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 26744,
+        "basic_profile": {
+          "name": "Sam Krut",
+          "professional_network_name": "Sam Krut",
+          "headline": "Co-Founder & President @ Flip | HIRING",
+          "current_title": "Co-Founder & President",
+          "normalized_title": {
+            "matched_title": "Co-Founder & President",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9720b2d443da77668107c8cad24e9564855400d3fedaa663005eeaac9f136cbf.jpg",
+          "location": {
+            "city": "Santa Monica",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Santa Monica, California, United States",
+            "full_location": "Santa Monica, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/sam-krut"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flip",
+                "company_website": "https://flipcx.com/",
+                "professional_network_id": "10627926",
+                "title": "Co-Founder & President",
+                "description": "Building.",
+                "employment_type": "",
+                "start_date": "2018-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781732,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/43be1c6ae89e573161d03d0d17ab52a38eeb345ef456c96433496a370be09f2d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flipcx",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 82,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 744706546,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 26746,
+        "basic_profile": {
+          "name": "Brian Schiff",
+          "professional_network_name": "Brian Schiff",
+          "headline": "CEO @ Flip \u2014 Voice AI for Commerce, Transportation & Healthcare Calls // We\u2019re Hiring!\ud83d\udca5",
+          "current_title": "Co-Founder, CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder, CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dfc7f389b460796b9050e50681322896ae97f0c2bda36048df10840b23615e80.jpg",
+          "location": {
+            "city": "Brooklyn",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Brooklyn, New York, United States",
+            "full_location": "Brooklyn, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bschiff"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flip",
+                "company_website": "https://flipcx.com/",
+                "professional_network_id": "10627926",
+                "title": "Co-Founder, CEO",
+                "description": "Ever talk to a crazy good AI when you call a brand? That\u2019s Flip. \n\nStart free today @ flipcx.com\u2026or hit up my DMs \ud83d\ude42\n\nDorm room founding, 2x pivot, found it \u2014 Shoutout everyone who has been a part of this wild ride.",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781732,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/43be1c6ae89e573161d03d0d17ab52a38eeb345ef456c96433496a370be09f2d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flipcx",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 82,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 736021029,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 823972,
+        "basic_profile": {
+          "name": "Lee Nadler",
+          "professional_network_name": "Lee Nadler",
+          "headline": "Chief Marketing Officer FLIP I US Open & Super Bowl media I  Sherpa-inspired Guide I Board of Directors Ad Club & Tokki Catalyst ",
+          "current_title": "Chief Marketing Officer",
+          "normalized_title": {
+            "matched_title": "Chief Marketing Officer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/923abcb1a5bde4de8f406b839b33a849cf7a6760cc84941fdb04e0aac90b1f83.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/leenadler"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "leenadler"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flip",
+                "company_website": "https://flipcx.com/",
+                "professional_network_id": "10627926",
+                "title": "Chief Marketing Officer",
+                "description": "Flipping the script on customer experience with AI automation for Retail/eCommerce, Healthcare and Transportation brands. ",
+                "location": {
+                  "raw": "Brooklyn, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781732,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/43be1c6ae89e573161d03d0d17ab52a38eeb345ef456c96433496a370be09f2d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flipcx",
+                "seniority_level": "CXO",
+                "function_category": "Marketing",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 82,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2879867020,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "H.O. Zimman, Inc.",
+                "company_website": "https://hozinc.com/",
+                "professional_network_id": "80102852",
+                "title": "Super Bowl and US Open Tennis - Advertising and Hospitality",
+                "description": "Working directly with the NFL and US Tennis Association. Connecting advertisers with coveted audiences in the collectable, official programs of the Super Bowl, US Open Tennis Championships, The Masters as well as the Baseball and Football Hall of Fame. Working with the premium publisher for premiere events, H.O. Zimman, established in 1940.",
+                "employment_type": "Part-time",
+                "start_date": "2020-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1552702,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/889fe275634a9dd56b3a17cfbbcf7813f385798d158c883afb0e22ce09bafeef.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/h-o-zimman-inc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 14,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Book and Periodical Publishing",
+                  "Media and Telecommunications",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Book and Periodical Publishing",
+                "position_id": 2204135347,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Lynn, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Lynn",
+                  "Essex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Sherpa Marketing inc",
+                "company_website": "https://sherpamarketing.net/",
+                "professional_network_id": "30759417",
+                "title": "Founder & President",
+                "description": "Sherpa Marketing guides high growth companies and leaders to their \u201cSummit of Success.\u201d My approach, inspired by Sherpas I met on expeditions to Mt Everest, is to galvanize clients to overcome seemingly insurmountable obstacles and reach growth goals. In addition, for select companies, I serve as Fractional CMO focused on launching new products and multi-faceted initiatives.  www.sherpamarketing.net",
+                "location": {
+                  "raw": "www.sherpamarketing.net"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1346799,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8079419d11af2bc8a7a1c141688f0f750a3555ab87ac16ea82184b8bba32b1e9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sherpa-marketing-inc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Marketing Services",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Marketing Services",
+                "position_id": 36972822,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_QP5d2ryIykjRhB7G4dQcR3112_r7wPnX_rBsdGywOOEuwWUsTnUNmUqtWEJPH6k1uRo3Yt8yafDZCKbWhkKekXKKGBJODo-8DFncvMVWMj8nB6IOeq_TzdUH-_QMAAP__npxYUXYAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

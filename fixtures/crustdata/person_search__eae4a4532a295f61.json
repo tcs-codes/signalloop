@@ -1,0 +1,391 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "langfuse.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1216467,
+        "basic_profile": {
+          "name": "Jannik Maierh\u00f6fer",
+          "professional_network_name": "Jannik Maierh\u00f6fer",
+          "headline": "Growth Engineer @ Langfuse (now part of ClickHouse)",
+          "current_title": "Growth Engineer",
+          "normalized_title": {
+            "matched_title": "Growth Engineer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a464e192dbca4d8a14efac11be1c5560bc9103a8437cdfa5abbd52a31da36c20.jpg",
+          "location": {
+            "city": "Berlin",
+            "state": "Berlin",
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Berlin, Berlin, Germany",
+            "full_location": "Berlin, Berlin, Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/maierhoefer"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Langfuse",
+                "company_website": "https://langfuse.com",
+                "professional_network_id": "89896853",
+                "title": "Growth Engineer",
+                "description": "Open Source\u00a0Agent Evals & Observability",
+                "location": {
+                  "raw": "Berlin, Deutschland"
+                },
+                "employment_type": "",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810063,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6da8819aa179f1d78dee599935f8f1c6add5f26034c619b484573b6925fe4337.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/langfuse",
+                "seniority_level": "Entry Level",
+                "function_category": "Engineering",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2473445609,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 5088606,
+        "basic_profile": {
+          "name": "Leonard Wolters",
+          "professional_network_name": "Leonard Wolters",
+          "headline": "Growing Langfuse \ud83e\udea2",
+          "current_title": "Growth & Operations",
+          "normalized_title": {
+            "matched_title": "Growth & Operations Manager",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9889,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4f18698bceb5ce46b712add016b4444b8c29a1b5c5c2f27f66f26f2e0b03939f.jpg",
+          "location": {
+            "city": "Berlin",
+            "state": "Berlin",
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Berlin, Berlin, Germany",
+            "full_location": "Berlin, Berlin, Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/leonardwolters"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Langfuse",
+                "company_website": "https://langfuse.com",
+                "professional_network_id": "89896853",
+                "title": "Growth & Operations",
+                "description": "Langfuse is an open-source AI engineering platform, focussed on observability, evals, prompt/skill management etc. to help the best AI teams deliver high-quality agents in production.\n\nUsed by 21 of Fortune 50. \n\nWorking on building the company behind the product (focus on Recruiting, Marketing, Finance, Ops)",
+                "location": {
+                  "raw": "Berlin, Germany"
+                },
+                "employment_type": "",
+                "start_date": "2025-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810063,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6da8819aa179f1d78dee599935f8f1c6add5f26034c619b484573b6925fe4337.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/langfuse",
+                "seniority_level": "Entry Level",
+                "function_category": "Operations",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2793089143,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "ClickHouse",
+                "company_website": "https://www.clickhouse.com",
+                "professional_network_id": "80114151",
+                "title": "Growth & Operations",
+                "description": "Part of ClickHouse since January 2026.",
+                "location": {
+                  "raw": "Berlin, Germany"
+                },
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 632609,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/34bb8ba8b8d98f14fdf4e1756bc06297dec2924f6c20c785bac550215b3cbc60.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clickhouseinc",
+                "seniority_level": "Entry Level",
+                "function_category": "Operations",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 756,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2844264043,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 15269699,
+        "basic_profile": {
+          "name": "Diego Hern\u00e1ndez-Hern\u00e1ndez",
+          "professional_network_name": "Diego Hern\u00e1ndez-Hern\u00e1ndez",
+          "headline": "GTM LATAM at ClickHouse & Langfuse",
+          "current_title": "GTM Spanish-Speaking LATAM",
+          "normalized_title": {
+            "matched_title": "Account Executive - LATAM",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.5807,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7c447e381fe1ef44624b8dccfbac649a101679835071d05047f6e0c397e12745.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Colombia",
+            "continent": "South America",
+            "raw": "Colombia",
+            "full_location": "Colombia"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/diego-hernandez-h"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "ClickHouse",
+                "company_website": "https://www.clickhouse.com",
+                "professional_network_id": "80114151",
+                "title": "GTM Spanish-Speaking LATAM",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 632609,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/34bb8ba8b8d98f14fdf4e1756bc06297dec2924f6c20c785bac550215b3cbc60.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clickhouseinc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 756,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2829287641,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Langfuse",
+                "company_website": "https://langfuse.com",
+                "professional_network_id": "89896853",
+                "title": "GTM Spanish-Speaking LATAM",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 810063,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6da8819aa179f1d78dee599935f8f1c6add5f26034c619b484573b6925fe4337.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/langfuse",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3029112960,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_Q36TZq4iMNG3ZQSxu3UHEdxfP3wdeVzve2y7nDqsB5cZebfauKCXbAqq3hI5yjUlqKGSzaz6X2DNRiT2ylIQqGIRir7AYOMcxYTU3lzwyMt8XA3NMeWw6ruef6PsLAAD__4qe0ah4AAAA",
+    "total_count": 7,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

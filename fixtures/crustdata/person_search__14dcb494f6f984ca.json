@@ -1,0 +1,312 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "cubbystorage.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 2292731,
+        "basic_profile": {
+          "name": "Tully Hannan",
+          "professional_network_name": "Tully Hannan",
+          "headline": "GTM @ Cubby",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/35f0cdb08e556b245994c25b0e3b29f17843fcb094d1f83488e3304400851d82.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/tullyhannan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "tully1991"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cubby",
+                "company_website": "http://cubbystorage.com",
+                "professional_network_id": "77626169",
+                "title": "GTM",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698533,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9032c951cfdd96a880b5f8a4ea4d6d09d53c1020482a8c132fa3725a08ce9087.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cubbyinc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 103,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2212318191,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3064219,
+        "basic_profile": {
+          "name": "Matthew Wellschlager",
+          "professional_network_name": "Matthew Wellschlager",
+          "headline": "Head of Sales and Marketing at Cubby",
+          "current_title": "Head of Sales and Marketing",
+          "normalized_title": {
+            "matched_title": "Head of Sales and Marketing",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4a5256fa1f23ab5b8c964283d7ba3509d7c3b287ed7df4a1d93ce90dc8cf55d5.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matthew-wellschlager-2964102"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "wellschlager"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cubby",
+                "company_website": "http://cubbystorage.com",
+                "professional_network_id": "77626169",
+                "title": "Head of Sales and Marketing",
+                "description": "",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698533,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9032c951cfdd96a880b5f8a4ea4d6d09d53c1020482a8c132fa3725a08ce9087.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cubbyinc",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 103,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2863799364,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 97101836,
+        "basic_profile": {
+          "name": "Eric Gordon",
+          "professional_network_name": "Eric Gordon",
+          "headline": "Revenue Operations \u00b7 Business Operations \u00b7 Chief of Staff | CRM, Forecasting, Operating Cadence | Builder, not inheritor",
+          "current_title": "Director of Revenue Operations",
+          "normalized_title": {
+            "matched_title": "Director of Revenue Operations",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/12e7438195adabba4f5b87e727eafadb39811ad3bf211ff8536428424dabc4b3.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/eg1222"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "ScrambledEG2"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cubby",
+                "company_website": "http://cubbystorage.com",
+                "professional_network_id": "77626169",
+                "title": "Director of Revenue Operations",
+                "description": "",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698533,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9032c951cfdd96a880b5f8a4ea4d6d09d53c1020482a8c132fa3725a08ce9087.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cubbyinc",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 103,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3038668561,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ6CMBAG4Fdpbmbo_YUr5VWMIb0rDYOxEcpgjO9unL8Pva7teK97PndaHJWq7DFD8xanyDEXUxkTc-WiwRImMQAaDNVHSDAENS_Iha3ISIOjsx2dFndLkT3PQe6Do956fqzWruef5PsLAAD__3wi1DF4AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

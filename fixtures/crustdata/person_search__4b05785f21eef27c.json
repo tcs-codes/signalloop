@@ -1,0 +1,430 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "m0.org"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 146823,
+        "basic_profile": {
+          "name": "Luca Prosperi",
+          "professional_network_name": "Luca Prosperi",
+          "headline": "CEO @ M0",
+          "current_title": "Chief Executive Officer & Co-Founder",
+          "normalized_title": {
+            "matched_title": "Chief Executive Officer & Co-founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dcc4ad75accf91fea299d44e0b1fe626b64da09b0645257ac0ab5f95eaf79151.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Portugal",
+            "continent": "Europe",
+            "raw": "Portugal",
+            "full_location": "Portugal"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/lucaprosperi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "M0",
+                "company_website": "https://www.m0.org/",
+                "professional_network_id": "92567833",
+                "title": "Chief Executive Officer & Co-Founder",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780561,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cc9262881559d86e2c3e34ced922d277a9dd769c4d2b8de0ef88644ec966032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/m0-infrastructure",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2152888227,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "KAST",
+                "company_website": "https://kast.xyz/",
+                "professional_network_id": "97420672",
+                "title": "Board Member & Non Executive Director",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1472423,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d9c40b5e3a5f8b6fc7d7de6674fc0c257ef3ca2b1f7cdec250621ad3dbaad36c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kastxyz",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 226,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 2939643621,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Endeavor",
+                "company_website": "https://www.endeavor.org",
+                "professional_network_id": "301210",
+                "title": "Entrepreneur",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 915233,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/825c300555dbc58bb14f10ba801fbaacb26237e6c3a14d35f1f2134942343078.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/endeavorglobal",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 1874,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2645637069,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Prelude",
+                "company_website": "https://prelude.xyz",
+                "professional_network_id": "107046864",
+                "title": "Senior Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6503619,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ea4f27bc5b869a5245290984107780466e4a190300a022adbea4c07217948264.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/preludexyz",
+                "seniority_level": "Senior",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 5,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2645634127,
+                "company_type": "Partnership",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 146824,
+        "basic_profile": {
+          "name": "Gregory Di Prisco",
+          "professional_network_name": "Gregory Di Prisco",
+          "headline": "Co-Founder & Chief Architect @ M0 | MP @ Distributed Capital Partners",
+          "current_title": "Co-Founder and Chief Architect",
+          "normalized_title": {
+            "matched_title": "Co-Founder & Chief Architect",
+            "department": "Real Estate & Construction",
+            "sub_department": "Architectural & Interior Design",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d14c21fab4204c77708a0b77fa107b4a17534b10367f4809447055ac833306fe.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/gregory-di-prisco-0672a9125"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "M0",
+                "company_website": "https://www.m0.org/",
+                "professional_network_id": "92567833",
+                "title": "Co-Founder and Chief Architect",
+                "description": "https://m0.xyz/",
+                "employment_type": "",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780561,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cc9262881559d86e2c3e34ced922d277a9dd769c4d2b8de0ef88644ec966032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/m0-infrastructure",
+                "seniority_level": "CXO",
+                "function_category": "Engineering",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2153745376,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Distributed Capital Partners",
+                "company_website": "http://distributedcapital.io",
+                "professional_network_id": "11129915",
+                "title": "Partner",
+                "description": "https://www.distributedcapital.io/",
+                "location": {
+                  "raw": "Greater New York City Area"
+                },
+                "employment_type": "",
+                "start_date": "2017-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4054630,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/35e0b8c33bd970238a3c7678daa5c8a25ba605d2d355eb31fca92f80fd77bd7a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/distributedcapital",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 3,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1002361565,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "West Palm Beach, Florida, United States",
+                "company_hq_location_address_components": [
+                  "West Palm Beach",
+                  "Palm Beach County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3560262,
+        "basic_profile": {
+          "name": "Jacob L.",
+          "professional_network_name": "Jacob L.",
+          "headline": "Chief Growth Officer @ M0",
+          "current_title": "Chief Growth Officer",
+          "normalized_title": {
+            "matched_title": "Chief Growth Officer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bdf4205cef5cf8ac8ae2a650520823196d2a4c3ee65c15bea975539c5f09a798.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jacob-l-ba537428"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "jacoblaufer"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "M0",
+                "company_website": "https://www.m0.org/",
+                "professional_network_id": "92567833",
+                "title": "Chief Growth Officer",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780561,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cc9262881559d86e2c3e34ced922d277a9dd769c4d2b8de0ef88644ec966032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/m0-infrastructure",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2371263722,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJSw7CIBAG4KuQWXdRBvgLvYoxzfCYdGEktnRhjHc3rr8Pva52vLddzp1WQ4IIxWKDhlS5BUT2zpdcNHqWZKsDa1IVH1ye1UVrK9QnRq6LoNFk6OzHoNXcXMDM4PtkaPQhj6306_kXfH8BAAD__7nPYv93AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

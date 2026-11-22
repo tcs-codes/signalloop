@@ -1,0 +1,505 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "checkbox.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 802293,
+        "basic_profile": {
+          "name": "Sean Ramsey",
+          "professional_network_name": "Sean Ramsey",
+          "headline": "SVP of Revenue @ Checkbox | AI Legal Front Door | 2 Time Dad of the Year",
+          "current_title": "Global SVP of Revenue",
+          "normalized_title": {
+            "matched_title": "VP Revenue",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9811,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c4bee156ab79fb378e2455f62513190512137f007c0d503e5463b22354c59dc6.jpg",
+          "location": {
+            "city": "Geneva",
+            "state": "Illinois",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Geneva, Illinois, United States",
+            "full_location": "Geneva, Illinois, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/sjramsey1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Global SVP of Revenue",
+                "description": "I currently serve as the Global SVP of Revenue at Checkbox, responsible for sales, customer success, and revenue operations across all global markets, with teams in North America and Australia. My job is to optimize the customer journey, ensuring world-class new business, GRR, and NRR metrics are achieved.\n\nCheckbox is a Sequoia-backed no-code automation platform, empowering teams to build automated workflows using drag and drop without reliance on IT. Checkbox is used to automate intake and triage, approval workflows, access to knowledge, and document generation, all without coding and through the power of AI. Recognized as a leader by Gartner Digital Markets, Checkbox powers the rapid digital transformation programs in leading organizations globally including PwC, Allianz, Coca-Cola, Pepsi-Co, Deloitte, BMW, and Danone.",
+                "location": {
+                  "raw": "Chicago, IL"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "Vice President",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2516285938,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Executive Member",
+                "description": "CRO School Graduate (February 2022). Learned skills, perspectives, and experiences to strategically level-up to the C-Suite. \n\nPavilion is a private membership for high-growth operators who are looking to thrive in today's evolving business world. As an Executive Member, I am participating in CRO trainings and communities.",
+                "location": {
+                  "raw": "Chicago, Illinois, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1779330739,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3472680,
+        "basic_profile": {
+          "name": "Valine Salomon",
+          "professional_network_name": "Valine Salomon",
+          "headline": "Manager of Business Development | Explorer \ud83c\udf0e | AI Workflow Strategist \ud83e\udde0 | World Renowned Foodie \ud83c\udf5b",
+          "current_title": "Manager, Business Development",
+          "normalized_title": {
+            "matched_title": "Manager of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4761303a04eb269563eb41926138d33705027aea0a017a454b2c7a2f5f6d45db.jpg",
+          "location": {
+            "city": null,
+            "state": "Florida",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Miami-Fort Lauderdale Area",
+            "full_location": "Miami-Fort Lauderdale Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/valine-salomon-68180415b"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Manager, Business Development",
+                "description": "Managing and training a team of BDRs, while continuously building outbound sales strategies, messaging, and playbooks.",
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2907435776,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Team Lead, Business Development",
+                "description": "Mentoring a team of BDRs while continuously building outbound sales strategies, messaging, and playbooks.",
+                "employment_type": "Full-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "Senior",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2895895974,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Founding Business Development Representative",
+                "description": "Building Checkbox\u2019s outbound sales function from the ground up, creating scalable playbooks and processes while driving pipeline with legal teams.",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2727864594,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 4498538,
+        "basic_profile": {
+          "name": "Lorien Maxwell",
+          "professional_network_name": "Lorien Maxwell",
+          "headline": "Senior Sales Director | SaaS | Legal Tech | 15+ Years in Sales | 10+ Years Leading Teams | Building & Scaling Vertical GTM",
+          "current_title": "Senior Sales Director",
+          "normalized_title": {
+            "matched_title": "Senior Sales Director",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bbf5790d8df9f90dace6ab4c6e5c0b0799072a42999c7a80244adbd930687ebb.jpg",
+          "location": {
+            "city": "Rocklin",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Rocklin, California, United States",
+            "full_location": "Rocklin, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/lorienmaxwell"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Senior Sales Director",
+                "description": "",
+                "location": {
+                  "raw": "Remote"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3000745594,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Onit",
+                "company_website": "http://www.onit.com",
+                "professional_network_id": "797386",
+                "title": "Sr. Sales Director, Strategic Verticals, Capital Markets and SLED",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 663073,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/35f06d7e110cc1479d4103522ee05fe538ddb9274b9d8d3d0522e82cbad635d9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/onit",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 549,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2847648537,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Atlanta, Georgia, United States",
+                "company_hq_location_address_components": [
+                  "Atlanta",
+                  "Fulton County",
+                  "Georgia",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Onit",
+                "company_website": "http://www.onit.com",
+                "professional_network_id": "797386",
+                "title": "Sr. Director Client Sales, Key Segment",
+                "description": "",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 663073,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/35f06d7e110cc1479d4103522ee05fe538ddb9274b9d8d3d0522e82cbad635d9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/onit",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 549,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2488194772,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Atlanta, Georgia, United States",
+                "company_hq_location_address_components": [
+                  "Atlanta",
+                  "Fulton County",
+                  "Georgia",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMarDMAwA0KsYzRkkRT-2c5VPCZKQyVBqmjhDKb176fze8LzieG27njusCagZYjWTKrSQu-UmoRY-s-kSrWKLqOyELMg5aGZ01LCsHOIFpgRnPwas6V-klr-53KYEow-9b96vx08IP98AAAD__ye4qK14AAAA",
+    "total_count": 10,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

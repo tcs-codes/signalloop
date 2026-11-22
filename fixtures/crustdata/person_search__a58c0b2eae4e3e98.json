@@ -1,0 +1,227 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "neviswealth.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 863068,
+        "basic_profile": {
+          "name": "Kelly Moore",
+          "professional_network_name": "Kelly Moore",
+          "headline": "Sales @ Nevis",
+          "current_title": "Sales",
+          "normalized_title": {
+            "matched_title": "Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Inside & Outside Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3604919b23a0f7c0198d9c5c6db435c2465fcd474b39375feab064217a98ac02.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kelly-moore-040537a0"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Nevis",
+                "company_website": "http://www.neviswealth.com",
+                "professional_network_id": "109777010",
+                "title": "Sales",
+                "description": "",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 17476620,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cec8d23ed8d6db9c39aa3466b5d5b5f9af8ea009628039749ff1e98cdc970b8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/neviswealth",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 59,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2943041982,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 25391248,
+        "basic_profile": {
+          "name": "Peyton Goodwin Felton",
+          "professional_network_name": "Peyton Goodwin Felton",
+          "headline": "Founding GTM Recruiter at Nevis",
+          "current_title": "Founding GTM Recruiter",
+          "normalized_title": {
+            "matched_title": "GTM Recruiter",
+            "department": "People & HR",
+            "sub_department": "Talent Acquisition & Recruiting",
+            "similarity": 0.9139,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/ceca54f8bdf65733ce65c6e1f9c84b0f116b6e0f79c3a43685123055725bc8ea.jpg",
+          "location": {
+            "city": "Raleigh",
+            "state": "North Carolina",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Raleigh, North Carolina, United States",
+            "full_location": "Raleigh, North Carolina, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/peytongoodwin"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Nevis",
+                "company_website": "http://www.neviswealth.com",
+                "professional_network_id": "109777010",
+                "title": "Founding GTM Recruiter",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 17476620,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cec8d23ed8d6db9c39aa3466b5d5b5f9af8ea009628039749ff1e98cdc970b8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/neviswealth",
+                "seniority_level": "Entry Level",
+                "function_category": "Human Resources",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 59,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3052913345,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

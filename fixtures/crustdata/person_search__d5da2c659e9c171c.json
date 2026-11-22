@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "infisical.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 921543,
+        "basic_profile": {
+          "name": "Justin Elrod",
+          "professional_network_name": "Justin Elrod",
+          "headline": "Sales Leadership | Enterprise & Mid-Market",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f97d51c2bacc4f7f209ef7be9bd43c5cdb22cc24694f16776ec3c8a6a5a1fcde.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/justinelrod1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Infisical",
+                "company_website": "https://infisical.com",
+                "professional_network_id": "87088127",
+                "title": "GTM",
+                "description": ".",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1104f7db106a154fed95ddc9a19226a647d96db4895106d9c02705c9f3111628.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/infisical",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 49,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2618722537,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 9083050,
+        "basic_profile": {
+          "name": "Marina Ingham",
+          "professional_network_name": "Marina Ingham",
+          "headline": "GTM at Infisical \u267e\ufe0f",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/346754d100f180fd3749f63095edae6659b75ca95083837cb36d71d2ca5c5d11.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/marina-ingham"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Infisical",
+                "company_website": "https://infisical.com",
+                "professional_network_id": "87088127",
+                "title": "GTM",
+                "description": "",
+                "location": {
+                  "raw": "Austin, TX"
+                },
+                "employment_type": "",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1104f7db106a154fed95ddc9a19226a647d96db4895106d9c02705c9f3111628.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/infisical",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 49,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3047339049,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 67736036,
+        "basic_profile": {
+          "name": "Garrett Gibbs",
+          "professional_network_name": "Garrett Gibbs",
+          "headline": "Head of GTM @ Infisical  | Security Infrastructure for Developers and Agents",
+          "current_title": "Head of GTM",
+          "normalized_title": {
+            "matched_title": "GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9831,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/97e0588c1058487ca43d59680d2a45bd94dccd1c147ed541a37acd18a2ada934.jpg",
+          "location": {
+            "city": "Austin",
+            "state": "Texas",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Austin, Texas, United States",
+            "full_location": "Austin, Texas, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/garrettgibbs"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "GarrettGibbs"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Infisical",
+                "company_website": "https://infisical.com",
+                "professional_network_id": "87088127",
+                "title": "Head of GTM",
+                "description": "Infisical is the all-in-one identity security platform for developers, machines, and AI agents. The platform secures the secrets, certificates, SSH keys, and privileged access that power modern software \u2014 increasingly mission-critical as more of the world's infrastructure is built and operated by autonomous, AI-driven systems. Infisical powers thousands of organizations, including many of the world's leading enterprises and AI companies.\n\nAs Infisical's first GTM leader, I'm responsible for building the foundation that will support the company's next phase of growth. Current focus areas:\n\n\u2022 Building and leading the team of Commercial and Enterprise Account Executives\n\n\u2022 Standing up Infisical's Revenue Operations function \u2014 what we call Go-to-Market Engineering \u2014 with a charter to use AI and automation to compound team productivity\n\n\u2022 Architecting a modern GTM tech stack designed for how selling actually works now (and where it's going)\n\n\u2022 Defining the value framework, sales process, and enterprise messaging\n\n\u2022 Recruiting and hiring across the GTM organization\n\n\u2022 Partnering with the CEO and leadership team on the strategic work that shapes how Infisical goes to market: segmentation, pricing and packaging, partner motion, customer success",
+                "location": {
+                  "raw": "Austin, Texas, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1104f7db106a154fed95ddc9a19226a647d96db4895106d9c02705c9f3111628.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/infisical",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 49,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2915198313,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8Ao7Rsv2LMUqDNDkbixg7G-O_G8_vA69Ljve1y7rA60GRNAllKqNbUB2EqwWsp1aTElM1TbhJwsZCJGT2izIXrvKRqTWFycPZjwOpuxBzJR7pPDkYf8thqv55_wu8vAAD__wghsTV4AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

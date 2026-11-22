@@ -1,0 +1,483 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "verticalinsure.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 276651,
+        "basic_profile": {
+          "name": "Charles Wyatt",
+          "professional_network_name": "Charles Wyatt",
+          "headline": "Strategic Finance leader for early stage technology companies",
+          "current_title": "Chief Financial Officer",
+          "normalized_title": {
+            "matched_title": "Chief Financial Officer",
+            "department": "Finance & Accounting",
+            "sub_department": "Financial Planning & Analysis",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6a8564999a97ba3c1a69aad51d882fcea69ec6fc08d8f59b9eef5c0094e584dc.jpg",
+          "location": {
+            "city": null,
+            "state": "Minnesota",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Minneapolis-St. Paul Area",
+            "full_location": "Greater Minneapolis-St. Paul Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/charles-wyatt"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vertical Insure",
+                "company_website": "https://www.verticalinsure.com/",
+                "professional_network_id": "89723343",
+                "title": "Chief Financial Officer",
+                "description": "",
+                "location": {
+                  "raw": "Minneapolis, Minnesota, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781801,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/86749dd8776f440c38910884ba783f366d8d9a2dbc65e1901d0093722030a0e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vertical-insure",
+                "seniority_level": "CXO",
+                "function_category": "Finance",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 53,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 2230199647,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Vertical Insure",
+                "company_website": "https://www.verticalinsure.com/",
+                "professional_network_id": "89723343",
+                "title": "Chief Financial Officer",
+                "description": "",
+                "location": {
+                  "raw": "Minneapolis, Minnesota, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 781801,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/86749dd8776f440c38910884ba783f366d8d9a2dbc65e1901d0093722030a0e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vertical-insure",
+                "seniority_level": "CXO",
+                "function_category": "Finance",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 53,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 2230199665,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 507957,
+        "basic_profile": {
+          "name": "Brock N.",
+          "professional_network_name": "Brock N.",
+          "headline": "Helping Vertical SaaS companies increase profits through embedded insurance",
+          "current_title": "Co-Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9150d0014fabb25cda4c31ec2df5e9a3cf3f81eff7fcafa0b03ca40b1a16787e.jpg",
+          "location": {
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Minneapolis, Minnesota, United States",
+            "full_location": "Minneapolis, Minnesota, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brocknoland"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vertical Insure",
+                "company_website": "https://www.verticalinsure.com/",
+                "professional_network_id": "89723343",
+                "title": "Co-Founder and CEO",
+                "description": "Helping industry specific vertical SaaS companies increase profits through embedded insurance.",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781801,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/86749dd8776f440c38910884ba783f366d8d9a2dbc65e1901d0093722030a0e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vertical-insure",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 53,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 1917288890,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "FastForward",
+                "company_website": "https://www.ff.tech/",
+                "professional_network_id": "113016693",
+                "title": "Founding Investor",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 28127806,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5db4816399835faffb756a8c5e972f8f4c750e847559be4f2c2c3bfaf952a527.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fastforward-gtm",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2880932547,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Blank Metal",
+                "company_website": "https://blankmetal.ai/",
+                "professional_network_id": "107153107",
+                "title": "Founding Investor",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2024-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6787328,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b1c2b7f9e00bf8c7324eb11bb54d3023e3099febcfc2d4959121c49de4249663.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/blank-metal",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 42,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2652511641,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "SunnyData",
+                "company_website": "http://www.sunnydata.ai",
+                "professional_network_id": "81908305",
+                "title": "Founding Investor",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 953858,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e04fa2f3f62c22b7fac14b3d4481808e892af972883aaee3a82c21b5c3ab53eb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sunnydata",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 168,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 2534925793,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "University of St. Thomas",
+                "company_website": "http://stthomas.edu",
+                "professional_network_id": "166674",
+                "title": "Advisor to Graduate Programs in Engineering & Software",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2022-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6046857,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/49c995185a2b479eac692eddc2e6bef34f4c96366d5d27a7f9cd7a804648b359.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/universityofstthomas",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 4088,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 2352905309,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "St. Paul, Minnesota, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1779412,
+        "basic_profile": {
+          "name": "Ryan Kasprzak",
+          "professional_network_name": "Ryan Kasprzak",
+          "headline": "...",
+          "current_title": "Chief Underwriting Officer",
+          "normalized_title": {
+            "matched_title": "Chief Underwriting Officer",
+            "department": "Finance & Accounting",
+            "sub_department": "Insurance & Underwriting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6b664bb3ab2d099a026dfa2b0190e92d1f9347c665668c8852bad6a9151503e3.jpg",
+          "location": {
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Minneapolis, Minnesota, United States",
+            "full_location": "Minneapolis, Minnesota, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ryan-kasprzak"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vertical Insure",
+                "company_website": "https://www.verticalinsure.com/",
+                "professional_network_id": "89723343",
+                "title": "Chief Underwriting Officer",
+                "description": "",
+                "location": {
+                  "raw": "Minnesota, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781801,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/86749dd8776f440c38910884ba783f366d8d9a2dbc65e1901d0093722030a0e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vertical-insure",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 53,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 2885026201,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJSw7CIBAG4KuQWXfxMzxGehVjGqBDujASW7owxrubrr8vvU_dP8uWj41mQ1LQElJLoVqtwd18WBtCgIPakgVaJRWOBZFXRM9gXzKiqNPGUWgydPR90GzuViR5y4_J0OgjP5faz9clln__AAAA__8MNeGCeAAAAA==",
+    "total_count": 12,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

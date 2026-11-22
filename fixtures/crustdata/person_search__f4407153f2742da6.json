@@ -1,0 +1,380 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "clarasight.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 23849641,
+        "basic_profile": {
+          "name": "Thomas Barrett",
+          "professional_network_name": "Thomas Barrett",
+          "headline": "Helping enterprises travel smarter @ Clarasight",
+          "current_title": "Community & Growth",
+          "normalized_title": {
+            "matched_title": "Community Growth Lead",
+            "department": "Media & Communications",
+            "sub_department": "Community & Stakeholder Engagement",
+            "similarity": 0.9343,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bc61240bcc52aedb8f507eafe32ddade49a3c6a52be884b0abf27b1e794024d9.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/thomassjbarrett"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Community & Growth",
+                "description": "Building Clarasight\u2019s outbound sales motion from the ground up, helping enterprise finance and travel leaders bring AI-powered visibility and control to travel and expense.",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3019110108,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 116349483,
+        "basic_profile": {
+          "name": "Zachary Campbell",
+          "professional_network_name": "Zachary Campbell",
+          "headline": "Community and Growth Manager at Clarasight",
+          "current_title": "Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9ba1de0c70a6b8a47a797bc698b955b38261a06f5e0c967082b2272480f60892.jpg",
+          "location": {
+            "city": null,
+            "state": "Quebec",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Greater Montreal Metropolitan Area",
+            "full_location": "Greater Montreal Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/campbellzachary"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Growth",
+                "description": "Building and managing Clarasight\u2019s SDR function and outbound motion, including managing SDRs and developing a scalable outbound engine, while growing CTAN, a 350+ member community for corporate travel leaders focused on AI.",
+                "location": {
+                  "raw": "Canada"
+                },
+                "employment_type": "Permanent Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2995785657,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Corporate Travel AI Network (CTAN)",
+                "company_website": "https://www.clarasight.com/community",
+                "professional_network_id": "113256270",
+                "title": "Community Lead & Co-founder",
+                "description": "Founded and lead the Corporate Travel AI Network (CTAN), an independent, buyer-only community bringing corporate travel leaders together to rethink how travel programs need to operate in an AI-first world.\n\nIn our first 12 months, CTAN grew to 350+ members, including leaders from some of the largest and most complex corporate travel programs in the world.\n\nI lead the strategy and growth of the community, including hands-on AI learning cohorts, peer-led show-and-tell sessions, 1:1 member connections, workshops, dinners, and other programming designed to help travel leaders learn from one another and put AI into practice.\n\nIn October 2026, we're launching Jetstream, our first in-person CTAN Summit in New York City.\n\nOur mission is bigger than learning how to use new AI tools. We're building a community of travel leaders who are collectively rethinking how their teams work, the skills they need, and what's possible for the next generation of corporate travel programs.",
+                "employment_type": "Permanent Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 67795096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/corporate-travel-ai-network",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Artificial Intelligence"
+                ],
+                "company_professional_network_industry": "Artificial Intelligence",
+                "position_id": 3021772991,
+                "company_type": "Partnership",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Co-Founder, Corporate Travel AI Network",
+                "description": "Co-founded the Corporate Travel AI Network, a community of 300+ corporate travel, procurement, finance, and expense leaders exploring the impact of AI on corporate travel.\n\nBuilt the network to create a trusted forum for practitioners to share AI use cases, discuss emerging technologies, exchange best practices, and collaborate on the future of business travel and expense management.\n\nThe community hosts peer discussions, expert sessions, workshops, and networking opportunities focused on operational efficiency, spend optimization, traveler experience, policy compliance, and intelligent decision-making.\n\nLearn more: https://www.clarasight.com/community",
+                "location": {
+                  "raw": "Canada"
+                },
+                "employment_type": "",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2945134510,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 120972500,
+        "basic_profile": {
+          "name": "Shannon Audino",
+          "professional_network_name": "Shannon Audino",
+          "headline": "GTM and Solutions Consulting Leader | VP Pre-Sales | Enterprise SaaS | Team Builder | Customer Success",
+          "current_title": "Director, Sales Engineering",
+          "normalized_title": {
+            "matched_title": "Director Sales Engineering",
+            "department": "Sales & Revenue",
+            "sub_department": "Solution Consulting & Presales",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/62b77e978394d657b94c3febafa6b692d93dda199af29828f2acb1e810809e01.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/shannon-audino-8110564"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Director, Sales Engineering",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2993895756,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJPQrDIBQH8KvImzP4fx9Rc5VSgmgkQ6k0MUMpvXvp_PvQ69qO97rnc6fFEZoUkWIJMIkKaY1VGLNWCxJzCsqWmm9ImhlzyKXGik2VBTOMJkdnPwYt7gb2KbB5f58cjT7yYy39ev5Nvr8AAAD__5TtwXd5AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

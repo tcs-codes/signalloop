@@ -1,0 +1,347 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "primordial-labs.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 309139,
+        "basic_profile": {
+          "name": "Adrian Pope",
+          "professional_network_name": "Adrian Pope",
+          "headline": "CTO & Co-Founder at Primordial Labs",
+          "current_title": "CTO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CTO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7be5f8c9f382d9502d9e3d9e1459ea84e00622fb05c8fe297fa038388c997248.jpg",
+          "location": {
+            "city": "New Haven",
+            "state": "Connecticut",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New Haven, Connecticut, United States",
+            "full_location": "New Haven, Connecticut, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/adrian-pope-355b0430"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Primordial Labs",
+                "company_website": "https://www.primordial-labs.com",
+                "professional_network_id": "72406703",
+                "title": "CTO & Co-Founder",
+                "description": "Primordial Labs is developing Anura, natural language command and control software that enables users to easily and naturally collaborate with robotic systems.\n\nhttps://www.primordial-labs.com/",
+                "location": {
+                  "raw": "New Haven, Connecticut, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 817012,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63bfad2a61364186579eee84574f552f0e4102ee4b9edfe8fb2326e32eb1a925.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/primordial-labs-inc",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1769932011,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "New Haven, Texas, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 309140,
+        "basic_profile": {
+          "name": "Lee Ritholtz",
+          "professional_network_name": "Lee Ritholtz",
+          "headline": "CEO & Co-Founder at Primordial Labs",
+          "current_title": "CEO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/127da1966b83c7fa6f47a652bdf9369706883cec9b67ec5fb65af69f8400e01b.jpg",
+          "location": {
+            "city": "New Haven",
+            "state": "Connecticut",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New Haven, Connecticut, United States",
+            "full_location": "New Haven, Connecticut, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/leeritholtz"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Primordial Labs",
+                "company_website": "https://www.primordial-labs.com",
+                "professional_network_id": "72406703",
+                "title": "CEO & Co-Founder",
+                "description": "Primordial Labs is developing Anura, natural language command & control software which enables warfighters to easily and naturally collaborate with robotic systems.\n\nhttps://www.primordial-labs.com/",
+                "employment_type": "Full-time",
+                "start_date": "2021-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 817012,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63bfad2a61364186579eee84574f552f0e4102ee4b9edfe8fb2326e32eb1a925.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/primordial-labs-inc",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1769993321,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "New Haven, Texas, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3580349,
+        "basic_profile": {
+          "name": "Matthew Archuleta",
+          "professional_network_name": "Matthew Archuleta",
+          "headline": "Chief of Staff l Green Beret l Yale MBA l Harvard MPA",
+          "current_title": "Chief of Staff",
+          "normalized_title": {
+            "matched_title": "Chief of Staff",
+            "department": "Executive Leadership",
+            "sub_department": "Executive Support & Coordination",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/ff8dd41be62b0ac6616a7d02bc57ec5799ebd5cdc78729be96817f4ff6a02474.jpg",
+          "location": {
+            "city": "Milford",
+            "state": "Connecticut",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Milford, Connecticut, United States",
+            "full_location": "Milford, Connecticut, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matthew-archuleta"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Primordial Labs",
+                "company_website": "https://www.primordial-labs.com",
+                "professional_network_id": "72406703",
+                "title": "Chief of Staff",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 817012,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/63bfad2a61364186579eee84574f552f0e4102ee4b9edfe8fb2326e32eb1a925.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/primordial-labs-inc",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2841316944,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "New Haven, Texas, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "USSOCOM",
+                "company_website": "https://www.socom.mil",
+                "professional_network_id": "36849",
+                "title": "SOF Ventures",
+                "description": "Connecting private capital and emerging technology to solve operational challenges",
+                "employment_type": "Part-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1280845,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/eb554d8ccf25cd8ecc48d2268c3eae8b297d5e07e27e7d0237194c4a030f93ee.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ussocom",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1963,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Armed Forces",
+                  "Military and International Affairs",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Armed Forces",
+                "position_id": 2864299939,
+                "company_type": "Government Agency",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Tampa, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Tampa",
+                  "Hillsborough County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "51 Vets",
+                "company_website": "https://51vets.org/",
+                "professional_network_id": "71845983",
+                "title": "Member",
+                "description": "51 Vets is a nonprofit that helps elite military veterans successfully transition to equally stimulating positions in the private sector.",
+                "employment_type": "",
+                "start_date": "2020-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1205877,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/09d2cdc059cf2471522d7c9116c0f5a43ef0cefeae48cdf976f1e7260309bc03.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/51-vets",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 99,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2138633080,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMa6DMAwG4KtEnhn8x04MXOXpCQWTiqFqVAhDVfXuVefvTc-rHq9lL-dOcyCxiEnMsjMSuBiMExiI0aPdCiODVxk1a9qUN_XK8OriWC3BaAh0tqPTHP4kjSw6_Q-Beuvlvni7Hj_RzzcAAP__MTI-L3cAAAA=",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

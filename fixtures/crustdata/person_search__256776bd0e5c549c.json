@@ -1,0 +1,702 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "flowengineering.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 239371,
+        "basic_profile": {
+          "name": "Pari Singh",
+          "professional_network_name": "Pari Singh",
+          "headline": "Founder & CEO @ Flow Engineering",
+          "current_title": "Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/14fafc766410ff88ca4b27a6c3392fac5d971d29c5a38d99b96e2095185345f7.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/parisingh"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flow Engineering",
+                "company_website": "http://flowengineering.com",
+                "professional_network_id": "18030570",
+                "title": "Founder & CEO",
+                "description": "Backed by Valor Equity Partners, Atreides Management and Sequoia Capital.\n\nFlow is an agentic systems engineering platform helping hardware teams design, build, test and iterate faster. It connects requirements, CAD, simulation, code and testing in a living system of record, with AI agents that track changes, identify downstream impacts and verify test coverage so teams can move faster while maintaining engineering rigor.\n\nTrusted by Rivian, Anduril, Joby Aviation, Radiant Industries, Astranis, and many more.",
+                "location": {
+                  "raw": "San Francisco, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2023-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781189,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c17a7c710acf650f368b39a9c4db7c55a7585f5884f6aeb63c5bf1554245b2e7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flowengineer",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 842776247,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Boom Supersonic",
+                "company_website": "http://boomsupersonic.com",
+                "professional_network_id": "7584134",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 636867,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e0ad414a7dd6c040d296665618d522f5f170881cf4380216622220ff898ff750.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boomsupersonic",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 365,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Aviation and Aerospace Component Manufacturing",
+                  "Transportation Equipment Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Aviation and Aerospace Component Manufacturing",
+                "position_id": 3052952805,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Englewood, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Englewood",
+                  "Arapahoe County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Heron Power",
+                "company_website": "http://www.heronpower.com",
+                "professional_network_id": "105580164",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6296159,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ee83c9bcab991d1b02ab215bc3aedd41d72b77d5a0bd051bf806c3b76d91d04.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/heron-power-electronics",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 125,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Electric Power Transmission, Control, and Distribution",
+                  "Utilities"
+                ],
+                "company_professional_network_industry": "Electric Power Transmission, Control, and Distribution",
+                "position_id": 2873939188,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scotts Valley, California, United States",
+                "company_hq_location_address_components": [
+                  "Scotts Valley",
+                  "Santa Cruz County",
+                  "California",
+                  "United States",
+                  "95066"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Fluidstack",
+                "company_website": "http://fluidstack.com",
+                "professional_network_id": "27024383",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 706053,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1e36950b5a788bda5349d6a097a54371427963da72fa45ad0a5b045f14d7aed9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/fluidstack",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 608,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2900303186,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Reflect Orbital",
+                "company_website": "http://reflectorbital.com",
+                "professional_network_id": "90426412",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1215511,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/87857edef09c22039d415eb923887bf4994cb52726cef72ce850fe966f8b2e36.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/reflectorbital",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 69,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Renewable Energy Power Generation",
+                  "Electric Power Generation",
+                  "Utilities"
+                ],
+                "company_professional_network_industry": "Renewable Energy Power Generation",
+                "position_id": 3033616445,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Dirac, Inc.",
+                "company_website": "https://www.diracinc.com/",
+                "professional_network_id": "76516898",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1151917,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3f31659d9703ad2153f2dee1117de1c27141fa5454be0bc53df52d97e6e011ea.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/diracinc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 39,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 3033621233,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Drafter",
+                "company_website": "http://drafterinc.com",
+                "professional_network_id": "97174414",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1153829,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8ecb71bca144ef97fb85b4c3ec887d8ebb5aa5b58bcc030954de7f39cfb67c6c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/drafter-inc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3033621266,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Starcloud",
+                "company_website": "https://www.starcloud.com/",
+                "professional_network_id": "100775936",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4010495,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/523123de0339e7ded93767f599a4bf7103a6cdc4defb4d744e243bbe9566d7dd.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/starcloudinc",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 66,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Defense and Space Manufacturing",
+                  "Transportation Equipment Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Defense and Space Manufacturing",
+                "position_id": 2819740236,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Redmond, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Redmond",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Leaders In Tech",
+                "company_website": "https://www.leadersintech.org",
+                "professional_network_id": "18872051",
+                "title": "Fellow",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1595407,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/71d0cd8a952ca13ebeb207db8c88b6ce3c7075ecc522d7df01ec6a9fb8bf285d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/leadersintech",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 41,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 2523672659,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 45353662,
+        "basic_profile": {
+          "name": "Ava Krippes",
+          "professional_network_name": "Ava Krippes",
+          "headline": "Executive Assistant @ Flow",
+          "current_title": "Executive Assistant to Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Executive Assistant to Founder and CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Executive Support & Coordination",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/73f9b82d34a7e3ee71b145dac2a973ec2d83751f254a5600ed942b91d9a8ef02.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/avakrippes"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flow Engineering",
+                "company_website": "http://flowengineering.com",
+                "professional_network_id": "18030570",
+                "title": "Executive Assistant to Founder & CEO",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 781189,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c17a7c710acf650f368b39a9c4db7c55a7585f5884f6aeb63c5bf1554245b2e7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flowengineer",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2885659803,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 541220257,
+        "basic_profile": {
+          "name": "Eduard Wieandt",
+          "professional_network_name": "Eduard Wieandt",
+          "headline": "Legora Design Studio",
+          "current_title": "Legora Design Studio",
+          "normalized_title": {
+            "matched_title": "Designer",
+            "department": "Product & Design",
+            "sub_department": "Graphic & Visual Design",
+            "similarity": 0.9353,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/84a631350a32e965a5081bf2aa83d09ddcc6c10d849e4b3695314f6889b0fa5d.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Germany",
+            "full_location": "Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/eduard-wieandt-a95796130"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Legora",
+                "company_website": "",
+                "professional_network_id": "93196471",
+                "title": "Legora Design Studio",
+                "description": "Prev studio acquired. Now building the in-house cross-functional design studio.",
+                "location": {
+                  "raw": "Stockholm"
+                },
+                "employment_type": "",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 6037069,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/faf4d7e32ed17c371ce3ca546becee900eb70b32010dd18025dde4a17f7836b8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/wearelegora",
+                "seniority_level": "Entry Level",
+                "function_category": "Arts and Design",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 980,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3054630891,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Sweden",
+                "company_hq_location": "Stockholm, Stockholm County, Sweden",
+                "company_hq_location_address_components": [
+                  "Stockholm",
+                  "Stockholm County",
+                  "Sweden"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Flow Engineering",
+                "company_website": "http://flowengineering.com",
+                "professional_network_id": "18030570",
+                "title": "Angel Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 781189,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c17a7c710acf650f368b39a9c4db7c55a7585f5884f6aeb63c5bf1554245b2e7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flowengineer",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3019118279,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Flow Engineering",
+                "company_website": "http://flowengineering.com",
+                "professional_network_id": "18030570",
+                "title": "Design Partner",
+                "description": "",
+                "employment_type": "Self-employed",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 781189,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c17a7c710acf650f368b39a9c4db7c55a7585f5884f6aeb63c5bf1554245b2e7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flowengineer",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Arts and Design",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3011563715,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Born",
+                "company_website": "https://born.com",
+                "professional_network_id": "91653758",
+                "title": "Angel Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 815351,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/595ec79991a48f9d04d6027fb31a0b4138106f866e97dd50805a86e837b3c206.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/born-dot-com",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2909058713,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York City, New York, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQqDMAwG4FcpOXtoa38SfZUxJK0JHsZkWg9j7N3Hzt-HXpcd72XTc6M5kEPYWrN1tCKG7FP0xnXSygKW5AwtkpIkFXaryNAYG2opqKYrDYHO_eg0hxtKyjlm8H0I1Peuj6Xt1_Nv4_cXAAD___IFPE15AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

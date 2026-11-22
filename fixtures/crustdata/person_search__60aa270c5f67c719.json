@@ -1,0 +1,348 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "estuary.dev"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1701668,
+        "basic_profile": {
+          "name": "Zulfikar Qureshi",
+          "professional_network_name": "Zulfikar Qureshi",
+          "headline": "Real-Time Data Integration Evangelist | ex-GoldenGate, Oracle, HVR, Fivetran and Databricks",
+          "current_title": "Head of Sales Engineering, Worldwide",
+          "normalized_title": {
+            "matched_title": "Senior Director of Sales Engineering",
+            "department": "Sales & Revenue",
+            "sub_department": "Solution Consulting & Presales",
+            "similarity": 0.9924,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6d756304b4242173351c2cabc68869dc7c956c397b85d8321d2ca00863ad5a81.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "United Kingdom",
+            "full_location": "United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/zulfikar-qureshi-854b867"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Estuary",
+                "company_website": "http://estuary.dev",
+                "professional_network_id": "65266256",
+                "title": "Head of Sales Engineering, Worldwide",
+                "description": "",
+                "location": {
+                  "raw": "London Area, United Kingdom"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 669604,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/050554e0962604ab504b0fde15eb271e4cf5f313298f1bbfd419dc38bb106e08.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/estuary-tech",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 68,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2651991882,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 7102920,
+        "basic_profile": {
+          "name": "Alex Wictor",
+          "professional_network_name": "Alex Wictor",
+          "headline": "Human In The Loop",
+          "current_title": "Forward Deployed Engineer & GTM Engineer",
+          "normalized_title": {
+            "matched_title": "Forward Deployed Engineer",
+            "department": "Engineering & Technology",
+            "sub_department": "Field & Technical Service Engineering",
+            "similarity": 0.8279,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alexander-wictor"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Estuary",
+                "company_website": "http://estuary.dev",
+                "professional_network_id": "65266256",
+                "title": "Forward Deployed Engineer & GTM Engineer",
+                "description": "Forward Deployed Engineer & GTM Engineer at Estuary. I build the software based systems that connect our team with the right customers, and help teams move to real-time data with Estuary.",
+                "location": {
+                  "raw": "Seattle, WA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 669604,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/050554e0962604ab504b0fde15eb271e4cf5f313298f1bbfd419dc38bb106e08.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/estuary-tech",
+                "seniority_level": "Entry Level",
+                "function_category": "Engineering",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 68,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3032693254,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Amazon",
+                "company_website": "https://www.aboutamazon.com/",
+                "professional_network_id": "1586",
+                "title": "Strategic Account Executive",
+                "description": "I am responsible for driving revenue growth and building strategic partnerships with key brands and retailers in the health, wellness, and personal care industries. My primary focus is on Strategic Accounts and Emerging Brands, where I work closely with vendors, manufacturers, and distributors to design the most efficient onboarding strategies while architecting integration workflows for Amazon\u2019s 3P marketplace.\n\nAdditionally, I design and deliver AI enablement training programs across our 3P business covering prompt engineering, and agentic/applied AI workflows.",
+                "location": {
+                  "raw": "Seattle, Washington, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6034577,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/50c0868b767f02f1f5ed3285bbd5b6db93df0ef3c6f00194dba9ed7e337b8f33.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/amazon",
+                "seniority_level": "Strategic",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 760519,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2454565420,
+                "company_type": "Public Company",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 27103958,
+        "basic_profile": {
+          "name": "Anthony Antonellis",
+          "professional_network_name": "Anthony Antonellis",
+          "headline": "Head of Sales at Estuary",
+          "current_title": "Head of Sales",
+          "normalized_title": {
+            "matched_title": "Head of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6c5b657e3f77e1629a7264334f1f633af957ecc51e2287bde264a95897f4db73.jpg",
+          "location": {
+            "city": "Duxbury",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Duxbury, Massachusetts, United States",
+            "full_location": "Duxbury, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/anthony-antonellis-83905344"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Estuary",
+                "company_website": "http://estuary.dev",
+                "professional_network_id": "65266256",
+                "title": "Head of Sales",
+                "description": "",
+                "location": {
+                  "raw": "Duxbury, MA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 669604,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/050554e0962604ab504b0fde15eb271e4cf5f313298f1bbfd419dc38bb106e08.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/estuary-tech",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 68,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3048856747,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ6CMAwA0F9ZeubQMrpu_IoxZLQlHIyLMA7G-O_G8_vA6_Ljvez13GEOQOwjVUJlX5F0zcrOlkSLKNKElqvEVKqgTTFu2WgrhokFk6FPCkOAsx0d5nAbhTAWzvchQG-9PhZt1_NP8v0FAAD__4bv5j54AAAA",
+    "total_count": 7,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

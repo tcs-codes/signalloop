@@ -1,0 +1,312 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "clueso.io"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 3364767,
+        "basic_profile": {
+          "name": "Rishi Sagar",
+          "professional_network_name": "Rishi Sagar",
+          "headline": "Building Clueso | Product videos in minutes, not days. \u26a1",
+          "current_title": "Founding GTM | Revenue & Pipeline",
+          "normalized_title": {
+            "matched_title": "Founding GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.8931,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/fea68a91a4c27cf08f99f3bf1b2737302bdcd49086e465bdefb30c4b6b897421.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/rishisagarn"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clueso",
+                "company_website": "https://www.clueso.io/",
+                "professional_network_id": "90607992",
+                "title": "Founding GTM | Revenue & Pipeline",
+                "description": "",
+                "location": {
+                  "raw": "Austin, TX"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 809985,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b405454306763b13cb58dce46cf16e57f59db5e37dff693973220836dba3523b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clueso",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 41,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2853668584,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 114854953,
+        "basic_profile": {
+          "name": "Kunal B",
+          "professional_network_name": "Kunal B",
+          "headline": "Building Clueso.io - AI Video Creation Platform for Enterprises",
+          "current_title": "Founding GTM",
+          "normalized_title": {
+            "matched_title": "Founding GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9628,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/1a72e57d495c1943df7d01058628e6bf72983b2e37685719a5f53803b885deb7.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kunalgetsit"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clueso",
+                "company_website": "https://www.clueso.io/",
+                "professional_network_id": "90607992",
+                "title": "Founding GTM",
+                "description": "Your product ships fast. Your product content doesn't. At Clueso, I help enterprise Education, Enablement, and Marketing teams turn rough screen recordings into polished product videos, in minutes.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 809985,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b405454306763b13cb58dce46cf16e57f59db5e37dff693973220836dba3523b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clueso",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 41,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2812081545,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 150531438,
+        "basic_profile": {
+          "name": "Krish Gandhi",
+          "professional_network_name": "Krish Gandhi",
+          "headline": "Leading Growth @Clueso (YC W23) | ISB",
+          "current_title": "All Things Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9802,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2dee33df70bfadc0e05877591dd5d201d54c9d03c7eb3c54da4d79aefe9b2828.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/gandhikrish"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clueso",
+                "company_website": "https://www.clueso.io/",
+                "professional_network_id": "90607992",
+                "title": "All Things Growth",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 809985,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b405454306763b13cb58dce46cf16e57f59db5e37dff693973220836dba3523b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clueso",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 41,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2929199583,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ6CMAwA0F9Zeuaw0rUr_IoxZC1bOBiJMA7G-O_G8_vA66rHe9nKucEcoKTcohaNcWxo5OYuhuNqmogb0tiqrMxTtpozmccqLuyWpySoKjAEOPejwxxuyJEJE-l9CND3Xh6L79fzb-n7CwAA___vzonqeQAAAA==",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

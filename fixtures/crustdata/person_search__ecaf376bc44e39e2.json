@@ -1,0 +1,413 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "parkade.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 395602,
+        "basic_profile": {
+          "name": "Ben Plowman",
+          "professional_network_name": "Ben Plowman",
+          "headline": "Co-Founder / CTO at Parkade",
+          "current_title": "Co-Founder / CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9975,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6925f224dcfdc360b82d370ceb9a691a44b9cc8d1262142ce8f7331d4389709c.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/plowman"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Parkade",
+                "company_website": "http://www.parkade.com",
+                "professional_network_id": "18879003",
+                "title": "Co-Founder / CTO",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco, CA"
+                },
+                "employment_type": "",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699507,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/69814db4ecb952e7c478a1a4ea4c5abd11edc3e34e84a47447e0c6e2fc087404.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/parkade",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 54,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1415160971,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2707446,
+        "basic_profile": {
+          "name": "Michael S.",
+          "professional_network_name": "Michael S.",
+          "headline": "Chief Revenue Officer, GTM Advisor, AI Conductor",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/fa69cb9560f5bf8e5ba4e189390f09451c4af093c0fb4126d66367cf78e6694b.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mikestevens1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Parkade",
+                "company_website": "http://www.parkade.com",
+                "professional_network_id": "18879003",
+                "title": "Chief Revenue Officer",
+                "description": "Parkade is a SaaS platform that automates parking operations for multifamily residential communities. It integrates directly with property management systems to handle management, payments, enforcement, and gate access through a single mobile-connected platform. Customers include Greystar, Milhaus, and FirstService.\n \nAs Chief Revenue Officer, I own net new revenue from pipeline generation through close, leading both sales and marketing.",
+                "employment_type": "",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699507,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/69814db4ecb952e7c478a1a4ea4c5abd11edc3e34e84a47447e0c6e2fc087404.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/parkade",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 54,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2896349561,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Clear Signal Advisory",
+                "company_website": "http://www.clearsignaladvisors.com",
+                "professional_network_id": "113028738",
+                "title": "Founder",
+                "description": "Clear Signal Advisory provides GTM and sales advisory for CEOs, founders, and revenue leaders at B2B SaaS companies from Seed through Series C.",
+                "employment_type": "",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 32507865,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab0b49370410da0981130f57985972ade423463247b24aa9e8f169f3912db556.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clear-signal-advisory",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2875493605,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Sacramento, California, United States",
+                "company_hq_location_address_components": [
+                  "Sacramento",
+                  "Sacramento County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3672793,
+        "basic_profile": {
+          "name": "Evan Goldin",
+          "professional_network_name": "Evan Goldin",
+          "headline": "CEO/Cofounder @ Parkade",
+          "current_title": "Co-founder/CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9cde4237354bf92a91b916e08354ae3edc9348b15f257be27340f145fb4d5b3f.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Los Angeles Metropolitan Area",
+            "full_location": "Los Angeles Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/evangoldin"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "evangoldin"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Parkade",
+                "company_website": "http://www.parkade.com",
+                "professional_network_id": "18879003",
+                "title": "Co-founder/CEO",
+                "description": "Parkade is modernizing an absolutely massive-but-overlooked market: private parking.\n\nWe're a tech-enabled parking-management system that helps apartment buildings, condos and offices automate their parking workflows. Rather than signing paper leases, paying by check or having property managers maintain spreadsheets, tenants can directly manage their parking needs using our mobile and web apps. Payments, maps, gate access, enforcement, subleasing tools and guest access are all included \u2014 completely changing how tenants park in our partner buildings.\n\nParkade reduces emissions, reduces congestion and gives parking space back to cities. As Chief Parking Officer (and CEO/cofounder), I lead the team and our strategic vision. Come join us!",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2018-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699507,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/69814db4ecb952e7c478a1a4ea4c5abd11edc3e34e84a47447e0c6e2fc087404.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/parkade",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 54,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1382604675,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Housing Industry Foundation",
+                "company_website": "http://www.hifinfo.org",
+                "professional_network_id": "3129238",
+                "title": "Board Member",
+                "description": "Helping a fantastic org that works to prevent homelessness in the Bay Area.",
+                "location": {
+                  "raw": "San Mateo County, California, United States"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2022-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6241836,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0605937d4c87394d3ddbd23858fa059e7d89c90750b9eeb2df0217bca129055d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/housing-industry-foundation",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 21,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2019556228,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Placemate",
+                "company_website": "http://www.placemate.com",
+                "professional_network_id": "13991518",
+                "title": "President & Board Director",
+                "description": "As a lifelong part-time resident of Lake Tahoe, I became increasingly worried by the housing crisis facing locals around the lake, and the difficulty for homeowners to find tenants in a small-town area like Tahoe. \n\nSo, in my spare time, I partnered with some full-time Tahoe residents to create Placemate. The organization fills a much-needed gap, and partners with vacation towns around the United States to incentivize homeowners to activate new long-term rentals from existing housing inventory. I work with the team to improve their digital product, streamline operations and strategize the future of the business, and serve as a member of the board.",
+                "location": {
+                  "raw": "Lake Tahoe"
+                },
+                "employment_type": "Seasonal",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2679901,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/faa41ac877e8a95b2bc67b968ba3abfe581657680cf3cbe83c26ff7e2cda03d4.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/placemateinc",
+                "seniority_level": "Vice President",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 8,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Real Estate",
+                  "Real Estate and Equipment Rental Services"
+                ],
+                "company_professional_network_industry": "Real Estate",
+                "position_id": 1431248865,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Truckee, California, United States",
+                "company_hq_location_address_components": [
+                  "Truckee",
+                  "Nevada County",
+                  "California",
+                  "United States",
+                  "96161"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8AlK52v2LMQgtkByNxYwdj_Hez8_vC-6z7Z93yscHiwBs2k2YqSOpbYbZZiKvezGuSlIhrpRIwBk7RUxY0RW5MngvmAJODo-8DFnfHmSMLPiYHo4_8XK2fr0vw9w8AAP__g5iiEXcAAAA=",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

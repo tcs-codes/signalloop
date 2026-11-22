@@ -1,0 +1,327 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "masttro.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 302072,
+        "basic_profile": {
+          "name": "Javier M Gutierrez",
+          "professional_network_name": "Javier M Gutierrez",
+          "headline": "Co Founder @ Masttro Group",
+          "current_title": "Co CEO Masttro",
+          "normalized_title": {
+            "matched_title": "Prezes",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.8118,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2a85662e0ff49e4ab28b9ce683fd5c97528f172be05599e029639c8e85548b6f.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/javier-m-gutierrez-55096076"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Masttro",
+                "company_website": "https://www.masttro.com/",
+                "professional_network_id": "4862723",
+                "title": "Co CEO Masttro",
+                "description": "",
+                "location": {
+                  "raw": "Switzerland, United States, Mexico, Chile"
+                },
+                "employment_type": "",
+                "start_date": "2010-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780386,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2dc87d6a7889176b90c7ba3b13728a0470852a15b4d15ee4a2dc025bc0deb35c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/masttro",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 16,
+                "company_headcount_latest": 96,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1800982875,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 302073,
+        "basic_profile": {
+          "name": "Domingo Viesca",
+          "professional_network_name": "Domingo Viesca",
+          "headline": "Co Founder at Masttro Holding AG",
+          "current_title": "Co Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.996,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/14376664ece50c1b4df71ba19d32f79c4559b9b411da540d698efa76b596a66e.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/domingo-viesca-34409959"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Masttro",
+                "company_website": "https://www.masttro.com/",
+                "professional_network_id": "4862723",
+                "title": "Co Founder",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2015-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780386,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2dc87d6a7889176b90c7ba3b13728a0470852a15b4d15ee4a2dc025bc0deb35c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/masttro",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 11,
+                "company_headcount_latest": 96,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 623406095,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3251685,
+        "basic_profile": {
+          "name": "Rey Tapia",
+          "professional_network_name": "Rey Tapia",
+          "headline": "CISO||CPO||CTO||Advisor",
+          "current_title": "Global CISO & DPO",
+          "normalized_title": {
+            "matched_title": "Global Chief Information Security Officer",
+            "department": "Operations & Logistics",
+            "sub_department": "Operational Security Services",
+            "similarity": 0.8884,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2a2f3bfcf2cbce2dff5966b6e2f2db83a3675534fa5df965a2eec511346351ad.jpg",
+          "location": {
+            "city": "Monterrey",
+            "state": "Nuevo Leon",
+            "country": "Mexico",
+            "continent": "North America",
+            "raw": "Monterrey, Nuevo Le\u00f3n, Mexico",
+            "full_location": "Monterrey, Nuevo Le\u00f3n, Mexico"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/rey-tapia-4901b828"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "reytapia"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Masttro",
+                "company_website": "https://www.masttro.com/",
+                "professional_network_id": "4862723",
+                "title": "Global CISO & DPO",
+                "description": "Global leader responsible for the information security function. Key activities include designing the comprehensive cybersecurity strategy, defining and maintaining the Information Security Management System (ISMS), which encompasses security processes such as secure architectures, risk management and control implementation, policy and procedure development, identity management, vulnerability management, SecDevOps, incident management, security monitoring, third\u2011party risk management (TPRM), and operational continuity management.\nCompliance with data privacy standards and regulations: LFPDPPP for Mexico, as well as GLBA for financial services in the United States, FDPA for Switzerland, and GDPR for the European Union.",
+                "location": {
+                  "raw": "New York, Zurich, Monterrey & Santiago de Chile"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780386,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2dc87d6a7889176b90c7ba3b13728a0470852a15b4d15ee4a2dc025bc0deb35c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/masttro",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 96,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2095421920,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Latam Business School",
+                "company_website": "http://www.latam.university",
+                "professional_network_id": "644428",
+                "title": "Profesor de Seguridad de la Informaci\u00f3n",
+                "description": "Profesor de cursos de seguridad de la informaci\u00f3n que incluyen estrategia de seguridad de la informaci\u00f3n, gesti\u00f3n de riesgos de la seguridad de la informaci\u00f3n, pruebas de intrusi\u00f3n y gesti\u00f3n de vulnerabilidades, as\u00ed como de la continuidad de negocio y ciber incidentes.",
+                "location": {
+                  "raw": "Online"
+                },
+                "employment_type": "Seasonal",
+                "start_date": "2020-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1370868,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e6806afddcf1ea62cac206945075fbbafcfaba4d36612d360398fc1d6f42ffd0.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/latambschool",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 87,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 2095421256,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "Mexico",
+                "company_hq_location": "Polanco V Secci\u00f3n, Distrito Federal, Mexico",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQ7CIAwA4FchPe_AXwvsVYxZCrTZwUjc2MEY3914_j7wuuR4bzufO6wGmINiVxelpETofO0-RE2xUKOqzWrC4EMS5py1Yc0kLkvxtVstYmExcI5jwmpuwaOjjPfFwByTH1sb1_Mv9P0FAAD__1BzPIN3AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

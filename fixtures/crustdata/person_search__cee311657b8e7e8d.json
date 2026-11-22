@@ -1,0 +1,392 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "superblocks.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 903553,
+        "basic_profile": {
+          "name": "Brad Wyman",
+          "professional_network_name": "Brad Wyman",
+          "headline": "Revenue Leader | GTM Strategy | Passionate about Data & Technology | Early Stage Builder | Tech Geek | Husband & Father of 2  ",
+          "current_title": "Head of Sales",
+          "normalized_title": {
+            "matched_title": "Head of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9e19f4a756bcf5d5b0ea2db730b770af77af163e72a9e3c01d138056c5dac7c0.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/brad-wyman-94450b3"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "Head of Sales",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2026-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3060311501,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 908045,
+        "basic_profile": {
+          "name": "Liliana Prine",
+          "professional_network_name": "Liliana Prine",
+          "headline": "Customer Growth Manager | Founding Team @ Superblocks",
+          "current_title": "GTM - Founding Team",
+          "normalized_title": {
+            "matched_title": "Founding Team - GTM",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9629,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9e77c5a0329b5c0f93af3550a320f2260d55e8f8fd9bbbf1ffaf0adfcdbdcedc.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/liliana-prine"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "GTM - Founding Team",
+                "description": "Superblocks helps enterprise developers accelerate DIY by 10x for internal operational applications. \n\nGenerate with AI, Edit Visually, Extend with Code and Govern Centrally.",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2254585707,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "Customer Growth Manager",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2699787222,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "AI Software Builder - Sales Tooling",
+                "description": "Announcing Clark, the first AI agent to build internal enterprise apps. \n\nSuperblocks enables engineers, IT and business teams to build secure internal apps together \u2013 generate with AI using Clark, edit visually in the Superblocks Editor and extend with code in your IDE (Cursor, Windsurf, VSCode). Govern apps centrally with integrations, authentication, permissions, and audit logs\u2014all in a single pane of glass.",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2647401347,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 908052,
+        "basic_profile": {
+          "name": "Justin Lee",
+          "professional_network_name": "Justin Lee",
+          "headline": "Head of GTM Strategy & Ops",
+          "current_title": "Head of GTM Strategy & Ops & AI Software Builder",
+          "normalized_title": {
+            "matched_title": "GTM Strategy",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9551,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e112dc4a3588f515896c6a5aa7ad43aa2a5db08c485a93a478753e3da3699fd7.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/justin-lee-555a475a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Superblocks",
+                "company_website": "http://www.superblocks.com",
+                "professional_network_id": "80777552",
+                "title": "Head of GTM Strategy & Ops & AI Software Builder",
+                "description": "",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690534,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d127be30d0a495aa42533dcc41dcd1b0335037b28995a1897e73e41095807608.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/superblockshq",
+                "seniority_level": "Director",
+                "function_category": "Operations",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 62,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2439591280,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQqDMAwG4FcpOXtIM2t-fZUxpKQNHsbKtB7G2LsPz9-X3mfdP-uWj42WQFCJjoTRgMxVTcRjchS3mAo8avbk1Rg6l1vFNIGLxJEhKiZKQ6Cj7Z2WcJ8ZnOQxBOqt5-dq7XxdgN8_AAD__0yjd3h2AAAA",
+    "total_count": 8,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "permitflow.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1144889,
+        "basic_profile": {
+          "name": "Jen Kramer",
+          "professional_network_name": "Jen Kramer",
+          "headline": "Enterprise Sales Leader who builds and coaches high-performing teams - from zero to scale | GTM Strategy | SaaS | Fortune 500",
+          "current_title": "Enterprise Sales Director",
+          "normalized_title": {
+            "matched_title": "Enterprise Sales Director",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8d6e303abb7ec514739dcb069954881d36d4ac335ea6547d8b36eb16166424d3.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jenkramer8"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "JenKramer8"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "PermitFlow",
+                "company_website": "http://www.permitflow.com",
+                "professional_network_id": "81938337",
+                "title": "Enterprise Sales Director",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699555,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ebe42644af6f257312c3b4475b809cc7404be56ec794fa4c35afc3b64824e27.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/permitflow",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3043849303,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3212761,
+        "basic_profile": {
+          "name": "Keegan Ziegler",
+          "professional_network_name": "Keegan Ziegler",
+          "headline": "Permits - Faster Nationwide",
+          "current_title": "Founding Business Development Representative",
+          "normalized_title": {
+            "matched_title": "Cofounder Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9156,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0de2d65fd5ecd4915b7063c493ef388ae78f8584bebf3271e02a03726754077e.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/keegan-ziegler-bb3562158"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "PermitFlow",
+                "company_website": "http://www.permitflow.com",
+                "professional_network_id": "81938337",
+                "title": "Founding Business Development Representative",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699555,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ebe42644af6f257312c3b4475b809cc7404be56ec794fa4c35afc3b64824e27.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/permitflow",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2457572197,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3212762,
+        "basic_profile": {
+          "name": "Phillip L.",
+          "professional_network_name": "Phillip L.",
+          "headline": "In-Store Partnerships",
+          "current_title": "Sales Development Representative",
+          "normalized_title": {
+            "matched_title": "Sales Development Representative",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a5c8ad106b77a8d9d62eacd81cdbaf2db16a8a29658f662d3041f9598d2130ca.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/philliplluberes"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "DoorDash",
+                "company_website": "https://careersatdoordash.com/",
+                "professional_network_id": "3205573",
+                "title": "Sales Development Representative",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 3206335,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2f1b71b35b4371d43c16b3625ae9333ecef9a48381ef0d343070311f97f71bdf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/doordash",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 84144,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2672247556,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "PermitFlow",
+                "company_website": "http://www.permitflow.com",
+                "professional_network_id": "81938337",
+                "title": "Sales Development Representative",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 699555,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ebe42644af6f257312c3b4475b809cc7404be56ec794fa4c35afc3b64824e27.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/permitflow",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2435531398,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Goodman Masson",
+                "company_website": "http://www.goodmanmasson.com",
+                "professional_network_id": "23156",
+                "title": "Recruitment Consultant",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1036291,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/de49a8df8933e55b6f8421857ad7ba70a4e6a2a79042aecadfad2e2e112e9458.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/goodman-masson",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 256,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Staffing and Recruiting",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Staffing and Recruiting",
+                "position_id": 2401485336,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Venturi",
+                "company_website": "http://www.venturi-group.com/",
+                "professional_network_id": "432241",
+                "title": "Recruitment Consultant",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1200978,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4bee0e9131de1446c58177249e086bbf512c0c0466ead209956b8bc465bb505f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/venturigroup",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 124,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Staffing and Recruiting",
+                  "Administrative and Support Services"
+                ],
+                "company_professional_network_industry": "Staffing and Recruiting",
+                "position_id": 1855319996,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "Manchester, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "Manchester",
+                  "Manchester",
+                  "Greater Manchester",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe_QldLBfsWYhVLIDkbixg7G-O_G8_vA66rHe9vzucPqQItwUeToddFaycSHNHMwM8mcW0PCgmwWspLnJSX0lWMMItqYCSYHZz8GrO7maaZF6D45GH3kx1b69fwL4fcXAAD__4ouvMR4AAAA",
+    "total_count": 20,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "quindar.space"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 3095794,
+        "basic_profile": {
+          "name": "Matt Wood",
+          "professional_network_name": "Matt Wood",
+          "headline": "Space Go-to-Market Leader | Building 0\u21921 Markets, Products & Commercial Growth",
+          "current_title": "Director of Commercial Business Development & Sales",
+          "normalized_title": {
+            "matched_title": "Director of Commercial Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9954,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/db6a4ce36ddc1fc9de426573124e460ba673674cafe43876844acd488bfe6d24.jpg",
+          "location": {
+            "city": null,
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver Metropolitan Area",
+            "full_location": "Denver Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matthewnwood"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "mnwood1"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Quindar",
+                "company_website": "https://www.quindar.space",
+                "professional_network_id": "79119549",
+                "title": "Director of Commercial Business Development & Sales",
+                "description": "Joined Quindar at an early stage to help build and scale the commercial business for its cloud-native satellite mission operations platform.\n\u2022 Help shape and execute commercial GTM, including market development, positioning, pricing and packaging, and customer growth.\n\u2022 Develop opportunities from early engagement through contract, deployment and expansion with leading spacecraft manufacturers and operators.\n\u2022 Help build the commercial organization and customer success approach as Quindar scales.",
+                "location": {
+                  "raw": "Denver Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810276,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d037bdb5595fbaea3a86ac4b46a0c805089aa61bdc07616b15bff0d9965c4385.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/quindarspace",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 64,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2449772038,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Arvada, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Arvada",
+                  "Jefferson County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 14101457,
+        "basic_profile": {
+          "name": "Param Desai",
+          "professional_network_name": "Param Desai",
+          "headline": "Defense Tech | Aerospace Engineer | Kellogg MBA",
+          "current_title": "Director, Federal Growth & Strategy",
+          "normalized_title": {
+            "matched_title": "Director of Growth Strategy",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.8212,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/515c8012465a0671d476d39d86ddf4ba912afb92d7d1ac2bc10da763e8a7019c.jpg",
+          "location": {
+            "city": "Arlington",
+            "state": "Virginia",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Arlington, Virginia, United States",
+            "full_location": "Arlington, Virginia, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/param-m-desai"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Quindar",
+                "company_website": "https://www.quindar.space",
+                "professional_network_id": "79119549",
+                "title": "Director, Federal Growth & Strategy",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810276,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d037bdb5595fbaea3a86ac4b46a0c805089aa61bdc07616b15bff0d9965c4385.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/quindarspace",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 64,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2942091813,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Arvada, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Arvada",
+                  "Jefferson County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 30822467,
+        "basic_profile": {
+          "name": "Yaw Aning",
+          "professional_network_name": "Yaw Aning",
+          "headline": "Director of Business Development at Quindar",
+          "current_title": "Director of Business Development",
+          "normalized_title": {
+            "matched_title": "Director of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bd1245dc2432f255f69c45f9a0921e5d65bb202657fcb6594b5d64d5820f477a.jpg",
+          "location": {
+            "city": "Stanmore",
+            "state": "New South Wales",
+            "country": "Australia",
+            "continent": "Oceania",
+            "raw": "Stanmore, New South Wales, Australia",
+            "full_location": "Stanmore, New South Wales, Australia"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yaw-aning-026a64307"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Quindar",
+                "company_website": "https://www.quindar.space",
+                "professional_network_id": "79119549",
+                "title": "Director of Business Development",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810276,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d037bdb5595fbaea3a86ac4b46a0c805089aa61bdc07616b15bff0d9965c4385.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/quindarspace",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 64,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2389727881,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Arvada, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Arvada",
+                  "Jefferson County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe8QkzYx-xWRkaaFHcTh1h1E_Hfx_D7wOvv-XlY_VpgTOOagIHU20cis4m5erDf0goSZ20W41hAT7FW6ZWKMpoVqMW4wJTi2fcCcboxXoix6nxKMbfhjie18_ql8fwEAAP__ELvfyHgAAAA=",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

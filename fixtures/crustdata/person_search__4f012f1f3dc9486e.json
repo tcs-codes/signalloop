@@ -1,0 +1,322 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "vesta.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 28145,
+        "basic_profile": {
+          "name": "Devon Yang",
+          "professional_network_name": "Devon Yang",
+          "headline": "Co-Founder & CTO at Vesta",
+          "current_title": "Co-Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9972,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0ffeb855b1fdfdbc462347186f82d0dc74f18992dc879379dd1413def866181a.jpg",
+          "location": {
+            "city": "Bellevue",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Bellevue, Washington, United States",
+            "full_location": "Bellevue, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/devon"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "ydev"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vesta",
+                "company_website": "https://vesta.com",
+                "professional_network_id": "71297206",
+                "title": "Co-Founder & CTO",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2020-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2ea048bbcd998384b4f9e6c155591f7ae44b2c36dfadad273d45b904714ff224.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/usevesta",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 120,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1718061846,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 28146,
+        "basic_profile": {
+          "name": "Mike Yu",
+          "professional_network_name": "mike yu",
+          "headline": "ceo @ vesta",
+          "current_title": "cofounder, ceo",
+          "normalized_title": {
+            "matched_title": "Co-Founder, CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9954,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3d6b12feb843fb5b6868572bb94bae99ce8ed942d19db84e342930b9559c7edb.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mikeyu1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vesta",
+                "company_website": "https://vesta.com",
+                "professional_network_id": "71297206",
+                "title": "cofounder, ceo",
+                "description": "vesta is the ai-native loan origination system and agent platform that replaces legacy platforms, puts ai agents to work across mortgage manufacturing, and delivers durable cost-per-loan and productivity gains\u2014on a modern, auditable stack.",
+                "employment_type": "Full-time",
+                "start_date": "2020-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2ea048bbcd998384b4f9e6c155591f7ae44b2c36dfadad273d45b904714ff224.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/usevesta",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 120,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1667033665,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Cognition",
+                "company_website": "https://www.cognition.ai",
+                "professional_network_id": "101842393",
+                "title": "advisor",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1128887,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/735ac815998d00486028b1157b53a9b6852c064d6fc91366e5a9572b56c9fc48.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cognition-ai-labs",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 642,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2697360863,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 28147,
+        "basic_profile": {
+          "name": "Devon Yang",
+          "professional_network_name": "Devon Yang",
+          "headline": "Co-Founder at Vesta",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Niagara Falls",
+            "state": "Ontario",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Niagara Falls, Ontario, Canada",
+            "full_location": "Niagara Falls, Ontario, Canada"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/devon-yang-79650b231"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vesta",
+                "company_website": "https://vesta.com",
+                "professional_network_id": "71297206",
+                "title": "Co-Founder",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654490,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2ea048bbcd998384b4f9e6c155591f7ae44b2c36dfadad273d45b904714ff224.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/usevesta",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 120,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1915545540,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIwQrCMAwA0F8pOe_QjqZJ9isiI0sbdhCLW3cQ8d_F6_vA62rHe9313GEJoEwakZu6VkXKYjI7c82NIkkSohLRZqTipq7FS5OUN0sbco3EMAU4-zFgCbeZU6b7FGD0oY_V-vX8O35_AQAA__9L5NtDdQAAAA==",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

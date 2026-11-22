@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "matters.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 276890,
+        "basic_profile": {
+          "name": "Dhiraj Khare",
+          "professional_network_name": "Dhiraj Khare",
+          "headline": "Building Matters.AI, ex-APJ Cloud Sales Leader at SentinelOne, ex-CRO-PingSafe, ex-Lacework, ex-MongoDB",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/07e3aa8a7bd1f51f12881449e1c85ddf813953a539ce22b4944833ac722d9a31.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/dhirajkhare"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Matters.AI",
+                "company_website": "https://www.matters.ai/",
+                "professional_network_id": "77169499",
+                "title": "Chief Revenue Officer",
+                "description": "Building what truly matters for enterprises worldwide, world\u2019s first AI Security Engineer for complete Data Security Lifecycle Management.\n\nAt Matters.AI, I lead Growth & Revenue, working with global customers and partners to secure the entire journey of sensitive data from discovery & classification to protection, monitoring, and compliance. \n\nMy focus goes beyond numbers,  it\u2019s about shaping a company that redefines how organizations everywhere manage and safeguard their data in the AI Era.",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 778629,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9abd170c5bd5d3c20cb2e461d0aa0d0f291417a3bc97a8a4de63e61cdbbcbee1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mattersai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 64,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2711274189,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 36306411,
+        "basic_profile": {
+          "name": "Sandeep Deshpande",
+          "professional_network_name": "Sandeep Deshpande",
+          "headline": "Driving What Matters",
+          "current_title": "Enterprise Sales",
+          "normalized_title": {
+            "matched_title": "Enterprise Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c48222b71694dd404377298ee463c71f1cc4c5d74c90ba8ee2f80aed990f82cf.jpg",
+          "location": {
+            "city": null,
+            "state": "Maharashtra",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Mumbai Metropolitan Region",
+            "full_location": "Mumbai Metropolitan Region"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/sandeep-deshpande-91065018"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Matters.AI",
+                "company_website": "https://www.matters.ai/",
+                "professional_network_id": "77169499",
+                "title": "Enterprise Sales",
+                "description": "\u25cf Taking ownership of developing the Enterprise Market in the West Region, specializing in Data Security solutions.\n\u25cf Proactively built a $4M+ sales pipeline within 6 months from ground zero, establishing initial market presence without prior enterprise customer references in the region.\n\u25cf Driving strategic market entry into key BFSI accounts, actively engaging major institutions including CSB, Motilal Oswal, RBL Bank, NPCI, ICICI Lombard and NSE.\n\u25cf Devising Go-To-Market (GTM) strategies and collaborating with channel partners to identify target accounts and accelerate market adoption.",
+                "location": {
+                  "raw": "Mumbai"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 778629,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9abd170c5bd5d3c20cb2e461d0aa0d0f291417a3bc97a8a4de63e61cdbbcbee1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mattersai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 64,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2863591238,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 89339045,
+        "basic_profile": {
+          "name": "Prateek S",
+          "professional_network_name": "Prateek S",
+          "headline": "Giving Voice to What Matters | Marketing @ Matters AI | Lead SEO & Content Growth | Ex - SellerApp | Autonomous Data Protection | AI Security Demand Gen | Technical SEO | AI Search Optimization",
+          "current_title": "Lead SEO & Content Growth Specialist",
+          "normalized_title": {
+            "matched_title": "SEO & Content Specialist",
+            "department": "Marketing",
+            "sub_department": "Content Marketing",
+            "similarity": 0.9675,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3eb01df582918ec56bbcbe92d17dcf7ccc9e2203b8baac49941dbcbb54b79715.jpg",
+          "location": {
+            "city": null,
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Greater Bengaluru Area",
+            "full_location": "Greater Bengaluru Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/prateek-srinivasalu"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Matters.AI",
+                "company_website": "https://www.matters.ai/",
+                "professional_network_id": "77169499",
+                "title": "Lead SEO & Content Growth Specialist",
+                "description": "",
+                "location": {
+                  "raw": "India"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 778629,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9abd170c5bd5d3c20cb2e461d0aa0d0f291417a3bc97a8a4de63e61cdbbcbee1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/mattersai",
+                "seniority_level": "Senior",
+                "function_category": "Marketing",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 64,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2929877010,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe-Q_mXNXkVkJO3CDmJx6w4ivrt4_j7wurbjve5y7rA4aJwTqYlRYC0abEbauDKViM2KcQ6zVDFF8lUaZYo-xayoviGaweTg7MeAxd0Kx8iY8n1yMPqQx1r79fxT-v4CAAD__8GjQ0Z4AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

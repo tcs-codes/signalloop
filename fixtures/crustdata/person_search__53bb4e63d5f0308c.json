@@ -1,0 +1,485 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "cyvl.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 761075,
+        "basic_profile": {
+          "name": "Brian Denenberg",
+          "professional_network_name": "Brian Denenberg",
+          "headline": "VP Sales & Business Development @ Cyvl | HBR Contributor | Mentor \u00b7 Advisor \u00b7 Investor",
+          "current_title": "Vice President, Sales and Business Development",
+          "normalized_title": {
+            "matched_title": "Vice President Sales and Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4423c2844232e56b75cfbb5b9e50b431102e9e511e60522763403713e0ffc6c1.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Boston",
+            "full_location": "Greater Boston"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bdenenberg"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CYVL",
+                "company_website": "https://cyvl.com/?utm_source=linkedin&utm_medium=social&utm_campaign=company_bio",
+                "professional_network_id": "67496084",
+                "title": "Vice President, Sales and Business Development",
+                "description": "Cyvl turns street level data into actionable intelligence cities need to manage and fund their infrastructure: pavement, sidewalks, signs, and utilities.\n\nI own revenue: direct sales to municipalities and DOTs, channel partnerships with civil engineering firms, and building the team behind both.\n\nCyvl today: 500+ municipal partners, a citywide partnership with the City of Atlanta, 4x year-over-year growth, and \"Digital Infrastructure\" written into federal statute with Cyvl cited by the House T&I Committee.\n\nWe're hiring. Check our open roles or reach out.",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698100,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/177f7cfa61ccba4493739d981ff8c2820d1fa161729c80677d633ae9c0c30341.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cyvl",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 70,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2548827458,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Somerville, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Somerville",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Venture Lane | Startup Hub",
+                "company_website": "http://www.theventurelane.com",
+                "professional_network_id": "13041373",
+                "title": "Co-Founder & Mentor",
+                "description": "Co-founded the Venture Lane Traction Studio, a year-round program that takes early-stage B2B software companies to growth stage. I mentor founders on sales, go-to-market, and building their first revenue teams.",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 984101,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d01f626b47f2f1a3e6098e6031207f5ee127288ccfd65b7256d346a267eb4925.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/venture-lane-boston-startup-hub",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Real Estate",
+                  "Real Estate and Equipment Rental Services"
+                ],
+                "company_professional_network_industry": "Real Estate",
+                "position_id": 1899795674,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Our Generation Speaks (OGS)",
+                "company_website": "http://www.ogspeaks.com",
+                "professional_network_id": "10394690",
+                "title": "Adjunct Professor, Entrepreneurship",
+                "description": "Taught the entrepreneurship and business model course to Our Generation Speaks Fellows at The Heller School for Social Policy and Management, Brandeis University.",
+                "employment_type": "Part-time",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1153903,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f562ba07fe5468575e236b2ca84067bba2803bfc4a435ba482d6f74ab79a3438.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/our-generation-speaks",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 19,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Civic and Social Organizations",
+                "position_id": 2954110011,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Waltham, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Waltham",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "The Heller School for Social Policy and Management at Brandeis University",
+                "company_website": "http://heller.brandeis.edu/",
+                "professional_network_id": "15102075",
+                "title": "Adjunct Professor of Entrepreneurship",
+                "description": "Adjunct faculty at The Heller School for Social Policy and Management, Brandeis University. Teach the entrepreneurship and business model course for the Our Generation Speaks (OGS) fellowship \u2014 covering business model design, go-to-market, and how founders build their first sales motion.\n\nOpen to adjunct teaching opportunities in sales, go-to-market, and entrepreneurship.",
+                "employment_type": "Part-time",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6393270,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d852a6e1060b01d0f1146e4281b663f04fe72b9566bccac02cc566b28d4998e4.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/thehellerschool",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 177,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 2989155472,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Waltham, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Waltham",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Tive",
+                "company_website": "http://www.tive.com",
+                "professional_network_id": "10450144",
+                "title": "Advisor",
+                "description": "Advise the leadership team on sales strategy and go-to-market. Tive provides sensor-driven, in-transit supply chain visibility.",
+                "location": {
+                  "raw": "Greater Boston"
+                },
+                "employment_type": "",
+                "start_date": "2018-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 632242,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c0dc23139f83207e41e2de4c6096c547c0606f6c87569eb15107910bc0dd616e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/tiveinc",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 313,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1495734934,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Charlestown, Massachusetts, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 24289411,
+        "basic_profile": {
+          "name": "Kevin O'Connor",
+          "professional_network_name": "Kevin O'Connor",
+          "headline": "GTM and Business Development Leader",
+          "current_title": "Inside Sales Manager",
+          "normalized_title": {
+            "matched_title": "Inside Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Inside & Outside Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/21c920c25d3d60a0e708ca6fa5a08183edc56fd2f67d74b38b74561420096a6c.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/1kevinoconnor1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "CYVL",
+                "company_website": "https://cyvl.com/?utm_source=linkedin&utm_medium=social&utm_campaign=company_bio",
+                "professional_network_id": "67496084",
+                "title": "Inside Sales Manager",
+                "description": "",
+                "location": {
+                  "raw": "Somerville, Massachusetts, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698100,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/177f7cfa61ccba4493739d981ff8c2820d1fa161729c80677d633ae9c0c30341.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cyvl",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 70,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3027336112,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Somerville, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Somerville",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 109990532,
+        "basic_profile": {
+          "name": "Ben Baker",
+          "professional_network_name": "Ben Baker",
+          "headline": "Business Development Representative at Cyvl",
+          "current_title": null,
+          "normalized_title": null,
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d11ff98bf9f91f7d03857a7bdc8389537023b01b77bb17eef8e1c46f95aa1627.jpg",
+          "location": {
+            "city": "Cambridge",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Cambridge, Massachusetts, United States",
+            "full_location": "Cambridge, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ben-baker-1b93b3327"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cyvl",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 0,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "CYVL",
+                "company_website": "https://cyvl.com/?utm_source=linkedin&utm_medium=social&utm_campaign=company_bio",
+                "professional_network_id": "67496084",
+                "title": "Business Development Representative",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 698100,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/177f7cfa61ccba4493739d981ff8c2820d1fa161729c80677d633ae9c0c30341.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cyvl",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 70,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2469132538,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Somerville, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Somerville",
+                  "Middlesex County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe-QZk2b7FdERqwNO4jFrTuI-O_i-X3gdbb9vW52bLAEqIqEnlJkQWPEkhpnl8ZcGrrHm1ASyWSElKvPWmsu9yziRaOYwRTg6PuAJVwiqiryTNcpwOjDHmvt5_Nv5fsLAAD__-5xtj55AAAA",
+    "total_count": 7,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

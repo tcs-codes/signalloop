@@ -1,0 +1,295 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "yoodli.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 13988,
+        "basic_profile": {
+          "name": "Varun Puri",
+          "professional_network_name": "Varun Puri",
+          "headline": "CEO and Cofounder at Yoodli - Upskill your workforce for the AI Future",
+          "current_title": "CEO and Cofounder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9992,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8a99b2972c6476625e591199b5b834d8fe3cf56cea2e8f01d6a59b8f138aa226.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/varun-puri001"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yoodli",
+                "company_website": "http://www.yoodli.ai",
+                "professional_network_id": "76228185",
+                "title": "CEO and Cofounder",
+                "description": "Yoodli is the AI platform for human skills. Organizations like Google, Sandler, Snowflake, FranklinCovey, and Databricks, and more than 1 million learners use Yoodli to enable sales teams, help managers lead better, and run training and certifications at scale. \n\nEsha and I started Yoodli because we believe in the human potential - we are building technology to help people, not replace them. We're hiring for most roles - reach out if you're interested. You can learn more about the mission, team, and try the platform for free at yoodli.ai",
+                "location": {
+                  "raw": "Seattle, WA"
+                },
+                "employment_type": "",
+                "start_date": "2021-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689839,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3a3cef34aa34405d605e719808e36c5b2858cedab178f09445e9c2bfe6961dcb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yoodli",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 135,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2323852981,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 13989,
+        "basic_profile": {
+          "name": "Esha Joshi",
+          "professional_network_name": "Esha Joshi",
+          "headline": "Co-Founder & President at Yoodli - Upskill your workforce for the future with the AI platform for human skills",
+          "current_title": "Co-Founder, President, Chief Customer Officer at Yoodli",
+          "normalized_title": {
+            "matched_title": "Chief Customer Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Account Management & Strategy",
+            "similarity": 0.6836,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/16bc878f7db4a80a4361220c658085ce241da0c263657b054afda1da81b6078a.jpg",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/eshajoshi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yoodli",
+                "company_website": "http://www.yoodli.ai",
+                "professional_network_id": "76228185",
+                "title": "Co-Founder, President, Chief Customer Officer at Yoodli",
+                "description": "Yoodli is the AI platform for human skills. Organizations like Google, Sandler, Snowflake, Korn Ferry, and Databricks, and more than 1 million learners use Yoodli to enable sales teams, help managers lead better, and run training and certifications at scale. \n\nVarun and I started Yoodli because we believe in the human potential - we are building technology to help people, not replace them. We're hiring for most roles - please reach out if you're interested! You can learn more about the mission, team, and try the platform for free at yoodli.ai.",
+                "location": {
+                  "raw": "Seattle, WA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689839,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3a3cef34aa34405d605e719808e36c5b2858cedab178f09445e9c2bfe6961dcb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yoodli",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 135,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1851185248,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 13990,
+        "basic_profile": {
+          "name": "Yoodli Team",
+          "professional_network_name": "Yoodli Team",
+          "headline": "Chief Executive Officer at Yoodli",
+          "current_title": "Chief Executive Officer",
+          "normalized_title": {
+            "matched_title": "Chief Executive Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Seattle",
+            "state": "Washington",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Seattle, Washington, United States",
+            "full_location": "Seattle, Washington, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yoodli-team-a431ba255"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yoodli",
+                "company_website": "http://www.yoodli.ai",
+                "professional_network_id": "76228185",
+                "title": "Chief Executive Officer",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689839,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3a3cef34aa34405d605e719808e36c5b2858cedab178f09445e9c2bfe6961dcb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yoodli",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 135,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2062857250,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIvQ7CIBAA4FchN3fgej9wfRVjGhBIByOxpYMxvrvp-n3hfdb9s27p2GBx0ArNrbDGyio2Y6rqs6Fw4GBZWgzUUKWIGlFLWrNEZCMjbzFygsnB0fcBi7shmfn75GD0kZ7ro5-vy9H__gEAAP__himJLnYAAAA=",
+    "total_count": 10,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

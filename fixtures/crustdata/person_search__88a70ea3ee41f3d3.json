@@ -1,0 +1,372 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "hakimo.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 176847,
+        "basic_profile": {
+          "name": "Samuel Joseph",
+          "professional_network_name": "Samuel Joseph",
+          "headline": "Co-Founder and CEO at Hakimo",
+          "current_title": "Co-Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c84460d406aae8a69b2b3616c8f16306842c497b2e26be444c3f7757f9c7260d.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/samjosephkpl"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hakimo",
+                "company_website": "https://hakimo.ai/",
+                "professional_network_id": "23962911",
+                "title": "Co-Founder and CEO",
+                "description": "Building an AI-powered security monitoring platform for real estate portfolios and enterprise environments that improve safety while reducing costs. Hakimo helps customers identify and respond to incidents in real time, prevent losses, and improve operational efficiency through software-driven monitoring and response.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 647602,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/02a3f1c4a081698965b134b891199111ee9e667241cd189a7c8a659287d4f641.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hakimo",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 128,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1639577701,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Menlo Park, California, United States",
+                "company_hq_location_address_components": [
+                  "Menlo Park",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Forbes Technology Council",
+                "company_website": "http://forbestechcouncil.com",
+                "professional_network_id": "11075183",
+                "title": "Official Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1036211,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76dca08b2fa08e7781cd50597f868af10e6bc4f4aa4d99a92ac760aa1e7c4c0d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/forbestechcouncil",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 1862,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Civic and Social Organizations",
+                "position_id": 1869873590,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 863191,
+        "basic_profile": {
+          "name": "Bret Knobelauch",
+          "professional_network_name": "Bret Knobelauch",
+          "headline": "Chief Revenue Officer @ Hakimo",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/651c07ebf4e8619aa3df698ff450649741b64d28fd7434ee295c11a793f021b1.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Charlotte Metro",
+            "full_location": "Charlotte Metro"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bret-knobelauch"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hakimo",
+                "company_website": "https://hakimo.ai/",
+                "professional_network_id": "23962911",
+                "title": "Chief Revenue Officer",
+                "description": "Modernizing physical security with artificial intelligence, modern software, and data analytics.",
+                "location": {
+                  "raw": "Charlotte, NC"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 647602,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/02a3f1c4a081698965b134b891199111ee9e667241cd189a7c8a659287d4f641.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hakimo",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 128,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2881514908,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Menlo Park, California, United States",
+                "company_hq_location_address_components": [
+                  "Menlo Park",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Membership Executive",
+                "description": "",
+                "location": {
+                  "raw": "Cornelius, NC"
+                },
+                "employment_type": "",
+                "start_date": "2020-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 3035632737,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 107004434,
+        "basic_profile": {
+          "name": "Harshit Singh",
+          "professional_network_name": "Harshit Singh",
+          "headline": "Pre-Final Year @IIT Kharagpur | Incoming Product Analyst Intern @Eternal",
+          "current_title": "Founder\u2019s Office Intern",
+          "normalized_title": {
+            "matched_title": "Founder's Office Intern",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9931,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dc543795c4ebc875e6f707040b2f7a2e16b076e26a380f1c61450e4daaecde05.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "India",
+            "continent": "Asia",
+            "raw": "India",
+            "full_location": "India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/harshit-singh-387962288"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hakimo",
+                "company_website": "https://hakimo.ai/",
+                "professional_network_id": "23962911",
+                "title": "Founder\u2019s Office Intern",
+                "description": "",
+                "employment_type": "Internship",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 647602,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/02a3f1c4a081698965b134b891199111ee9e667241cd189a7c8a659287d4f641.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hakimo",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 128,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3055464592,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Menlo Park, California, United States",
+                "company_hq_location_address_components": [
+                  "Menlo Park",
+                  "San Mateo County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJSwrCMBAG4KuEWXfxN5PX9CoiJZ0kdCEG23Qh4t3F9feh11WP97rnc6fFkE9BSwBSLRuH5lXnoBZVLatWgaA0JxozhBlO4iyROcctSbFeGk2Gzn4MWsxtRgScY3efDI0-8mPVfj3_Fr6_AAAA__-A4VIKeQAAAA==",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "alignedup.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 87518,
+        "basic_profile": {
+          "name": "Gal Deitsch",
+          "professional_network_name": "Gal Deitsch \u2728",
+          "headline": "Founder, CPO @ Aligned",
+          "current_title": "Founder & CPO",
+          "normalized_title": {
+            "matched_title": "CPO and Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.8644,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bea87fb598ff22ce74d23e5138ff7aebb809bdc650e05d2ae6e570fed09d33ca.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Israel",
+            "full_location": "Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/gal-deitsch"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Aligned",
+                "company_website": "https://www.alignedup.com?utm_source=Social&utm_medium=Aligned_Page&utm_campaign=website_button&utm_id=163&avk=mvk_Linkedin_Page",
+                "professional_network_id": "73810331",
+                "title": "Founder & CPO",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 813860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76d9252931c4ae3574c2b80a116cbc2486b7b91ecbca680248f07847c30c72a3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alignedup",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1974323780,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Remote First, West Virginia, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Genesis Accelerator",
+                "company_website": "https://genesis-accelerator.com/",
+                "professional_network_id": "103609376",
+                "title": "Mentor",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2057208,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7c97c6acbd7c890ea3d5037c6132550034af9b5f085fa63fb7b5fbe17083883f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/genesis-accelerator",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 15,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 2825308915,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Executive",
+                "description": "The Revenue Collective is a leading community of sales and marketing executives at growth-focused companies.",
+                "employment_type": "",
+                "start_date": "2020-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1697732073,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 87519,
+        "basic_profile": {
+          "name": "Gal Aga",
+          "professional_network_name": "Gal Aga",
+          "headline": "CEO @ Aligned | Don\u2019t Sell; offer \u2018Buying Process As A Service\u2019",
+          "current_title": "CEO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/82c96f749dbaddfacd4d08bc250dcb9b1fa935f05efb03dcb91d572456baedfa.jpg",
+          "location": {
+            "city": null,
+            "state": "Tel Aviv District",
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Tel Aviv District, Israel",
+            "full_location": "Tel Aviv District, Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/galaga"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Aligned",
+                "company_website": "https://www.alignedup.com?utm_source=Social&utm_medium=Aligned_Page&utm_campaign=website_button&utm_id=163&avk=mvk_Linkedin_Page",
+                "professional_network_id": "73810331",
+                "title": "CEO & Co-Founder",
+                "description": "Aligned is the new way for GTM teams to work with customers. A customer-facing AI workspace that helps Sales & Customer Success manage deal complexity, by moving the chaotic email-links-files-back-and-forth into a single shared workspace for each customer where AI agents help run every step. A Deal Room for AEs and Client Portal for CSMs, where reps can make it easier for buyers to buy, better project manage deals, use AI to support buyers faster, analyze never-before-tracked buying signals, and more easily follow the company's playbook.\n\n70K+ reps from companies such as Deel, Motorola, HubSpot, and Similarweb use Aligned to cut sales cycles by 30% and increase their win rate by 15% on average.",
+                "employment_type": "",
+                "start_date": "2022-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 813860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76d9252931c4ae3574c2b80a116cbc2486b7b91ecbca680248f07847c30c72a3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alignedup",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1975216334,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Remote First, West Virginia, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Gartner",
+                "company_website": "https://gtnr.it/3vpPW81",
+                "professional_network_id": "2078",
+                "title": "GTM Ambassador",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1910110,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0e36cdbc0a2d9f4a1de26c94461d164ffe34b85b6386ec0741439ad7da5ffcf2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/gartner",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 22044,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Information Services",
+                "position_id": 2376213909,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Stamford, Connecticut, United States",
+                "company_hq_location_address_components": [
+                  "Stamford",
+                  "Western Connecticut Planning Region",
+                  "Connecticut",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Forbes Technology Council",
+                "company_website": "http://forbestechcouncil.com",
+                "professional_network_id": "11075183",
+                "title": "Thought Leader",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2023-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1036211,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76dca08b2fa08e7781cd50597f868af10e6bc4f4aa4d99a92ac760aa1e7c4c0d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/forbestechcouncil",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 1862,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Civic and Social Organizations",
+                "position_id": 2301312250,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Executive Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1689217234,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "SixFigures",
+                "company_website": "http://www.sixfigures.io",
+                "professional_network_id": "73881630",
+                "title": "Sales Mentor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1064725,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/64dfa41a469f653ebcd8a87bacf057fda45ec97aa0ebe13765d51e2bbe25c85e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sixfigures-school",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 27,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1801699740,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 87520,
+        "basic_profile": {
+          "name": "Yotam Sela",
+          "professional_network_name": "Yotam Sela",
+          "headline": "Founder & CTO @ Aligned",
+          "current_title": "Co-Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9972,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8ba0aca33a9aad1b84403d84fd9525634f4a07003b8ce4117d6e41c2b243f500.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Israel",
+            "full_location": "Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yotamsela"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Aligned",
+                "company_website": "https://www.alignedup.com?utm_source=Social&utm_medium=Aligned_Page&utm_campaign=website_button&utm_id=163&avk=mvk_Linkedin_Page",
+                "professional_network_id": "73810331",
+                "title": "Co-Founder & CTO",
+                "description": "Aligned helps sellers to create personalized mini-sites for each deal, expose hidden buyer behavior & win more deals.",
+                "employment_type": "Full-time",
+                "start_date": "2021-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 813860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76d9252931c4ae3574c2b80a116cbc2486b7b91ecbca680248f07847c30c72a3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alignedup",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1896020221,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Remote First, West Virginia, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIwQrCMAwA0F8pOe-Qpk2T7VdERlhadhCLW3cQ8d_F6_vA66rHe93t3GEJwEbEpRWsjWp0nElNregWUbIJa04eWWKmLJLcXVxNdW5RuSAKTAHOfgxYwk2FCe9TgNGHPdatX8-_p-8vAAD__yNVd6B1AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "onefootprint.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 14265,
+        "basic_profile": {
+          "name": "Eli Wachs",
+          "professional_network_name": "Eli Wachs ",
+          "headline": "Co-Founder/CEO @ Footprint | AI Operating System for Risk",
+          "current_title": "Co-Founder + CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/41e66e6b6aaae1f7a0d4f70f68260d5f4175c410ef5ba1375408a0b7b2b22c33.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/eliwachs"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Footprint",
+                "company_website": "http://www.onefootprint.com",
+                "professional_network_id": "82759308",
+                "title": "Co-Founder + CEO",
+                "description": "Topping cartels and corrupt regimes by building the AI operating system for risk. Raised $45M from QED + Index. Work with largest companies in banking, payments, and digital commerce.",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690975,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee4b6ad6bb14a35ab4bc9a5397f87e45147f57668a7dc3ae16930582c7486191.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/onefootprint",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 39,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1903403465,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 14266,
+        "basic_profile": {
+          "name": "Alex Grinman",
+          "professional_network_name": "Alex Grinman",
+          "headline": "Co-founder & CTO @ Footprint",
+          "current_title": "Co-founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9966,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/54506c5a5585efc038f518409a7357b9961b8045332eec80e6c0d0f6a92da5a3.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/agrinman"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Footprint",
+                "company_website": "http://www.onefootprint.com",
+                "professional_network_id": "82759308",
+                "title": "Co-founder & CTO",
+                "description": "The AI harness for risk operations. Footprint's AI agent infra helps businesses convert more users with a generative onboarding UI, assess risk in milliseconds, and power financial crime investigations.",
+                "employment_type": "Full-time",
+                "start_date": "2022-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690975,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee4b6ad6bb14a35ab4bc9a5397f87e45147f57668a7dc3ae16930582c7486191.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/onefootprint",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 39,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1942835292,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Boston Venture Studio",
+                "company_website": "https://www.bvs.net",
+                "professional_network_id": "77758469",
+                "title": "Advisor",
+                "description": "Advising on crypto/security",
+                "employment_type": "",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1706777,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/623a41c50c9d6ad4d62c024ec92a064539b29b84ca0b898a50c3e0a77c85b2df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bvsnet",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 14,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1908887154,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 118260310,
+        "basic_profile": {
+          "name": "Surya Kaza",
+          "professional_network_name": "Surya Kaza",
+          "headline": "Chief of Staff @ Footprint",
+          "current_title": "Chief of Staff",
+          "normalized_title": {
+            "matched_title": "Chief of Staff",
+            "department": "Executive Leadership",
+            "sub_department": "Executive Support & Coordination",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f012ec348e5404a180faf1907bfa12ee8e98fbc185a97f50d0a4c4936224081b.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/suryakaza"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Footprint",
+                "company_website": "http://www.onefootprint.com",
+                "professional_network_id": "82759308",
+                "title": "Chief of Staff",
+                "description": "Founding SDR -> GTM Engineer -> Chief of Staff (in 16 months). At Footprint, we help stop the financial crime that funds the criminal organizations plaguing our country.",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 690975,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee4b6ad6bb14a35ab4bc9a5397f87e45147f57668a7dc3ae16930582c7486191.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/onefootprint",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 39,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2472088017,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Chasing the Bag Inc.",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Side Hustles",
+                "description": "Been building side hustles since I was 14, scaled a few to 6-figs each:\n        - Ticket broker\n        - Amazon FBA\n        - Discord community (for retail investors, subscription-based)\n        - Reselling miscellaneous items (sports cards, real Banksy, etc.)\n\nMost of my side hustles never scaled, but learned a lot along the way.",
+                "location": {
+                  "raw": "Moneyville, USA"
+                },
+                "employment_type": "",
+                "start_date": "2017-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2584503559,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMa6DMAwA0KtEnhns8LENV_mqUGwcMVSNCmGoqt696vze8LzieK17OXdYEuDmwSiWN8slUw1HnyT-1FSsChVBHC2zmsRs0-aIMxMVdtYIrTAkONvRYUn_RJoZR8LbkKC3Xu6rt-vxs_HzDQAA___tHVfneQAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

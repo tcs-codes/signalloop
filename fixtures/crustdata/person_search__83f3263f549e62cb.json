@@ -1,0 +1,335 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "opus.so"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 87236,
+        "basic_profile": {
+          "name": "Rachael Nemeth",
+          "professional_network_name": "Rachael Nemeth",
+          "headline": "CEO, Cofounder at Opus \ud83d\udccd\u2728",
+          "current_title": "CEO, Co-founder",
+          "normalized_title": {
+            "matched_title": "CEO, Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cc92635206003998cfe866efccee99bdde8fba79e3a1a24e40e5ab43ec2a6bd9.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/rachael-nemeth"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "RachaelNemeth5"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Opus Training",
+                "company_website": "https://www.opus.so",
+                "professional_network_id": "3598921",
+                "title": "CEO, Co-founder",
+                "description": "The only Standards Execution Platform for multi-unit brands | Paris Baguette, Smashburger, VASA Fitness, Blaze Pizza, Super Star Car Wash, Salt & Straw, Raceway Car Wash, Mellow Mushroom, Mac Haik, Just Salad, Newks Eatery, Luke's Lobster, Craveworthy Brands, Bonchon and hundreds more",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2020-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 812269,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3589fd8ed5260cec851ade4b7f5e959050752e37cef3df2971b4e3825e72770e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/opus-so",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 412078207,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 87237,
+        "basic_profile": {
+          "name": "Jeffrey Silver",
+          "professional_network_name": "Jeffrey Silver",
+          "headline": "Co-founder and CTO at Opus Training",
+          "current_title": "Co-founder and CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9955,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/febc25513de0ef817169c8e0e86713c35b7bbaa7af203889d0c7d582abf89c61.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jeffrey-silver-96007ab0"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Opus Training",
+                "company_website": "https://www.opus.so",
+                "professional_network_id": "3598921",
+                "title": "Co-founder and CTO",
+                "description": "The only Standards Execution Platform for multi-unit brands | Paris Baguette, Smashburger, VASA Fitness, Blaze Pizza, Super Star Car Wash, Salt & Straw, Raceway Car Wash, Mellow Mushroom, Mac Haik, Just Salad, Newks Eatery, Luke's Lobster, Craveworthy Brands, Bonchon and hundreds more",
+                "location": {
+                  "raw": "New York"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 812269,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3589fd8ed5260cec851ade4b7f5e959050752e37cef3df2971b4e3825e72770e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/opus-so",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1622288946,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 87238,
+        "basic_profile": {
+          "name": "Vince Li",
+          "professional_network_name": "Vince Li",
+          "headline": "Cofounder @ Opus | Design Advisor @ Gutter Capital | Building better AAC tools @ night",
+          "current_title": "Co-Founder, Principal Designer",
+          "normalized_title": {
+            "matched_title": "Founder & Principal Designer",
+            "department": "Product & Design",
+            "sub_department": "Graphic & Visual Design",
+            "similarity": 0.9984,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2a86b96fd4a0b19804db5e76f101cd57d2c71609cae8bdfbc391ce0738d25e33.jpg",
+          "location": {
+            "city": "Amsterdam",
+            "state": "North Holland",
+            "country": "Netherlands",
+            "continent": "Europe",
+            "raw": "Amsterdam, North Holland, Netherlands",
+            "full_location": "Amsterdam, North Holland, Netherlands"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/vincelinyc"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Opus Training",
+                "company_website": "https://www.opus.so",
+                "professional_network_id": "3598921",
+                "title": "Co-Founder, Principal Designer",
+                "description": "",
+                "location": {
+                  "raw": "New York, Verenigde Staten"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 812269,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3589fd8ed5260cec851ade4b7f5e959050752e37cef3df2971b4e3825e72770e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/opus-so",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Arts and Design",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 57,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3019754134,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Gutter Capital",
+                "company_website": "http://gutter.cc",
+                "professional_network_id": "81455433",
+                "title": "Design Advisor",
+                "description": "",
+                "location": {
+                  "raw": "New York, Verenigde Staten"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 969159,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f91569341ec284df67bb92cbe41d6fefea35a4648032ffd0741ef755048666ff.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/gutter-capital",
+                "seniority_level": "Entry Level",
+                "function_category": "Arts and Design",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 12,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 3019752192,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTIzQrCMAwA4FcpOe-w_qXNXkVkJF3CDmJx6w4ivrt4_T7wuvR4rzufOywO0iZMmr1qiDIjZdmSZs-zceCshpWTL2KRWpCmyYtRwFo8qlHECJODsx8DFnerJcR6nxyMPvixtn49_56_vwAAAP__17hLdHUAAAA=",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

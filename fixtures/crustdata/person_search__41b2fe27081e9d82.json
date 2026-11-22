@@ -1,0 +1,338 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "4minds.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 99980,
+        "basic_profile": {
+          "name": "Christopher M Barone",
+          "professional_network_name": "Christopher M Barone",
+          "headline": "Custom AI | GTM at 4MINDS | Senior Sales Leader | Builder",
+          "current_title": "Enterprise GTM",
+          "normalized_title": {
+            "matched_title": "Enterprise GTM",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a2383175c018ee6bfe6d3d70da4b4d961c24eb4733650c65567f10febc6197f8.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Philadelphia",
+            "full_location": "Greater Philadelphia"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/christopher-m-barone-9601211"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "4Minds",
+                "company_website": "https://4minds.ai/",
+                "professional_network_id": "106859343",
+                "title": "Enterprise GTM",
+                "description": "",
+                "location": {
+                  "raw": "Philadelphia, PA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 13605231,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cb9b05d825e43da5ee44723a4f251a668e589e39a216f06d1e82aba7fa65651.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/4mindsai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 59,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2917948786,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dallas, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Dallas",
+                  "Dallas County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2528309,
+        "basic_profile": {
+          "name": "Ed Porter",
+          "professional_network_name": "Ed Porter",
+          "headline": "VP of Sales at 4MINDS",
+          "current_title": "Vice President of Sales",
+          "normalized_title": {
+            "matched_title": "Vice President of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b1a2822eb45a70fd4c00d5c20ba4054b326817df2362b44af5502ece83929050.jpg",
+          "location": {
+            "city": "Columbia",
+            "state": "Maryland",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Columbia, Maryland, United States",
+            "full_location": "Columbia, Maryland, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/edaporter"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "4Minds",
+                "company_website": "https://4minds.ai/",
+                "professional_network_id": "106859343",
+                "title": "Vice President of Sales",
+                "description": "Building and leading a team of sales professionals focused on helping customers get value from Generative AI.  Using 4MINDS Enterprises can build and deploy custom models in production that are trained on their corporate data, learn continuously (without costly retraining), maintain context and get smarter over time.",
+                "employment_type": "",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 13605231,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cb9b05d825e43da5ee44723a4f251a668e589e39a216f06d1e82aba7fa65651.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/4mindsai",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 59,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2901561771,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dallas, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Dallas",
+                  "Dallas County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Boys & Girls Clubs of Prince George\u2019s County",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Board Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2022-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2133031810,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 14983412,
+        "basic_profile": {
+          "name": "Liz Nguyen",
+          "professional_network_name": "Liz Nguyen ",
+          "headline": "Senior Sales & GTM Recruiter",
+          "current_title": "Senior Sales & GTM Recruiter",
+          "normalized_title": {
+            "matched_title": "Sr Sales recruiter",
+            "department": "People & HR",
+            "sub_department": "Talent Acquisition & Recruiting",
+            "similarity": 0.9227,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b6796c769ebf90652f4c575180356f037ec47a3c83a6c426846cfa7c7c5b40aa.jpg",
+          "location": {
+            "city": "Costa Mesa",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Costa Mesa, California, United States",
+            "full_location": "Costa Mesa, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/liz-nguyen-42162613a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "4Minds",
+                "company_website": "https://4minds.ai/",
+                "professional_network_id": "106859343",
+                "title": "Senior Sales & GTM Recruiter",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 13605231,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7cb9b05d825e43da5ee44723a4f251a668e589e39a216f06d1e82aba7fa65651.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/4mindsai",
+                "seniority_level": "Senior",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 59,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2841801692,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dallas, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Dallas",
+                  "Dallas County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8Aa4F1v2LMUijNDkbixg7G-O_G8_vA62rHe9vl3GF1ICHW0qgZY1VPHklY5pBbNs_sS1HjlHWRLDpLbJTQFCUpG_mEESYHZz8GrO4WiBekMN8nB6MPeWy1X88_hfj9BQAA__9rlJ1OeQAAAA==",
+    "total_count": 15,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

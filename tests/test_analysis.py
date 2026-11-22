@@ -88,6 +88,16 @@ def test_narrative_with_invented_number_fails(campaign, fake_llm):
         analysis.analyze(c.id)
 
 
+def test_tiny_segment_cannot_pick_the_combined_dimensions():
+    df = synthetic_frame()
+    # a 10-person country segment with 6 replies: huge rate, tiny n
+    df.loc[:9, "hq_country"] = "IND"
+    df.loc[:9, "responded"] = [True] * 6 + [False] * 4
+    assert analysis.dimension_spread(df, "hq_country") == 0.0     # only one segment has n >= 30
+    _, ranked = analysis.compute(df)
+    assert "hq_country" not in ranked and set(ranked) >= {"seniority", "funding_stage", "headcount_band"}
+
+
 def test_lift_math():
     df = pd.DataFrame({"responded": [True, False, False, False] * 10,
                        "seniority": ["VP+", "VP+", "Director", "Director"] * 10})

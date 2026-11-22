@@ -1,0 +1,392 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "cello.so"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 472564,
+        "basic_profile": {
+          "name": "Robert Coletti",
+          "professional_network_name": "Robert Coletti",
+          "headline": "CPTO & Co-Founder | Referrals on Autopilot",
+          "current_title": "CPTO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "VP/Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9527,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/ab0517c42c8630b241bb0068b85db97c3a503ba0216e559c4c42e2d37a00fbcc.jpg",
+          "location": {
+            "city": "Munich",
+            "state": "Bavaria",
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Munich, Bavaria, Germany",
+            "full_location": "Munich, Bavaria, Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/robertcoletti"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "CPTO & Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "Munich, Bavaria, Germany"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1960808030,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 472565,
+        "basic_profile": {
+          "name": "Stefan Bader",
+          "professional_network_name": "Stefan Bader",
+          "headline": "CEO @ Cello | Referrals on Autopilot",
+          "current_title": "CEO & Co-founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/25a7b262bd7775f57995a13c241b20234926fbbb53e1bf8f8b45ed3c4d4c8124.jpg",
+          "location": {
+            "city": "Munich",
+            "state": "Bavaria",
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "Munich, Bavaria, Germany",
+            "full_location": "Munich, Bavaria, Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/stefan-bader"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "parkpocket"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "CEO & Co-founder",
+                "description": "Helping customers generate revenue on autopilot through referrals",
+                "location": {
+                  "raw": "Munich, Bavaria, Germany"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1909050576,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "EWOR",
+                "company_website": "https://www.ewor.com/?sc=SM&ssc=LinkedIn&sm=General",
+                "professional_network_id": "29019213",
+                "title": "Venture Scout",
+                "description": "Helping to back the top 0.1% of founders",
+                "employment_type": "",
+                "start_date": "2025-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 821527,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/528d602d45deb9d6aba6e60a31c4be2d9cd52d4a798fc24b186dc81e1682c489.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ewor",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 384,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Education"
+                ],
+                "company_professional_network_industry": "Education",
+                "position_id": 2727891752,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Germany",
+                "company_hq_location": "Berlin, Berlin, Germany",
+                "company_hq_location_address_components": [
+                  "Berlin",
+                  "Kreisfreie Stadt Berlin",
+                  "Berlin",
+                  "Germany"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 119772821,
+        "basic_profile": {
+          "name": "Philipp Neusser",
+          "professional_network_name": "Philipp Neusser",
+          "headline": "People & Marketing at Cello | Referrals on Autopilot | GTM10 Awards",
+          "current_title": "Member",
+          "normalized_title": {
+            "matched_title": "Member",
+            "department": "Customer Service & Support",
+            "sub_department": "Member & Membership Services",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b7c39a46934f292d2f2862d38de72ecf2f0f2186e3eb37cde738d5058ccdb2d1.jpg",
+          "location": {
+            "city": "D\u00fcsseldorf",
+            "state": "North Rhine-Westphalia",
+            "country": "Germany",
+            "continent": "Europe",
+            "raw": "D\u00fcsseldorf, North Rhine-Westphalia, Germany",
+            "full_location": "D\u00fcsseldorf, North Rhine-Westphalia, Germany"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/philipp-neusser"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Chief of Staff Network",
+                "company_website": "https://www.chiefofstaff.network",
+                "professional_network_id": "13999125",
+                "title": "Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1098628,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fb236553b2bed46df8028f592740cc6f4713ca06f59d8d271beab3565be166a7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/chiefofstaffnetwork",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 243,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Professional Organizations",
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Professional Organizations",
+                "position_id": 2999778189,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "Chief of Staff",
+                "description": "",
+                "location": {
+                  "raw": "D\u00fcsseldorf, North Rhine-Westphalia, Germany"
+                },
+                "employment_type": "",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2971600269,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Cello",
+                "company_website": "https://cello.so/",
+                "professional_network_id": "86679014",
+                "title": "Head of People & Marketing",
+                "description": "",
+                "location": {
+                  "raw": "D\u00fcsseldorf, North Rhine-Westphalia, Germany"
+                },
+                "employment_type": "",
+                "start_date": "2023-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 710616,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/175fc805b290918f9426777a868a4d49e74453d033f39878d6b93344640a1dac.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/joincello",
+                "seniority_level": "Director",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 61,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2971396522,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Remote, Oregon, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQ7CIAwA4FchPe9AofztVYxZSinZwUjc2MEY3914_j7wuvR4bzufO6wGVBwSM9ks3KrWgIwVY--SSogtMpGNnZoX1kDIWFpO2QtWrbZkC4uBcxwTVnNDLCm57PC-GJhj8mOTcT3_5r-_AAAA__9hCSP5eQAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

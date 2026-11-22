@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "earlytrade.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 63243,
+        "basic_profile": {
+          "name": "Guy Saxelby",
+          "professional_network_name": "Guy Saxelby",
+          "headline": "Earlytrade CEO & Co-founder",
+          "current_title": "CEO & Co-founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cfe92a3574b0328d072d6d36f043cc15d48176c47c5d3b108d3830a6d1f4de26.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/guy-saxelby"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Earlytrade",
+                "company_website": "https://earlytrade.com",
+                "professional_network_id": "19140865",
+                "title": "CEO & Co-founder",
+                "description": "Earlytrade is a construction technology company focused on solutions for managing supply chains, improving margins, and providing liquidity. Earlytrade\u2019s core product is its Early Payments product, where General Contractors make their payables available for subcontractors and suppliers to make discount offers for early payment in a competitive tender, with automated award and acceptance managed by the technology. Earlytrade does not take balance-sheet risk on the early payments, instead leveraging working capital made available via the General Contractor.",
+                "employment_type": "",
+                "start_date": "2018-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 668611,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8af21855c9e2a8053b651f78d41693259d5bca7360b04dfa2860a13df9c25248.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/earlytrade",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1608924114,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Denver, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Denver",
+                  "Denver County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "YPO",
+                "company_website": "https://on.ypo.org/2NgPIxp",
+                "professional_network_id": "16041",
+                "title": "Primary Member - Aspen Chapter",
+                "description": "Sydney Pacific Chapter (2023-2025)",
+                "employment_type": "",
+                "start_date": "2023-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 818526,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6772caac48168fac3b4cb9a7a345d89dfa0b9c43499771bc17d9b97b43864a45.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ypoglobal",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 10602,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2291145410,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Irving, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Irving",
+                  "Dallas County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Reach Alts",
+                "company_website": "http://www.reachalts.com.au",
+                "professional_network_id": "74742482",
+                "title": "Seed Investor",
+                "description": "For years, retail investors have yearned to access the biggest private equity funds globally. But without a $20m cheque and the ability to lock your liquidity up for 10+ years it's been impossible. Until now...\n\nReach Alternative Investments is democratising global instituional-grade private equity opportunities for sophisticated retail investors in the APAC region.",
+                "employment_type": "",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 829071,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0e05c94dcccb2ffa7058f7d40c1c9a793de24dc0a402003312ec2699547496d7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/reachalts",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 12,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Investment Management",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Investment Management",
+                "position_id": 1949521785,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Australia",
+                "company_hq_location": "Millers Point, Sydney, The Rocks, Haymarket, Dawes Point, Barangaroo, Darling Harbour, Sydney South, Parliament House, New South Wales, Australia",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Antler",
+                "company_website": "http://www.antler.co",
+                "professional_network_id": "27221633",
+                "title": "Limited Partner",
+                "description": "Antler is a global early-stage venture capital firm that invests in the defining technology companies of tomorrow. The firm has offices across six continents and most major entrepreneurial hubs. \n\nI have invested in the Antler Global Fund, which invests in Series A of the best Antler portfolio companies from around the world. As well as the UK Early Stage Fund, which invests Pre-Seed in the finest British entrepreneurs.",
+                "employment_type": "",
+                "start_date": "2021-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 698199,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b7e828d0906d649993f9248efc7b0ecca7c912d4d46da7bb334639446de6c609.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/antlerglobal",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 1516,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1830149642,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Singapore",
+                "company_hq_location": "Prinsep Street, Singapore",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 63244,
+        "basic_profile": {
+          "name": "Piers Symons",
+          "professional_network_name": "Piers Symons",
+          "headline": "Earlytrade COO & Co-founder",
+          "current_title": "Chief Operating Officer & Co-founder",
+          "normalized_title": {
+            "matched_title": "Chief Operating Officer & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5fa53b34f3a97d820ee1016d10dba8a2fa40fb9ebb80a8e3028410d825ee8c66.jpg",
+          "location": {
+            "city": "Denver",
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver, Colorado, United States",
+            "full_location": "Denver, Colorado, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/pierssymons"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Earlytrade",
+                "company_website": "https://earlytrade.com",
+                "professional_network_id": "19140865",
+                "title": "Chief Operating Officer & Co-founder",
+                "description": "Earlytrade is the largest working capital marketplace in Australia and New Zealand and has been listed by The Australian Financial Review BOSS Magazine as the No. 2 most innovative technology company in Australia & New Zealand and the No. 1 construction solution in technology category.\n\nFounded in 2016, Earlytrade has become a trusted source of liquidity through B2B early payments for more than 75,000 businesses across APAC. Earlytrade continues to expand and evolve its software solutions for enterprise clients including ASX 200 firms and forward-thinking APAC business leaders who wish to overcome the biggest issues in their supply chains including modern slavery, decarbonisation and economic inequality.",
+                "location": {
+                  "raw": "Sydney, New South Wales, Australia"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 668611,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8af21855c9e2a8053b651f78d41693259d5bca7360b04dfa2860a13df9c25248.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/earlytrade",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1705810004,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Denver, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Denver",
+                  "Denver County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

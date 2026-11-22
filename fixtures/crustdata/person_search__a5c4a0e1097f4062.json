@@ -1,0 +1,298 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "lambentspaces.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 40422,
+        "basic_profile": {
+          "name": "Richard Scannell",
+          "professional_network_name": "Richard Scannell",
+          "headline": "CEO Lambent",
+          "current_title": "Chief Executive Officer",
+          "normalized_title": {
+            "matched_title": "Chief Executive Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5673f4e3b5fe12d2c1ee3ba74a423f310f31b7430bef55a416e6bd5e49c1f338.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/richardscannell"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lambent",
+                "company_website": "http://www.lambentspaces.com",
+                "professional_network_id": "22301120",
+                "title": "Chief Executive Officer",
+                "description": "Lambent is a Boston-based software company for smart space planning. Its SaaS platform leverages AI to deliver occupancy analytics for space optimization at corporate campuses and colleges. The Lambent Spaces platform leverages an existing data source (Wi-Fi) to provide anonymous and predictive analytics. The software delivers actionable intelligence so facilities professionals and space planners can make better use of the spaces they have. For more information, visit https://lambentspaces.com/.",
+                "location": {
+                  "raw": "Boston, MA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/12ccabccf6f9f953b113f867ef55c76b76de213adca7cc9fb0a3cb6210e295df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lambentspaces",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 46,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2001822416,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 40423,
+        "basic_profile": {
+          "name": "Julie Roberts",
+          "professional_network_name": "Julie (Johnson) Roberts",
+          "headline": "Co-Founder & Chief Strategy Officer, Lambent | BBJ 40 under 40",
+          "current_title": "Co-Founder & Chief Strategy Officer",
+          "normalized_title": {
+            "matched_title": "Co-Founder & Chief Strategy Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Corporate Strategy & Business Development",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7b2b1f3732bd3c881590ed1d7cefb1935f299240da5fcd761603e229d48ed0d8.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/juliejohnsonroberts"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "Armored_Jewels"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lambent",
+                "company_website": "http://www.lambentspaces.com",
+                "professional_network_id": "22301120",
+                "title": "Co-Founder & Chief Strategy Officer",
+                "description": "Lambent's Occupancy Analytics platform Lambent Spaces provides actionable intelligence for smart space planning. Wi-Fi powered data, shaped with AI.\n\nOur vision is to empower the creation of smarter and more sustainable spaces everywhere, and put strategic data at the heart of every decision.\n\nCo-Founder, Chief Strategy Officer, Board Member\nFormer CEO (July 2019 - July 2022)\nwww.lambentspaces.com",
+                "location": {
+                  "raw": "Greater Boston Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2016-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/12ccabccf6f9f953b113f867ef55c76b76de213adca7cc9fb0a3cb6210e295df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lambentspaces",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 46,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 897723831,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 867514,
+        "basic_profile": {
+          "name": "Alex Baker",
+          "professional_network_name": "Alex Baker",
+          "headline": "Chief Data Scientist at Lambent",
+          "current_title": "Chief Data Scientist",
+          "normalized_title": {
+            "matched_title": "Chief Data Scientist",
+            "department": "Data & Analytics",
+            "sub_department": "Data Science & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d061867a9b9a207ab10ddacb9f87099c97f36cbb8326ab8543bae9bafc48b30e.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Boston",
+            "full_location": "Greater Boston"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alex-baker-093b5329"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lambent",
+                "company_website": "http://www.lambentspaces.com",
+                "professional_network_id": "22301120",
+                "title": "Chief Data Scientist",
+                "description": "Researching and developing cutting-edge approaches to combining data from numerous sources, enabling customers to learn about the past, present, and future occupancy of their spaces.\n\nLeading the development of a best-in-class video analytics platform that analyzes data from hundreds of cameras and anonymously counts people in real time.\n\nApplying my background in software design, visualization, and large-scale data analysis to support Armored Things' sales, user experience, and engineering teams.",
+                "location": {
+                  "raw": "Greater Boston Area"
+                },
+                "employment_type": "",
+                "start_date": "2018-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712181,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/12ccabccf6f9f953b113f867ef55c76b76de213adca7cc9fb0a3cb6210e295df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lambentspaces",
+                "seniority_level": "CXO",
+                "function_category": "Research",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 46,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1336708384,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Boston, Massachusetts, United States",
+                "company_hq_location_address_components": [
+                  "Boston",
+                  "Suffolk County",
+                  "Massachusetts",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8ABQrsV4xZ2q7LDkbixg7G-O_G8_vA67Ljvex87jA7qFoCFfGJIqMQaWTW1KpqZt148yt6iUISybNYNsRqKFYC1kZrg8nB2Y8Bs7tVKjmk--Rg9MGPRfv1_EP-_gIAAP__rj19jHYAAAA=",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

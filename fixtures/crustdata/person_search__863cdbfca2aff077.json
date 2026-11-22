@@ -1,0 +1,292 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "raylu.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 614229,
+        "basic_profile": {
+          "name": "Samuel Ilkka",
+          "professional_network_name": "Samuel Ilkka",
+          "headline": "Co-Founder & COO of Raylu",
+          "current_title": "Co-Founder, COO",
+          "normalized_title": {
+            "matched_title": "COO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9838,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cc068085be6822721e5ed6d0face19ba6932c68b9b3032f4d61c474b3a0def3f.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/samuel-ilkka-1414b5128"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Raylu",
+                "company_website": "https://www.raylu.ai/",
+                "professional_network_id": "89624197",
+                "title": "Co-Founder, COO",
+                "description": "Raylu is AI for financial services, helping firms identify signals from noise across the opportunities they see. Never again waste your efforts on deals that are a no-go or pass on hidden gem opportunities driving returns for your competitors - focus your fund's resources only on the most important information with AI that collects, analyzes, and organizes deal data so you always make the right decision.",
+                "employment_type": "Full-time",
+                "start_date": "2022-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 700958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a4ee4835336ecab35389be43b2d79d0833b51c957d98753366d2a454afbd0d1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/raylu-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 34,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2009491243,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 42527399,
+        "basic_profile": {
+          "name": "Frankie Freeman",
+          "professional_network_name": "Frankie Freeman",
+          "headline": "Chief of Staff @ Raylu",
+          "current_title": "Chief of Staff",
+          "normalized_title": {
+            "matched_title": "Chief of Staff",
+            "department": "Executive Leadership",
+            "sub_department": "Executive Support & Coordination",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Cambridge",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Cambridge, Massachusetts, United States",
+            "full_location": "Cambridge, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/frankie-freeman"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Raylu",
+                "company_website": "https://www.raylu.ai/",
+                "professional_network_id": "89624197",
+                "title": "Chief of Staff",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 700958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a4ee4835336ecab35389be43b2d79d0833b51c957d98753366d2a454afbd0d1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/raylu-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 34,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2936081921,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 115662906,
+        "basic_profile": {
+          "name": "Ali Dastjerdi",
+          "professional_network_name": "Ali Dastjerdi",
+          "headline": "Co-Founder & CEO at Raylu | Building AI That Helps Investors Think Faster and Decide Smarter",
+          "current_title": "Co-founder, CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder, CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2f509955ff9aa7ea9d52764d205aa2b11e257c67d12beef8230f49f1bfb2b5d0.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ali-dastjerdi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Raylu",
+                "company_website": "https://www.raylu.ai/",
+                "professional_network_id": "89624197",
+                "title": "Co-founder, CEO",
+                "description": "Raylu is AI for financial services, helping firms identify signals from noise across the opportunities they see. Never again waste your efforts on deals that are a no-go or pass on hidden gem opportunities driving returns for your competitors - focus your fund's resources only on the most important information with AI that collects, analyzes, and organizes deal data so you always make the right decision.",
+                "location": {
+                  "raw": "New York, New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 700958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a4ee4835336ecab35389be43b2d79d0833b51c957d98753366d2a454afbd0d1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/raylu-ai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 34,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2009484837,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ6CMAwA0F9Zeuawlq6u_IoxpCssHIyLMA7G-O-G8_vC-1z3z7zZscEUwHPM7JQrFUc3icqExRkVXWRNOtqNtZhI1lhtMSzC4-JcoydGgiHA0fYOU7gjJhHSKI8hQG_dnrO383UZ__4BAAD__6LNbzl5AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "trustero.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.23,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 23581,
+        "basic_profile": {
+          "name": "Phillip Liu",
+          "professional_network_name": "Phillip Liu",
+          "headline": "Founder & CEO at Trustero | Making compliance continuous, not annual | AI-native GRC | Previously: SignalFx (acq. Splunk $1B+)",
+          "current_title": "Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/55d97d92fe94b542fa6025a11e59485956e53cb64a4e75f4809555c67d47e44d.jpg",
+          "location": {
+            "city": "Palo Alto",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Palo Alto, California, United States",
+            "full_location": "Palo Alto, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/liuphillip"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Trustero",
+                "company_website": "https://www.trustero.com/",
+                "professional_network_id": "78375136",
+                "title": "Founder & CEO",
+                "description": "Trustero is the AI-native GRC platform. Our multi-agent AI automates the work that used to require humans and expensive consultants: control testing, evidence collection and management, gap analysis, questionnaire response and assessment, custom GRC AI agents, and continuous compliance monitoring. The patented Trust Graph connects your cloud providers, GRC platforms, and identity systems to deliver an AI context for accurate, audit-ready intelligence on demand.\n\nCustomers use Trustero to:\n\n    - Achieve NIST, FFIEC, EU AI Act, ISO 42001, SOC 2, ISO 27001, HIPAA, FedRAMP, PCI DSS, and more\n    - Cut audit prep from months to weeks\n    - Answer 300-question questionnaires in minutes\n    - Integrate AI into existing platforms (Archer, MetricStream, OnSpring, Open Pages)\n\ntrustero.com",
+                "location": {
+                  "raw": "Silicon Valley, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654459,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a688bdcd5e4e3fb622c0133264d2d14b94d56d67383d59eccda5dea13c6bf117.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trustero",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 23,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 1936423147,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 1,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

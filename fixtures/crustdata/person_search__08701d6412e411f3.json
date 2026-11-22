@@ -1,0 +1,537 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "1mind.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 505272,
+        "basic_profile": {
+          "name": "Tim Busbin",
+          "professional_network_name": "Tim Busbin",
+          "headline": "GTM @ 1mind",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8cf64160a0bf87537abb215c5bd62ac2d6c43a3df5186dd7f8062d3168b6dde9.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/timbusbin"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "1mind",
+                "company_website": "http://1mind.com",
+                "professional_network_id": "103324312",
+                "title": "GTM",
+                "description": "Changing how teams GTM with Superhumans.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710612,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f37f0b522c4c5af44c60df95f3024c7258eaddecbc48f0d01ceede2e80b0e407.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/1mindai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 141,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2967808389,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1048925,
+        "basic_profile": {
+          "name": "Katie Nocerino",
+          "professional_network_name": "Katie Nocerino",
+          "headline": "Founding Member at Pavilion Gold",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/cc858473b1bf3bdb7a82d652d821b26ec34ad270ec2e0703bd6e664035c104b8.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Los Angeles Metropolitan Area",
+            "full_location": "Los Angeles Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/katienocerino"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "1mind",
+                "company_website": "http://1mind.com",
+                "professional_network_id": "103324312",
+                "title": "GTM",
+                "description": "I lead humans & Superhumans in Sales, RevOps, Solutions Engineering & Enablement at 1mind. We build GTM Superhumans that will change the trajectory of your business. We are pioneering AI Led Growth (AILG), which will provide a delightful, efficient customer experience and groundbreaking ROI.",
+                "location": {
+                  "raw": "Los Angeles, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710612,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f37f0b522c4c5af44c60df95f3024c7258eaddecbc48f0d01ceede2e80b0e407.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/1mindai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 141,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2527722101,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion Gold",
+                "company_website": "https://www.joinpavilion.com/gold/",
+                "professional_network_id": "112952160",
+                "title": "Founding Member",
+                "description": "Founding Member of Pavilion Gold, a highly selective network of CROs, CMOs, and senior GTM operators. Participating in confidential peer councils, off-the-record discussions, and curated introductions designed to sharpen decision-making and drive better outcomes at scale.",
+                "employment_type": "",
+                "start_date": "2026-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 31250210,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f6e764ee3b257a08d2a8b3ad863564ec569e4d8ad207644ed6977e5171eaca63.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pavilion-gold",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 32,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Industry Associations",
+                  "Civic and Social Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Industry Associations",
+                "position_id": 3061754275,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Primary Venture Partners",
+                "company_website": "http://www.primary.vc",
+                "professional_network_id": "1381092",
+                "title": "Expert",
+                "description": "As an Expert, I provide strategic advice and guidance to the investment team and founders within the Primary portfolio and broader network. Experts enjoy access to early-stage businesses, emerging trends and technology, and an expanded network of exceptional leaders and resources through a top-tier seed-stage firm.\n\nPrimary is New York City\u2019s premier early-stage venture firm working alongside founders to build unicorns like Alloy, Alma, Chief, Dandy Electric, Latch, K Health, Stellar Health, Slice, and many more.",
+                "location": {
+                  "raw": "Los Angeles, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1043370,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/32ff8ead66aa5948b2ce3eccfbc8bbd21894f3c5201a115ca675e60fa693b032.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/primary-venture-partners",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 810,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Investment Management",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Investment Management",
+                "position_id": 2565716938,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "ReachSuite.io (acquired)",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Advisor",
+                "description": "Strategic advisor to the Co-Founder and CEO",
+                "location": {
+                  "raw": "Los Angeles, California, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2261499485,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Stage 2 Capital",
+                "company_website": "http://www.stage2.capital",
+                "professional_network_id": "35523567",
+                "title": "Limited Partner, Stage 2 Capital Catalyst",
+                "description": "The Stage 2 Capital Catalyst supports early stage B2B software companies in scaling their businesses by combining Venture Capital and Go-To-Market, empowering founders with hands-on coaching from an unrivaled network of go-to-market leaders.",
+                "location": {
+                  "raw": "Los Angeles, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2022-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1044874,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8dae7c4853b9f6853d39feed06c8097424415dd09bde2e1cb6d325a4cda544ed.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/stage-2-capital",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 742,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2062284325,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Virtual, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Member",
+                "description": "",
+                "location": {
+                  "raw": "Los Angeles, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2020-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1705426612,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1052445,
+        "basic_profile": {
+          "name": "Roc\u00edo Belen Romero",
+          "professional_network_name": "Roc\u00edo Belen Romero",
+          "headline": "Currently driving pipeline for 1mind | Founding GTM at Outera | Building ops from the inside",
+          "current_title": "Senior GTM Strategist",
+          "normalized_title": {
+            "matched_title": "GTM Strategy",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9821,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b4d47def110473ea9e8fffad80af8aa6a19cee5db5990be73fb9699c8896eb92.jpg",
+          "location": {
+            "city": "Rosario",
+            "state": "Santa Fe Province",
+            "country": "Argentina",
+            "continent": "South America",
+            "raw": "Rosario, Santa Fe, Argentina",
+            "full_location": "Rosario, Santa Fe, Argentina"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/roc\u00edo-belen-romero-a97977246"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "1mind",
+                "company_website": "http://1mind.com",
+                "professional_network_id": "103324312",
+                "title": "Senior GTM Strategist",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco y alrededores"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 710612,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f37f0b522c4c5af44c60df95f3024c7258eaddecbc48f0d01ceede2e80b0e407.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/1mindai",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 141,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3009111509,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Outera",
+                "company_website": "https://outera.io/",
+                "professional_network_id": "112217084",
+                "title": "Founding GTM",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 31434810,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f4fde0a4b836a347c75b8396c64dd5976924ef11feb9434c46164b23e5588ca5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/outera-io",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 28,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2905736281,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Miami, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Miami",
+                  "Miami-Dade County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMarDMAwA0KsYzRkkf9uycpVPCZKjkKHUNHGGUnr30vm94Xn58Vp2PXeYA1BOvP1lN15TjVWqSmksSK0gk6GYKUc3ahtmcUZzc13JsWoSLDAFOPsxYA7_hDmmlG9TgNGH3pfWr8dPony-AQAA__-ZjFw1eAAAAA==",
+    "total_count": 29,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

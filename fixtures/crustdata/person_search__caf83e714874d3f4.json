@@ -1,0 +1,312 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "vectara.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 950584,
+        "basic_profile": {
+          "name": "Joe Lee",
+          "professional_network_name": "Joe Lee",
+          "headline": "Enterprise Revenue & GTM Executive | Build AI Go-to-Market Engines | Semiconductor Expertise",
+          "current_title": "Vice President of Global Sales",
+          "normalized_title": {
+            "matched_title": "Vice President of Global Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "International & Global Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dcdaf67582bb7212a999c4c75a17e829951a8f9d3968421a3c9f8207af4439c1.jpg",
+          "location": {
+            "city": "Sunnyvale",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Sunnyvale, California, United States",
+            "full_location": "Sunnyvale, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/leejosephm"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vectara",
+                "company_website": "https://vectara.com/",
+                "professional_network_id": "82856836",
+                "title": "Vice President of Global Sales",
+                "description": "Recruited to lead global enterprise go-to-market during Vectara\u2019s transition from early traction to enterprise-grade adoption in highly regulated and security-sensitive environments. \n\nVectara Reports Record First-Half Momentum with Surging Revenue and Marquee Enterprise Wins. Over 100% New Revenue Growth in 2026. Broadcom (NASDAQ:AVGO)\n\nGetting agents to operate correctly in production involves combining complex components in the right way. Vectara has proven the platform can do this well especially when multimodal data is involved.\u201d\n\u2014 Alan Davidson, Chief Information Officer, Broadcom\n\nVectara, the trusted enterprise platform for building Agentic and RAG solutions that run on-premise, in VPC, and in SaaS today announced record momentum for the first half of 2026. The company more than doubled its revenue year over year, fueled by a wave of new enterprise deployments, expanded usage at marquee accounts, and a series of strategic AI partner certifications. Enterprises moved agentic AI from experimentation into production and standardized on Vectara to keep those systems accurate, while enabling new applications around failure analysis remediation, contract lifecycle management, and faster manufacturing design and build efficiency.\n\nBuilt and led the global enterprise sales motion for the global team.",
+                "location": {
+                  "raw": "Palo Alto, CA"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 811946,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7a715d6a1a7364410da192014916fcf8a5cf08061529b0bc2e9953a91d0be2e9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vectara",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 71,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2450767181,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1159241,
+        "basic_profile": {
+          "name": "Laxman Dhamsam",
+          "professional_network_name": "Laxman Dhamsam",
+          "headline": "Data Analytics, Ai ML tech Global Business Leader",
+          "current_title": "Head of Sales & Partnerships, MEA & APAC",
+          "normalized_title": {
+            "matched_title": "Vice President of Sales and Partnerships",
+            "department": "Sales & Revenue",
+            "sub_department": "Channel & Partner Sales",
+            "similarity": 0.9351,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e8e80e0a1399bb34895bb68c11bf1e8324c634030c86b3d1230d2a794b314c85.jpg",
+          "location": {
+            "city": "Dubai",
+            "state": "Dubai",
+            "country": "United Arab Emirates",
+            "continent": "Asia",
+            "raw": "Dubai, United Arab Emirates",
+            "full_location": "Dubai, United Arab Emirates"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/laxman-dhamsam-456a745"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vectara",
+                "company_website": "https://vectara.com/",
+                "professional_network_id": "82856836",
+                "title": "Head of Sales & Partnerships, MEA & APAC",
+                "description": "",
+                "location": {
+                  "raw": "Dubai, United Arab Emirates"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 811946,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7a715d6a1a7364410da192014916fcf8a5cf08061529b0bc2e9953a91d0be2e9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vectara",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 71,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2696946341,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1536860,
+        "basic_profile": {
+          "name": "Andy Fung",
+          "professional_network_name": "Andy Fung",
+          "headline": "Go-to-Market at Vectara",
+          "current_title": "Founding GTM",
+          "normalized_title": {
+            "matched_title": "Founding GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9646,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/andy-fung-695a8b31"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Vectara",
+                "company_website": "https://vectara.com/",
+                "professional_network_id": "82856836",
+                "title": "Founding GTM",
+                "description": "Vectara is an enterprise AI agent platform trusted by Broadcom, SanDisk, and Compass. \n\nMost engineering teams at large manufacturers sit on decades of institutional knowledge in FA reports, process docs, design specs, and equipment manuals spread across a dozen systems, inconsistently tagged and impossible to search.\n\nWhen an excursion hits or a failure comes in, engineers spend hours hunting for an answer that might be buried in a 2003 PDF.\n\nVectara fixes that. It makes your entire knowledge base instantly searchable in plain language, with every answer cited back to the source document so engineers get the right answer in seconds, not days, and hallucination rates drop under 1%.\n\nSanDisk went from 40% to 91% retrieval accuracy. Broadcom\u2019s support deflection went from 33% to 95%. Runs on-prem, air-gapped, or SaaS; your IP stays yours.",
+                "employment_type": "",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 811946,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7a715d6a1a7364410da192014916fcf8a5cf08061529b0bc2e9953a91d0be2e9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vectara",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 71,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2953925485,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe_QZGmT7ldERloydhCLW3cQ8d_F8_vA6_Ljve527rAEEM-MG1pKrBVbRHcimc0KVWVOM1kuEjeRwqKxaanV0I3UiK1EmAKc_RiwhBumOWuO9ynA6MMea-vX8y_5-wsAAP__UE_byncAAAA=",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

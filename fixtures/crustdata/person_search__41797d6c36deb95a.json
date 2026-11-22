@@ -1,0 +1,353 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "flagright.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 4446583,
+        "basic_profile": {
+          "name": "Michael Lopez",
+          "professional_network_name": "Michael Lopez",
+          "headline": "Sales Director at Flagright",
+          "current_title": "Sales Director",
+          "normalized_title": {
+            "matched_title": "Sales Director",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/253f6e486337300d059448d48a587e88f15d9886ea6afdb5790467e59c99954d.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/michael-lopez-sales-leader"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flagright",
+                "company_website": "https://link.flagright.com/LinkedIn",
+                "professional_network_id": "72378279",
+                "title": "Sales Director",
+                "description": "Flagright arms financial institutions with best-in-class technology to combat financial crime and meet AML compliance regulations. Our AI-native, no-code platform can be integrated within a week thanks to our API-first approach, drastically undercutting the industry standard of 2\u20134 months. Flagright's comprehensive product suite includes real-time transaction monitoring, customer risk scoring, merchant monitoring, case management, and sanctions screening, among other industry-leading features. Unique to the market, our AI Forensics module equips fincrime fighters with an immersive investigative experience that drives vigilance and operational efficiency in financial crime prevention. \n\nContact me to learn more or visit Flagright's website: https://flagright.com/contact.",
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810685,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81ee61909436bff09afc037e0b637df77313182e9f163a72e4e9f9aa8fb4b005.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flagright",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3038378709,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 23014715,
+        "basic_profile": {
+          "name": "Joe Tressitt",
+          "professional_network_name": "Joe Tressitt",
+          "headline": "GTM Sales Leader @ Flagright | Ex-Palantir, Ex-Blackrock",
+          "current_title": "GTM | NORAM Sales Lead",
+          "normalized_title": {
+            "matched_title": "Director of North American Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.7922,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6d49feb5714921c52614503e2c98a79358268e5cf961d200ead2f8fd5a4b0680.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/josephtressitt"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flagright",
+                "company_website": "https://link.flagright.com/LinkedIn",
+                "professional_network_id": "72378279",
+                "title": "GTM | NORAM Sales Lead",
+                "description": "Flagright arms financial institutions with the best-in-class technology to combat financial crime and meet AML compliance regulations. Our AI-native, no-code platform can be integrated within a week thanks to our API-first approach, which drastically undercuts the industry standard of 2-4 months. Flagright's comprehensive product suite includes real-time transaction monitoring, customer risk scoring, merchant monitoring, case management, and sanctions screening among other industry-leading features. Unique to the market, our AI Forensics module equips fincrime fighters with an immersive investigative experience that drives vigilance and operational efficiency in financial crime prevention efforts. \n\nContact me to hear more or visit: https://flagright.com/contact",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810685,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81ee61909436bff09afc037e0b637df77313182e9f163a72e4e9f9aa8fb4b005.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flagright",
+                "seniority_level": "Senior",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2929456488,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 94794663,
+        "basic_profile": {
+          "name": "Amy Cleall",
+          "professional_network_name": "Amy Cleall",
+          "headline": "Sales Director, EMEA & APAC at Flagright",
+          "current_title": "Sales Director, EMEA & APAC",
+          "normalized_title": {
+            "matched_title": "Sales Director - APAC",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9421,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/51371af27da653706b258fdf48da2e50903a1dceb75c6866ecb6ccccb790664f.jpg",
+          "location": {
+            "city": "London",
+            "state": "England",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "London, England, United Kingdom",
+            "full_location": "London, England, United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/amychestnutt"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "ARCDigital_NI"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Flagright",
+                "company_website": "https://link.flagright.com/LinkedIn",
+                "professional_network_id": "72378279",
+                "title": "Sales Director, EMEA & APAC",
+                "description": "Leading the EMEA and APAC Account Executive teams at Flagright.",
+                "location": {
+                  "raw": "London"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810685,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81ee61909436bff09afc037e0b637df77313182e9f163a72e4e9f9aa8fb4b005.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flagright",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3044155418,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Flagright",
+                "company_website": "https://link.flagright.com/LinkedIn",
+                "professional_network_id": "72378279",
+                "title": "Commercial Director EMEA",
+                "description": "Flagright arms financial institutions with the best-in-class technology to combat financial crime and meet AML compliance regulations. Our AI-native, no-code platform can be integrated within a week thanks to our API-first approach, which drastically undercuts the industry standard of 2-4 months. Flagright's comprehensive product suite includes real-time transaction monitoring, customer risk scoring, merchant monitoring, case management, and sanctions screening among other industry-leading features. Unique to the market, our AI Forensics module equips fincrime fighters with an immersive investigative experience that drives vigilance and operational efficiency in financial crime prevention efforts.\n\nContact me to hear more or visit https://flagright.com/contact",
+                "location": {
+                  "raw": "London Area, United Kingdom"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 810685,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/81ee61909436bff09afc037e0b637df77313182e9f163a72e4e9f9aa8fb4b005.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/flagright",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 63,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2577998502,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQrCMAwA0F8pOe-wNkmb7FdERq0JO4jFrTuI-O_i-X3gddr-Xrd6bLAEwFsSYeaS5ugxzexmsRAaZiRjRZVGs0rMZCwuVXNLzVWsuNyLwxTg6PuAJVyUilLOeJ0CjD7qY239fP6Jvr8AAAD__0k1fiZ4AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

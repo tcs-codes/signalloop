@@ -61,8 +61,10 @@ def segment_table(df: pd.DataFrame, dims: list[str]) -> pd.DataFrame:
 
 
 def dimension_spread(df: pd.DataFrame, dim: str) -> float:
+    """n-weighted variance of segment reply rates, over segments with n >= LOW_CONFIDENCE_N only:
+    a 10-person segment with 3 replies must not decide which dimensions get combined."""
     t = segment_table(df, [dim])
-    t = t[t["n"] >= MIN_N_SHOW]
+    t = t[(t["n"] >= LOW_CONFIDENCE_N) & (t["segment_value"] != "unknown")]
     if len(t) < 2:
         return 0.0
     mean = (t["rate"] * t["n"]).sum() / t["n"].sum()

@@ -1,0 +1,541 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "clarasight.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 11181,
+        "basic_profile": {
+          "name": "Philip Charm",
+          "professional_network_name": "Philip Charm",
+          "headline": "Co-Founder, Clarasight \u00b7 the AI platform for trusted travel data, decisions, and automation",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4aa2fb8317a0bd27c4ba1a876dc00db3693f59c5a0ea3a9d01357656aa941b2a.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Boston",
+            "full_location": "Greater Boston"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/philipcharm"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "PhilipCharm"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Co-Founder",
+                "description": "The AI-powered Operating System for Corporate Travel - trusted by the world's leading enterprises who view travel as a driver of value and not just a cost of doing business.",
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1919713084,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Member",
+                "description": "",
+                "location": {
+                  "raw": "Boston, Massachusetts, United States"
+                },
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1843392592,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "QuotaPath",
+                "company_website": "https://www.quotapath.com",
+                "professional_network_id": "28183843",
+                "title": "Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 635043,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f76d10123684f3a619eb8524e8c3135d0daa4dfc4708b395e3628af721e0d8e1.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/quotapath",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 91,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1991344393,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Philadelphia, Pennsylvania, United States",
+                "company_hq_location_address_components": [
+                  "Philadelphia",
+                  "Philadelphia County",
+                  "Pennsylvania",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "NextGen Venture Partners",
+                "company_website": "http://www.nextgenvp.com/",
+                "professional_network_id": "5093204",
+                "title": "Venture Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2017-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1066462,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8f060659082aaa88dcd1ed2f49d3970e8750d5b97e3bc34d4dd5d34d1f3d8751.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/nextgen-venture-partners",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 444,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1781769931,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Charm & Associates",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Advisor & Investor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2012-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 14,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 1781774245,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 11183,
+        "basic_profile": {
+          "name": "Adam Braun",
+          "professional_network_name": "Adam Braun",
+          "headline": "CEO at Clarasight | 3X Entrepreneur",
+          "current_title": "CEO & Co-Founder",
+          "normalized_title": {
+            "matched_title": "CEO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/036d6903dcd69d95bfe847d05adf8552c4cfc326fd2a1f6ab88983c6ab154c0b.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/arbraun"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "AdamBraun"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "CEO & Co-Founder",
+                "description": "The AI Platform for Enterprise Travel & Expense - trusted by the world's leading enterprises with customers representing more than $5B of travel spend.",
+                "employment_type": "Full-time",
+                "start_date": "2021-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1861901667,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Pencils of Promise",
+                "company_website": "http://www.pencilsofpromise.org/",
+                "professional_network_id": "969174",
+                "title": "Board Chair",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 808590,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1ee0f24ce45268628cbb2ccfc24734815172dd1680b0cb76fd2afc0804093777.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/pencils-of-promise",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 128,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2714493437,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 116349483,
+        "basic_profile": {
+          "name": "Zachary Campbell",
+          "professional_network_name": "Zachary Campbell",
+          "headline": "Community and Growth Manager at Clarasight",
+          "current_title": "Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9ba1de0c70a6b8a47a797bc698b955b38261a06f5e0c967082b2272480f60892.jpg",
+          "location": {
+            "city": null,
+            "state": "Quebec",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Greater Montreal Metropolitan Area",
+            "full_location": "Greater Montreal Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/campbellzachary"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Growth",
+                "description": "Building and managing Clarasight\u2019s SDR function and outbound motion, including managing SDRs and developing a scalable outbound engine, while growing CTAN, a 350+ member community for corporate travel leaders focused on AI.",
+                "location": {
+                  "raw": "Canada"
+                },
+                "employment_type": "Permanent Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2995785657,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Corporate Travel AI Network (CTAN)",
+                "company_website": "https://www.clarasight.com/community",
+                "professional_network_id": "113256270",
+                "title": "Community Lead & Co-founder",
+                "description": "Founded and lead the Corporate Travel AI Network (CTAN), an independent, buyer-only community bringing corporate travel leaders together to rethink how travel programs need to operate in an AI-first world.\n\nIn our first 12 months, CTAN grew to 350+ members, including leaders from some of the largest and most complex corporate travel programs in the world.\n\nI lead the strategy and growth of the community, including hands-on AI learning cohorts, peer-led show-and-tell sessions, 1:1 member connections, workshops, dinners, and other programming designed to help travel leaders learn from one another and put AI into practice.\n\nIn October 2026, we're launching Jetstream, our first in-person CTAN Summit in New York City.\n\nOur mission is bigger than learning how to use new AI tools. We're building a community of travel leaders who are collectively rethinking how their teams work, the skills they need, and what's possible for the next generation of corporate travel programs.",
+                "employment_type": "Permanent Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 67795096,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/corporate-travel-ai-network",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Artificial Intelligence"
+                ],
+                "company_professional_network_industry": "Artificial Intelligence",
+                "position_id": 3021772991,
+                "company_type": "Partnership",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Clarasight",
+                "company_website": "http://www.clarasight.com",
+                "professional_network_id": "76607316",
+                "title": "Co-Founder, Corporate Travel AI Network",
+                "description": "Co-founded the Corporate Travel AI Network, a community of 300+ corporate travel, procurement, finance, and expense leaders exploring the impact of AI on corporate travel.\n\nBuilt the network to create a trusted forum for practitioners to share AI use cases, discuss emerging technologies, exchange best practices, and collaborate on the future of business travel and expense management.\n\nThe community hosts peer discussions, expert sessions, workshops, and networking opportunities focused on operational efficiency, spend optimization, traveler experience, policy compliance, and intelligent decision-making.\n\nLearn more: https://www.clarasight.com/community",
+                "location": {
+                  "raw": "Canada"
+                },
+                "employment_type": "",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 691363,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3db344c9bfcdee843e4a1a3ab4721301dbd7b99955c6808ed2c6de497eeadd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/clarasight-cpa",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2945134510,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9AoUXYrxizlNJlByNxYwdj_Hez8_vC-7T9s2xybDA70LxS85SMWVpBsiZcWKSWwBJMcsRKFKtpVUrIueEtr74EUUveEkwOjr4PmN0dMUUqlONjcjD6kOei_XxdFn__AAAA___uZU6zeQAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

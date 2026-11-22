@@ -1,0 +1,695 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "matiks.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 27915881,
+        "basic_profile": {
+          "name": "Adyasha K.",
+          "professional_network_name": "Adyasha K.",
+          "headline": "MarCom & Design",
+          "current_title": "Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a69a1065ff5e4ad5d83caed68a30cf15c24ca7054856776aa1c5d558b17174fe.jpg",
+          "location": {
+            "city": "Bengaluru Urban",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bangalore Urban, Karnataka, India",
+            "full_location": "Bangalore Urban, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/adyasha-k-8640ba287"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Matiks",
+                "company_website": "https://www.matiks.com/apps",
+                "professional_network_id": "104755330",
+                "title": "Growth",
+                "description": "",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Internship",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1510677,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/13ac03763f977efa1e0124f3aea4174b120473c22d03eb3b9ea8b92bc0cbc1fe.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/matiksplay",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 80,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Mobile Gaming Apps",
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Mobile Gaming Apps",
+                "position_id": 3001187192,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Bengaluru South, Karnataka, India",
+                "company_hq_location_address_components": [
+                  "Bengaluru South",
+                  "Bengaluru Urban",
+                  "Bangalore Division",
+                  "Karnataka",
+                  "India"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Indiebhindy",
+                "company_website": "https://www.instagram.com/indiebhindy?igsh=MWJjZm9taHFtb2xsNw==",
+                "professional_network_id": "109732075",
+                "title": "Art contributor",
+                "description": "",
+                "location": {
+                  "raw": "Assam, India"
+                },
+                "employment_type": "",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 68844137,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/indiebhindy",
+                "seniority_level": "Entry Level",
+                "function_category": "Arts and Design",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Musicians",
+                  "Entertainment Providers"
+                ],
+                "company_professional_network_industry": "Musicians",
+                "position_id": 2885693727,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 67480052,
+        "basic_profile": {
+          "name": "T. Satish Kumar Patro",
+          "professional_network_name": "T. Satish Kumar Patro",
+          "headline": "Adobe | Matiks | Teachbetter.ai | travelPaa || Data Analyst | UX/UI Designer | SARC Convenor | Senior Analyst @Analytics and Consulting Club",
+          "current_title": "Product & Growth intern",
+          "normalized_title": {
+            "matched_title": "Product and Growth Intern",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9992,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a37912b1c04940d922319e6ee69c2449d316e53f42447cc2053853ac66693989.jpg",
+          "location": {
+            "city": "Brahmapur",
+            "state": "Odisha",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Brahmapur, Odisha, India",
+            "full_location": "Brahmapur, Odisha, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/satishnitr"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Matiks",
+                "company_website": "https://www.matiks.com/apps",
+                "professional_network_id": "104755330",
+                "title": "Product & Growth intern",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1510677,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/13ac03763f977efa1e0124f3aea4174b120473c22d03eb3b9ea8b92bc0cbc1fe.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/matiksplay",
+                "seniority_level": "In Training",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 80,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Mobile Gaming Apps",
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Mobile Gaming Apps",
+                "position_id": 2882387952,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Bengaluru South, Karnataka, India",
+                "company_hq_location_address_components": [
+                  "Bengaluru South",
+                  "Bengaluru Urban",
+                  "Bangalore Division",
+                  "Karnataka",
+                  "India"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "National Institute of Technology Rourkela",
+                "company_website": "http://www.nitrkl.ac.in/",
+                "professional_network_id": "15250263",
+                "title": "Convenor: Film and Music Society",
+                "description": "",
+                "location": {
+                  "raw": "Raurkela"
+                },
+                "employment_type": "",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6140496,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5bb2e76328f7a10477e7348c76650320980d71d0e1d7fa9779967037740ec3a2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/national-institute-of-technology-rourkela",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1655,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 2988103368,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 8, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Student Alumni Relations Cell, NIT Rourkela",
+                "company_website": "https://alum.nitrkl.ac.in",
+                "professional_network_id": "105001620",
+                "title": "Convenor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6754820,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fcb9d9f0ff101c213df76be988b418e8de968554a7b13f205ed45c6f05202b7c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/student-alumni-relations-cell-nitr",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 22,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 2738744197,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 8, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Analytics and Consulting Club, NIT Rourkela",
+                "company_website": "https://ancnitr.in/",
+                "professional_network_id": "99857118",
+                "title": "Senior Consultant & Head of Design",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2579115,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ef5bdb798d4676146d71134921496a446ceb96ead32e19ca64f65abad2222cb5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/analytics-and-consulting-club",
+                "seniority_level": "Director",
+                "function_category": "Arts and Design",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 109,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2630873942,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Analytics and Consulting Club, NIT Rourkela",
+                "company_website": "https://ancnitr.in/",
+                "professional_network_id": "99857118",
+                "title": "Junior Consultant & Designer",
+                "description": "",
+                "location": {
+                  "raw": "Raurkela, Odisha, India"
+                },
+                "employment_type": "Apprenticeship",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2579115,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ef5bdb798d4676146d71134921496a446ceb96ead32e19ca64f65abad2222cb5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/analytics-and-consulting-club",
+                "seniority_level": "Entry Level",
+                "function_category": "Arts and Design",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 109,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2398962918,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 104796712,
+        "basic_profile": {
+          "name": "Priyal Todi",
+          "professional_network_name": "Priyal Todi",
+          "headline": "CE\u201927@Nitr | Matiks | Ex-NHAI | Ex- EIL",
+          "current_title": "Training Coordinator",
+          "normalized_title": {
+            "matched_title": "Training Coordinator",
+            "department": "People & HR",
+            "sub_department": "Learning & Development",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/51932eb2d3df3e357a1b02afb21a67c1fa98bb3390cf4e2f45158a626662725e.jpg",
+          "location": {
+            "city": "Dibrugarh East",
+            "state": "Assam",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Dibrugarh East, Assam, India",
+            "full_location": "Dibrugarh East, Assam, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/priyal-todi-908307239"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "National Institute of Technology Rourkela",
+                "company_website": "http://www.nitrkl.ac.in/",
+                "professional_network_id": "15250263",
+                "title": "Training Coordinator",
+                "description": "",
+                "location": {
+                  "raw": "Raurkela"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 6140496,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5bb2e76328f7a10477e7348c76650320980d71d0e1d7fa9779967037740ec3a2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/national-institute-of-technology-rourkela",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1655,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 2993456282,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 8, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Student Alumni Relations Cell, NIT Rourkela",
+                "company_website": "https://alum.nitrkl.ac.in",
+                "professional_network_id": "105001620",
+                "title": "Mentor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6754820,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fcb9d9f0ff101c213df76be988b418e8de968554a7b13f205ed45c6f05202b7c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/student-alumni-relations-cell-nitr",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 22,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 2993479554,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 8, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Hourglass NITR",
+                "company_website": "",
+                "professional_network_id": "101412759",
+                "title": "Mentor",
+                "description": "",
+                "location": {
+                  "raw": "Raurkela"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 8034045,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2329f3abbfcc54661a76ac3843e7965afefeab4968f358bb3e089268b41908f7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hourglass-nitr",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 44,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 2914865761,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 10, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Analytics and Consulting Club, NIT Rourkela",
+                "company_website": "https://ancnitr.in/",
+                "professional_network_id": "99857118",
+                "title": "Mentor",
+                "description": "",
+                "location": {
+                  "raw": "Raurkela"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2579115,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ef5bdb798d4676146d71134921496a446ceb96ead32e19ca64f65abad2222cb5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/analytics-and-consulting-club",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 109,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2914885580,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Student Alumni Relations Cell, NIT Rourkela",
+                "company_website": "https://alum.nitrkl.ac.in",
+                "professional_network_id": "105001620",
+                "title": "Design Lead",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6754820,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fcb9d9f0ff101c213df76be988b418e8de968554a7b13f205ed45c6f05202b7c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/student-alumni-relations-cell-nitr",
+                "seniority_level": "Senior",
+                "function_category": "Arts and Design",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 22,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Education Administration Programs",
+                  "Health and Human Services",
+                  "Government Administration"
+                ],
+                "company_professional_network_industry": "Education Administration Programs",
+                "position_id": 2739046120,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 8, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Matiks",
+                "company_website": "https://www.matiks.com/apps",
+                "professional_network_id": "104755330",
+                "title": "Product Growth Intern",
+                "description": "",
+                "employment_type": "Internship",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1510677,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/13ac03763f977efa1e0124f3aea4174b120473c22d03eb3b9ea8b92bc0cbc1fe.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/matiksplay",
+                "seniority_level": "In Training",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 80,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Mobile Gaming Apps",
+                  "Computer Games",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Mobile Gaming Apps",
+                "position_id": 2634337153,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Bengaluru South, Karnataka, India",
+                "company_hq_location_address_components": [
+                  "Bengaluru South",
+                  "Bengaluru Urban",
+                  "Bangalore Division",
+                  "Karnataka",
+                  "India"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Institute Counselling Services, NIT Rourkela",
+                "company_website": "https://www.ics-nitrkl.in/",
+                "professional_network_id": "69899215",
+                "title": "Mentor",
+                "description": "",
+                "location": {
+                  "raw": "Raurkela"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2921090,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6a1095bb68c0c3c3aa990ac2d6abf9a9c88981e51b794e64c43c120bff221e55.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/institute-counselling-services-nit-rourkela",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 58,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2457920488,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "India",
+                "company_hq_location": "Rourkela - 8, Odisha, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_Qpj9J9ioiI10XdhCLW3cQ8d3F8_eB17Ud72XXc4fZAQkqryExU24lZ88RMVJca1EyM2PVVmPymJpJ2pC5YMzkqwSqWWBycPZjwOxuwSeSQgHvk4PRhz6WtV_PvwX6_gIAAP__RGEYtnoAAAA=",
+    "total_count": 17,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

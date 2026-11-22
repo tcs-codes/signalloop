@@ -1,0 +1,289 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "fun.xyz"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 57853,
+        "basic_profile": {
+          "name": "Alex F.",
+          "professional_network_name": "Alex F.",
+          "headline": "Founder & CEO at Fun",
+          "current_title": "Founder & CEO",
+          "normalized_title": {
+            "matched_title": "Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d4ddfd86c81ecd2034f83d6b42f7c5d3cdf5215ffdc20ac6c0b1cf2e439cabf4.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alexkalilfine"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "search4students"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Fun",
+                "company_website": "http://fun.xyz",
+                "professional_network_id": "80248341",
+                "title": "Founder & CEO",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712215,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a12fbe3af78ec32198398eb4b5595d869c00b0b75b53ead3e05fb4a556ebff91.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/funxyz",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 115,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2046361534,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 785355,
+        "basic_profile": {
+          "name": "Jeffrey Caron",
+          "professional_network_name": "Jeffrey Caron",
+          "headline": "CFO @ Fun",
+          "current_title": "CFO",
+          "normalized_title": {
+            "matched_title": "CFO",
+            "department": "Finance & Accounting",
+            "sub_department": "Financial Planning & Analysis",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a09a00342544e19fa0d891aeb7be30cfbd1a59d3a338dcddeb9fe8ea4195a2fb.jpg",
+          "location": {
+            "city": "Boston",
+            "state": "Massachusetts",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boston, Massachusetts, United States",
+            "full_location": "Boston, Massachusetts, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jeffrey-caron-91626163"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Fun",
+                "company_website": "http://fun.xyz",
+                "professional_network_id": "80248341",
+                "title": "CFO",
+                "description": "Powering fiat and blockchain payment rails for modern fintechs.",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712215,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a12fbe3af78ec32198398eb4b5595d869c00b0b75b53ead3e05fb4a556ebff91.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/funxyz",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 115,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2554990909,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 98252086,
+        "basic_profile": {
+          "name": "Aly Chason",
+          "professional_network_name": "Aly Chason",
+          "headline": "Chief of Staff at Fun.xyz",
+          "current_title": "Chief of Staff",
+          "normalized_title": {
+            "matched_title": "Chief of Staff",
+            "department": "Executive Leadership",
+            "sub_department": "Executive Support & Coordination",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3e60e3509dfd5b61f14f46ccf24d542018dd7da9748a1217e060c285a3087d8a.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/aly-chason-740445129"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Fun",
+                "company_website": "http://fun.xyz",
+                "professional_network_id": "80248341",
+                "title": "Chief of Staff",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712215,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a12fbe3af78ec32198398eb4b5595d869c00b0b75b53ead3e05fb4a556ebff91.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/funxyz",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 115,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3020987243,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTMwQrCMAwA0F8pOe-QtU1N9isiI00KO4jFrTuI-O-y84P3hffZ9s-66bHBEiDijMl9turKkWJjThqzkSDFJpILCUpFL56LU6LiXm9oqiwpW4UpwNH3AUu4yxUgl8cUYPShz9X6-bqIf_8AAAD__6QjN6t4AAAA",
+    "total_count": 8,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

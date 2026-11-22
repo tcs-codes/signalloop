@@ -1,0 +1,576 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "inclined.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 13112600,
+        "basic_profile": {
+          "name": "Alex Kaye",
+          "professional_network_name": "Alex Kaye",
+          "headline": "LFGTM || Sr GTM Operations Leader || Kelley School of Business MBA Candidate",
+          "current_title": "Revenue Operations",
+          "normalized_title": {
+            "matched_title": "Revenue Operations",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c448e792389bae0cf866bb97d799bdde58e622adcc9e523f103cdceef992bdf3.jpg",
+          "location": {
+            "city": "Boulder",
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Boulder, Colorado, United States",
+            "full_location": "Boulder, Colorado, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alex-t-kaye"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "AlexTKaye"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inclined",
+                "company_website": "http://www.inclined.com",
+                "professional_network_id": "68941451",
+                "title": "Revenue Operations",
+                "description": "Inclined Technologies is a fintech innovator transforming the $5 trillion whole life insurance market by providing a first-of-its-kind platform that allows policyholders to easily access cash value through the Inclined Line of Credit (iLOC). ",
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642173,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/807d36b472b5b841279dcb018235cae41a615cf387a17de52d40e9760f62a5bf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inclined-tech",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 43,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2880889040,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Mill Valley, California, United States",
+                "company_hq_location_address_components": [
+                  "Mill Valley",
+                  "Marin County",
+                  "California",
+                  "United States",
+                  "94941"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Switchchord",
+                "company_website": "https://www.switchchord.com/",
+                "professional_network_id": "40661064",
+                "title": "GTM Advisor",
+                "description": "Switchchord\u2019s identity-based legal workflows provide a simple process for songwriters to accurately document song ownership and metadata, which is automatically delivered to music publishers for ingestion into their internal systems. Our flexible data models allow this data to be populated into copyright registration and licensing processes.",
+                "employment_type": "Freelance",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 952433,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a61c8fa0a7fd8085300dac59fbac9a83c25e3fc4e3ade33c1d8a280001b376e6.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/switchchord",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2319905663,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Dallas, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Dallas",
+                  "Dallas County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "RevOps Co-op",
+                "company_website": "http://www.revopscoop.com",
+                "professional_network_id": "68641483",
+                "title": "Member",
+                "description": "The RevOps Co-op is a community for revenue operations professionals - including sales operations, marketing operations, and customer success operations.\n\nThe community is built to serve our members through on-demand expertise, best practice content, education opportunities, and networking events.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1060074,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1c3e5eae082a62caca422a1d2d8a7e0900a84574d58fd56179fa9763d32a9e88.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/revopscoop",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1286,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2358828405,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Seattle, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Seattle",
+                  "King County",
+                  "Washington",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Skaled Consulting",
+                "company_website": "https://skaled.com/",
+                "professional_network_id": "2864641",
+                "title": "Sr Revenue Operations Consultant / Fractional VP of Rev Ops",
+                "description": "Fractional // Contract Rev Ops consultant for B2B companies advising C-level and GTM Leadership teams. \n\nSkaled Consulting is a world-class management and sales consulting provider. We accelerate the growth of emerging and enterprise companies by bringing in Sales Leadership, Operations, and Enablement experts who drive real and quantifiable business outcomes.",
+                "employment_type": "Contract",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1266183,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3f1d33858c4a44a6345719caaaeaa3646060ce22b73ecf372523d58fbf88957f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/skaled",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 38,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2358992820,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Pavilion",
+                "company_website": "https://www.joinpavilion.com/",
+                "professional_network_id": "27062956",
+                "title": "Member",
+                "description": "The Revenue Collective is a private, invitation-only community of sales and marketing executives at growth-focused companies.",
+                "employment_type": "",
+                "start_date": "2020-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 634203,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ab9b4bff5f9931b9477553e6b22648d828d8f83295520dbd192c30d6c5ea53df.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/join-pavilion",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 5160,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1623354427,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Modern Sales Pros",
+                "company_website": "http://www.modernsaleshq.com",
+                "professional_network_id": "18762737",
+                "title": "Member",
+                "description": "Modern Sales Pros is the world's largest community for leaders in sales, operations, enablement, and related disciplines. The mission is to help our community learn how to solve the biggest challenges they face (and would otherwise bang their head against the wall trying to solve). Members learn from each other through our online message board and through amazing in-person events.",
+                "employment_type": "",
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1216589,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/30ccc925a8803a048fb6a4d3cb1a74615d617b212ed50b314b65f878b0f0e41a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/modernsalespros",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 305,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1623355253,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 22812625,
+        "basic_profile": {
+          "name": "Monica Kerber",
+          "professional_network_name": "Monica Kerber",
+          "headline": "SaaS Fintech Professional | Whole Life Insurance Super Fan| Connector| Empowering Policyowners to Unlock Their Borrowing Power| Keynote Speaker",
+          "current_title": "Vice President of Sales",
+          "normalized_title": {
+            "matched_title": "Vice President of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/03aacae2a0507dc9e90d236714f402ad472e7375be6b41d65186d2dd6675b995.jpg",
+          "location": {
+            "city": null,
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver Metropolitan Area",
+            "full_location": "Denver Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/monicakerber"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "kerbercatalyst"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inclined",
+                "company_website": "http://www.inclined.com",
+                "professional_network_id": "68941451",
+                "title": "Vice President of Sales",
+                "description": "",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642173,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/807d36b472b5b841279dcb018235cae41a615cf387a17de52d40e9760f62a5bf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inclined-tech",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 43,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2695114390,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Mill Valley, California, United States",
+                "company_hq_location_address_components": [
+                  "Mill Valley",
+                  "Marin County",
+                  "California",
+                  "United States",
+                  "94941"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Arbonne",
+                "company_website": "http://www.arbonne.com",
+                "professional_network_id": "162497",
+                "title": "Consultant | District Manager| Area Manager Recognition",
+                "description": "",
+                "location": {
+                  "raw": "Denver, Colorado, United States"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1218346,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f2f4c344da84a9b5fc6672b02b7e9d5577453f1d5ea5c81f709858f3cc51e08f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/arbonne",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 14123,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Retail"
+                ],
+                "company_professional_network_industry": "Retail",
+                "position_id": 1868111242,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Irvine, California, United States",
+                "company_hq_location_address_components": [
+                  "Irvine",
+                  "Orange County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Kerber Consulting, LLC",
+                "company_website": "https://www.kerberconsulting.biz",
+                "professional_network_id": "10435811",
+                "title": "Owner",
+                "description": "To expand my impact I created Kerber Consulting. I specialize in working with C-Level Executives and leaders in strategic planning, creating high performing teams through strategic consultation and advising. Ultimately, helping leaders to carry out their visions for growth and elite performance. \n\nI have extensive knowledge and expertise in hiring the right talent, training teams and developing high caliber recruiters, leaders, advisors and teams for sustainable growth. I work with a variety of other consultants to serve as an expert in talent acquisition and in building dynamic recruiting and leadership teams and am a high performance business strategist focused on serving you. Ultimately, I am a catalyst for YOUR best results. Learn more at www.kerberconsulting.biz\n\nImpact has been felt by my clients, including:\n\u2022\tNorthwestern Mutual\n\u2022\tNew York Life\n\u2022\tAllstate\n\u2022\tDesign your Basement \n\u2022\tBasalite\n\u2022\tCooper Strategic\n\u2022\tiwillandtrust.com\n\u2022\tThe Beautiful Scar Project\n\u2022       FOCUS Fellowship of Catholic University Students\n\u2022       Huwa Enterprises\n\n\u2022.      NOVUS",
+                "location": {
+                  "raw": "Colorado"
+                },
+                "employment_type": "",
+                "start_date": "2011-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 7845892,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f7dfcbf7f40ed224f7daa2f2707c660e049a620e869bcfa6ac5778d94b3a0316.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kerber-consulting-llc",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 15,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 201567595,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 177188327,
+        "basic_profile": {
+          "name": "John Dwyer",
+          "professional_network_name": "John Dwyer",
+          "headline": "Account Executive Sales Manager at Inclined",
+          "current_title": "Account Executive Sales Manager",
+          "normalized_title": {
+            "matched_title": "Account Executive / Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Account Management & Strategy",
+            "similarity": 0.9904,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/1ff863556105c68b6466847a30299a1c2255d3768834469f569c08ba2172a1ca.jpg",
+          "location": {
+            "city": "Denver",
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver, Colorado, United States",
+            "full_location": "Denver, Colorado, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/john-f-dwyer"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Inclined",
+                "company_website": "http://www.inclined.com",
+                "professional_network_id": "68941451",
+                "title": "Account Executive Sales Manager",
+                "description": "At Inclined, we are using modern technology to transform the whole life insurance market by helping all policyholders get the maximum value out of their policies. We are singularly focused on the $1.0 Trillion of cash value in whole life policies today and fixing the legacy problems that have existed in the market for decades relative to how policyholders access their cash value savings. Our platform offers a simple and efficient way to utilize cash value while maintaining the significant tax advantage inherent in whole life policies. We're a well-funded start-up founded by industry veterans from finance, software and life insurance, including the co-founder of Strava and Guidewire.",
+                "location": {
+                  "raw": "Denver, CO"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642173,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/807d36b472b5b841279dcb018235cae41a615cf387a17de52d40e9760f62a5bf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/inclined-tech",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 43,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3034058544,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Mill Valley, California, United States",
+                "company_hq_location_address_components": [
+                  "Mill Valley",
+                  "Marin County",
+                  "California",
+                  "United States",
+                  "94941"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9QKLRjv2LMUlbIDkbixg7G-O_G8_vA66rHe9313GFxkJApm29CoVG0nKIxFgxcAmsrLRKX7GcU2WpOSsbqYyuiWA2TGkwOzn4MWNzNi_h5piD3ycHoQx_r1q_n3-j7CwAA__-0PkJEeQAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

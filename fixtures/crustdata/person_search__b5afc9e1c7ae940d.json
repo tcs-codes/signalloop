@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "descope.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 96022,
+        "basic_profile": {
+          "name": "Phil Hillhouse",
+          "professional_network_name": "Phil Hillhouse",
+          "headline": "Vice President Global Sales | Executive Leadership | GTM Strategist | Sales Execution Specialist | Channel Chief | Descope | Customer and Agentic AI CIAM",
+          "current_title": "Vice President of Global Sales",
+          "normalized_title": {
+            "matched_title": "Vice President of Global Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "International & Global Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0904f148a00252ee419e2a403ca9752546978dc19ebfc15ea079a0f52799ed2d.jpg",
+          "location": {
+            "city": "Atlanta",
+            "state": "Georgia",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Atlanta, Georgia, United States",
+            "full_location": "Atlanta, Georgia, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/philhillhouse"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "phillhouse"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Descope",
+                "company_website": "https://www.descope.com",
+                "professional_network_id": "89542997",
+                "title": "Vice President of Global Sales",
+                "description": "",
+                "location": {
+                  "raw": "Atlanta Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780187,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a243a4e99513923c5c05a101b9896496830ee59d831cfdee4b48d639e8c828b0.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/descope",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 120,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2829535152,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Altos, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Altos",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1497083,
+        "basic_profile": {
+          "name": "Alik Haik",
+          "professional_network_name": "Alik Haik",
+          "headline": "Head of Sales Israel & EMEA | EX PaloAlto / FireEye / Mandiant",
+          "current_title": "Sales Manager",
+          "normalized_title": {
+            "matched_title": "Sales Manager",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d8aa44ca123bb6b1debe39097714a164abbbf0864cf8593f54d7ecaab91f730f.jpg",
+          "location": {
+            "city": "Tel Aviv-Yafo",
+            "state": "Tel Aviv District",
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+            "full_location": "Tel Aviv-Yafo, Tel Aviv District, Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alikhaik"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Descope",
+                "company_website": "https://www.descope.com",
+                "professional_network_id": "89542997",
+                "title": "Sales Manager",
+                "description": "Drag & Drop Customer and Agentic IAM. Add auth, MFA, SSO and access control to your apps, AI agents and MCP servers. Prevent account takeover and get a 360\u00b0 view of your customer and agentic identities with the Descope External IAM platform. Customize identity journeys for your customers, partners, AI agents, and MCP servers.",
+                "location": {
+                  "raw": "Tel Aviv District, Israel"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780187,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a243a4e99513923c5c05a101b9896496830ee59d831cfdee4b48d639e8c828b0.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/descope",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 120,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2303288103,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Altos, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Altos",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1527580,
+        "basic_profile": {
+          "name": "Shane Poyar",
+          "professional_network_name": "Shane Poyar",
+          "headline": "Growth Marketing Manager @ Descope",
+          "current_title": "Growth Marketing & Operations Manager",
+          "normalized_title": {
+            "matched_title": "Growth Operations",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.8901,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a35fc10cc31fa89367ac2af196626dbea309c1510619c3c4a9a9c2bd4a487779.jpg",
+          "location": {
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Salt Lake City, Utah, United States",
+            "full_location": "Salt Lake City, Utah, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/shanepoyar"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Descope",
+                "company_website": "https://www.descope.com",
+                "professional_network_id": "89542997",
+                "title": "Growth Marketing & Operations Manager",
+                "description": "Descope is a drag-and-drop customer authentication and identity management platform. Our no-code workflow builder, SDKs, and APIs help organizations easily create and customize the entire user journey for their apps \u2013 from authentication and authorization to MFA and federation. Customers use Descope to improve their app\u2019s user onboarding with passwordless authentication, enhance security with MFA and step-up controls, and unify identities across customer-facing apps.\n\n- Technology Implementation and Management: Oversee the implementation and utilization of growth-\nrelated tools and technologies, such as CRM systems, marketing automation, and analytics platforms.\n\n- Paid Media and Performance Marketing: Own and drive paid user acquisition by working with existing\npaid media agencies and running in-house paid initiatives to improve ROAS.\n\n- Experimentation and Testing: Design and execute A/B tests, experiments, and pilots to optimize\nconversion rates, user experience, and customer journey across various GTM touchpoints.\n\n- Optimization of GTM Processes: Streamline GTM workflows and operational processes to enhance\nefficiency and scalability, focusing on customer acquisition and upsell.\n\n- Cross-functional Collaboration: Work closely with marketing, sales, developer relations, and customer success teams to align growth strategies and ensure a cohesive approach towards company goals.\n\n- Reporting and Performance Tracking: Develop and maintain dashboards and reports to track KPIs,\nproviding regular updates on growth initiatives' performance and effectiveness.",
+                "location": {
+                  "raw": "Mountain View, California, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780187,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a243a4e99513923c5c05a101b9896496830ee59d831cfdee4b48d639e8c828b0.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/descope",
+                "seniority_level": "Entry Level Manager",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 120,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2350833630,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Altos, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Altos",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8AA0q7XzFmGW3JDkbixg7G-O_G8_vA67Ljve7bucPiYGbOOYqgWiqMmaNWkRbYz6osPnFFX5GsVUyNikZtiQwVA5mQwOTg7MeAxd1Cnksmf58cjD62xyr9ev4l4PcXAAD__xkRe6h4AAAA",
+    "total_count": 16,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

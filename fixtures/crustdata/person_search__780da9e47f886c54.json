@@ -1,0 +1,326 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "checkbox.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 28116,
+        "basic_profile": {
+          "name": "Evan Wong",
+          "professional_network_name": "Evan Wong",
+          "headline": "Checkbox CEO | AI Legal Front Door | Forbes 30 Under 30 | TEDx Speaker",
+          "current_title": "Co-founder | CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder, CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9994,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8c0c348b92f57c04ed05c1c13d66a0cc61d73bda6196c18b2303c0d110ec746f.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/theevanwong"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "TheEvanWong"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Co-founder | CEO",
+                "description": "Checkbox is a Sequoia-backed software company that helps legal teams get efficiency and visibility across all requests. Checkbox is used to automate intake and triage, approval workflows, access to knowledge, and document generation, all without coding and through the power of AI. Recognized as a leader by Gartner, Checkbox is trusted by companies including SAP, Pepsi, and Hitachi.",
+                "location": {
+                  "raw": "www.checkbox.ai"
+                },
+                "employment_type": "",
+                "start_date": "2016-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 793168381,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 28118,
+        "basic_profile": {
+          "name": "James Han",
+          "professional_network_name": "James Han",
+          "headline": "COO & Co-founder at Checkbox | AI Legal Front Door | Forbes 30 Under 30",
+          "current_title": "COO & Co-founder",
+          "normalized_title": {
+            "matched_title": "COO & Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/d80ae905c4dc9493b28f367a9405a8fb25b67dd4ab031dfd61cac6212f288149.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jamesqiuhan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "COO & Co-founder",
+                "description": "Leading Product & Engineering at Checkbox\n\nCheckbox is a 9x-award winning platform that enables the digitisation and automation of expert knowledge and processes. By using our drag and drop Studio, domain-experts can build software that automates intake and triaging, assessments and documentation generation, all without a developer. As a pioneer in expert process automation (EPA), Checkbox seamlessly integrates the concepts of form building, visual decision-tree mapping, interactive spreadsheet, workflow and document automation.",
+                "employment_type": "",
+                "start_date": "2016-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 814936960,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 28350354,
+        "basic_profile": {
+          "name": "Somya K.",
+          "professional_network_name": "Somya K.",
+          "headline": "Chief Legal Officer | Professor of Law | Former Tech Founder/CEO | Author | Speaker | The Open Door Podcast Host ",
+          "current_title": "Chief Legal Officer",
+          "normalized_title": {
+            "matched_title": "Chief Legal Officer",
+            "department": "Legal & Compliance",
+            "sub_department": "Corporate Legal Affairs",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bfff106c2692c1f9bf87ddd673c7c675469de4f2e877271feb568225d197e3a4.jpg",
+          "location": {
+            "city": "Chicago",
+            "state": "Illinois",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Chicago, Illinois, United States",
+            "full_location": "Chicago, Illinois, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/somyakaushik"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "EsqMeLaw"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Checkbox",
+                "company_website": "http://checkbox.ai",
+                "professional_network_id": "7943075",
+                "title": "Chief Legal Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 664168,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30a513bfbc9eb294d931d7cc9343e47ee0579e707def7e53e08c7ed8d7ba106.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/checkboxai",
+                "seniority_level": "CXO",
+                "function_category": "Legal",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2891726551,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Lewis & Clark Law School",
+                "company_website": "http://law.lclark.edu",
+                "professional_network_id": "16393",
+                "title": "Adjunct Professor Of Law",
+                "description": "As a professor of Contract Drafting and Negotiations, I use this opportunity to give my students opportunities to use their legal skills against real-life scenarios. I developed a unique syllabus that leads the students through several hypotheticals, requiring them to draft agreements as a lawyer or in-house counsel for their corporate client. I teach each concept from the angle of a litigator, showing them how and where a contract may break down in theory, intent or meeting of the minds. At the end of the semester, they are required to navigate business concepts and they negotiate and draft an asset purchase agreement. They also have an opportunity to negotiate settlements when breach of contract issues arise in their hypotheticals, giving the students real-life examples of how drafting well can be the greatest source of mitigating litigation risk.",
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6230824,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bd207dbc4128191919aafc79a080c2cebadac160ef9227254ff67d073ebf428b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lewisandclarklawschool",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 343,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Higher Education",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Higher Education",
+                "position_id": 1828870444,
+                "company_type": "Educational Institution",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Portland, Oregon, United States",
+                "company_hq_location_address_components": [
+                  "Portland",
+                  "Multnomah County",
+                  "Oregon",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMa7DIAwA0KsgzxkwxnzIVb6qCNugDFVREzJUVe9edX5veF7teG17PXdYHXhlFNUUajSslqlo7E2D9CSMhVIqKXpGr8VYKf-Z79KMIraKIQssDs5xTFjdf8jEnjjeFgdzzHrfdFyPH9HnGwAA___2CA1weAAAAA==",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

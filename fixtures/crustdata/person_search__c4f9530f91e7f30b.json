@@ -1,0 +1,341 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "satsuma.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 128551023,
+        "basic_profile": {
+          "name": "Chris Lutz",
+          "professional_network_name": "Chris Lutz",
+          "headline": "GM & Commercial Executive | Vertical SaaS | Healthcare & Animal Health",
+          "current_title": "Principal & Operating Partner",
+          "normalized_title": {
+            "matched_title": "Founder & Operating Partner",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9231,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e2223b17d084b3269c8e6b6e62a4b92b0a11062a40e9048778122a8491adc2c8.jpg",
+          "location": {
+            "city": null,
+            "state": "Florida",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Orlando",
+            "full_location": "Greater Orlando"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/cbwlutz"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Sabal Growth Partners",
+                "company_website": "",
+                "professional_network_id": "99403490",
+                "title": "Principal & Operating Partner",
+                "description": "Selective operating, advisory and commercial engagements with vertical software and technology companies, focused on enterprise growth, GTM and recurring revenue.",
+                "location": {
+                  "raw": "Orlando, FL"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2022-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 10506267,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dc77d90cface78fb9c7950ea0567ccbf34567c0c1bc7c04d649f975d9ac04557.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/sabal-growth-partners",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2305113118,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Clermont, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Clermont",
+                  "Lake County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Satsuma.ai",
+                "company_website": "https://www.satsuma.ai",
+                "professional_network_id": "33241600",
+                "title": "GTM Advisor \u2013 Healthcare",
+                "description": "Satsuma.ai makes existing software agent-ready, turning APIs into production infrastructure for AI agents with identity, permissions, observability and governance built in.",
+                "location": {
+                  "raw": "Austin, TX"
+                },
+                "employment_type": "Contract",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 701925,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/06542daf1e7808b987b45dfd7c0ea3cddc16d685a7ba5ab8437e105b06f08c61.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/satsumaai",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 20,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 3046209347,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "The Veterinary Intelligence Company",
+                "company_website": "https://www.vetintelcompany.com/",
+                "professional_network_id": "143581001",
+                "title": "Strategic Partnerships",
+                "description": "Vet Intel is a commercial intelligence platform for animal health teams that turns fragmented data on veterinary practices, ownership, technology, and market activity into a real-time view of the industry, delivered directly into the systems they already use.",
+                "employment_type": "Contract",
+                "start_date": "2026-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 90893889,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-veterinary-intelligence-company",
+                "seniority_level": "Strategic",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Veterinary Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Veterinary Services",
+                "position_id": 3050909549,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 568980750,
+        "basic_profile": {
+          "name": "Johnie Boy Flores",
+          "professional_network_name": "Johnie Boy Flores",
+          "headline": "Sales Specialist at MealMe, Inc.",
+          "current_title": "Sales Specialist",
+          "normalized_title": {
+            "matched_title": "Sales Specialist",
+            "department": "Sales & Revenue",
+            "sub_department": "Industry & Specialist Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": null,
+          "location": {
+            "city": "Cebu City",
+            "state": "Central Visayas",
+            "country": "Philippines",
+            "continent": "Asia",
+            "raw": "Cebu, Central Visayas, Philippines",
+            "full_location": "Cebu, Central Visayas, Philippines"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/johnie-boy-flores-7ab805360"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": null
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Satsuma.ai",
+                "company_website": "https://www.satsuma.ai",
+                "professional_network_id": "33241600",
+                "title": "Sales Specialist",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 701925,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/06542daf1e7808b987b45dfd7c0ea3cddc16d685a7ba5ab8437e105b06f08c61.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/satsumaai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 20,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Embedded Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Embedded Software Products",
+                "position_id": 2619607783,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Austin, Texas, United States",
+                "company_hq_location_address_components": [
+                  "Austin",
+                  "Travis County",
+                  "Texas",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Grubhub",
+                "company_website": "http://www.grubhub.com",
+                "professional_network_id": "3283052",
+                "title": "Inbound Customer Service Representative",
+                "description": "",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "",
+                "start_date": "2020-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 662782,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d0e4adb87242df0213512aeac61891953b8d9d140de97b0cfe6e0e432d0264fc.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/grubhub-seamless",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 6635,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2697475754,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Chicago, Illinois, United States",
+                "company_hq_location_address_components": [
+                  "Chicago",
+                  "Cook County",
+                  "Illinois",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

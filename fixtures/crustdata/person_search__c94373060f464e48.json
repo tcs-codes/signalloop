@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "earlytrade.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 17549728,
+        "basic_profile": {
+          "name": "Jack Quintana",
+          "professional_network_name": "Jack Quintana",
+          "headline": "GTM at Earlytrade",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6d988c761da63cb8572c07597d56531d37af62c8d82687e1a90937017fdd9108.jpg",
+          "location": {
+            "city": "Fort Collins",
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Fort Collins, Colorado, United States",
+            "full_location": "Fort Collins, Colorado, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jackquintana"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Earlytrade",
+                "company_website": "https://earlytrade.com",
+                "professional_network_id": "19140865",
+                "title": "GTM",
+                "description": "",
+                "location": {
+                  "raw": "Denver Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 668611,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8af21855c9e2a8053b651f78d41693259d5bca7360b04dfa2860a13df9c25248.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/earlytrade",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3018993648,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Denver, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Denver",
+                  "Denver County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 26127810,
+        "basic_profile": {
+          "name": "Seb W.",
+          "professional_network_name": "Seb W.",
+          "headline": "",
+          "current_title": "Business Development Representative",
+          "normalized_title": {
+            "matched_title": "Business Development Representative",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/2d359fd2eb77abbfdb18efd4eca319024ea5a3adcead87fb277ebc58df2cb586.jpg",
+          "location": {
+            "city": "Sydney",
+            "state": "New South Wales",
+            "country": "Australia",
+            "continent": "Oceania",
+            "raw": "Sydney, New South Wales, Australia",
+            "full_location": "Sydney, New South Wales, Australia"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/seb-w-59a4b6102"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Earlytrade",
+                "company_website": "https://earlytrade.com",
+                "professional_network_id": "19140865",
+                "title": "Business Development Representative",
+                "description": "",
+                "location": {
+                  "raw": "Sydney, New South Wales, Australia"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 668611,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8af21855c9e2a8053b651f78d41693259d5bca7360b04dfa2860a13df9c25248.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/earlytrade",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2646637217,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Denver, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Denver",
+                  "Denver County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 35881447,
+        "basic_profile": {
+          "name": "Jonan Krauss",
+          "professional_network_name": "Jonan Krauss",
+          "headline": "Relationship Manager at Earlytrade",
+          "current_title": "Inside Sales Representative",
+          "normalized_title": {
+            "matched_title": "Inside Sales Representative",
+            "department": "Sales & Revenue",
+            "sub_department": "Inside & Outside Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e8d0eb38ff263bc605f926c3493a4a36a36cd992e3a356cc310c789ca379e9a5.jpg",
+          "location": {
+            "city": "Denver",
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver, Colorado, United States",
+            "full_location": "Denver, Colorado, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jon-krauss"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Earlytrade",
+                "company_website": "https://earlytrade.com",
+                "professional_network_id": "19140865",
+                "title": "Inside Sales Representative",
+                "description": "",
+                "location": {
+                  "raw": "Denver, CO"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 668611,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8af21855c9e2a8053b651f78d41693259d5bca7360b04dfa2860a13df9c25248.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/earlytrade",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2862227175,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Denver, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Denver",
+                  "Denver County",
+                  "Colorado",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMa7DIAwA0KsgzxnANmByla-vyMWgDFVREzJUVe9edX5veF7teG27njusDgytc87ex9KKBW6MQkGIo79VrJqkaaHCPsUePUsg7FaxkxCaKcLi4BzHhNX9URQJzPl_cTDH1PtWx_X4UUifbwAAAP__j7s0rHkAAAA=",
+    "total_count": 16,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

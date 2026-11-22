@@ -1,0 +1,445 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "blockworks.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 11581,
+        "basic_profile": {
+          "name": "Dan McArdle",
+          "professional_network_name": "Dan McArdle",
+          "headline": "Co-Founder at Messari",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/93a0c25d85171f0202b57ceb4d8bebe27f26f094813859f80db761fa9b9cb3ae.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mcardledan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Messari",
+                "company_website": "https://messari.io/",
+                "professional_network_id": "27450766",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2018-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 629318,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/539bbe056075d13b1f9aa5f12dcab711038a33331abc2d983ec0e42b4849ea2b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/messari",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 66,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1351906770,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Exa.ai",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Co-Founder and CTO",
+                "description": "Voice automating a hotel room near you.",
+                "location": {
+                  "raw": "New York City"
+                },
+                "employment_type": "",
+                "start_date": "2016-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 828970112,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Uniguest",
+                "company_website": "https://www.uniguest.com",
+                "professional_network_id": "418900",
+                "title": "Co-Founder and CTO",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2016-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 819733,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9006e9eca8cd428e2a3954a3633f70807ea76c595f9cad3da2a57f680d412d58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/uniguest",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 463,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 919716004,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Antioch, Tennessee, United States",
+                "company_hq_location_address_components": [
+                  "Antioch",
+                  "Nashville",
+                  "Davidson County",
+                  "Tennessee",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Digital Currency Council",
+                "company_website": "http://www.digitalcurrencycouncil.com",
+                "professional_network_id": "5098497",
+                "title": "Director of Curriculum & Content",
+                "description": "Education and training program content creation and strategy. Bitcoin, blockchain, and general digital currency expertise.",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "",
+                "start_date": "2014-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4233611,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4cf0f37f4d86c82a9988a81db04be74ed1fda024b415d941ab3d2918c99a4d79.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/digital-currency-council",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 12,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 631381526,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 308769,
+        "basic_profile": {
+          "name": "Jason Yanowitz",
+          "professional_network_name": "Jason Yanowitz",
+          "headline": "Co-Founder, Blockworks",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c4cbdda463117e0dcc586e3a0fc99241e4dc8c53bba983d7c13b0684db6f256c.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yanowitzjason"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "JasonYanowitz"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Blockworks",
+                "company_website": "https://blockworks.com",
+                "professional_network_id": "28123388",
+                "title": "Co-Founder",
+                "description": "We envision a world where the global financial system runs on trusted, onchain markets. Our mission is to build that trust. We do this by connecting investors and businesses in onchain capital markets, giving businesses a platform to earn trust and giving investors the data and information they need to underwrite the asset class.\n\nblockworks.com",
+                "location": {
+                  "raw": "New York City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2017-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698577,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ebfe691015f9da294a9ea8062d37870b0005b77726b573150f3e3252a84ce17.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-blockworks-group",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 192,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1313855722,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Dynamic Communities",
+                "company_website": "http://www.dynamicscommunities.com",
+                "professional_network_id": "271489",
+                "title": "Board Member",
+                "description": "The world's largest community of acceleration economy professionals",
+                "employment_type": "Part-time",
+                "start_date": "2021-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 668158,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e8beb0448380451d210f9ed513857b705b7f184a2745bcbb554c3b0ec33ee312.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/dynamic-communities-inc-",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 55,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Online Audio and Video Media",
+                  "Internet Publishing",
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Online Audio and Video Media",
+                "position_id": 1801172407,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Tampa, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Tampa",
+                  "Hillsborough County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 308771,
+        "basic_profile": {
+          "name": "Michael Ippolito",
+          "professional_network_name": "Michael Ippolito",
+          "headline": "Co-Founder at Blockworks",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4016718e4494a47760cada3260635c0683abb23e401193a94910957375328597.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/michael-ippolito-b47b89105"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Blockworks",
+                "company_website": "https://blockworks.com",
+                "professional_network_id": "28123388",
+                "title": "Co-Founder",
+                "description": "BlockWorks Group produces events and podcasts in the blockchain and digital asset space.\n\nWe host everything from private dinners for family offices to large conferences for financial market professionals, professional service firms, and institutional investors.\n\nInterested in speaking at or sponsoring an event? Email me at michael@blockworksgroup.io",
+                "location": {
+                  "raw": "Greater New York City Area"
+                },
+                "employment_type": "",
+                "start_date": "2018-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698577,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ebfe691015f9da294a9ea8062d37870b0005b77726b573150f3e3252a84ce17.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/the-blockworks-group",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 192,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1321215346,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9QQFrYrxizlNFmByNxYwdj_Hez8_vC-9T9s2xybDA7KKyKN8LYms9Fc_a-BdZUA1u2qFYqiRKntUn0ShZqRUNCES4JCSYHR98HzO4eMTP7x-Rg9CHPZe3n6wL6_QMAAP__ZpCFZnYAAAA=",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

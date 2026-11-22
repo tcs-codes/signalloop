@@ -1,0 +1,295 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "hyphenate.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1081257,
+        "basic_profile": {
+          "name": "Ajay Krishna Amudan",
+          "professional_network_name": "Ajay Krishna Amudan",
+          "headline": "Co-Founder and CTO at Hyphenate AI | Ex-Microsoft | Stanford CS | ACM-ICPC 2015 World Finalist | IMO 2011, 2012 | IIT-M CS",
+          "current_title": "Cofounder, CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9957,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c90145f1007c8aa9d6e6dcf460444ad7d0ec72a2ecccc9138a4f97a292af416e.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ajay-krishna-amudan-a772507a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hyphenate (formerly Maximor)",
+                "company_website": "https://hyphenate.ai/",
+                "professional_network_id": "99242160",
+                "title": "Cofounder, CTO",
+                "description": "On a mission to transform the Office of the CFO for enterprises with AI and automation.\n\nHyphenate\u2019s agentic platform is your Financial OS which helps modernize the CFO Function and helps automate works spanning Controllership, FP&A, Treasury to all your most complex FInOps workflows.\n\nAll this while seamlessly integrating with your existing ERP and finance stack of companies, without requiring costly migrations.\n\nCombining AI automation with vetted human oversight, Hyphenate offers 10x efficiency improvements, and 100% accurate, audit-ready financials.\n\nDM to book a demo and free financial close process audit.",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1484386,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/212fe8dfae332dd184b6d7bd6dabfc01962433e2aecfd51d5a47ddf830d93245.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hyphenateai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2243317427,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1081732,
+        "basic_profile": {
+          "name": "Ramnandan Krishnamurthy",
+          "professional_network_name": "Ramnandan Krishnamurthy",
+          "headline": "Co-founder & CEO of Hyphenate - The Autonomous Finance Platform",
+          "current_title": "Co-founder & CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6da6b2fb44266b6513740975a0babbee609a86136b5613e1cad221b866e46d76.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ramnandan"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "skramd"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hyphenate (formerly Maximor)",
+                "company_website": "https://hyphenate.ai/",
+                "professional_network_id": "99242160",
+                "title": "Co-founder & CEO",
+                "description": "Hyphenate is the autonomous finance platform that runs on top of the ERP and systems finance already uses. It connects them in one shared context and learns how finance works from the systems, spreadsheets, and workflows already in place. \n\nTeams don\u2019t have to document every process from scratch or write prompts and rules to put agents to work. Agents do 98% of the finance work they touch. Every action shows its work and is fully auditable. Books reconcile continuously, so the numbers are always current, not just after month-end. The platform gets sharper with every close.\n\nDM me to book a quick walkthrough.",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1484386,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/212fe8dfae332dd184b6d7bd6dabfc01962433e2aecfd51d5a47ddf830d93245.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hyphenateai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2177295920,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 7162580,
+        "basic_profile": {
+          "name": "David McCutcheon",
+          "professional_network_name": "David McCutcheon",
+          "headline": "CRO @ Hyphenate | Autonomous Finance | Turning Doers into Reviewers",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/7887f4bb8ca9f3b1960a11bb4099af20e1c161968b63260e05e03a2b6ba80873.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/david-mccutcheon04"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Hyphenate (formerly Maximor)",
+                "company_website": "https://hyphenate.ai/",
+                "professional_network_id": "99242160",
+                "title": "Chief Revenue Officer",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 1484386,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/212fe8dfae332dd184b6d7bd6dabfc01962433e2aecfd51d5a47ddf830d93245.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hyphenateai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 40,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2922195985,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe_QsgJlv2LMwmjJDkbixg7G-O_G8_vA67Ljve7l3GFxgDH5LBwtcqC2ZZqLmKmpNrJckojMqc1-y4oBU1OujUirILLXwjA5OPsxYHG3RNEHwfvkYPRRHmvt1_Mv_P0FAAD__5PU_Yx3AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

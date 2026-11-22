@@ -1,0 +1,425 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "speakeasygo.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 126846521,
+        "basic_profile": {
+          "name": "Alex Manavi",
+          "professional_network_name": "Alex Manavi",
+          "headline": "Co-Founder, CEO at Speakeasy",
+          "current_title": "Co-Founder, CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder, CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a08b7cae546921091ec4a37fc2664dcdbb5be6ce10ae337e3b0d5972ab28365b.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/alex-manavi-8b47ab1b0"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Speakeasy",
+                "company_website": "http://spkeasy.com",
+                "professional_network_id": "98047827",
+                "title": "Co-Founder, CEO",
+                "description": "The operations & intelligence platform powering live experiences",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "",
+                "start_date": "2023-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 2395885,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/67970cfbaa928c0612ba7f6de92049073bf4d6e718ba40c7c1d2d14960ae21aa.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/speakeasy-go",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 20,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2217060478,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 126846580,
+        "basic_profile": {
+          "name": "Jackson Bass",
+          "professional_network_name": "Jackson Bass",
+          "headline": "|",
+          "current_title": "Associate",
+          "normalized_title": {
+            "matched_title": "Associate",
+            "department": "Consulting & Professional Services",
+            "sub_department": "Advisory & Strategy Consulting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0af4c2b3fb7a42c255e8f45f8d1fd4ea3f05335f090a579897fbb36abd9ed7d1.jpg",
+          "location": {
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Los Angeles, California, United States",
+            "full_location": "Los Angeles, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jacksonbasss"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Abington Emerson Investments, LLC",
+                "company_website": "http://www.abingtonemerson.com",
+                "professional_network_id": "2985536",
+                "title": "Associate",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 3261858,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/22bac53cd9158affda5101ca58bf660c3bf09e6ea62c34f82f7126d315d36820.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/abington-emerson-capital",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 9,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Real Estate",
+                  "Real Estate and Equipment Rental Services"
+                ],
+                "company_professional_network_industry": "Real Estate",
+                "position_id": 2915391582,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "29Stone",
+                "company_website": "http://29stone.com",
+                "professional_network_id": "143087107",
+                "title": "Principal",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 75000712,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/29stone",
+                "seniority_level": "Senior",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Investment Management",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Investment Management",
+                "position_id": 2983483781,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Los Angeles, California, United States",
+                "company_hq_location_address_components": [
+                  "Los Angeles",
+                  "Los Angeles County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Vantus California Realty",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Real Estate Agent",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2915385911,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Speakeasy",
+                "company_website": "http://spkeasy.com",
+                "professional_network_id": "98047827",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2023-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2395885,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/67970cfbaa928c0612ba7f6de92049073bf4d6e718ba40c7c1d2d14960ae21aa.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/speakeasy-go",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 20,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2647709990,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Jackson Bass Music",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "DJ & Music Producer",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2016-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2489542868,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 126846597,
+        "basic_profile": {
+          "name": "Tamas An",
+          "professional_network_name": "Tamas An",
+          "headline": "Co-Founder, CTO @ Speakeasy | Physics, CS @ UChicago",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/24adcdccf79e7d8f237e9deadcbe537b983b60e3c635acb208b9bb25b053269d.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Greater Chicago Area",
+            "full_location": "Greater Chicago Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/tamas-an-24b3b01a0"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Speakeasy",
+                "company_website": "http://spkeasy.com",
+                "professional_network_id": "98047827",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2023-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 2395885,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/67970cfbaa928c0612ba7f6de92049073bf4d6e718ba40c7c1d2d14960ae21aa.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/speakeasy-go",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 20,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2370371333,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9goVDYrxizQNdmByNxYwdj_Hez8_vC-9T9s2z12GB2wKjW9EamBddInKV6SoGUQhMRNVuFkGLjZoXFkwlLwhgpoJaMMDk4-j5gdnf0KVOKhR-Tg9FHfS7Sz9dl9PsHAAD__5sFsA15AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

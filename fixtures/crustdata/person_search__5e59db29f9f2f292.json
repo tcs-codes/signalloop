@@ -1,0 +1,1006 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "moises.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 17286,
+        "basic_profile": {
+          "name": "Hugo Rodrigues",
+          "professional_network_name": "Hugo Rodrigues",
+          "headline": "CTO at Moises",
+          "current_title": "Chief Technology Officer",
+          "normalized_title": {
+            "matched_title": "Chief Technology Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/255b99a83cb17395b65120ebdeb96c1f95bc953bc8b5a7e5a4df9f4bce64d8c9.jpg",
+          "location": {
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Salt Lake City, Utah, United States",
+            "full_location": "Salt Lake City, Utah, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/hugor"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Moises",
+                "company_website": "http://moises.ai/?ct=lk-bio",
+                "professional_network_id": "43368220",
+                "title": "Chief Technology Officer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689665,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d86d9d198a11d1a973542b52aac4a084b36f9178c7d95b0d6e510f413bd41cdf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/moises",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1775239109,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Salt Lake City, Utah, United States",
+                "company_hq_location_address_components": [
+                  "Salt Lake City",
+                  "Salt Lake County",
+                  "Utah",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Music AI",
+                "company_website": "http://www.music.ai",
+                "professional_network_id": "100040442",
+                "title": "Chief Technology Officer",
+                "description": "",
+                "location": {
+                  "raw": "Salt Lake City"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1993258,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2fcd9f568bd4f58e367c66fbc6807f0c330a1fe6aa7bc104ccbb59f834bcfedf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/musicai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 330,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2320393887,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Salt Lake City, Uttar\u0101khand, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 17287,
+        "basic_profile": {
+          "name": "Geraldo Ramos",
+          "professional_network_name": "Geraldo Ramos",
+          "headline": "Co-founder & CEO at Moises",
+          "current_title": "Chief Executive Officer",
+          "normalized_title": {
+            "matched_title": "Chief Executive Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/bddff3b7f3f9e5392e438275861944e92e867769d9a165322fdd27ed1dac4e2d.jpg",
+          "location": {
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Salt Lake City, Utah, United States",
+            "full_location": "Salt Lake City, Utah, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/geraldoramos"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "geraldoramos"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Moises",
+                "company_website": "http://moises.ai/?ct=lk-bio",
+                "professional_network_id": "43368220",
+                "title": "Chief Executive Officer",
+                "description": "",
+                "location": {
+                  "raw": "Salt Lake City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689665,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d86d9d198a11d1a973542b52aac4a084b36f9178c7d95b0d6e510f413bd41cdf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/moises",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1657432163,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Salt Lake City, Utah, United States",
+                "company_hq_location_address_components": [
+                  "Salt Lake City",
+                  "Salt Lake County",
+                  "Utah",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Music AI",
+                "company_website": "http://www.music.ai",
+                "professional_network_id": "100040442",
+                "title": "Chief Executive Officer",
+                "description": "",
+                "location": {
+                  "raw": "Salt Lake City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2020-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1993258,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2fcd9f568bd4f58e367c66fbc6807f0c330a1fe6aa7bc104ccbb59f834bcfedf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/musicai",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 330,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2323545118,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Salt Lake City, Uttar\u0101khand, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2657423,
+        "basic_profile": {
+          "name": "Kiko Lumack",
+          "professional_network_name": "Kiko Lumack",
+          "headline": "Managing Partner at Valutia",
+          "current_title": "Managing Partner",
+          "normalized_title": {
+            "matched_title": "Managing Partner",
+            "department": "Executive Leadership",
+            "sub_department": "Board Governance & Advisory",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Portugal",
+            "continent": "Europe",
+            "raw": "Lisbon Metropolitan Area",
+            "full_location": "Lisbon Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/kikolumack"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "KikoLumack"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Valutia",
+                "company_website": "http://www.valutia.com",
+                "professional_network_id": "67748183",
+                "title": "Managing Partner",
+                "description": "",
+                "location": {
+                  "raw": "Lisboa, Portugal"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2012-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 970743,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3d9938f10de0b5a11afc2dc62afa1123e4211c111bb3393595dbfe63472f9c34.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/valutia",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 14,
+                "company_headcount_latest": 9,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 1684059359,
+                "company_type": "Partnership",
+                "company_headquarters_country": "Portugal",
+                "company_hq_location": "Lisboa, Lisbon, Portugal",
+                "company_hq_location_address_components": [
+                  "Lisbon",
+                  "Lisbon",
+                  "Lisbon",
+                  "Portugal"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "ZeroDois pela Educa\u00e7\u00e3o",
+                "company_website": "http://Mailto:contato@02pelaeducacao.org.br",
+                "professional_network_id": "102827454",
+                "title": "Membro da comunidade ZeroDois Pela Educa\u00e7\u00e3o",
+                "description": "Apoiador da iniciativa do ecossistema de inova\u00e7\u00e3o que busca transformar a educa\u00e7\u00e3o no Brasil a partir da doa\u00e7\u00e3o de 0,2% do seu sucesso. O objetivo \u00e9 reduzir o \u00edndice de analfabetismo e tornar a escola p\u00fablica cada vez melhor para milh\u00f5es de crian\u00e7as em busca de um futuro melhor para o nosso pa\u00eds.",
+                "employment_type": "",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 4397833,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9e3f9145f69e14935d244f7834518bf81a1eae27838b79f25370ce67f0066897.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/zerodois",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 44,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Non-profit Organizations",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Non-profit Organizations",
+                "position_id": 2698638159,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Bearth Solutions",
+                "company_website": "https://www.bearth.eco",
+                "professional_network_id": "80891461",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2022-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3421428,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/217770e46ac9bd6cc0005f0d07cd23ba0d745c4f5db53da74f0cb05be8a2fc42.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/bearth-solutions",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Environmental Services",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Environmental Services",
+                "position_id": 2229530299,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Sooper",
+                "company_website": "https://www.sooper.com.br",
+                "professional_network_id": "71952802",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 675058,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee5cc3c113beda2722618b43fb121ae3a5082b4e32352db93f7012d79155aff3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/besooper",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 156,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Wholesale"
+                ],
+                "company_professional_network_industry": "Wholesale",
+                "position_id": 1883256637,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Unxpose",
+                "company_website": "https://app.unxpose.com/signup",
+                "professional_network_id": "70968508",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 890209,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a19c8ea646eb7fbd79ebd59260a1f599244d858e585a912cbc9d12e6b7703744.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/unxpose",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Computer and Network Security",
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Computer and Network Security",
+                "position_id": 1798958541,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Moises",
+                "company_website": "http://moises.ai/?ct=lk-bio",
+                "professional_network_id": "43368220",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 689665,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d86d9d198a11d1a973542b52aac4a084b36f9178c7d95b0d6e510f413bd41cdf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/moises",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1770610200,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Salt Lake City, Utah, United States",
+                "company_hq_location_address_components": [
+                  "Salt Lake City",
+                  "Salt Lake County",
+                  "Utah",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Meetz (Exit para a Receita Previs\u00edvel)",
+                "company_website": "https://www.meetz.com.br/",
+                "professional_network_id": "64864594",
+                "title": "Partner and Board Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2021-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3421427,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5a2f0fe4661b908c40d09339f14900dd54536770afa5d44755e3fdfd92aff37e.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/wearemeetz",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 27,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Business Content",
+                  "Internet Publishing",
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Business Content",
+                "position_id": 1796962383,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "Recife, State of Pernambuco, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Medipre\u00e7o",
+                "company_website": "https://www.medipreco.com.br",
+                "professional_network_id": "11749413",
+                "title": "Partner and Board Member",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 841522,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f0ab5ad84b0d8ac18082325319423eb906ca04e1bb709d1c6226c0e4e66be96b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/medipreco",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 31,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1753187466,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "Bras\u00edlia, Federal District, Brazil",
+                "company_hq_location_address_components": [
+                  "Bras\u00edlia",
+                  "Bras\u00edlia",
+                  "Bras\u00edlia",
+                  "Federal District",
+                  "Brazil"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Gira",
+                "company_website": "https://gira.app.br/",
+                "professional_network_id": "37844746",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 829295,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a91fd0bf1e3cd16a891f44cc2edf2fb195b5477cc76537d9916cdc6ce61d5b58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/gira-app",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 23,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1753190204,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "ProntoChef",
+                "company_website": "https://empresas.prontochef.com.br/",
+                "professional_network_id": "10113565",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3013890,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/64eab9f9454449807bf3a590711bb98c48e5479145f7bd5afca7c9df583e718c.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/prontochef",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 37,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Food and Beverage Services",
+                  "Accommodation and Food Services"
+                ],
+                "company_professional_network_industry": "Food and Beverage Services",
+                "position_id": 1753187541,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Networkme",
+                "company_website": "https://www.networkme.com.br/",
+                "professional_network_id": "14047768",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2020-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 826810,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1a52bcae4c5adc6b0bfbf5e63156340f5261962c66dbe5366ebee0094aef0c45.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/networkme-io",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Education Management"
+                ],
+                "company_professional_network_industry": "Education Management",
+                "position_id": 1755449877,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Portugal",
+                "company_hq_location": "Avenidas Novas, Portugal",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Zenklub",
+                "company_website": "https://zenklub.com.br",
+                "professional_network_id": "10337751",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2019-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 674373,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d7272ad68d651351bf814415129934cb9ef08935881d196e2d261b2ddead13d9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/zenklub",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 649,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Wellness and Fitness Services",
+                  "Recreational Facilities",
+                  "Entertainment Providers"
+                ],
+                "company_professional_network_industry": "Wellness and Fitness Services",
+                "position_id": 1551972624,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Unicorn Factory Lisboa",
+                "company_website": "https://unicornfactorylisboa.com",
+                "professional_network_id": "86464384",
+                "title": "Mentor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2019-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1199422,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/47dec9e2c780ef765d394277206b1af2bc049cffe202a1058fe2eee97bad49cd.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/unicornfactorylisboa",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 177,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Non-profit Organization Management"
+                ],
+                "company_professional_network_industry": "Non-profit Organization Management",
+                "position_id": 1558122247,
+                "company_type": "Nonprofit",
+                "company_headquarters_country": "Portugal",
+                "company_hq_location": "Lisboa, Lisbon, Portugal",
+                "company_hq_location_address_components": [
+                  "Lisbon",
+                  "Lisbon",
+                  "Lisbon",
+                  "Portugal"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Docket",
+                "company_website": "https://docket.com.br",
+                "professional_network_id": "24983699",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2017-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 674900,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/525a8f22a573262836fce2fe96a1859078f1c368a47ce83cd198218565e5408d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/docketbrasil",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 153,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1379949280,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Rapidoo",
+                "company_website": "http://www.rapidoo.com.br",
+                "professional_network_id": "12892883",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2017-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 968114,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/adc26ca7c3bb1904575f8e1dd665cc9d7c18a6d02f24974d122dedf4160e0c5d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/rapidoo-br",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 8,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Financial Services",
+                "position_id": 1379948573,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "Tatui, S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "idwall",
+                "company_website": "http://idwall.co",
+                "professional_network_id": "10628684",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2016-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 678435,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6e082dfcf5e0dbfe1a26c8c9e3ff6b03072493f449b113632ea0e6d7445fe6eb.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/idwall",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 10,
+                "company_headcount_latest": 221,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1379949096,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Single Brands",
+                "company_website": "",
+                "professional_network_id": "10184725",
+                "title": "Co-Founder",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2015-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 7669825,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/602272a009e6c3aa4cb266e0a88ba64c3cf4c67ea4aaf24a5c26f0da81687e6d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/single-brands",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 11,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Food and Beverage Manufacturing",
+                  "Manufacturing"
+                ],
+                "company_professional_network_industry": "Food and Beverage Manufacturing",
+                "position_id": 1358895324,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Parafuzo",
+                "company_website": "http://www.parafuzo.com",
+                "professional_network_id": "3759521",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2015-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1108381,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f15c1628d18606b18791dc6ec81992efdc1c98568f7fdf18928a843bfdccf008.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/parafuzo-com",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 11,
+                "company_headcount_latest": 244,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Household Services",
+                  "Consumer Services"
+                ],
+                "company_professional_network_industry": "Household Services",
+                "position_id": 1380510842,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "S\u00e3o Paulo, State of S\u00e3o Paulo, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Wellhub",
+                "company_website": "http://wellhub.com",
+                "professional_network_id": "11308185",
+                "title": "Partner",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2013-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1268618,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/37a56167376c41dbe6130f6e44ed6077fb58cbc79d3c13d2e605e1b263df5d06.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/wellhub",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 13,
+                "company_headcount_latest": 2619,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Wellness and Fitness Services",
+                  "Recreational Facilities",
+                  "Entertainment Providers"
+                ],
+                "company_professional_network_industry": "Wellness and Fitness Services",
+                "position_id": 1379949844,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Carvalheira",
+                "company_website": "",
+                "professional_network_id": "11257113",
+                "title": "Co-Founder and Chairman",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2004-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 3421429,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fac343fab3e88a438c6b43ceb6d39e9630f601185ed80c4947b5d91cc9365685.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/carvalheiramemories",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "More than 10 years",
+                "years_at_company_raw": 22,
+                "company_headcount_latest": 153,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Entertainment Providers"
+                ],
+                "company_professional_network_industry": "Entertainment Providers",
+                "position_id": 1379983124,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Brazil",
+                "company_hq_location": "Recife, State of Pernambuco, Brazil",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQqDMAwG4FcpOXvQv02DvsoY0sQUD2NlWg9j7N3Hzt-HXpcf73Uv505LoCyaU5wYFT4bEEUL6jyOymDJLCrigEqZNk_uc9UsZojQZFtlGgKd7ei0hBsyS0K8D4F66-WxWruef-HvLwAA___fiEwSdwAAAA==",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

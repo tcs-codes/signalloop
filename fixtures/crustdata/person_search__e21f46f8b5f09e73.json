@@ -1,0 +1,364 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "kwant.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 49776727,
+        "basic_profile": {
+          "name": "Melina Pacheco",
+          "professional_network_name": " Melina Pacheco",
+          "headline": "Business Development Representative @ Kwant | Driving Business Growth",
+          "current_title": "Business Development Representative",
+          "normalized_title": {
+            "matched_title": "Business Development Representative",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/088242065e866bc53a3d4016c6129bf9da5358e25329c85178e605c157755b34.jpg",
+          "location": {
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "country": "Mexico",
+            "continent": "North America",
+            "raw": "Hermosillo, Sonora, Mexico",
+            "full_location": "Hermosillo, Sonora, Mexico"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/melina-pv"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Kwant",
+                "company_website": "https://www.kwant.ai",
+                "professional_network_id": "4829264",
+                "title": "Business Development Representative",
+                "description": "",
+                "location": {
+                  "raw": "\u042d\u0440\u043c\u043e\u0441\u0438\u043b\u044c\u043e, SON"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698804,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/92db5dda846b2f5f2ae7ffdb081c470dfabe1dec172666e35dce1ea5b4df04a8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kwantai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2615364524,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Brooklyn, New York, United States",
+                "company_hq_location_address_components": [
+                  "Brooklyn",
+                  "Kings County",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 172993639,
+        "basic_profile": {
+          "name": "Richard Norcross",
+          "professional_network_name": "Richard Norcross",
+          "headline": "Sales And Marketing Specialist at Kwant",
+          "current_title": null,
+          "normalized_title": null,
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/richard-norcross-b0354b226"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Kwant",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 0,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Kwant",
+                "company_website": "https://www.kwant.ai",
+                "professional_network_id": "4829264",
+                "title": "Sales And Marketing Specialist",
+                "description": "",
+                "employment_type": "",
+                "start_date": null,
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 698804,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/92db5dda846b2f5f2ae7ffdb081c470dfabe1dec172666e35dce1ea5b4df04a8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kwantai",
+                "seniority_level": "Entry Level",
+                "function_category": "Sales",
+                "years_at_company": "",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1874359942,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Brooklyn, New York, United States",
+                "company_hq_location_address_components": [
+                  "Brooklyn",
+                  "Kings County",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 209659866,
+        "basic_profile": {
+          "name": "Makenzie Eden",
+          "professional_network_name": "Makenzie Eden",
+          "headline": "Construction Workforce Intelligence | AI, Labor Analytics & Project Visibility | Director of Sales @ Kwant",
+          "current_title": "Director of Sales",
+          "normalized_title": {
+            "matched_title": "Director of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b2a7db978dc86cd58096c5b071fb7c656805f027b5fc77c192ff00d20791d651.jpg",
+          "location": {
+            "city": "San Diego",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Diego, California, United States",
+            "full_location": "San Diego, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/makenzieeden"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Kwant",
+                "company_website": "https://www.kwant.ai",
+                "professional_network_id": "4829264",
+                "title": "Director of Sales",
+                "description": "Kwant is the leading construction workforce management software using AI-driven insights and wearables to increase safety, productivity and compliance. \n\n+ Access Control: Facial recognition, contactless/passive badging system, turnstiles, scanners \n+ Safety: Fatigue monitoring, mass SMS messaging, high-risk zone alerting, fall detection, near-miss detection ++ predictive analytics \n+ Compliance: Certification tracking and automations \n+ Productivity: AI Project Chat, Automate manual processes, Workforce risk dashboard with predictive analytics, compare actual vs budgeted workforce numbers, Sync with Procore, CMiC, Hammertech, PowerBI, more \n\nMessage me to set up a demo makenzie@kwant.ai",
+                "employment_type": "Full-time",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 698804,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/92db5dda846b2f5f2ae7ffdb081c470dfabe1dec172666e35dce1ea5b4df04a8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kwantai",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 47,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2446733398,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Brooklyn, New York, United States",
+                "company_hq_location_address_components": [
+                  "Brooklyn",
+                  "Kings County",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Confetti Photo Booth",
+                "company_website": "",
+                "professional_network_id": null,
+                "title": "Co-Owner",
+                "description": "San Diego, Orange County, Temecula Valley\n\nwww.confettipb.com",
+                "location": {
+                  "raw": "San Diego, California, United States"
+                },
+                "employment_type": "",
+                "start_date": "2023-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 0,
+                "company_status": null,
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 0,
+                "company_headcount_range": "",
+                "company_industries": [],
+                "company_professional_network_industry": "",
+                "position_id": 2346083854,
+                "company_type": "",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ6CMAwA0F9ZeubAiq2UXzGGdF0bDsZFGAdj_Hfj-X3gdfr-Xjc9NlgSGI1ChsqacRTCqNWRKV9ntRAr5hGRM_mlCE_uBW3O5mLh1VAFhgRH2zss6YajMMnMfB8S9Nb1sVo7n3-bvr8AAAD__5NQErR5AAAA",
+    "total_count": 3,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

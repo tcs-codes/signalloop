@@ -1,0 +1,132 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "getsphere.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.23,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 458106,
+        "basic_profile": {
+          "name": "Nicholas Rudder",
+          "professional_network_name": "Nicholas Rudder",
+          "headline": "CEO & CFO @ Sphere | Decoding global tax & trade compliance | a16z & YC backed",
+          "current_title": "CEO & CFO",
+          "normalized_title": {
+            "matched_title": "CFO & COO",
+            "department": "Finance & Accounting",
+            "sub_department": "Financial Planning & Analysis",
+            "similarity": 0.9497,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/e79374033f6ed95219a69ade5ac2a474cf315278efabecdc321f27177eb1b1aa.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/nicholasrudder"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Sphere",
+                "company_website": "https://www.getsphere.com/",
+                "professional_network_id": "69773723",
+                "title": "CEO & CFO",
+                "description": "Building the world's first AI-native, revenue-based compliance platform. \n\nBacked by a16z, Felicis Ventures, Y Combinator, 20vc and leading angels.\n\nLoved by our customers: Deel, Lovable, ElevenLabs, Replit and many more.",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 697914,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/32db5785c7081d8e7515de6ce35545ea5c05900ab16455933f0c5f4be5383dca.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/getsphere",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 50,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1706190820,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 1,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

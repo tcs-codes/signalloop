@@ -1,0 +1,529 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "stackai.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 2795967,
+        "basic_profile": {
+          "name": "Nick Salata",
+          "professional_network_name": "Nick Salata",
+          "headline": "GTM Engineer @ StackAI / Asana",
+          "current_title": "GTM Engineer",
+          "normalized_title": {
+            "matched_title": "GTM Engineer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Cleveland",
+            "state": "Ohio",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Cleveland, Ohio, United States",
+            "full_location": "Cleveland, Ohio, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/nicksalata"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "StackAI",
+                "company_website": "https://www.stackai.com",
+                "professional_network_id": "80754038",
+                "title": "GTM Engineer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810179,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ed930f9e74a27db935854dee3cbcffb762bbc82a15e5a0c58f373e22fbcc0d05.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/stackai",
+                "seniority_level": "Entry Level",
+                "function_category": "Engineering",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 85,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2960276642,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Asana",
+                "company_website": "http://asana.com/",
+                "professional_network_id": "807257",
+                "title": "GTM Engineer",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2026-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 633874,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/573c79ef56c690ca8d387c8d12dbd9cffc01b18ebe2278358f47f26432dafbc4.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/asana",
+                "seniority_level": "Entry Level",
+                "function_category": "Engineering",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 4459,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2983205307,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Kairos Ops",
+                "company_website": "https://kairosops.com",
+                "professional_network_id": "106273854",
+                "title": "Founder & Head GTM Engineer",
+                "description": "Most outbound consultants have never actually carried a quota. I have \u2014 10+ years in sales and sales development before I ever touched a RevOps dashboard. That's why the systems I build actually get used.\n\nKairosOps is fractional RevOps and GTM engineering for B2B startups whose outbound isn't working. I lead with diagnosis. Are you targeting the right ICP? Is your messaging landing? Where are deals leaking? Then build the infrastructure to fix it.\n\nHow it works:\n\u2192 Diagnose: Audit your GTM motion and find what's actually broken\n\u2192 Build: Outbound infrastructure, CRM automation, enrichment workflows, scoring models\n\u2192 Transfer: Systems that run without me after I leave\n\nTypical engagement: Seed to Series B, $15-30K, 2-4 months.\n\nIf your outbound is broken and you're not ready for a full-time RevOps hire \u2014 that's exactly what this is for.",
+                "employment_type": "Self-employed",
+                "start_date": "2022-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 13179661,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e2a8f00c5eccd6e15951d9316df7f109c259d15442d929fa377a281433db0c2b.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kairosops",
+                "seniority_level": "Owner / Partner",
+                "function_category": "Engineering",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Business Consulting and Services",
+                "position_id": 2683020358,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 84385596,
+        "basic_profile": {
+          "name": "Jonathan Kleiman",
+          "professional_network_name": "Jonathan Kleiman",
+          "headline": "Founding Team @ StackAI (acq. by Asana) | Investor @ Cedar Tree Capital | AGI for Enterprise",
+          "current_title": "Founding Team & SVP of Sales",
+          "normalized_title": {
+            "matched_title": "Partner & VP of Sales",
+            "department": "Executive Leadership",
+            "sub_department": "Sales & Marketing Leadership",
+            "similarity": 0.9872,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/39c6e9a7930d4a25fb4f33bbf3212666f42ad8b390fa876c6a7a4467e5d9fe28.jpg",
+          "location": {
+            "city": "Miami",
+            "state": "Florida",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Miami, Florida, United States",
+            "full_location": "Miami, Florida, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/jonathan-kleiman-b9786614a"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "StackAI",
+                "company_website": "https://www.stackai.com",
+                "professional_network_id": "80754038",
+                "title": "Founding Team & SVP of Sales",
+                "description": "",
+                "location": {
+                  "raw": "New York, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810179,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ed930f9e74a27db935854dee3cbcffb762bbc82a15e5a0c58f373e22fbcc0d05.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/stackai",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 85,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2526358468,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Cedar Tree Capital",
+                "company_website": "",
+                "professional_network_id": "105066769",
+                "title": "Partner",
+                "description": "",
+                "location": {
+                  "raw": "Miami, Florida, United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 9691523,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/74c577cc61fa9c2c34ec07b2452b94f2c37af100b6f2f1154391d33589f60683.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cedar-tree-capital",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Venture Capital and Private Equity Principals",
+                  "Capital Markets",
+                  "Financial Services"
+                ],
+                "company_professional_network_industry": "Venture Capital and Private Equity Principals",
+                "position_id": 2526353977,
+                "company_type": "Partnership",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Miami, Florida, United States",
+                "company_hq_location_address_components": [
+                  "Miami",
+                  "Miami-Dade County",
+                  "Florida",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "3i Members",
+                "company_website": "http://www.3imembers.com?utm_medium=social",
+                "professional_network_id": "76591873",
+                "title": "Member",
+                "description": "3i brings engaged private investors together to source opportunities, share expertise and build value for one another that goes far beyond the deal.",
+                "employment_type": "",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 642144,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/455e9625acb47ffebad0b3e2e05220a6efba60b1ceef0aa5788fda537aef4b7a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/3imembers",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 162,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 2343618643,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Neteera",
+                "company_website": "https://www.neteera.com/",
+                "professional_network_id": "10579488",
+                "title": "Investor & Advisor",
+                "description": "",
+                "location": {
+                  "raw": "Jerusalem, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2021-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 664968,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1c1da14f351cf53f4cd8ea027bf8435806b39232d4317250e62f4a279e2b7c98.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/neteera",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Medical Device"
+                ],
+                "company_professional_network_industry": "Medical Device",
+                "position_id": 1843154810,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Lewes, Delaware, United States",
+                "company_hq_location_address_components": [
+                  "Lewes",
+                  "Sussex County",
+                  "Delaware",
+                  "United States",
+                  "19958"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 107128986,
+        "basic_profile": {
+          "name": "Justin Munro",
+          "professional_network_name": "Justin Munro",
+          "headline": "StackAI  | Build, Deploy & GOVERN AI Agents",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c8966b7f867d6317e88294e42bfdb1150c44636ac900e8a36fb969b2126e9a82.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Los Angeles Metropolitan Area",
+            "full_location": "Los Angeles Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/justinmunro3"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "StackAI",
+                "company_website": "https://www.stackai.com",
+                "professional_network_id": "80754038",
+                "title": "GTM",
+                "description": "Stack AI is an AI-native workflow orchestration platform for back-office automation, working with businesses to accelerate their adoption of AI Agents.",
+                "employment_type": "Full-time",
+                "start_date": "2025-09-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 810179,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ed930f9e74a27db935854dee3cbcffb762bbc82a15e5a0c58f373e22fbcc0d05.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/stackai",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 85,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2765241793,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Silly Dog",
+                "company_website": "http://sillydog.co",
+                "professional_network_id": "103750488",
+                "title": "Founder",
+                "description": "Personalized Apparel for Dog Owners",
+                "employment_type": "Self-employed",
+                "start_date": "2024-03-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 6684151,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2d8e0ee9314d4089c427532308def4201f973d01c83a16f5320aa05e7fe32477.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/silly-dog-co",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Retail Apparel and Fashion",
+                  "Retail"
+                ],
+                "company_professional_network_industry": "Retail Apparel and Fashion",
+                "position_id": 2642667394,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJParDMAwA4KsYzRniH1lSrvJ4hEi1yFBqmjhDKb176fy94Xm147Xu27nDEsBiYSocvWXh2gSduSixUaGmmjyRCgrON_XkJUdBzuianbwaG0wBzn4MWMJfnCkmFq7_U4DRx3ZfrV-Pn-HnGwAA__-nTQQVeQAAAA==",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "ory.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1573977,
+        "basic_profile": {
+          "name": "Pramod Kutty",
+          "professional_network_name": "Pramod Kutty",
+          "headline": "Helping enterprises modernize identity, security, and access in an AI era.",
+          "current_title": "Director of Sales - APAC",
+          "normalized_title": {
+            "matched_title": "Director of Sales, APAC",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9994,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6f4498bc5551eb9b7fc22bee5c31bf01439575b2fd4d0307d434e0cea55ca016.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/pramod-kutty-58975111"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ory Corp",
+                "company_website": "https://www.ory.com",
+                "professional_network_id": "11374545",
+                "title": "Director of Sales - APAC",
+                "description": "I support Ory Corp's growth initiatives in the APAC region, focusing on business development and strategic partnerships.  \n\n\u2022 Drive new business and expanded existing accounts to enhance market presence.  \n\u2022 Build and nurtured strategic relationships to support long-term growth objectives.  \n\u2022 Contribute to Ory's overall strategy in the dynamic APAC market, emphasizing customer engagement.",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 674198,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56edd1add2d75bcdf7fc216d56d5282913bf7cf7b2421ceb3179a1e94ce20e58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ory-corp",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 2812645798,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scottsdale, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Scottsdale",
+                  "Maricopa County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2696126,
+        "basic_profile": {
+          "name": "Rob Murray",
+          "professional_network_name": "Rob Murray",
+          "headline": "Chief Revenue Officer, Ory Corp.",
+          "current_title": "Chief Revenue Officer",
+          "normalized_title": {
+            "matched_title": "Chief Revenue Officer",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/620824544e561ee522f75be882ae73990dd5ca440a2299564da9a52fe1a0cac2.jpg",
+          "location": {
+            "city": null,
+            "state": "Colorado",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Denver Metropolitan Area",
+            "full_location": "Denver Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/robemurray"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "RobertEMurray"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ory Corp",
+                "company_website": "https://www.ory.com",
+                "professional_network_id": "11374545",
+                "title": "Chief Revenue Officer",
+                "description": "Lead Ory's global sales and go-to-market organization, with a focus on helping enterprises recognize industry-leading time to value across Ory's customer, B2B, and Agent IAM products.",
+                "location": {
+                  "raw": "Denver, CO"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 674198,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56edd1add2d75bcdf7fc216d56d5282913bf7cf7b2421ceb3179a1e94ce20e58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ory-corp",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 2972172254,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scottsdale, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Scottsdale",
+                  "Maricopa County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 27144751,
+        "basic_profile": {
+          "name": "Mohit Khanna",
+          "professional_network_name": "Mohit Khanna",
+          "headline": "Director of Sales @ Ory | MBA | Identity & Access Mgmt",
+          "current_title": "Director of Sales",
+          "normalized_title": {
+            "matched_title": "Director of Sales",
+            "department": "Sales & Revenue",
+            "sub_department": "Field & Regional Sales",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/dee1581d13efe481c6890d59386a76e29bab757acb20ae86d8f12c39983f1108.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/mkhanna1"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Ory Corp",
+                "company_website": "https://www.ory.com",
+                "professional_network_id": "11374545",
+                "title": "Director of Sales",
+                "description": "\u2022 Develop and execute a IAM territory strategy focused on acquiring new enterprise customers and expanding Ory\u2019s footprint within existing accounts.\n\u2022 Identify, engage, and build trusted relationships with executive and technical stakeholders (CISOs, CTOs, IAM Architects, Developers, and Product Leaders).\n\u2022 Lead the entire sales cycle from prospecting and qualification through proposal, negotiation, and close while consistently meeting or exceeding sales quotas.\n\u2022 Clearly articulate Ory\u2019s value proposition, emphasizing open-source advantages, developer empowerment, and scalable IAM solutions.\n\u2022 Collaborate with Ory\u2019s Solutions Engineering, Product, and Marketing teams to align technical capabilities with customer needs and strategic initiatives.\n\u2022 Engage with the Ory open-source community to identify enterprise opportunities and strengthen the brand\u2019s presence among developers and partners.\n\u2022 Stay informed on industry trends in IAM, Zero Trust, OpenID Connect, OAuth 2.0, and cloud-native security.\n\u2022 Represent Ory at conferences, industry events, and customer meetings as a trusted advisor and thought leader in open identity.",
+                "employment_type": "",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 674198,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/56edd1add2d75bcdf7fc216d56d5282913bf7cf7b2421ceb3179a1e94ce20e58.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ory-corp",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 56,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Data Security Software Products",
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Data Security Software Products",
+                "position_id": 2757606750,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Scottsdale, Arizona, United States",
+                "company_hq_location_address_components": [
+                  "Scottsdale",
+                  "Maricopa County",
+                  "Arizona",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_QNM3S7VVERn8SdhCLW3cQ8d3F8_eB16XHe9vzucPqwLcaTZGoiQ9ElSViboUw-ZBpXpJiRDHPOHNLrKRkLKxWQlisEEwOzn4MWN0tCMYojPfJwegjP7bar-ef5u8vAAD__zavjKt4AAAA",
+    "total_count": 6,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

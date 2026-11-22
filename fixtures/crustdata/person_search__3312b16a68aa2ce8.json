@@ -1,0 +1,382 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "yardstik.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 1085320,
+        "basic_profile": {
+          "name": "Jonathan Seifert",
+          "professional_network_name": "Jonathan Seifert",
+          "headline": "GTM - Embedded at Yardstik",
+          "current_title": "GTM - Embedded",
+          "normalized_title": {
+            "matched_title": "GTM Engineer",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.7699,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/81ccfa7b01aa9176dcbe944b2be0bd01b0b2781804ec22147f8575a638d848b1.jpg",
+          "location": {
+            "city": "Montreal",
+            "state": "Quebec",
+            "country": "Canada",
+            "continent": "North America",
+            "raw": "Montreal, Quebec, Canada",
+            "full_location": "Montreal, Quebec, Canada"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/j-seifert"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yardstik",
+                "company_website": "http://yardstik.com",
+                "professional_network_id": "64929202",
+                "title": "GTM - Embedded",
+                "description": "",
+                "location": {
+                  "raw": "Minneapolis, MN"
+                },
+                "employment_type": "",
+                "start_date": "2026-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642314,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4e609b19c83c5bf25e571dd69611e44bd723fb2bf403afd7cb4d1c92b2093751.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yardstik",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 74,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3002375849,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "OTG Leads",
+                "company_website": "http://www.otgleads.com",
+                "professional_network_id": "110110002",
+                "title": "GTM Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 62084132,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/otg-leads",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2849030696,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "DiversityBot",
+                "company_website": "https://www.diversitybot.app",
+                "professional_network_id": "79985553",
+                "title": "GTM Advisor",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 32521173,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fe40d72de1570c3606fe4e45af7d01070901e2e5e443316845c2c345d3336c2f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/diversitybot",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Human Resources Services",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Human Resources Services",
+                "position_id": 2849046392,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Palo Alto, California, United States",
+                "company_hq_location_address_components": [
+                  "Palo Alto",
+                  "Santa Clara County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2178515,
+        "basic_profile": {
+          "name": "Mark Busch",
+          "professional_network_name": "Mark Busch",
+          "headline": "Director of Revenue Operations",
+          "current_title": "Director of Revenue Operations",
+          "normalized_title": {
+            "matched_title": "Director of Revenue Operations",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/872a18e6f12556ccd4c03f568bdea93d3746bd6c2133bbf08514afc0962d3578.jpg",
+          "location": {
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Minneapolis, Minnesota, United States",
+            "full_location": "Minneapolis, Minnesota, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/markfbusch"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yardstik",
+                "company_website": "http://yardstik.com",
+                "professional_network_id": "64929202",
+                "title": "Director of Revenue Operations",
+                "description": "",
+                "location": {
+                  "raw": "Minneapolis, Minnesota, United States"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2023-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642314,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4e609b19c83c5bf25e571dd69611e44bd723fb2bf403afd7cb4d1c92b2093751.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yardstik",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 74,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2303054970,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2629555,
+        "basic_profile": {
+          "name": "Brady Stromme",
+          "professional_network_name": "Brady Stromme",
+          "headline": "GTM @ Yardstik",
+          "current_title": "Head of Sales & Customer Success",
+          "normalized_title": {
+            "matched_title": "VP of Sales & Customer Success",
+            "department": "Sales & Revenue",
+            "sub_department": "Retail & Consumer Sales",
+            "similarity": 0.9992,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/0de56ecb11497927f8bbe3e5ac93cb12b42e873549c10ba9cbf510d8a63f2838.jpg",
+          "location": {
+            "city": "Saint Paul",
+            "state": "Minnesota",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "St Paul, Minnesota, United States",
+            "full_location": "St Paul, Minnesota, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/bradystrommeyardstik"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Yardstik",
+                "company_website": "http://yardstik.com",
+                "professional_network_id": "64929202",
+                "title": "Head of Sales & Customer Success",
+                "description": "Trust, reimagined.",
+                "employment_type": "Full-time",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 642314,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4e609b19c83c5bf25e571dd69611e44bd723fb2bf403afd7cb4d1c92b2093751.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/yardstik",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 74,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2810213017,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Minneapolis, Minnesota, United States",
+                "company_hq_location_address_components": [
+                  "Minneapolis",
+                  "Hennepin County",
+                  "Minnesota",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJsQ6CMBAG4FdpbmaAwn-98irGkPZ6DYOxEcpgjO9unL8PvS473tuezp1WR1L9wkgqNXLOoYRZkkWMAp2DQMus08SLwlDYSgyaPVsVjLBFRGlwdLaj0-punn0EcB8c9dbTY9N2Pf8y-e8vAAD__146UU94AAAA",
+    "total_count": 12,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

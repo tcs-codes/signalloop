@@ -1,0 +1,262 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "moises.ai"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.46,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 27968233,
+        "basic_profile": {
+          "name": "Matt Henninger",
+          "professional_network_name": "Matt Henninger",
+          "headline": "Music Partnership & Strategy Executive",
+          "current_title": "VP, Business Development & Strategy",
+          "normalized_title": {
+            "matched_title": "Vice President, Business Development & Strategy",
+            "department": "Executive Leadership",
+            "sub_department": "Corporate Strategy & Business Development",
+            "similarity": 0.9986,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/84ccae60640a5347ffe97beac250cd3ed4c48f069072a0497d53175b792db78e.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "United States",
+            "full_location": "United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/matt-henninger"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "henninger_matt"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Moises",
+                "company_website": "http://moises.ai/?ct=lk-bio",
+                "professional_network_id": "43368220",
+                "title": "VP, Business Development & Strategy",
+                "description": "Joined to build the Music.ai B2B division from zero and shape AI licensing strategy for both the B2B platform and the Moises consumer app. Operating in a space with no existing commercial playbook, developed novel frameworks for ethical AI licensing that became foundational to the company's product growth and model development.\n\n- Grew Moises user base ~400% to 71M users; scaled Music.ai B2B audio processing to >3M minutes/day\n- Executed 50+ B2B agreements licensing AI audio technologies across labels, publishers, DSPs, universities, consumer electronics, and generative AI companies\n- Negotiated first-of-their-kind generative AI partnerships with leading Digital Audio Workstations and Tier-A consumer electronics manufacturers\n- Established ethical AI licensing framework beginning in 2022 \u2014 ahead of industry-wide debate on the topic\n- Panelist on ethical AI and music tools at MusicBiz, NAMM, Music Tectonics, Berklee School of Music, University of Michigan, and Indiana University",
+                "employment_type": "Full-time",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689665,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d86d9d198a11d1a973542b52aac4a084b36f9178c7d95b0d6e510f413bd41cdf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/moises",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2772361506,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Salt Lake City, Utah, United States",
+                "company_hq_location_address_components": [
+                  "Salt Lake City",
+                  "Salt Lake County",
+                  "Utah",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "Music AI",
+                "company_website": "http://www.music.ai",
+                "professional_network_id": "100040442",
+                "title": "VP, Business Development & Strategy",
+                "description": "See details @ Moises position above",
+                "employment_type": "Full-time",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1993258,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2fcd9f568bd4f58e367c66fbc6807f0c330a1fe6aa7bc104ccbb59f834bcfedf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/musicai",
+                "seniority_level": "Vice President",
+                "function_category": "Sales",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 330,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2790800391,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Salt Lake City, Uttar\u0101khand, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 100419415,
+        "basic_profile": {
+          "name": "Spencer Mann",
+          "professional_network_name": "Spencer Mann",
+          "headline": "SVP of Revenue and Growth at Moises",
+          "current_title": "SVP of Revenue",
+          "normalized_title": {
+            "matched_title": "VP Revenue",
+            "department": "Sales & Revenue",
+            "sub_department": "Revenue Operations & Analytics",
+            "similarity": 0.9976,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/6ad3976dc3fb424155574cc7cafed8f56f3890ff193c423ef15a85b48f95ce8c.jpg",
+          "location": {
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Salt Lake City Metropolitan Area",
+            "full_location": "Salt Lake City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/spencer-mann"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "spencer_mann"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Moises",
+                "company_website": "http://moises.ai/?ct=lk-bio",
+                "professional_network_id": "43368220",
+                "title": "SVP of Revenue",
+                "description": "\u2022 Growth leadership\n\u2022 Pricing and promotions\n\u2022 Net negative churn - Upgrades, retention, and reactivation\n\u2022 Paid advertising\n\u2022 App store optimization",
+                "location": {
+                  "raw": "Salt Lake City Metropolitan Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2022-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 689665,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d86d9d198a11d1a973542b52aac4a084b36f9178c7d95b0d6e510f413bd41cdf.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/moises",
+                "seniority_level": "Vice President",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 193,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2067136779,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Salt Lake City, Utah, United States",
+                "company_hq_location_address_components": [
+                  "Salt Lake City",
+                  "Salt Lake County",
+                  "Utah",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": null,
+    "total_count": 2,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

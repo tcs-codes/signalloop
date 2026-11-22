@@ -1,0 +1,389 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "lightdash.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 381261,
+        "basic_profile": {
+          "name": "Rohan Bedi",
+          "professional_network_name": "Rohan Bedi",
+          "headline": "Growth at Lightdash | Agentic Analytics",
+          "current_title": "Growth",
+          "normalized_title": {
+            "matched_title": "Growth",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/25ac5a5975b3749cd89b23713a9f62ab601051a2ced827929e868647a876f9ef.jpg",
+          "location": {
+            "city": "London",
+            "state": "England",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "London, England, United Kingdom",
+            "full_location": "London, England, United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/rohan-bedi-17114782"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lightdash",
+                "company_website": "https://lightdash.com/",
+                "professional_network_id": "68159185",
+                "title": "Growth",
+                "description": "Redefining what GTM is with AI.\n\nEnterprise at scale, always exceeded quota (several successive quarters at 400%-500% quota).\nA part of and helping to build the best team in all of tech.",
+                "location": {
+                  "raw": "London Area, United Kingdom"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712626,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fa7454805eb798267f033658b13cba723f7379a0f1fae1bb087c25fe9dc782ee.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lightdash",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2618312773,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 1527476,
+        "basic_profile": {
+          "name": "Ian A.",
+          "professional_network_name": "Ian A.",
+          "headline": "Head of Sales and Partnerships @ Lightdash",
+          "current_title": "Head of Sales and Partnerships",
+          "normalized_title": {
+            "matched_title": "Director of Sales & Partnerships",
+            "department": "Sales & Revenue",
+            "sub_department": "Channel & Partner Sales",
+            "similarity": 0.9983,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/f1f4bf80ca522ce0a713c734f06bf4641f8f032cde3af06bcd33510c539dac38.jpg",
+          "location": {
+            "city": "London",
+            "state": "England",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "London, England, United Kingdom",
+            "full_location": "London, England, United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/ianahuja"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lightdash",
+                "company_website": "https://lightdash.com/",
+                "professional_network_id": "68159185",
+                "title": "Head of Sales and Partnerships",
+                "description": "",
+                "employment_type": "Full-time",
+                "start_date": "2022-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712626,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fa7454805eb798267f033658b13cba723f7379a0f1fae1bb087c25fe9dc782ee.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lightdash",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1971310722,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              },
+              {
+                "name": "miniti",
+                "company_website": "https://miniti.app",
+                "professional_network_id": "13348999",
+                "title": "Founder",
+                "description": "AI speech coach and live meeting assistant",
+                "location": {
+                  "raw": "London Area, United Kingdom"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2026-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 25162878,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3cb73a68edb5782b7d2ef220fac2720e356376d48c7c6974219db7fcc7f12792.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/miniti",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 8,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2838244627,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Ahuja Supper Clubs",
+                "company_website": "https://ianahuja.com/supperclubs/",
+                "professional_network_id": "108212573",
+                "title": "Vibe cook",
+                "description": "Monthly supper clubs, at my house, 12 people, 12 dishes, \u00a320 pp. DM if interested :)",
+                "location": {
+                  "raw": "London Area, United Kingdom"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 9399916,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b481f4b9f0b87bb0415b6ef499b9130051c38d9c9f222b541e32b0aeac393dd5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ahuja-supper-clubs",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Restaurants",
+                  "Food and Beverage Services",
+                  "Accommodation and Food Services"
+                ],
+                "company_professional_network_industry": "Restaurants",
+                "position_id": 2683382459,
+                "company_type": "Self-Employed",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 173888843,
+        "basic_profile": {
+          "name": "Filippo Pavone",
+          "professional_network_name": "Filippo Pavone",
+          "headline": "Agentic BI platform for modern data teams | Lightdash",
+          "current_title": "GTM",
+          "normalized_title": {
+            "matched_title": "Gtm",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.998,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/b060dbd4dcb006927cb049041f4df044b2df4c12d11846151d922fad5b74f035.jpg",
+          "location": {
+            "city": "London",
+            "state": "England",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "raw": "London Area, United Kingdom",
+            "full_location": "London Area, United Kingdom"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/filippo-pavone"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Lightdash",
+                "company_website": "https://lightdash.com/",
+                "professional_network_id": "68159185",
+                "title": "GTM",
+                "description": "",
+                "location": {
+                  "raw": "Londra"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 712626,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/fa7454805eb798267f033658b13cba723f7379a0f1fae1bb087c25fe9dc782ee.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lightdash",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 33,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2961198206,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMa6DMAwG4KtEnhkwifEPV3l6Qq6TiKFqVAhDVfXuVefvTc-rHK9tt3OnNZDpJFiypTJySRzBbnUSSZPOHMuC6gqt6i6COTOqqBlnsI9Vb0pDoLMdndbwxxoBIMX_IVBv3e6bt-vxs_T5BgAA__9mSFeReQAAAA==",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

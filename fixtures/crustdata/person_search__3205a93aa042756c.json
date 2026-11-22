@@ -1,0 +1,1157 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "alignedup.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 359591,
+        "basic_profile": {
+          "name": "Yuval H.",
+          "professional_network_name": "Yuval H.",
+          "headline": "Co-Founder @ Growtika | SEO & GEO Agency | We get B2B SaaS & Cybersecurity cited in ChatGPT, Claude & Perplexity",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/8a9398b003a9d1550eeb2ca6e8daad7c882272cce620cc673c4df83dc32ba292.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Israel",
+            "full_location": "Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/yuvalhalevi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Growtika",
+                "company_website": "https://growtika.com/",
+                "professional_network_id": "71707934",
+                "title": "Co-Founder",
+                "description": "",
+                "location": {
+                  "raw": "Tel Aviv District, Israel"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 3430349,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30e650e6ea505ef2d79d58f93b25514a50a48cb82f192b82899090b46e8e828.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/growtika",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Marketing Services",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Marketing Services",
+                "position_id": 2103750987,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Twofold Health",
+                "company_website": "https://www.trytwofold.com/",
+                "professional_network_id": "101973310",
+                "title": "Seed Investor & Growth Advisor",
+                "description": "Top-rated AI medical scribe for clinicians",
+                "employment_type": "Part-time",
+                "start_date": "2024-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2599482,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/55a9dc685be511ba8c27c881bfae1119cf6b5da08682035168084b6487ec8766.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trytwofold",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Hospitals and Health Care"
+                ],
+                "company_professional_network_industry": "Hospitals and Health Care",
+                "position_id": 2828655698,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "BeInCrypto",
+                "company_website": "https://beincrypto.com",
+                "professional_network_id": "33208280",
+                "title": "Contributor",
+                "description": "",
+                "employment_type": "Seasonal",
+                "start_date": "2024-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 700256,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/60e3c4e54fe381c744b551c656f6ab9b7849bde38f49a401765b58da9f17dfdc.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/beincrypto",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 110,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Online Audio and Video Media",
+                  "Internet Publishing",
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Online Audio and Video Media",
+                "position_id": 2483539600,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United Kingdom",
+                "company_hq_location": "London, England, United Kingdom",
+                "company_hq_location_address_components": [
+                  "London",
+                  "London",
+                  "Greater London",
+                  "England",
+                  "United Kingdom"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Cellular Intelligence",
+                "company_website": "https://www.cellularintelligence.com/",
+                "professional_network_id": "98835010",
+                "title": "Investor",
+                "description": "Building a future where biology is no longer destiny, but design.",
+                "employment_type": "Part-time",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1073192,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c0dc785bbd3efe4e75e10eb09c6d996178ab3a4c1b04f35ac36a41b2dec06fb7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cellular-intelligence",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 100,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Biotechnology Research",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Biotechnology Research",
+                "position_id": 2828651828,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Brighton, Massachusetts, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Lasso",
+                "company_website": "https://lasso.security",
+                "professional_network_id": "96053161",
+                "title": "Investor & Growth Advisor",
+                "description": "Cybersecurity for GenAI",
+                "employment_type": "Part-time",
+                "start_date": "2023-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1066607,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3dc1e28d75c977590f1b2bfe0291515744b5e8eb0c605e8f8b963667168e83dc.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lasso-security",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2828659582,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Startup Stash",
+                "company_website": "http://startupstash.com",
+                "professional_network_id": "9328183",
+                "title": "Chief Marketing Officer",
+                "description": "StartupStash is one of the world's biggest online directories of resources and tools for startups and entrepreneurs. Currently, we are the most upvoted product of all time on ProductHunt.",
+                "employment_type": "Full-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1076361,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/673c8a918fa19a34d142d787621a5ef026cfbfcec9141436ebf5cdd18524e315.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/startupstash",
+                "seniority_level": "CXO",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2310268785,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Aligned",
+                "company_website": "https://www.alignedup.com?utm_source=Social&utm_medium=Aligned_Page&utm_campaign=website_button&utm_id=163&avk=mvk_Linkedin_Page",
+                "professional_network_id": "73810331",
+                "title": "Investor & Growth Advisor",
+                "description": "helping sales reps design a buying experience with personalized workspace",
+                "employment_type": "Part-time",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 813860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76d9252931c4ae3574c2b80a116cbc2486b7b91ecbca680248f07847c30c72a3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alignedup",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2828669387,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Remote First, West Virginia, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "NeuraLight",
+                "company_website": "https://neuralight.ai/",
+                "professional_network_id": "71674965",
+                "title": "Investor",
+                "description": "",
+                "employment_type": "Part-time",
+                "start_date": "2021-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 662470,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3b6a2b3225a59d6249ce4727642404e322d8ca523fbcb5a8f7cb05fefde52ef2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/neuralight",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 29,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2828671297,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "lakeFS",
+                "company_website": "https://lakefs.io/",
+                "professional_network_id": "34950406",
+                "title": "Investor & Growth Advisor",
+                "description": "The Control Plane for AI-Ready Data",
+                "employment_type": "Part-time",
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 664510,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8754471dfae6c9cc20dc9c685860358e566d01a87be9ae48c119edccec65a397.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lakefs",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 41,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2828669402,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "CoinGecko",
+                "company_website": "https://www.coingecko.com",
+                "professional_network_id": "6554949",
+                "title": "Contributor",
+                "description": "",
+                "employment_type": "Seasonal",
+                "start_date": "2019-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1108335,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4af31f0c926ffde5bc7ffd7fb13d00781f22eb9412f800de30ce9dbc05174f49.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/coingecko",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 178,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Internet Publishing",
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Internet Publishing",
+                "position_id": 2483539687,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Malaysia",
+                "company_hq_location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
+                "company_hq_location_address_components": [
+                  "Federal Territory of Kuala Lumpur",
+                  "Kuala Lumpur",
+                  "Malaysia"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "HackerNoon",
+                "company_website": "https://hackernoon.com/",
+                "professional_network_id": "34267109",
+                "title": "Contributor",
+                "description": "",
+                "location": {
+                  "raw": "Tel Aviv Area, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2018-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 813958,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/426c3f77e641a78063b27cd12466690aacf35714b3abeae0ec0da9868915f465.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/hackernoon",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 268,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1471660556,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Edwards, Colorado, United States",
+                "company_hq_location_address_components": [
+                  "Edwards",
+                  "Eagle County",
+                  "Colorado",
+                  "United States",
+                  "81632"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "GuerrillaBuzz",
+                "company_website": "https://guerrillabuzz.com/",
+                "professional_network_id": "11684712",
+                "title": "Co-Founder",
+                "description": "As a non-traditional boutique growth agency, GuerrillaBuzz has been disrupting the blockchain marketing and PR landscape since 2017.",
+                "location": {
+                  "raw": "Tel Aviv"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2017-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2442959,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/703f1bff0f73ea9792c1bfb4ae82bbde78554188d37763d7742b16e8b3c048a9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/guerrillabuzz",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Advertising Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Advertising Services",
+                "position_id": 1324824141,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2656303,
+        "basic_profile": {
+          "name": "Asaf Fybish",
+          "professional_network_name": "Asaf Fybish",
+          "headline": "Building organic growth engines that drive pipeline for startups through SEO & AI Search",
+          "current_title": "Co-Founder & GM",
+          "normalized_title": {
+            "matched_title": "Co-Founder & MD",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9866,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/ff31c6e7f4b9af0d5f32bd7c962a06ed9cdd335bb7cad7bfda879f39e8a7e073.jpg",
+          "location": {
+            "city": null,
+            "state": "Tel Aviv District",
+            "country": "Israel",
+            "continent": "Asia",
+            "raw": "Tel Aviv District, Israel",
+            "full_location": "Tel Aviv District, Israel"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/asafybish"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "Asafybish"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Growtika",
+                "company_website": "https://growtika.com/",
+                "professional_network_id": "71707934",
+                "title": "Co-Founder & GM",
+                "description": "Growtika helps startups to accelerate growth and discoverability through proven SEO, AI Search and marketing methods to build dedicated organic growth engine that generates demand and pipeline.",
+                "location": {
+                  "raw": "Tel Aviv, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 3430349,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f30e650e6ea505ef2d79d58f93b25514a50a48cb82f192b82899090b46e8e828.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/growtika",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 6,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Marketing Services",
+                  "Business Consulting and Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Marketing Services",
+                "position_id": 1749760183,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Swan AI",
+                "company_website": "http://www.getswan.com",
+                "professional_network_id": "105550810",
+                "title": "Investor & Organic GTM Advisor",
+                "description": "AI GTM Engineer - From Prompt to Pipeline",
+                "employment_type": "Contract",
+                "start_date": "2025-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2818172,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/acef0a15599a5248d95bbe9e051b86f89eb1f77a13b8dc79a968f42ee0624e1d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/swan-ai-gtm",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 18,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 2854180861,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Wilmington, Delaware, United States",
+                "company_hq_location_address_components": [
+                  "Wilmington",
+                  "New Castle County",
+                  "Delaware",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Twofold Health",
+                "company_website": "https://www.trytwofold.com/",
+                "professional_network_id": "101973310",
+                "title": "Seed Investor & Growth Advisor",
+                "description": "Top-rated AI medical scribe for clinicians",
+                "employment_type": "Contract",
+                "start_date": "2024-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2599482,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/55a9dc685be511ba8c27c881bfae1119cf6b5da08682035168084b6487ec8766.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/trytwofold",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 10,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Hospitals and Health Care"
+                ],
+                "company_professional_network_industry": "Hospitals and Health Care",
+                "position_id": 2692529377,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Cellular Intelligence",
+                "company_website": "https://www.cellularintelligence.com/",
+                "professional_network_id": "98835010",
+                "title": "Investor & Marketing Advisor",
+                "description": "Redefining Cell Therapy With Artificial Intelligence",
+                "employment_type": "Contract",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1073192,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c0dc785bbd3efe4e75e10eb09c6d996178ab3a4c1b04f35ac36a41b2dec06fb7.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/cellular-intelligence",
+                "seniority_level": "Entry Level",
+                "function_category": "Marketing",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 100,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Biotechnology Research",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Biotechnology Research",
+                "position_id": 2571514714,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Brighton, Massachusetts, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Lasso",
+                "company_website": "https://lasso.security",
+                "professional_network_id": "96053161",
+                "title": "Investor & Growth Advisor",
+                "description": "Cybersecurity for GenAI",
+                "employment_type": "Contract",
+                "start_date": "2023-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1066607,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3dc1e28d75c977590f1b2bfe0291515744b5e8eb0c605e8f8b963667168e83dc.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lasso-security",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 3,
+                "company_headcount_latest": 65,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2293596233,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Aligned",
+                "company_website": "https://www.alignedup.com?utm_source=Social&utm_medium=Aligned_Page&utm_campaign=website_button&utm_id=163&avk=mvk_Linkedin_Page",
+                "professional_network_id": "73810331",
+                "title": "Investor & Growth Advisor",
+                "description": "helping sales reps design a buying experience with personalized workspace",
+                "employment_type": "Contract",
+                "start_date": "2022-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 813860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76d9252931c4ae3574c2b80a116cbc2486b7b91ecbca680248f07847c30c72a3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alignedup",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2197795845,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Remote First, West Virginia, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "NeuraLight",
+                "company_website": "https://neuralight.ai/",
+                "professional_network_id": "71674965",
+                "title": "Investor & Growth Advisor",
+                "description": "NeuraLight is a VC-backed venture on a mission to transform the lives of the billions of people impacted by neurological disorders by digitizing evaluation and care.",
+                "location": {
+                  "raw": "Tel Aviv, Israel"
+                },
+                "employment_type": "Contract",
+                "start_date": "2021-10-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 662470,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3b6a2b3225a59d6249ce4727642404e322d8ca523fbcb5a8f7cb05fefde52ef2.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/neuralight",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 29,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1857366823,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "GLG",
+                "company_website": "https://glg.com",
+                "professional_network_id": "163983",
+                "title": "Council Member",
+                "description": "As a GLG Council Member, I consult VCs, hedge funds, and startups on marketing and organic growth",
+                "employment_type": "",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 821760,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/91a385008f983a4b2947d61bcb8dc2322ddf8340069ab83496e2d2ca718d08f8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/glg",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 12344,
+                "company_headcount_range": "1001-5000",
+                "company_industries": [
+                  "Information Services",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Information Services",
+                "position_id": 1837156841,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Ximus",
+                "company_website": "http://ximusforum.com",
+                "professional_network_id": "18870946",
+                "title": "Member",
+                "description": "",
+                "location": {
+                  "raw": "Tel Aviv, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2020-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1083311,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/cd0ddccf130a12f0496099f80c3898fdf30ba51fb1ab97db0060b5249cec0e0d.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/ximusforum",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 162,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Think Tanks",
+                  "Research Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Think Tanks",
+                "position_id": 1713422333,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Amazon Web Services (AWS)",
+                "company_website": "http://aws.amazon.com",
+                "professional_network_id": "2382910",
+                "title": "Startups Mentor - Floor28 Builder Space",
+                "description": "Mentoring startup founders about organic growth, SEO and content marketing.\n\nhttps://floor28.co.il/aws-builder-space",
+                "location": {
+                  "raw": "Tel Aviv, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2020-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1033829,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5ce46e90454eb6200f0fd30a6fdbba8112c41701c303d63cdc3a10059f33ada5.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/amazon-web-services",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 147229,
+                "company_headcount_range": "10001+",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 1746588539,
+                "company_type": "Public Company",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Duvall, Washington, United States",
+                "company_hq_location_address_components": [
+                  "Duvall",
+                  "King County",
+                  "Washington",
+                  "United States",
+                  "98019"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "lakeFS",
+                "company_website": "https://lakefs.io/",
+                "professional_network_id": "34950406",
+                "title": "Investor & Growth Advisor",
+                "description": "",
+                "employment_type": "Contract",
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 664510,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8754471dfae6c9cc20dc9c685860358e566d01a87be9ae48c119edccec65a397.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/lakefs",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 6,
+                "company_headcount_latest": 41,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2578925460,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Startup Stash",
+                "company_website": "http://startupstash.com",
+                "professional_network_id": "9328183",
+                "title": "Chief of Stash",
+                "description": "StartupStash is one of the world's biggest online directories of resources and tools for startups and entrepreneurs. Currently, we are the most upvoted product of all time on ProductHunt.",
+                "location": {
+                  "raw": "Tel Aviv Area, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2018-12-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1076361,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/673c8a918fa19a34d142d787621a5ef026cfbfcec9141436ebf5cdd18524e315.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/startupstash",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 7,
+                "company_headcount_latest": 11,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1406580947,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "GuerrillaBuzz",
+                "company_website": "https://guerrillabuzz.com/",
+                "professional_network_id": "11684712",
+                "title": "Co-Founder & CEO",
+                "description": "GuerrillaBuzz is a dedicated Blockchain, Web3 and Fintech PR & marketing platform. Conventional? Not how we do it. We go off the beaten track to hyper-target your customers and build a loyal fanbase by providing dedicated PR, SEO and organic growth marketing services.",
+                "location": {
+                  "raw": "Tel Aviv Area, Israel"
+                },
+                "employment_type": "",
+                "start_date": "2018-04-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2442959,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/703f1bff0f73ea9792c1bfb4ae82bbde78554188d37763d7742b16e8b3c048a9.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/guerrillabuzz",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 8,
+                "company_headcount_latest": 7,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Advertising Services",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "Advertising Services",
+                "position_id": 1331130719,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "Israel",
+                "company_hq_location": "Tel Aviv, Tel Aviv District, Israel",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2970543,
+        "basic_profile": {
+          "name": "Chris Stols",
+          "professional_network_name": "Chris Stols",
+          "headline": "Sales Development & GTM Leader | Building, Scaling & Turning Around Pipeline Generation Teams | GTM Engineering & AI | Exit Experienced",
+          "current_title": "Director of Business Development",
+          "normalized_title": {
+            "matched_title": "Director of Business Development",
+            "department": "Sales & Revenue",
+            "sub_department": "Sales Development & Prospecting",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/c85096c74bd766b171ad62dc736409b006566fe4d2fc0965e2f176089dc4cdac.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York City Metropolitan Area",
+            "full_location": "New York City Metropolitan Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/chrisstols"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Aligned",
+                "company_website": "https://www.alignedup.com?utm_source=Social&utm_medium=Aligned_Page&utm_campaign=website_button&utm_id=163&avk=mvk_Linkedin_Page",
+                "professional_network_id": "73810331",
+                "title": "Director of Business Development",
+                "description": "A few milestones I'm proud of so far:\n- Transformed GTM strategy: Shifted prospecting from primarily PLG-driven to a scalable MM & Enterprise outbound motion, creating a new pipeline engine for the business.\n- +44% average deal size: Increased the average deal size entering pipeline as the organization moved upmarket.\n- Record pipeline generation: Delivered the two largest outbound pipeline-generation quarters in company history.\n- 6x BDR organization: Scaled the team from 2 \u2192 12 BDRs and built out the company's first BDR management layer.\n- 30% lower GTM spend: Rebuilt GTM systems, processes, and technology to reduce spend by 30% while increasing pipeline generation and efficiency.\n- Built a PLG scoring system using Claude, Tableau, and HubSpot to analyze free-user behavior, identify high-intent accounts and users, and translate product engagement signals into actionable Business Development outreach.\n- AI-native GTM: Established AI fluency across the revenue organization, embedding AI into prospecting, research, enablement, operations, and day-to-day GTM workflows.\n- Built the operating infrastructure across people, process, data, technology, and AI required to scale the new outbound motion.",
+                "employment_type": "Full-time",
+                "start_date": "2025-10-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 813860,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/76d9252931c4ae3574c2b80a116cbc2486b7b91ecbca680248f07847c30c72a3.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/alignedup",
+                "seniority_level": "Director",
+                "function_category": "Sales",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 86,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2772187527,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Remote First, West Virginia, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "Silvry",
+                "company_website": "https://silvry.co/",
+                "professional_network_id": "109198091",
+                "title": "Founder",
+                "description": "I founded Silvry as a part-time educational venture to help experienced professionals\u2014especially those in sales and education\u2014learn how to adopt and apply AI responsibly. Many mid- to late-career professionals feel left behind by rapid technological change; Silvry exists to bridge that gap through clear, hands-on instruction that builds confidence, not dependence.\n\nWhat I Do at Silvry:\nDeliver 1:1 and group AI education sessions focused on safe, ethical use\nCreate custom AI adoption playbooks for sales teams and educators\nOffer ongoing support and guidance to ensure confident, independent use\nAdvocate for accessible AI education that empowers professionals, not replaces them",
+                "location": {
+                  "raw": "United States"
+                },
+                "employment_type": "",
+                "start_date": "2024-08-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 17455170,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8e4ec02d8243b28e67f272689111f207b4e3406c357667bf55a8fe586ee06481.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/silvry",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "myself only",
+                "company_industries": [
+                  "Professional Training and Coaching",
+                  "Education"
+                ],
+                "company_professional_network_industry": "Professional Training and Coaching",
+                "position_id": 2743697513,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States of America",
+                "company_hq_location": "Montville, Connecticut, United States",
+                "company_hq_location_address_components": [
+                  "Montville",
+                  "Waterford",
+                  "New London County",
+                  "Connecticut",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTMMarDMAwA0KsYzRksWY7sXOXzCbIjk6HUNHGGUnr3kvnB-8DrsuO97nrusDigWqKgjxyw5WiYalFGThqM68aJxIhMiLcQsUSc_azacgveqhQRmByc_RiwuD_Kckf_k4PRhz7W2q_nLRi-vwAAAP__4CT2OHgAAAA=",
+    "total_count": 13,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

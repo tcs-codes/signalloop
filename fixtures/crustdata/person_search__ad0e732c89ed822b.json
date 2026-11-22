@@ -1,0 +1,327 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "bolt.new"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 22318,
+        "basic_profile": {
+          "name": "Eric Simons",
+          "professional_network_name": "Eric Simons",
+          "headline": "CEO at Bolt.new",
+          "current_title": "CEO & Founder",
+          "normalized_title": {
+            "matched_title": "CEO & Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/3ba4d32b522732876f8f557878f6fd0c68dd0d18f298b3b981afe0a024e957d7.jpg",
+          "location": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco, California, United States",
+            "full_location": "San Francisco, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/eric-simons-a464a664"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "bolt.new",
+                "company_website": "https://www.bolt.new/?utm_source=bolt.new_linkedin",
+                "professional_network_id": "35539062",
+                "title": "CEO & Founder",
+                "description": "Build stunning apps & websites, just by prompting",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2017-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654143,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2346f160c36848bdc7cb81512b609b74d99da488becd9dd2b00a12916a426915.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boltdotnew",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 116,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1418026221,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 22319,
+        "basic_profile": {
+          "name": "Albert Pai",
+          "professional_network_name": "Albert Pai",
+          "headline": "CTO at StackBlitz",
+          "current_title": "CTO / Founder",
+          "normalized_title": {
+            "matched_title": "CTO, Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Technology & Engineering Leadership",
+            "similarity": 0.9978,
+            "confident": true
+          },
+          "profile_picture_permalink": "",
+          "location": {
+            "city": "Palo Alto",
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "Palo Alto, California, United States",
+            "full_location": "Palo Alto, California, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/albertpai"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "bolt.new",
+                "company_website": "https://www.bolt.new/?utm_source=bolt.new_linkedin",
+                "professional_network_id": "35539062",
+                "title": "CTO / Founder",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "",
+                "start_date": "2017-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 654143,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2346f160c36848bdc7cb81512b609b74d99da488becd9dd2b00a12916a426915.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/boltdotnew",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 9,
+                "company_headcount_latest": 116,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1631539454,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 3564630,
+        "basic_profile": {
+          "name": "Eduardo F.",
+          "professional_network_name": "Eduardo F.",
+          "headline": "COO @ Tangerix | Building Online Marketplaces | C550 Captain at Vikingo Air",
+          "current_title": "Chief Operating Officer",
+          "normalized_title": {
+            "matched_title": "Chief Operating Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/49800e4e96b920f1fa33115c05d66445c227ecd815232971dd391d860e355e1d.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": "Venezuela",
+            "continent": "South America",
+            "raw": "Venezuela",
+            "full_location": "Venezuela"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/feoe"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Tangerix",
+                "company_website": "https://tangerix.bolt.host/",
+                "professional_network_id": "119503917",
+                "title": "Chief Operating Officer",
+                "description": "Co-leading Tangerix, an online marketplace business. I own business development, operations, and fundraising strategy \u2014 from go-to-market and partnerships to investor relations and financial planning. Building the operational backbone needed to scale early traction into a fundable growth story.",
+                "location": {
+                  "raw": "Caracas"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2025-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 60827584,
+                "company_status": "active",
+                "company_profile_picture_permalink": "",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/tangerix",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 1,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Oil and Gas",
+                  "Oil, Gas, and Mining"
+                ],
+                "company_professional_network_industry": "Oil and Gas",
+                "position_id": 2924379366,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Servicios Aereos Vikingo",
+                "company_website": "https://www.instagram.com/vikingoair/",
+                "professional_network_id": "105699403",
+                "title": "Pilot in Command \u2014 Cessna Citation C550",
+                "description": "Captain on the Cessna Citation C550 for executive and charter operations across the region. Responsible for flight planning, crew leadership, safety, and operational decision-making.",
+                "location": {
+                  "raw": "Caracas"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 2785205,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8217af8806ee06d4860948bca1eff10c18fe505958038ca7862d9e1ef2104220.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/vikingoair",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 2,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Airlines and Aviation",
+                  "Transportation, Logistics, Supply Chain and Storage"
+                ],
+                "company_professional_network_industry": "Airlines and Aviation",
+                "position_id": 2474154798,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJzQrCMAwA4FcpOe_QLmmS7lVERvozdhCLW3cQ8d3F8_eB19WO97rbucPiQMW8MMaQctBKgcyKWp19Zp1REklBsVgyZylbYmqkcVOsrSWNmmBycPZjwOJuGJkY_X1yMPqwx1r69fyLfH8BAAD__wzekxZ3AAAA",
+    "total_count": 7,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "truefoundry.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Sales"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Revenue"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Business Development"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Growth"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Go To Market"
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "GTM"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 862266,
+        "basic_profile": {
+          "name": "Nirali Shekhwa",
+          "professional_network_name": "Nirali Shekhwa",
+          "headline": "GTM Strategy at TrueFoundry",
+          "current_title": "GTM Strategy - Founder's Office",
+          "normalized_title": {
+            "matched_title": "Founding GTM Lead",
+            "department": "Marketing",
+            "sub_department": "Marketing Strategy & Planning",
+            "similarity": 0.9003,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/4ceda61f6f64303c691103316046ff11ba60173f78b04ff1f170519859e39688.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/nirali-shekhwa"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "TrueFoundry",
+                "company_website": "https://truefoundry.com",
+                "professional_network_id": "76255156",
+                "title": "GTM Strategy - Founder's Office",
+                "description": "",
+                "location": {
+                  "raw": "Bengaluru"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2026-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 703388,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df50186ec3b394222fda1b6a9db30479a55f3c9a6492baebe83eeb7f455fc53f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/truefoundry",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 139,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2927239536,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 891960,
+        "basic_profile": {
+          "name": "Angel Kaur Oberoi",
+          "professional_network_name": "Angel Kaur Oberoi",
+          "headline": "Growth Marketing Leader I Customer Engagement I ABM",
+          "current_title": "Growth Marketing Director",
+          "normalized_title": {
+            "matched_title": "Growth Marketing Lead",
+            "department": "Marketing",
+            "sub_department": "Digital & Social Media Marketing",
+            "similarity": 0.9978,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/076904f16505ad3a3c5723ad0cfd0234813e8948c071310e920e5293834eae12.jpg",
+          "location": {
+            "city": null,
+            "state": "California",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "San Francisco Bay Area",
+            "full_location": "San Francisco Bay Area"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/angeloberoi"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "TrueFoundry",
+                "company_website": "https://truefoundry.com",
+                "professional_network_id": "76255156",
+                "title": "Growth Marketing Director",
+                "description": "",
+                "location": {
+                  "raw": "San Francisco Bay Area"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2025-08-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 703388,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df50186ec3b394222fda1b6a9db30479a55f3c9a6492baebe83eeb7f455fc53f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/truefoundry",
+                "seniority_level": "Director",
+                "function_category": "Marketing",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 139,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2709877227,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 947155,
+        "basic_profile": {
+          "name": "Gaurav Mehta",
+          "professional_network_name": "Gaurav Mehta",
+          "headline": "Advisor - Analyst Relations at Capillary Technologies",
+          "current_title": "GTM Leader , Head of Strategic Alliances and Analyst Relations",
+          "normalized_title": {
+            "matched_title": "Senior Analyst Relations Manager",
+            "department": "Data & Analytics",
+            "sub_department": "Business Intelligence & Insights",
+            "similarity": 0.9494,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5ec0ae8f3bc6da1f4e7940db59a3c4dd168dd99c182c7abe69b0f7e15ebe235f.jpg",
+          "location": {
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "continent": "Asia",
+            "raw": "Bengaluru, Karnataka, India",
+            "full_location": "Bengaluru, Karnataka, India"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/gauravmehta08"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": "m_gaurav_m"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "TrueFoundry",
+                "company_website": "https://truefoundry.com",
+                "professional_network_id": "76255156",
+                "title": "GTM Leader , Head of Strategic Alliances and Analyst Relations",
+                "description": "I am busy building the Reseller and VAD Partner ecosystem globally. Partners are integral part of our growth story and having closed number of deals with the partners, we are now scaling this up. If you are looking to partner with us, please drop a message. \n\nI also head Analyst Relations(AR) Function. We are covered by Gartner in 28 reports including 11 hype cycles and overall 41 Analyst reports in the past 18 months. Thank you Gartner, Forrester, IDC, Everest group, HFS research, Constellation Research, Nucleus Research, Frost and Sullivan and other AR firms for covering us across the topics like AI gateway, MCP Gateway, Agent management platform, Agent Gateway, Cost optimization, Ai security, AI Governance and Observability.  \n\nTrueFoundry is a AI Control Plane that enterprises use to build, deploy, govern and scale Agentic AI applications. It's AI Gateway (Model gateway, MCP Gateway and Agent Gateway) is one of the most scaled production grade platform that today processes 1 trillion tokens a day for a single client and saves >100 Million USD. We serve number of fortune 500 enterprises globally and growing fast. \n\nVisit www.truefoundry.com",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 703388,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df50186ec3b394222fda1b6a9db30479a55f3c9a6492baebe83eeb7f455fc53f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/truefoundry",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 139,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2346466505,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Capillary Technologies",
+                "company_website": "https://www.capillarytech.com?utm_source=Linkedin",
+                "professional_network_id": "478140",
+                "title": "Advisor - Analyst Relations",
+                "description": "Capillary is my second home and I am glad that I am back to work here. Cozy environment and amazing super talented team. Colleagues with whom I worked together, laughed together and sailed through difficult times of Covid. I am Back !!!\n\nI will be leading the Analyst Relations for a New Product Launch. Exciting Space where super fast innovation and flawless execution is the only way companies will be able to thrive. \n\nWill share more details in coming weeks....Let's Start!!!",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2026-09-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 654217,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a4dfba16792eea989b6806a790a5f661b000fe7a65c84341e2ca6835dfa60300.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/capillary-technologies",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 1318,
+                "company_headcount_range": "501-1000",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 3008045403,
+                "company_type": "Public Company",
+                "company_headquarters_country": "India",
+                "company_hq_location": "HSR Layout, Karnataka, India",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              },
+              {
+                "name": "Restroworks",
+                "company_website": "http://www.restroworks.com",
+                "professional_network_id": "2350408",
+                "title": "Global Head of Strategic Alliances",
+                "description": "Driving Restroworks' global partnership and ecosystem strategy to accelerate international expansion, strategic alliances, and channel-led business growth. Advising the executive leadership team on building scalable partner ecosystems, strengthening market presence, and unlocking new growth opportunities across global markets.\n\nRestroworks is a cloud-based enterprise restaurant management platform trusted by 25,000+ restaurants across global markets. Purpose-built for multi-format restaurant operations\u2014including QSR, fine dining, casual dining, and caf\u00e9s\u2014the platform delivers a comprehensive technology stack covering POS, Inventory Management, Kitchen Automation, Self-Ordering Kiosks, and analytics. \n\nWe serve 25000+ Restaurants, 52 countries, 2.8 Billion Order value....and...World's best brands like Starbucks, Taco Bell, H\u00e4agen-Dazs, Nando\u2019s and Herfy.",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2026-07-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 707643,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/38fe66f1c14270d9611056c343a5b66ad3bc593af3f4fb5f5d522c4dba597eaa.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/restroworks-technologies",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 197,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2968106036,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Facets.cloud",
+                "company_website": "https://www.facets.cloud/",
+                "professional_network_id": "74716769",
+                "title": "Head of Growth and Strategy",
+                "description": "Helping Facets Cloud to grow",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2025-02-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 706742,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/31e7e7fa48a1f35736d41131b1158fbd2409b7888c36843314f203f784046f5f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/facets-cloud",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "1 to 2 years",
+                "years_at_company_raw": 1,
+                "company_headcount_latest": 49,
+                "company_headcount_range": "11-50",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2574427816,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "United States, United States",
+                "company_hq_location_address_components": [],
+                "business_email_verified": true
+              },
+              {
+                "name": "XEBO.ai",
+                "company_website": "https://www.xebo.ai",
+                "professional_network_id": "13636043",
+                "title": "Global Head of Analyst Relations",
+                "description": "Xebo.ai enables enterprises to enhance Customer and Employee Experience (CX & EX) through AI-driven insights. By analyzing the voice of customers (VOC) across multiple channels, we help organizations drive strategic decisions and improve business outcomes.\n\nTrusted by 10 Fortune 500 companies and 200+ global brands across 15 industries\u2014including Emirates, BMW, Bupa Arabia, and VISA\u2014Xebo.ai delivers measurable impact by increasing NPS, reducing churn, and validating transformative innovations.\n\nMy role involves:\n\n\u2022 Managing Analyst Relations for Xebo, enhancing collaboration with top AR firms like Gartner,  Forrester, IDC, Everest Group, Frost, Nelson, Omdia and others to boost brand visibility.\n\u2022 Introducing new initiatives within the organization based on insights gained from industry analysts.\n\u2022 Improving brand recognition and credibility by leveraging relationships with AR firms.",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 610535,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0698f45a606e7236ed28d0382a17980ca1c3ecd34c0cf5fd217add210b222130.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/xebo",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 104,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2529642616,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Frankford, Delaware, United States",
+                "company_hq_location_address_components": [
+                  "Frankford",
+                  "Sussex County",
+                  "Delaware",
+                  "United States",
+                  "19945"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Kissflow",
+                "company_website": "http://www.kissflow.com",
+                "professional_network_id": "3570830",
+                "title": "Global Head of Analyst Relations",
+                "description": "In my role as the Global Head of Analyst Relations at Kissflow, I led efforts to collaborate with Analyst firms, enhancing coverage and visibility for the company. By implementing strategic initiatives, I improved relationships with Analysts, driving positive outcomes for Kissflow.",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Part-time",
+                "start_date": "2024-11-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 819718,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e7cfef798b35d7276b11ce00016c0434742bed38e95c28ebad89cb69b8c3ec5f.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/kissflow",
+                "seniority_level": "Director",
+                "function_category": "",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 2,
+                "company_headcount_latest": 516,
+                "company_headcount_range": "201-500",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2529643422,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "Wilmington, Delaware, United States",
+                "company_hq_location_address_components": [
+                  "Wilmington",
+                  "New Castle County",
+                  "Delaware",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Multiple Companies",
+                "company_website": "http://serraconsult.com",
+                "professional_network_id": "949154",
+                "title": "Growth Advisor",
+                "description": "I have been instrumental in guiding multiple high potential companies from the USA and India on business strategy, international expansion, sales setup, strategic alliances, and analyst relations. Through my expertise, I help these startups achieve significant growth and success.",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2022-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1083380,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/80c96a7c7320f3df7509d87968722832d6f9c19e69116110e0143c7a0819656a.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/multiple-companies_2",
+                "seniority_level": "Entry Level",
+                "function_category": "Consulting",
+                "years_at_company": "3 to 5 years",
+                "years_at_company_raw": 4,
+                "company_headcount_latest": 4058,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "IT Services and IT Consulting",
+                  "Professional Services"
+                ],
+                "company_professional_network_industry": "IT Services and IT Consulting",
+                "position_id": 1969804935,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "San Francisco, California, United States",
+                "company_hq_location_address_components": [
+                  "San Francisco",
+                  "San Francisco County",
+                  "California",
+                  "United States"
+                ],
+                "business_email_verified": false
+              },
+              {
+                "name": "Verity",
+                "company_website": "https://verity.dev",
+                "professional_network_id": "79915499",
+                "title": "Angel Investor",
+                "description": "Active Angel Investor",
+                "location": {
+                  "raw": "Bengaluru, Karnataka, India"
+                },
+                "employment_type": "Self-employed",
+                "start_date": "2021-05-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "crustdata_company_id": 1945298,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec5278d83c6242921cb197290eb016eb86823bd41e8da2abeb0d903461571727.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/0xos",
+                "seniority_level": "Entry Level",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 51,
+                "company_headcount_range": "2-10",
+                "company_industries": [
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Technology, Information and Internet",
+                "position_id": 1926575463,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "",
+                "company_hq_location": "",
+                "company_hq_location_address_components": [],
+                "business_email_verified": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJMa7DIAwA0KsgzxkwYGPnKl9fkaGgDFVREzJUVe9edX5veF7teG27nTusDrgIi3ETqywqMSkX7L5bl04kOUkiCTnUhqrmzVK5VR81EGFBjrA4OMcxYXV_mjIS_S8O5ph23-q4Hj9A-nwDAAD__zP8I9F3AAAA",
+    "total_count": 15,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

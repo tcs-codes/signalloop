@@ -1,0 +1,295 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "triomics.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 84213,
+        "basic_profile": {
+          "name": "Sarim Khan",
+          "professional_network_name": "Sarim Khan",
+          "headline": "Co-founder & CEO at Triomics",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/9a6b11fdbdfae9509e736aafe554450d3c879eb5843ea568cd305e06a6212c11.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/sarim-khan-triomics"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Triomics",
+                "company_website": "https://triomics.com/",
+                "professional_network_id": "75527963",
+                "title": "Co-Founder",
+                "description": "Triomics automates oncology \u201cmid-office\u201d workflows that typically require trained staff to manually review unstructured medical records. We are partnered with leading cancer centers including Memorial Sloan Kettering, Mount Sinai, and Yale Cancer Center, and our work has been published in Nature Digital Medicine and presented at ASCO. Backed by Battery, Lightspeed, Nexus, and Y Combinator.",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780840,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8fcad51d5367139a81d9f9c02eb5013ced7dfe05b0057c0f55e03b5066b702e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/triomics",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1736723941,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 84214,
+        "basic_profile": {
+          "name": "Hrituraj Singh",
+          "professional_network_name": "Hrituraj Singh",
+          "headline": "Co-Founder and CTO at Triomics",
+          "current_title": "Co-Founder",
+          "normalized_title": {
+            "matched_title": "Co-Founder",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/32eb1cc1cc434e24528ff4f13ef10fcab980bf60cd63e8327a1b20b92bddec5b.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/hrituraj1997"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Triomics",
+                "company_website": "https://triomics.com/",
+                "professional_network_id": "75527963",
+                "title": "Co-Founder",
+                "description": "Triomics is a generative AI platform purpose-built for oncology workflows. We help leading academic and community cancer centers in the U.S. transform unstructured medical-record data into point-of-care insights, including screening patients for trials, powering pre-charting, and curating clinical data.\n\nWe are backed by leading investors such as Battery, Lightspeed, Nexus, General Catalyst, and Y Combinator",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "Full-time",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780840,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8fcad51d5367139a81d9f9c02eb5013ced7dfe05b0057c0f55e03b5066b702e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/triomics",
+                "seniority_level": "Owner / Partner",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1737153765,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2578482,
+        "basic_profile": {
+          "name": "Sebastien Rhodes",
+          "professional_network_name": "Sebastien Rhodes",
+          "headline": "Chief Business Officer | Triomics",
+          "current_title": "Chief Business Officer",
+          "normalized_title": {
+            "matched_title": "Chief Business Officer",
+            "department": "Executive Leadership",
+            "sub_department": "General & Regional Management",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/72d48d612535d1bb699dbc5a953abe4477999538014cb8f43cae8728d1faa404.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/sebastienrhodes"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "Triomics",
+                "company_website": "https://triomics.com/",
+                "professional_network_id": "75527963",
+                "title": "Chief Business Officer",
+                "description": "Strategy, Ops, Commercial, GTM, Finance, etc.",
+                "location": {
+                  "raw": "New York, NY"
+                },
+                "employment_type": "",
+                "start_date": "2026-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 780840,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8fcad51d5367139a81d9f9c02eb5013ced7dfe05b0057c0f55e03b5066b702e8.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/triomics",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 98,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2926329749,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe8AhW6wXzFmaaHNDkbixg7G-O_G8_vA69Ljve187rA6EDEJMfqEmdhbxNKCqRplrFICsiQJwRspzy3HRiQtUSp-mQ1LVZgcnP0YsLob0pJTxvvkYPTBj6326_kX-v4CAAD__6V09gJ3AAAA",
+    "total_count": 5,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}

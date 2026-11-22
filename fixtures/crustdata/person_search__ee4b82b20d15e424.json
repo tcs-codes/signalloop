@@ -1,0 +1,286 @@
+{
+  "request": {
+    "filters": {
+      "op": "and",
+      "conditions": [
+        {
+          "field": "experience.employment_details.current.company_website_domain",
+          "type": "=",
+          "value": "permitflow.com"
+        },
+        {
+          "op": "or",
+          "conditions": [
+            {
+              "field": "experience.employment_details.current.seniority_level",
+              "type": "in",
+              "value": [
+                "CXO",
+                "Owner / Partner"
+              ]
+            },
+            {
+              "field": "experience.employment_details.current.title",
+              "type": "(.)",
+              "value": "Founder"
+            }
+          ]
+        }
+      ]
+    },
+    "limit": 3,
+    "fields": [
+      "crustdata_person_id",
+      "basic_profile",
+      "social_handles",
+      "experience.employment_details.current"
+    ]
+  },
+  "endpoint": "/person/search",
+  "credits": 0.69,
+  "response": {
+    "profiles": [
+      {
+        "crustdata_person_id": 203816,
+        "basic_profile": {
+          "name": "Samuel K. Lam",
+          "professional_network_name": "Samuel K. Lam",
+          "headline": "Co-Founder & CTO at PermitFlow | AI for Construction",
+          "current_title": "Co-Founder & CTO",
+          "normalized_title": {
+            "matched_title": "Cofounder/CTO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9972,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/84fc58d7e7d311863b9fc7aff31a4deb370d02bca8d0b6e1e5d4d6e886ec603b.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/samuelklam"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "PermitFlow",
+                "company_website": "http://www.permitflow.com",
+                "professional_network_id": "81938337",
+                "title": "Co-Founder & CTO",
+                "description": "\ud83c\udfd7\ufe0f PermitFlow is the leading AI platform for construction teams. Real estate developers, homebuilders, general contractors, architects, owners, and home service contractors across the U.S. use PermitFlow to complete permitting, inspections, licensing, and more faster.\n\n\ud83c\udfaf\u00a0PermitFlow makes construction faster and better by reducing complexity, time, and cost. At a time when the US deals with a severe housing shortage, affordability challenges, and crumbling infrastructure, we want to be part of the solution.\n\n\ud83d\ude80 We\u2019ve raised $90.5M from Accel, Kleiner Perkins, Initialized Capital, Y Combinator, Felicis, and founders and executives from Google, OpenAI, Procore, Zillow, Uber, Opendoor, Bluebeam, Thumbtack, PlanGrid, and more.\n\n\ud83c\udfc6 Since our founding, we\u2019ve helped customers manage permitting for more than $20B in project value and thousands of housing units.\n\nCome build with us:\u00a0www.permitflow.com/careers",
+                "employment_type": "Full-time",
+                "start_date": "2021-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699555,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ebe42644af6f257312c3b4475b809cc7404be56ec794fa4c35afc3b64824e27.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/permitflow",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 1880302799,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 2587928,
+        "basic_profile": {
+          "name": "Joel Graber",
+          "professional_network_name": "Joel Graber",
+          "headline": "COO at PermitFlow",
+          "current_title": "Chief Operating Officer",
+          "normalized_title": {
+            "matched_title": "Chief Operating Officer",
+            "department": "Executive Leadership",
+            "sub_department": "Executive & C-Suite Leadership",
+            "similarity": 0.9999,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/5ed7926e66d095fc2bed9dc00d4ee5297b7ce0f667cf0b5be0dd44e093f49837.jpg",
+          "location": {
+            "city": "New York",
+            "state": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "raw": "New York, New York, United States",
+            "full_location": "New York, New York, United States"
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/joel-graber-9b913949"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "PermitFlow",
+                "company_website": "http://www.permitflow.com",
+                "professional_network_id": "81938337",
+                "title": "Chief Operating Officer",
+                "description": "",
+                "employment_type": "",
+                "start_date": "2026-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699555,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ebe42644af6f257312c3b4475b809cc7404be56ec794fa4c35afc3b64824e27.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/permitflow",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "Less than 1 year",
+                "years_at_company_raw": 0,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2898450084,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 4665908,
+        "basic_profile": {
+          "name": "Francis Thumpasery",
+          "professional_network_name": "Francis Thumpasery",
+          "headline": "Co-Founder and CEO at PermitFlow",
+          "current_title": "Co-Founder and CEO",
+          "normalized_title": {
+            "matched_title": "Co-Founder & CEO",
+            "department": "Executive Leadership",
+            "sub_department": "Founder & Entrepreneurship Leadership",
+            "similarity": 0.9995,
+            "confident": true
+          },
+          "profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/person/a7c3cc0577ca570b0936c7062f22f13428ab66fc151b6fa42646efe3c1e1c51e.jpg",
+          "location": {
+            "city": null,
+            "state": null,
+            "country": null,
+            "continent": null,
+            "raw": "",
+            "full_location": ""
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/francis-thumpasery"
+          },
+          "dev_platform_identifier": {
+            "profile_url": null
+          },
+          "twitter_identifier": {
+            "slug": ""
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "name": "PermitFlow",
+                "company_website": "http://www.permitflow.com",
+                "professional_network_id": "81938337",
+                "title": "Co-Founder and CEO",
+                "description": "Leading AI agents for builders. Contractors, architects, developers, and owners trust PermitFlow to simplify and accelerate their projects",
+                "employment_type": "",
+                "start_date": "2021-11-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "crustdata_company_id": 699555,
+                "company_status": "active",
+                "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7ebe42644af6f257312c3b4475b809cc7404be56ec794fa4c35afc3b64824e27.jpg",
+                "company_professional_network_profile_url": "https://www.linkedin.com/company/permitflow",
+                "seniority_level": "CXO",
+                "function_category": "",
+                "years_at_company": "6 to 10 years",
+                "years_at_company_raw": 5,
+                "company_headcount_latest": 175,
+                "company_headcount_range": "51-200",
+                "company_industries": [
+                  "Software Development",
+                  "Technology, Information and Internet",
+                  "Technology, Information and Media"
+                ],
+                "company_professional_network_industry": "Software Development",
+                "position_id": 2038013965,
+                "company_type": "Privately Held",
+                "company_headquarters_country": "United States",
+                "company_hq_location": "New York, New York, United States",
+                "company_hq_location_address_components": [
+                  "New York",
+                  "New York",
+                  "United States"
+                ],
+                "business_email_verified": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "H4sIAAAAAAAA_xTJwQ7CIAwA0F8hPe9AocWyXzFmaQdkByNxYwdj_Hez8_vC-6z7Z9n02GB2wNokNcnm1Wqi1LJhQ6yhVRLVIkUCl3Krxsq2Ro1GngmjL5gDIUwOjr4PmN2dUuLs5TE5GH3oc1n7-bqEfv8AAAD___E__a53AAAA",
+    "total_count": 4,
+    "total_count_relation": null,
+    "remarks": []
+  }
+}
