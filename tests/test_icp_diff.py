@@ -51,7 +51,8 @@ def world():
 
 
 def _diff(ins):
-    top, director = ins[0].id, ins[1].id
+    # evidence ids are the prompt's local labels: eligible insights sorted by lift (1 = top, 2 = Directors)
+    top, director = 1, 2
     return {"changes": [
         {"op": "narrow", "scope": "company", "field": STAGE, "from": ["seed", "series_a", "series_b"],
          "to": [{"field": STAGE, "type": "in", "value": ["series_a"]}], "evidence_insight_ids": [top],
@@ -111,11 +112,20 @@ def test_approval_creates_v2_and_reruns_lookalike(world, fake_llm):
 def test_invalid_evidence_or_field_is_rejected(world, fake_llm):
     f, v1, c, ins = world
     bad = _diff(ins)
-    bad["changes"][0]["evidence_insight_ids"] = [ins[2].id]        # not eligible
+    bad["changes"][0]["evidence_insight_ids"] = [9]                # no such label
     bad["changes"][1]["field"] = "made.up"
     fake_llm.responses["propose_icp_diff"] = [bad, bad]
     with pytest.raises(LLMValidationError):
         icp_diff.propose(c.id)
+
+
+def test_prompt_uses_labels_not_db_ids(world, fake_llm):
+    f, v1, c, ins = world
+    fake_llm.responses["propose_icp_diff"] = _diff(ins)
+    icp_diff.propose(c.id)
+    lines = fake_llm.calls[-1]["variables"]["insights"].splitlines()
+    assert [ln.split(":")[0] for ln in lines] == ["1", "2"]
+    assert all(str(i.id) + ":" not in "\n".join(lines) or i.id in (1, 2) for i in ins)
 
 
 def test_reject_leaves_icp_unchanged(world, fake_llm):

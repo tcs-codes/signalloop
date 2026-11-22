@@ -25,9 +25,9 @@ BASE, SEGMENT, VP_MULT, DIRECTOR, CAP = 0.06, 0.25, 1.5, 0.03, 0.6
 FIELDS = ["email", "domain", "profile_url", "sent_at", "opened", "replied", "meeting", "unsubscribed"]
 DEFAULT_CSV = PROJECT_ROOT / "fixtures" / "campaign_results.csv"
 DEFAULT_NAME = "Q4 outbound (synthetic demo)"
-# Planted pattern was the top insight for seeds 1-10 on the recorded contacts (lift 2.2-4.4x,
-# n=39); seed 7 (3.97x, Directors 0.11x) is the recorded demo campaign.
-DEFAULT_SEED = 7
+# Planted pattern was the top insight for seeds 1-10 on the recorded 326 contacts (lift
+# 2.6-4.5x, n=39); seed 9 (3.62x, Directors 0.24x) is a typical one and the recorded demo.
+DEFAULT_SEED = 9
 
 
 def reply_probability(stage: str | None, headcount_band: str | None, seniority: str | None) -> float:
@@ -40,18 +40,26 @@ def reply_probability(stage: str | None, headcount_band: str | None, seniority: 
     return p
 
 
+def _person_key(contact: Contact) -> str:
+    return contact.crustdata_person_id or contact.profile_url or contact.email or f"id:{contact.id}"
+
+
 def generate(out: Path = DEFAULT_CSV, seed: int = DEFAULT_SEED, start: str = "2026-10-01") -> int:
+    """Each person's outcome comes from an RNG seeded by (seed, their Crustdata person id), and
+    rows are sorted by that id, so the same people give the same CSV whatever order the DB
+    created them in (the demo DB staffs accounts in a different order than the recording)."""
     init_db()
-    rng = random.Random(seed)
     t0 = datetime.fromisoformat(start)
     with session_scope() as s:
         rows = s.exec(select(Contact, Account).join(Account, Contact.account_id == Account.id)
-                      .where(Account.is_seed == False).order_by(Contact.id)).all()  # noqa: E712
+                      .where(Account.is_seed == False)).all()  # noqa: E712
+    rows = sorted(rows, key=lambda r: _person_key(r[0]))
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         for contact, account in rows:
+            rng = random.Random(f"{seed}:{_person_key(contact)}")
             n = (account.firmographics_json or {}).get("normalized", {})
             p = reply_probability(n.get("funding_stage"), n.get("headcount_band"), contact.seniority)
             replied = rng.random() < p

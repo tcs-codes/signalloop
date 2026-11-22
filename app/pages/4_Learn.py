@@ -39,6 +39,10 @@ with c2:
     st.write("…or simulate one on the contacts already in SignalLoop.")
     seed = st.number_input("Random seed", value=demo_campaign.DEFAULT_SEED, step=1)
     if st.button("Generate demo campaign"):
+        from signalloop.orchestrator import staff_for_demo_campaign
+        staffed = staff_for_demo_campaign()          # mock mode: free, from fixtures
+        if staffed:
+            st.caption(f"Found decision-makers for {staffed} more account(s) from recorded data.")
         n = demo_campaign.generate(demo_campaign.DEFAULT_CSV, seed=int(seed))
         st.success(f"Simulated outcomes for {n} contacts → `fixtures/campaign_results.csv` (synthetic).")
 name = st.text_input("Campaign name", demo_campaign.DEFAULT_NAME)

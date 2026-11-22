@@ -112,12 +112,26 @@ def run_watch_engage(icp_id: int | None = None, *, day2: bool = False, n: int = 
 
 
 # ---------------------------------------------------------------- LEARN
+def staff_for_demo_campaign() -> int:
+    """Mock mode only: find decision-makers (from fixtures, free) for every unstaffed account,
+    so the synthetic campaign covers the same people as the recording. No-op in live mode."""
+    from signalloop.config import get_settings
+    if not get_settings().is_mock:
+        return 0
+    staffed = {c.account_id for c in contacts.list_contacts()}
+    todo = [a.id for a in lookalike.list_accounts() if a.id not in staffed]
+    if todo:
+        contacts.find_contacts(account_ids=todo)
+    return len(todo)
+
+
 def run_learn(campaign_csv: str | Path | bytes | None = None, *, generate: bool = False,
               name: str = demo_campaign.DEFAULT_NAME, seed: int = demo_campaign.DEFAULT_SEED) -> RunResult:
     """Import results (or generate the synthetic demo campaign), enrich, analyze, propose an ICP diff."""
     def steps(d: dict) -> None:
         src = campaign_csv
         if generate:
+            d["staffed_for_campaign"] = staff_for_demo_campaign()
             d["generated_rows"] = demo_campaign.generate(demo_campaign.DEFAULT_CSV, seed=seed)
             src = demo_campaign.DEFAULT_CSV
         if src is None:

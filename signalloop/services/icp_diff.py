@@ -41,8 +41,10 @@ def _conds_text(conds) -> str:
     return "\n".join(f"- {c.field} {c.type} {json.dumps(c.value)}" for c in conds) or "(none)"
 
 
-def _insight_text(i: Insight) -> str:
-    return (f"{i.id}: {i.dimension} = {i.segment_value}, n={i.n}, replies={i.responders}, "
+def _insight_text(label: int, i: Insight) -> str:
+    # local labels (1..n), not DB ids: the prompt must not depend on row ids so recorded
+    # LLM outputs replay in a fresh demo DB (fixtures/llm keys hash the full prompt)
+    return (f"{label}: {i.dimension} = {i.segment_value}, n={i.n}, replies={i.responders}, "
             f"rate={i.rate * 100:.1f}%, lift={i.lift:.2f}x")
 
 
@@ -107,13 +109,16 @@ def propose(campaign_id: int, icp_id: int | None = None) -> Approval | None:
         camp = s.get(Campaign, campaign_id)
     spec = icp_svc.spec_of(current)
     baseline = (camp.analysis_json or {}).get("baseline") or elig[0].baseline_rate
+    labels = {k + 1: i for k, i in enumerate(elig)}
     diff = call_llm("propose_icp_diff",
                     {"company_filters": _conds_text(spec.company_filters),
                      "person_filters": _conds_text(spec.person_filters),
-                     "insights": "\n".join(_insight_text(i) for i in elig),
+                     "insights": "\n".join(_insight_text(k, i) for k, i in labels.items()),
                      "baseline_pct": f"{baseline * 100:.1f}", "field_guide": icp_svc.field_guide()},
                     IcpDiff, model=get_settings().MODEL_STRONG, agent="icp_strategist",
-                    validator=_validator({i.id for i in elig}))
+                    validator=_validator(set(labels)))
+    for ch in diff.changes:  # labels -> real insight ids
+        ch.evidence_insight_ids = [labels[k].id for k in ch.evidence_insight_ids]
     proposed, warnings = icp_svc.validate_icp(apply_changes(spec, diff))
     proposed = proposed.model_copy(update={"rationale": (
         f"Learned from campaign '{camp.name}': {diff.expected_effect}").strip()})

@@ -48,6 +48,23 @@ def test_generated_csv_imports_with_high_link_rate_and_idempotent(world, tmp_pat
         assert len(sent) == world and n1 >= world
 
 
+def test_generated_csv_does_not_depend_on_insertion_order(world, tmp_path):
+    from sqlmodel import delete
+
+    from signalloop.models import Contact
+    a = tmp_path / "a.csv"
+    gen.generate(a, seed=3)
+    with session_scope() as s:
+        people = [(c.account_id, dict(c.profile_json), c.role) for c in s.exec(select(Contact)).all()]
+        s.exec(delete(Contact))
+    for acc_id, pj, role in reversed(people):                    # recreate in reverse order
+        pj.pop("normalized", None)
+        store.upsert_contact(pj, acc_id, role=role)
+    b = tmp_path / "b.csv"
+    gen.generate(b, seed=3)
+    assert a.read_text() == b.read_text()
+
+
 def test_columns_case_insensitive_and_unknown_ignored(world):
     csv_text = "EMAIL,Domain,Sent_At,Replied,Meeting,Opened,Unsubscribed,Extra\n" \
                ",co1.io,2026-10-02,yes,no,1,0,zzz\n,unknown.example,2026-10-03,0,0,0,0,\n"
